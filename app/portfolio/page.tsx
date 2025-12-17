@@ -8,17 +8,13 @@ export default function PortfolioHome() {
       {/* Home */}
       <section
         id="home"
-        className="min-h-[70vh] flex flex-col items-center justify-center text-center scroll-mt-20"
+        className="min-h-[50vh] flex flex-col items-center justify-center text-center scroll-mt-20"
       >
         {/* 배경색 제거, 파란 밑줄 유지 */}
         <h1 className="relative inline-block text-6xl font-extrabold tracking-tight">
-          <span>Game Client Developer</span>
+          <span>Game Client Programmer</span>
           <span className="block h-1 w-full bg-blue-500 mt-3 rounded"></span>
         </h1>
-        <p className="mt-6 text-lg text-gray-800">
-          새로운 기술과 개발 방식을 배우는 것을 즐기며, 실제 프로젝트에 빠르게
-          적용해 왔습니다.
-        </p>
         <p className="mt-1 text-lg text-gray-800 mb-2">
           개인 프로젝트를 통해 기획과 프로그래밍을 함께 경험하며, 문제 해결
           역량을 키워왔습니다.
@@ -118,6 +114,33 @@ export default function PortfolioHome() {
                   클론 프로젝트
                 </p>
               </Link>
+
+              {/* BassEngine */}
+              <a
+                href="https://github.com/WooGeun-Nam/BaseEngine"
+                target="_blank"
+                className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all
+                 hover:border-blue-500 hover:shadow-md
+                 focus:outline-none focus-visible:border-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300
+                 active:border-blue-700"
+                aria-label="2D Shooter Clone 상세 페이지로 이동"
+              >
+                <ImgPrefixed
+                  src="/icon/DirectX11.png"
+                  alt="2DShooterClone 썸네일"
+                  className="aspect-video rounded-md mb-4"
+                />
+                <h3 className="text-xl font-semibold text-center">
+                  BassEngine
+                </h3>
+                <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
+                  C++와 DirectX 11을 사용하여 제작된 2D 게임 엔진
+                </p>
+                <p className="text-sm text-gray-700 text-left">
+                  물리 시스템, UI, 오디오, 애니메이션 등 게임 개발에 필요한
+                  기능을 제공
+                </p>
+              </a>
             </div>
 
             {/* 기타 프로젝트 */}

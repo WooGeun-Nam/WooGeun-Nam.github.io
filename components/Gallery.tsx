@@ -40,7 +40,7 @@ export default function Gallery({ images, coverOnly = false, title }: Props) {
         <button
           type="button"
           onClick={() => openAt(0)}
-          className="group relative block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+          className="group relative block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 max-w-2xl mx-auto"
         >
           <ImgPrefixed
             src={img.src}
@@ -69,7 +69,7 @@ export default function Gallery({ images, coverOnly = false, title }: Props) {
   // 썸네일 그리드
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {fixedImages.map((img, i) => (
           <button
             key={i}
@@ -80,7 +80,7 @@ export default function Gallery({ images, coverOnly = false, title }: Props) {
             <ImgPrefixed
               src={img.src}
               alt={img.alt ?? ""}
-              className="w-full h-56 object-cover"
+              className="w-full h-44 object-cover"
             />
           </button>
         ))}
@@ -120,13 +120,13 @@ function Lightbox({
       onClick={onClose}
     >
       <div
-        className="relative max-w-5xl w-full px-6"
+        className="relative max-w-4xl w-full px-6"
         onClick={(e) => e.stopPropagation()}
       >
         <ImgPrefixed
           src={images[index].src}
           alt={images[index].alt ?? ""}
-          className="mx-auto max-h-[82vh] w-auto rounded-xl shadow-lg"
+          className="mx-auto max-h-[70vh] w-auto rounded-xl shadow-lg"
         />
         <button
           type="button"

@@ -1,9 +1,9 @@
 "use client";
 
-/** 배포 환경 prefix 계산: Pages(프로덕션)에서는 레포명 고정, 그 외에는 런타임 정보 사용 */
+/** 배포 환경 prefix 계산: Pages(프로덕션)에서는 루트("/") 고정 */
 const getPrefix = () => {
   if (process.env.NODE_ENV === "production") {
-    return "/towerdefense-portfolio";
+    return "/";
   }
   if (typeof window !== "undefined") {
     const d: any = (window as any).__NEXT_DATA__;
@@ -15,21 +15,21 @@ const getPrefix = () => {
 
 type Props = React.ImgHTMLAttributes<HTMLImageElement> & { src: string };
 
-/** <img> 대체. 기존 사용법 그대로. 상대·절대경로 모두 prefix를 붙여 정규화. */
+/** <img> 대체. 상대·절대경로 모두 prefix를 붙여 정규화. */
 export default function ImgPrefixed({ src, ...rest }: Props) {
   if (!src) return <img {...rest} />;
 
-  // prefix를 동기적으로 바로 계산 → 첫 렌더부터 정상 경로
   const prefix = getPrefix();
 
-  // "./../", "./", "/" 등 제거해 일관된 경로로 통일
+  // "./../", "./", "/" 제거하여 일관된 경로 생성
   const normalized = src.startsWith("http")
     ? src
-    : `/${src.replace(/^(\.\/+|\.\.\/+)+/, "").replace(/^\/+/, "")}`;
+    : src.replace(/^(\.\/+|\.\.\/+)+/, "").replace(/^\/+/, "");
 
-  const finalSrc = normalized.startsWith("http")
-    ? normalized
-    : `${prefix}${normalized}`;
+  // prefix와 normalized 를 안전하게 결합
+  const finalSrc = src.startsWith("http")
+    ? src
+    : `${prefix.replace(/\/+$/, "")}/${normalized.replace(/^\/+/, "")}`;
 
   return <img src={finalSrc} {...rest} />;
 }

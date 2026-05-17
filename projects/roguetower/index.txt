@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/_next/static/css/f095bac1189ed874.css","style"]
-0:["eLJ_fqZ1uGkdgCYCLYA06",[[["",{"children":["projects",{"children":["roguetower",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f095bac1189ed874.css","precedence":"next"}]],"$L4"]]]]
+0:["WcqE3M1_9rt6FtSOFgOFD",[[["",{"children":["projects",{"children":["roguetower",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f095bac1189ed874.css","precedence":"next"}]],"$L4"]]]]
 5:HL["/_next/static/css/378787ab23674440.css","style"]
 6:I{"id":66,"chunks":["185:static/chunks/app/layout-583879458fa1eea6.js"],"name":"","async":false}
 7:I{"id":7885,"chunks":["185:static/chunks/app/layout-583879458fa1eea6.js"],"name":"","async":false}

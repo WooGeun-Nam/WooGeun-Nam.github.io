@@ -18,7 +18,7 @@ export default function TopNav() {
             if (e.isIntersecting) setActive(id);
           });
         },
-        { rootMargin: "-40% 0px -55% 0px", threshold: [0, 0.2, 0.6] }
+        { rootMargin: "-40% 0px -55% 0px", threshold: [0, 0.2, 0.6] },
       );
       io.observe(el);
       observers.push(io);
@@ -50,6 +50,14 @@ export default function TopNav() {
           {link("home", "Home")}
           {link("projects", "Projects")}
           {link("resume", "Resume")}
+          <a
+            href="https://velog.io/@rolru7686"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-1 transition-colors text-gray-600 hover:text-gray-900"
+          >
+            Blog
+          </a>
         </div>
       </nav>
     </header>

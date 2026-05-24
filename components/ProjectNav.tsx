@@ -27,6 +27,14 @@ export default function ProjectNav() {
           >
             Resume
           </Link>
+          <a
+            href="https://velog.io/@rolru7686"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-1 transition-colors text-gray-600 hover:text-gray-900"
+          >
+            Blog
+          </a>
         </div>
       </nav>
     </header>

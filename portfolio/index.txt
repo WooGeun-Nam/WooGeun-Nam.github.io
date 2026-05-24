@@ -1,12 +1,12 @@
 1:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/_next/static/css/f095bac1189ed874.css","style"]
-0:["WcqE3M1_9rt6FtSOFgOFD",[[["",{"children":["portfolio",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f095bac1189ed874.css","precedence":"next"}]],"$L4"]]]]
+0:["pPKyXqP21zZtKk19GrKFu",[[["",{"children":["portfolio",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f095bac1189ed874.css","precedence":"next"}]],"$L4"]]]]
 5:HL["/_next/static/css/378787ab23674440.css","style"]
 6:I{"id":66,"chunks":["185:static/chunks/app/layout-583879458fa1eea6.js"],"name":"","async":false}
 7:I{"id":7885,"chunks":["185:static/chunks/app/layout-583879458fa1eea6.js"],"name":"","async":false}
 8:I{"id":1443,"chunks":["272:static/chunks/webpack-4cd0e0793be24404.js","971:static/chunks/fd9d1056-d8f6cc25471773ac.js","864:static/chunks/864-e4eff54ba195ac8e.js"],"name":"","async":false}
 9:I{"id":8639,"chunks":["272:static/chunks/webpack-4cd0e0793be24404.js","971:static/chunks/fd9d1056-d8f6cc25471773ac.js","864:static/chunks/864-e4eff54ba195ac8e.js"],"name":"","async":false}
-a:I{"id":8906,"chunks":["616:static/chunks/616-aabad0f4532436c5.js","514:static/chunks/app/portfolio/layout-2d87214ec9810861.js"],"name":"","async":false}
+a:I{"id":8906,"chunks":["616:static/chunks/616-aabad0f4532436c5.js","514:static/chunks/app/portfolio/layout-9871258216d2f04c.js"],"name":"","async":false}
 c:I{"id":5438,"chunks":["616:static/chunks/616-aabad0f4532436c5.js","444:static/chunks/app/portfolio/page-c24f726ca9388d9d.js"],"name":"","async":false}
 d:I{"id":4724,"chunks":["616:static/chunks/616-aabad0f4532436c5.js","444:static/chunks/app/portfolio/page-c24f726ca9388d9d.js"],"name":"","async":false}
 e:I{"id":2148,"chunks":["616:static/chunks/616-aabad0f4532436c5.js","444:static/chunks/app/portfolio/page-c24f726ca9388d9d.js"],"name":"","async":false}

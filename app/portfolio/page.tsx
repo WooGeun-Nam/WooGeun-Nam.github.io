@@ -90,6 +90,7 @@ export default function PortfolioHome() {
               </Link>
 
               {/* 2D Shooter Clone */}
+              {/*
               <Link
                 href="/projects/2dshooterclone"
                 className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all
@@ -114,7 +115,7 @@ export default function PortfolioHome() {
                   클론 프로젝트
                 </p>
               </Link>
-
+              */}
               {/* BassEngine */}
               <a
                 href="https://github.com/WooGeun-Nam/BaseEngine"

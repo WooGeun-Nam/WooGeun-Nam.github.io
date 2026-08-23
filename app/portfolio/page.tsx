@@ -124,7 +124,7 @@ export default function PortfolioHome() {
                  hover:border-blue-500 hover:shadow-md
                  focus:outline-none focus-visible:border-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300
                  active:border-blue-700"
-                aria-label="2D Shooter Clone 상세 페이지로 이동"
+                aria-label="BaseEngine 깃허브로 이동"
               >
                 <ImgPrefixed
                   src="/icon/DirectX11.png"
@@ -435,6 +435,7 @@ export default function PortfolioHome() {
               </div>
 
               {/* 2DShooterClone */}
+              {/*
               <div className="mb-6">
                 <h5 className="text-lg font-semibold">
                   2D Shooter Clone (2D 슈터 액션, Unity, 개인 프로젝트)
@@ -449,6 +450,21 @@ export default function PortfolioHome() {
                 </ul>
               </div>
             </div>
+            */}
+
+              {/* RogueTower */}
+              <div className="mb-6">
+                <h5 className="text-lg font-semibold">
+                  BaseEngine (C++ 기반 2D 게임 엔진, 개인 프로젝트)
+                </h5>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>개발 기간 : 2026.01 ~ 2026.04</li>
+                  <li>상용 엔진의 동작 구조 파악 및 저수준 그래픽스 API 학습을 위한 설계</li>
+                  <li>
+                    렌더링 파이프라인 제어, 프레임 동기화 메인 루프 구현, AABB 물리 충돌 검출, 입력 처리 매니저 구현
+                  </li>
+                </ul>
+              </div>
 
             {/* 기타 프로젝트 */}
             <div>

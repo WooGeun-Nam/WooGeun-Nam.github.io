@@ -89,33 +89,6 @@ export default function PortfolioHome() {
                 </p>
               </Link>
 
-              {/* 2D Shooter Clone */}
-              {/*
-              <Link
-                href="/projects/2dshooterclone"
-                className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all
-                 hover:border-blue-500 hover:shadow-md
-                 focus:outline-none focus-visible:border-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300
-                 active:border-blue-700"
-                aria-label="2D Shooter Clone 상세 페이지로 이동"
-              >
-                <ImgPrefixed
-                  src="/PortPolio/2DShooterCloneThum.png"
-                  alt="2DShooterClone 썸네일"
-                  className="aspect-video rounded-md mb-4 object-cover"
-                />
-                <h3 className="text-xl font-semibold text-center">
-                  2D Shooter Clone
-                </h3>
-                <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
-                  모바일 기반 2D 슈터 액션 ( Unity, C#, 1인개발 )
-                </p>
-                <p className="text-sm text-gray-700 text-left">
-                  FSM 기반 상태 제어와 모바일 UI/UX 경험 설계를 중심으로 학습한
-                  클론 프로젝트
-                </p>
-              </Link>
-              */}
               {/* BassEngine */}
               <a
                 href="https://github.com/WooGeun-Nam/BaseEngine"
@@ -142,6 +115,32 @@ export default function PortfolioHome() {
                   기능을 제공
                 </p>
               </a>
+
+              {/* 2D Shooter Clone */}
+              <Link
+                href="/projects/2dshooterclone"
+                className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all
+                 hover:border-blue-500 hover:shadow-md
+                 focus:outline-none focus-visible:border-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300
+                 active:border-blue-700"
+                aria-label="2D Shooter Clone 상세 페이지로 이동"
+              >
+                <ImgPrefixed
+                  src="/PortPolio/2DShooterCloneThum.png"
+                  alt="2DShooterClone 썸네일"
+                  className="aspect-video rounded-md mb-4 object-cover"
+                />
+                <h3 className="text-xl font-semibold text-center">
+                  2D Shooter Clone
+                </h3>
+                <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
+                  모바일 기반 2D 슈터 액션 ( Unity, C#, 1인개발 )
+                </p>
+                <p className="text-sm text-gray-700 text-left">
+                  FSM 기반 상태 제어와 모바일 UI/UX 경험 설계를 중심으로 학습한
+                  클론 프로젝트
+                </p>
+              </Link>
             </div>
 
             {/* 기타 프로젝트 */}
@@ -434,23 +433,6 @@ export default function PortfolioHome() {
                 </ul>
               </div>
 
-              {/* 2DShooterClone */}
-              {/*
-              <div className="mb-6">
-                <h5 className="text-lg font-semibold">
-                  2D Shooter Clone (2D 슈터 액션, Unity, 개인 프로젝트)
-                </h5>
-                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>개발 기간 : 2025.07 ~ 2025.08</li>
-                  <li>모바일 UI/UX 학습을 목표로 전투 시스템을 분석·재현</li>
-                  <li>
-                    FSM 기반으로 플레이어·봇의 이동, 공격, 스킬 캐스팅 상태를
-                    일관성 있게 관리
-                  </li>
-                </ul>
-              </div>
-              */}
-
               {/* BaseEngine */}
               <div className="mb-6">
                 <h5 className="text-lg font-semibold">
@@ -461,6 +443,21 @@ export default function PortfolioHome() {
                   <li>상용 엔진의 동작 구조 파악 및 저수준 그래픽스 API 학습을 위한 설계</li>
                   <li>
                     렌더링 파이프라인 제어, 프레임 동기화 메인 루프 구현, AABB 물리 충돌 검출, 입력 처리 매니저 구현
+                  </li>
+                </ul>
+              </div>
+
+              {/* 2DShooterClone */}
+              <div className="mb-6">
+                <h5 className="text-lg font-semibold">
+                  2D Shooter Clone (2D 슈터 액션, Unity, 개인 프로젝트)
+                </h5>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>개발 기간 : 2025.07 ~ 2025.08</li>
+                  <li>모바일 UI/UX 학습을 목표로 전투 시스템을 분석·재현</li>
+                  <li>
+                    FSM 기반으로 플레이어·봇의 이동, 공격, 스킬 캐스팅 상태를
+                    일관성 있게 관리
                   </li>
                 </ul>
               </div>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 interface DeployPageProps {
-  onTabChange: (tab: "deploy" | "plan" | "devlog") => void;
+  onTabChange: (tab: "deploy" | "plan" | "tech" | "devlog") => void;
 }
 
 const DeployPage: React.FC<DeployPageProps> = ({ onTabChange }) => {

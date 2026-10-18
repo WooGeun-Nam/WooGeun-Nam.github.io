@@ -449,10 +449,9 @@ export default function PortfolioHome() {
                   </li>
                 </ul>
               </div>
-            </div>
-            */}
+              */}
 
-              {/* RogueTower */}
+              {/* BaseEngine */}
               <div className="mb-6">
                 <h5 className="text-lg font-semibold">
                   BaseEngine (C++ 기반 2D 게임 엔진, 개인 프로젝트)
@@ -465,6 +464,7 @@ export default function PortfolioHome() {
                   </li>
                 </ul>
               </div>
+            </div>
 
             {/* 기타 프로젝트 */}
             <div>

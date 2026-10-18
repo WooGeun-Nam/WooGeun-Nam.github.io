@@ -12,12 +12,11 @@ export default function PortfolioHome() {
       >
         {/* 배경색 제거, 파란 밑줄 유지 */}
         <h1 className="relative inline-block text-6xl font-extrabold tracking-tight">
-          <span>Game Client Programmer</span>
+          <span>Game Developer</span>
           <span className="block h-1 w-full bg-blue-500 mt-3 rounded"></span>
         </h1>
-        <p className="mt-1 text-lg text-gray-800 mb-2">
-          개인 프로젝트를 통해 기획과 프로그래밍을 함께 경험하며, 문제 해결
-          역량을 키워왔습니다.
+        <p className="mt-2 text-lg text-gray-800 mb-2">
+          플레이어 경험을 수식과 데이터로 설계하고, 직접 구현·검증하며 게임의 재미를 완성합니다.
         </p>
         <p className="text-xs text-gray-600 mb-10">
           ※ 이 사이트는 Chrome 브라우저에서 가장 안정적으로 작동합니다.
@@ -59,7 +58,7 @@ export default function PortfolioHome() {
             </h2>
 
             {/* 게임 클라이언트 프로젝트 */}
-            <h3 className="text-2xl font-bold mb-6">Game Client</h3>
+            <h3 className="text-2xl font-bold mb-6">Game Projects</h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
               {/* RogueTower */}
               <Link
@@ -86,6 +85,35 @@ export default function PortfolioHome() {
                   타워디펜스의 전략적 배치와 장비 파밍 기반 성장을 결합하고,
                   랜덤 맵과 웨이브별 보상을 통해 로그라이크적 변주와 전략성을
                   강화한 게임
+                </p>
+              </Link>
+
+              {/* TinyJourney */}
+              <Link
+                href="/projects/tinyjourney"
+                className="group block rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all
+   hover:border-blue-500 hover:shadow-md
+   focus:outline-none focus-visible:border-blue-600 focus-visible:ring-2 focus-visible:ring-blue-300
+   active:border-blue-700"
+                aria-label="TinyJourney 상세 페이지로 이동"
+              >
+                <div className="aspect-video rounded-md mb-4 bg-gray-50 border border-gray-100 flex items-center justify-center overflow-hidden">
+                  <ImgPrefixed
+                    src="/TinyJourney/CatSide.png"
+                    alt="TinyJourney 썸네일"
+                    className="h-28 w-28 object-contain [image-rendering:pixelated] transition-transform duration-300 group-hover:scale-110"
+                  />
+                </div>
+
+                <h3 className="text-xl font-semibold text-center">
+                  TinyJourney (가제 · 개발 중)
+                </h3>
+                <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
+                  2D 탑다운 액션 RPG ( Unity, C#, 1인 개발 )
+                </p>
+                <p className="text-sm text-gray-700 text-left">
+                  6대 무기군 아키타입과 2.5D 절벽 고도 레벨 디자인을 결합하고,
+                  AI 에이전트 및 Excel 마스터 데이터 자동화 파이프라인으로 개발 중인 액션 RPG
                 </p>
               </Link>
 
@@ -415,7 +443,7 @@ export default function PortfolioHome() {
             {/* 게임 클라이언트 프로젝트 */}
             <div className="mb-10">
               <h4 className="text-2xl font-semibold mb-4">
-                게임 클라이언트 프로젝트
+                게임 개발 프로젝트
               </h4>
 
               {/* RogueTower */}
@@ -429,6 +457,22 @@ export default function PortfolioHome() {
                   <li>
                     오브젝트 풀링, 절차적 맵/경로 생성, PlayFab 연동, 데이터
                     지향 설계
+                  </li>
+                </ul>
+              </div>
+
+              {/* TinyJourney */}
+              <div className="mb-6">
+                <h5 className="text-lg font-semibold">
+                  TinyJourney (2D 탑다운 액션 RPG, Unity, 개인 프로젝트 · 진행 중)
+                </h5>
+                <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
+                  <li>개발 기간 : 2026.03 ~ 진행 중</li>
+                  <li>
+                    6대 무기군 전투 메커니즘, 스테이지 환경 기믹 및 2.5D 고도(Elevation) 레벨 디자인 설계
+                  </li>
+                  <li>
+                    기획-설계-구현 3단계 AI 문서 파이프라인 구축 및 Excel 마스터 데이터 실시간 동기화·타일셋 자동 빌더 구현
                   </li>
                 </ul>
               </div>

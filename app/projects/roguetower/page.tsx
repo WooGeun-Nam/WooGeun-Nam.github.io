@@ -123,7 +123,7 @@ export default async function RogueTowerPage() {
 
             <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-6 text-gray-800 mt-8">
               <dt className="font-semibold text-gray-600">ROLE</dt>
-              <dd>개발, 기획, 디자인</dd>
+              <dd>기획, 개발, 디자인</dd>
 
               <dt className="font-semibold text-gray-600">DURATION</dt>
               <dd>2024.10 ~ 2025.08</dd>

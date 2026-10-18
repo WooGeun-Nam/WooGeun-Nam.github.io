@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import ImgPrefixed from "../../../components/ImgPrefixed";
 
 export default function TinyJourneyPage() {
@@ -16,32 +15,32 @@ export default function TinyJourneyPage() {
     {
       num: "01",
       href: "#section-plan-01",
-      title: "게임 개요 및 코어 루프",
-      desc: "핵심 콘셉트, 시놉시스, 4단계 순환 코어 루프 및 익스트랙션 텐션",
+      title: "게임 개요 및 세계관 내러티브",
+      desc: "디자인 필라 3대 축, 생계형 토벌사 서사, 0대 선대 묘비 및 세대 계승 메타루프",
     },
     {
       num: "02",
       href: "#section-plan-02",
-      title: "전투 시스템 및 6대 무기군 아키타입 설계",
-      desc: "사거리·공격방식·특수 기믹 분리, 6종 무기군 파라미터 및 전술적 역할",
+      title: "코어 루프 및 익스트랙션 · 하우징 시스템",
+      desc: "10×10 테트리스 가방, 방어구를 100% 대체하는 N×N 하우징, 촉매 유물과 오염도",
     },
     {
       num: "03",
       href: "#section-plan-03",
-      title: "레벨 디자인 및 6개 스테이지 환경 기믹",
-      desc: "2.5D 절벽 고도, Y-Sorting 공격 시인성 보정, 테마별 환경 위험 요소",
+      title: "전투 시스템 및 2.5D 레이맨 리깅 연출",
+      desc: "인간의 유물 무기 콘셉트, 5단 레이어 오버핸드 풀 스윙, 타격감 피드백 규격",
     },
     {
       num: "04",
       href: "#section-plan-04",
-      title: "아이템·장비 파밍 및 연금술 경제 시스템",
-      desc: "6부위 5단계 장비 체계, 몬스터 전리품 연금술 물약 제작 순환 루프",
+      title: "절차적 아레나(96×56) 및 레벨 디자인",
+      desc: "Wall-First 지형 파이프라인, Ground(5×4)·Wall(5×8) 타일 규격, 프랍 파괴 채집",
     },
     {
       num: "05",
       href: "#section-plan-05",
-      title: "스테이지 1 몬스터 도감 및 도트 아트 리소스",
-      desc: "주인공 및 Stage 1 몬스터 4종, 초반 무기 픽셀 스프라이트 상세",
+      title: "몬스터 생태계(3+1+1) 및 1구역 몬스터 명세",
+      desc: "테마당 5종 황금 비율, 피격 반응형 체력바, 얕은 숲(1구역) 몬스터 4종 상세",
     },
   ];
 
@@ -49,26 +48,26 @@ export default function TinyJourneyPage() {
     {
       num: "01",
       href: "#section-tech-01",
-      title: "AI 에이전트 협업을 위한 3단계 문서 파이프라인",
-      desc: "기획-설계-작업지시 분리를 통한 컨텍스트 유실 방지 및 원자적 구현 체계",
+      title: "통합 엑셀 마스터 데이터 파이프라인 (GameData.xlsx)",
+      desc: "6개 시트 0.6초 원스톱 자동 빌드, 5원소 대칭 상성 매트릭스 및 데미지 공식",
     },
     {
       num: "02",
       href: "#section-tech-02",
-      title: "Excel 마스터 데이터 실시간 동기화 파이프라인",
-      desc: "AssetPostprocessor 기반 ScriptableObject 자동 파싱 및 무코드 밸런싱 환경",
+      title: "몬스터 전략 패턴 모듈화 및 물리 아키텍처",
+      desc: "IMonsterAttackModule 4종 분리, 무할당 조향 엔진(EnemyMotor2D), 바위형 물리 바디",
     },
     {
       num: "03",
       href: "#section-tech-03",
-      title: "2.5D 절벽 타일셋 및 물리 콜라이더 자동 빌더",
-      desc: "3계층 레이어 자동 분리, Custom Physics Shape 기반 낭떠러지 충돌체 생성",
+      title: "2.5D 절벽 깊이감 제어 및 공격 정렬 승격",
+      desc: "남쪽 절벽 턱 전면 레이어(Wall_Front_Tilemap) 분리, 공격 시 attackBoost(+1000) 보정",
     },
     {
       num: "04",
       href: "#section-tech-04",
-      title: "코어 클라이언트 아키텍처 및 렌더링 최적화",
-      desc: "ServiceLocator 의존성 주입, Zero-GC 풀링, Y-Sorting 동적 렌더 오더 제어",
+      title: "NGO 서버 권한 아키텍처 및 개발 마일스톤 현황",
+      desc: "멀티플레이 대비 권한 분리, Zero-DontDestroyOnLoad JSON 영속성, 구현 현황",
     },
   ];
 
@@ -78,32 +77,27 @@ export default function TinyJourneyPage() {
       {/* 상단: 대표 이미지 / 기본 프로젝트 정보 */}
       {/* ===================================================================== */}
       <section className="grid gap-8 md:grid-cols-2 items-stretch">
-        {/* 메인 미리보기 도트 썸네일 */}
-        <div className="bg-gray-50 border border-gray-200 rounded-xl flex items-center justify-center p-10 overflow-hidden shadow-sm">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl flex flex-col items-center justify-center p-10 overflow-hidden shadow-sm">
           <ImgPrefixed
             src="/TinyJourney/CatSide.png"
-            alt="TinyJourney 대표 캐릭터"
-            className="w-48 h-48 [image-rendering:pixelated] object-contain transition-transform duration-300 hover:scale-105"
+            alt="TinyJourney 캐릭터 프로토타입"
+            className="w-40 h-40 [image-rendering:pixelated] object-contain"
           />
+          <p className="text-xs text-gray-500 mt-4 text-center">
+            프로토타입 베이스 캐릭터 (세대 계승 및 커스터마이징에 따라 외형 교체 예정)
+          </p>
         </div>
 
-        {/* 메타 정보 */}
         <div className="flex flex-col justify-between">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="px-2.5 py-0.5 text-xs font-semibold bg-blue-100 text-blue-700 rounded-full">
-                개발 진행 중
-              </span>
-              <span className="px-2.5 py-0.5 text-xs font-semibold bg-gray-100 text-gray-700 rounded-full">
-                2D Top-down Action RPG
-              </span>
-            </div>
-
             <h1 className="text-4xl font-bold underline decoration-blue-500 underline-offset-8">
               TinyJourney (가제)
             </h1>
+            <p className="text-sm text-gray-600 mt-3 font-medium">
+              부제 : 털뭉치 토벌대의 본격 생계형 토벌 일지 (Tiny Paws, Heavy Hits)
+            </p>
 
-            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-6 text-gray-800 mt-8 text-sm sm:text-[15px]">
+            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]">
               <dt className="font-semibold text-gray-600">ROLE</dt>
               <dd>기획, 개발, 디자인</dd>
 
@@ -113,36 +107,28 @@ export default function TinyJourneyPage() {
               <dt className="font-semibold text-gray-600">TEAM</dt>
               <dd>1인 개발</dd>
 
-              <dt className="font-semibold text-gray-600">PLATFORM</dt>
-              <dd>PC (Unity 6 · 2D URP)</dd>
-            </dl>
-          </div>
+              <dt className="font-semibold text-gray-600">GENRE</dt>
+              <dd>2D 탑뷰 액션 RPG + 파밍/하우징 (로그라이트 가미)</dd>
 
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/portfolio#projects"
-              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold
-                   bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:outline-none
-                   focus-visible:ring-2 focus-visible:ring-blue-300 transition"
-            >
-              목록으로 돌아가기
-            </Link>
+              <dt className="font-semibold text-gray-600">PLATFORM</dt>
+              <dd>PC (Steam 타깃 · Unity C#)</dd>
+            </dl>
           </div>
         </div>
       </section>
 
       {/* ===================================================================== */}
-      {/* 하단 상세 탭 섹션 (기획서 | 기술서) */}
+      {/* 탭 컨테이너 (기획서 | 기술서) */}
       {/* ===================================================================== */}
-      <section className="pt-8">
+      <div className="w-full py-4">
         <div className="w-full">
-          {/* 탭 버튼 헤더 */}
+          {/* 탭 버튼 */}
           <div className="flex w-full">
             {tabs.map((tab, index) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex-1 py-3 font-semibold transition border border-b-0 text-base
+                className={`flex-1 py-2.5 font-semibold transition border border-b-0
                 ${
                   activeTab === tab.id
                     ? "bg-white text-blue-600 border-gray-300 shadow-[inset_0_3px_0_0_#3b82f6]"
@@ -156,32 +142,32 @@ export default function TinyJourneyPage() {
             ))}
           </div>
 
-          {/* 탭 본문 컨테이너 */}
-          <div className="w-full bg-white border border-t-0 border-gray-300 rounded-b-lg shadow p-6 sm:p-8">
+          <div className="w-full bg-white border border-t-0 border-gray-300 rounded-b-lg shadow p-6">
             {/* =============================================================== */}
-            {/* [기획서] 탭 콘텐츠 */}
+            {/* TAB 1: 기획서 */}
             {/* =============================================================== */}
             <div style={{ display: activeTab === "plan" ? "block" : "none" }}>
               <div className="space-y-12 text-gray-800">
-                {/* 헤더 및 태그 */}
+                {/* 헤더 & 목차 */}
                 <div className="border-b border-gray-200 pb-8">
                   <div className="text-center max-w-3xl mx-auto pt-2 mb-8">
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
                       TinyJourney 게임 기획서
                     </h2>
                     <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed mb-6">
-                      6대 무기군 전투 메커니즘과 2.5D 절벽 고도 레벨 디자인,
+                      &ldquo;인간의 시선이 닿지 않는 발밑 세계, 버려진 물건으로 무장한 털뭉치들의 묵직한 생존기&rdquo;
                       <br />
-                      연금술 경제 순환을 결합한 2D 탑다운 액션 RPG 기획 명세서입니다.
+                      익스트랙션 기반의 <b className="text-gray-900">10×10 테트리스 루팅</b>과 방어구를 대체하는{" "}
+                      <b className="text-gray-900">N×N 그리드 하우징 스펙업</b>을 결합한 2D 탑뷰 액션 RPG입니다.
                     </p>
                     <div className="flex flex-wrap justify-center gap-2">
                       {[
-                        "#탑다운 액션 RPG",
-                        "#6대 무기군 아키타입",
-                        "#2.5D 고도 레벨 디자인",
-                        "#연금술 경제 시스템",
-                        "#절차적 아레나",
-                        "#1인 개발",
+                        "#2D 탑뷰 액션 RPG",
+                        "#익스트랙션 루팅",
+                        "#N×N 하우징 스펙업",
+                        "#세대 계승 메타루프",
+                        "#2.5D 레이맨 리깅",
+                        "#데이터 기반 설계",
                       ].map((tag) => (
                         <span
                           key={tag}
@@ -233,504 +219,560 @@ export default function TinyJourneyPage() {
                   </div>
                 </div>
 
-                {/* 01. 게임 개요 및 코어 루프 */}
-                <section id="section-plan-01" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      01. 게임 개요 및 코어 루프
+                {/* 01. 게임 개요 및 세계관 내러티브 */}
+                <section
+                  id="section-plan-01"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      01
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      게임 개요 및 세계관 내러티브
                     </h3>
                   </div>
 
-                  <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-4 text-sm sm:text-[15px] leading-relaxed">
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">핵심 콘셉트</h4>
-                      <p className="text-gray-700">
-                        기억을 잃은 고양이 영웅이 6개의 테마 대륙을 돌파하며 잃어버린 힘의 파편을 되찾는 2D 탑다운 액션 RPG입니다.
-                        인간의 시선이 닿지 않는 발밑 세계에서 버려진 도구(나뭇가지, 포크, 스푼)를 무기 삼아 괴물에 맞서는 묵직한 액션 감성을 지향합니다.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-2">4단계 순환 코어 루프</h4>
-                      <div className="grid sm:grid-cols-4 gap-3 text-center">
-                        <div className="bg-white border border-gray-200 rounded-lg p-3">
-                          <span className="inline-block px-2 py-0.5 text-xs font-bold bg-blue-100 text-blue-700 rounded mb-1">
-                            Step 1
-                          </span>
-                          <p className="font-bold text-gray-900 text-sm">[전투·탐험]</p>
-                          <p className="text-xs text-gray-600 mt-1">
-                            스테이지 돌파 &amp; 기믹 파훼
-                          </p>
-                        </div>
-                        <div className="bg-white border border-gray-200 rounded-lg p-3">
-                          <span className="inline-block px-2 py-0.5 text-xs font-bold bg-blue-100 text-blue-700 rounded mb-1">
-                            Step 2
-                          </span>
-                          <p className="font-bold text-gray-900 text-sm">[파밍]</p>
-                          <p className="text-xs text-gray-600 mt-1">
-                            부위별 장비·연금술 재료 수집
-                          </p>
-                        </div>
-                        <div className="bg-white border border-gray-200 rounded-lg p-3">
-                          <span className="inline-block px-2 py-0.5 text-xs font-bold bg-blue-100 text-blue-700 rounded mb-1">
-                            Step 3
-                          </span>
-                          <p className="font-bold text-gray-900 text-sm">[정비·성장]</p>
-                          <p className="text-xs text-gray-600 mt-1">
-                            상점 거래 &amp; 물약 조합
-                          </p>
-                        </div>
-                        <div className="bg-white border border-gray-200 rounded-lg p-3">
-                          <span className="inline-block px-2 py-0.5 text-xs font-bold bg-blue-100 text-blue-700 rounded mb-1">
-                            Step 4
-                          </span>
-                          <p className="font-bold text-gray-900 text-sm">[도전]</p>
-                          <p className="text-xs text-gray-600 mt-1">
-                            보스 처치 &amp; 상위 대륙 해금
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h4 className="font-bold text-gray-900 mb-1">익스트랙션 기반 텐션</h4>
-                      <p className="text-gray-700">
-                        방 단위 클리어 후 [다음 방으로 강행]과 [마을로 즉시 귀환]의 선택지를 제시하여,
-                        획득한 전리품과 목숨을 건 하이 리스크-하이 리턴의 긴장감을 설계했습니다.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-
-                {/* 02. 전투 시스템 및 6대 무기군 아키타입 설계 */}
-                <section id="section-plan-02" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      02. 전투 시스템 및 6대 무기군 아키타입 설계
-                    </h3>
-                  </div>
-
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    <b className="text-gray-900">기획 의도 :</b> 무기 교체만으로 완전히 다른 조작감과 전술적 포지셔닝을 제공하기 위해 사거리, 공격 방식, 특수 기믹을 6개 아키타입으로 분리했습니다.
-                    플레이어가 마주하는 몬스터 군집 형태나 보스 패턴에 맞춰 최적의 무기를 스왑하도록 유도합니다.
-                  </p>
-
-                  <div className="overflow-x-auto border border-gray-200 rounded-xl">
-                    <table className="w-full text-left border-collapse text-sm sm:text-[15px]">
-                      <thead>
-                        <tr className="bg-gray-100 text-gray-800 font-bold border-b border-gray-200">
-                          <th className="py-3 px-4">무기군</th>
-                          <th className="py-3 px-4">사거리 / 판정</th>
-                          <th className="py-3 px-4">공격 방식 및 특징</th>
-                          <th className="py-3 px-4">특수 기믹 및 전술적 역할</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-gray-200 text-gray-700">
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            한손검 (One-Handed Sword)
-                          </td>
-                          <td className="py-3 px-4">근거리 부채꼴 베기</td>
-                          <td className="py-3 px-4">
-                            빠른 공속과 짧은 후딜레이를 통한 히트 앤 런 표준 밸런스형
-                          </td>
-                          <td className="py-3 px-4">
-                            안정적인 공수 전환, 가드 캔슬을 통한 빈틈 최소화
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            대검 (Greatsword)
-                          </td>
-                          <td className="py-3 px-4">중거리 광역 횡베기</td>
-                          <td className="py-3 px-4">
-                            공격 전/후 이동 속도 페널티, 묵직한 타격감과 광역 제압
-                          </td>
-                          <td className="py-3 px-4">
-                            차징(Charging) 시 슈퍼아머(경직 면역) 및 2.5배 데미지·강한 넉백
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            단검 (Dagger)
-                          </td>
-                          <td className="py-3 px-4">초근거리 연속 찌르기</td>
-                          <td className="py-3 px-4">
-                            압도적인 공격 속도, 치명타 확률 +20% 기본 보정
-                          </td>
-                          <td className="py-3 px-4">
-                            배후 공격(Backstab) 적중 시 1.5배 피해 및 순간 회피 연계
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            활 (Bow)
-                          </td>
-                          <td className="py-3 px-4">원거리 관통 화살</td>
-                          <td className="py-3 px-4">
-                            원거리 단일/직선 사격, 탄속 기반 정밀 조준 요구
-                          </td>
-                          <td className="py-3 px-4">
-                            화살 수량(최대 10발, 2초당 1발 자동 장전) 자원 관리 및 풀차징 관통
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            지팡이 (Staff)
-                          </td>
-                          <td className="py-3 px-4">원거리 유도 마법탄</td>
-                          <td className="py-3 px-4">
-                            MP 소모 기반 타격, 폭발형 범위(AoE) 스플래시 데미지
-                          </td>
-                          <td className="py-3 px-4">
-                            화상(지속 피해), 빙결(이동 둔화), 감전(체인 데미지) 등 원소 상태이상 부여
-                          </td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">
-                            창 (Spear)
-                          </td>
-                          <td className="py-3 px-4">중장거리 직선 찌르기</td>
-                          <td className="py-3 px-4">
-                            좁고 긴 일직선 관통 판정을 활용한 거리 유지(Spacing) 특화
-                          </td>
-                          <td className="py-3 px-4">
-                            창 끝점 타격(Sweet Spot) 시 1.3배 추가 피해 및 카운터 판정
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
-
-                {/* 03. 레벨 디자인 및 6개 스테이지 환경 기믹 */}
-                <section id="section-plan-03" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      03. 레벨 디자인 및 6개 스테이지 환경 기믹
-                    </h3>
-                  </div>
-
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    <b className="text-gray-900">기획 의도 :</b> 2D 탑다운 시점의 평면적인 전투를 극복하기 위해 2.5D 절벽 고도(Elevation)와 대륙별 환경 기믹을 결합했습니다.
-                    지형의 높낮이에 따른 물리 충돌과 시야 제어를 활용해 전략적 깊이를 확보했습니다.
-                  </p>
-
-                  {/* 2.5D 고도 및 공격 시인성 보정 */}
-                  <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-3">
-                    <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                      2.5D 절벽 고도 및 공격 시인성 보정 규칙
-                    </h4>
-                    <ul className="list-disc list-inside space-y-2 text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                      <li>
-                        <b>물리 충돌 및 Y-Sorting 계층 분리:</b> 1층 지면과 2층 절벽 상단을 각각 별도의 타일맵 레이어로 분리하고, 절벽 측면 수직 암벽에 벽 콜라이더(<code className="text-xs bg-gray-200 px-1 py-0.5 rounded">Wall_Collider</code>)를 배치하여 자연스러운 낙차감을 연출합니다.
-                      </li>
-                      <li>
-                        <b>공격 시인성 보정:</b> 캐릭터가 무기를 휘두르는 동안 시각적으로 대형 몬스터나 장애물에 가려지지 않도록 공격 판정 진행 중 Y-Sorting 가중치(<code className="text-xs bg-gray-200 px-1 py-0.5 rounded">+0.5f</code>)를 동적으로 보정합니다.
-                      </li>
-                      <li>
-                        <b>48×24 Expansive Arena:</b> 단일 화면의 답답함을 배제하고 시네머신 가상 카메라 스크롤을 활용하여 광활한 전장 속 모퉁이 은폐 및 거리 유도 전술을 유도합니다.
-                      </li>
-                    </ul>
-                  </div>
-
-                  {/* 6대 스테이지 테마 및 환경 기믹 표 */}
-                  <div className="overflow-x-auto border border-gray-200 rounded-xl">
-                    <table className="w-full text-left border-collapse text-sm sm:text-[15px]">
-                      <thead>
-                        <tr className="bg-gray-100 text-gray-800 font-bold border-b border-gray-200">
-                          <th className="py-3 px-4">스테이지</th>
-                          <th className="py-3 px-4">테마 명칭</th>
-                          <th className="py-3 px-4">핵심 환경 기믹 &amp; 위험 요소</th>
-                          <th className="py-3 px-4">등장 보스</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-gray-200 text-gray-700">
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 1</td>
-                          <td className="py-3 px-4">속삭이는 숲</td>
-                          <td className="py-3 px-4">
-                            수풀 은신 기습, 밟으면 이동 속도가 저하되는 가시 덩굴 지대
-                          </td>
-                          <td className="py-3 px-4">썩은 나무 정령 (Rotwood)</td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 2</td>
-                          <td className="py-3 px-4">메마른 협곡</td>
-                          <td className="py-3 px-4">
-                            간헐적 모래폭풍(시야 축소 및 이동 저하), 절벽 낙석 지대
-                          </td>
-                          <td className="py-3 px-4">바위 골렘 (Rock Golem)</td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 3</td>
-                          <td className="py-3 px-4">버려진 고대 유적</td>
-                          <td className="py-3 px-4">
-                            바닥 함정 발판(화살·창 트랩) 및 고대 수호 석상 회전 레이저
-                          </td>
-                          <td className="py-3 px-4">유적 수호병기 (Ancient Guardian)</td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 4</td>
-                          <td className="py-3 px-4">얼어붙은 설원</td>
-                          <td className="py-3 px-4">
-                            빙판 관성 미끄러짐 및 동상 게이지 누적(모닥불 거점 활용)
-                          </td>
-                          <td className="py-3 px-4">서리 늑대 우두머리 (Frost Alpha)</td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 5</td>
-                          <td className="py-3 px-4">용암 화산 지대</td>
-                          <td className="py-3 px-4">
-                            주기적 분화 용암 타일 및 화염 간헐천 폭발 판정
-                          </td>
-                          <td className="py-3 px-4">화염 드래곤 하수인 (Ignis Drake)</td>
-                        </tr>
-                        <tr className="hover:bg-blue-50/40">
-                          <td className="py-3 px-4 font-bold text-gray-900">Stage 6</td>
-                          <td className="py-3 px-4">심연의 마왕성</td>
-                          <td className="py-3 px-4">
-                            어둠 침식(시야 극도 제한) 및 공간 왜곡 차원 포탈 기믹
-                          </td>
-                          <td className="py-3 px-4">심연의 군주 (Abyss Lord)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </section>
-
-                {/* 04. 아이템·장비 파밍 및 연금술 경제 시스템 */}
-                <section id="section-plan-04" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      04. 아이템·장비 파밍 및 연금술 경제 시스템
-                    </h3>
-                  </div>
-
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    <b className="text-gray-900">기획 의도 :</b> 단순 수치 상승 장비 외에 몬스터 전리품을 활용한 소모품 제작(연금술)으로 파밍 재화의 지속 가능한 순환 구조를 구축했습니다.
-                  </p>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    {/* 6부위 장비 & 5단계 등급 */}
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-3">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                        6부위 장비 슬롯 &amp; 5단계 등급 체계
+                  {/* 디자인 필라 3대 축 */}
+                  <div className="grid md:grid-cols-3 gap-4 mb-8">
+                    <div className="p-5 bg-blue-50/40 border border-blue-100 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2">
+                        1. 한 방의 쾌감 (Gap Moe)
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-600">
-                        <b>장비 슬롯 (6종):</b> 무기, 투구, 갑옷, 장갑, 신발, 장신구
+                      <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+                        찹쌀떡처럼 귀여운 2~2.5등신 털뭉치 소동물이 인간이 숲에 버리고 간 거대한 유물(녹슨 티스푼, 쇠포크 등)을 온몸으로 휘두르는 묵직한 타격 피드백
                       </p>
-                      <div className="space-y-1.5 text-xs sm:text-sm">
-                        <div className="flex items-center gap-2">
-                          <span className="w-16 px-1.5 py-0.5 text-center font-bold bg-gray-200 text-gray-700 rounded">
-                            일반
-                          </span>
-                          <span className="text-gray-600">기본 능력치 보유 (Common, 흰색)</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="w-16 px-1.5 py-0.5 text-center font-bold bg-green-100 text-green-800 rounded">
-                            고급
-                          </span>
-                          <span className="text-gray-600">보조 스탯 1종 추가 (Uncommon, 초록)</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="w-16 px-1.5 py-0.5 text-center font-bold bg-blue-100 text-blue-800 rounded">
-                            희귀
-                          </span>
-                          <span className="text-gray-600">보조 스탯 2종 추가 (Rare, 파랑)</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="w-16 px-1.5 py-0.5 text-center font-bold bg-purple-100 text-purple-800 rounded">
-                            영웅
-                          </span>
-                          <span className="text-gray-600">스탯 가중치 극대화 (Epic, 보라)</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <span className="w-16 px-1.5 py-0.5 text-center font-bold bg-amber-100 text-amber-800 rounded">
-                            전설
-                          </span>
-                          <span className="text-gray-600">고유 패시브 효과 발동 (Legendary, 주황)</span>
-                        </div>
-                      </div>
+                    </div>
+                    <div className="p-5 bg-blue-50/40 border border-blue-100 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2">
+                        2. 내 손으로 벼린다
+                      </h4>
+                      <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+                        던전 토벌과 필드 채집으로 모은 전리품·고철을 활용해 무기를 제작하고 강화해 나가는 직관적인 파밍 성장 쾌감
+                      </p>
+                    </div>
+                    <div className="p-5 bg-blue-50/40 border border-blue-100 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2">
+                        3. 돌아올 곳이 있다
+                      </h4>
+                      <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+                        치열한 토벌 후 마을 자취방으로 복귀하여 인간의 잡동사니(병뚜껑, 골무 등)와 자연물로 만든 가구를 배치하면 곧 영구 스펙업이 되는 구조
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* 세계관 배경 & 세대 계승 내러티브 */}
+                  <div className="space-y-4">
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        세계관 배경 : ‘야생화(Feral Surge)’와 생계형 토벌사
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>무대 (잔디벌 마을) :</b> 인간의 발밑 세계에서 하루하루 단순 노동에 시달리던 소동물들의 은거지
+                        </li>
+                        <li>
+                          <b>생계형 동기 :</b> 외곽 숲의 동식물이 흉폭하게 변이하는 ‘야생화’ 사태로 거액의 포상금이 걸리자, 텅 빈 냉장고를 채우고 내 집을 마련하기 위해 ‘토벌사(Striker)’가 되어 숲으로 출격
+                        </li>
+                        <li>
+                          <b>레퍼런스 :</b> Moonlighter(파밍→마을 경영 루프), Hades(탑뷰 액션·히트스톱 타격감), Stardew Valley(하우징·생활 감성), Cult of the Lamb(귀여운 비주얼 × 묵직한 전투)
+                        </li>
+                      </ul>
                     </div>
 
-                    {/* 연금술 물약 조합 */}
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-3">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                        연금술 물약 조합 시스템
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        핵심 내러티브 장치 : ‘빈집의 비밀’과 세대 계승(Gentle Succession) 메타루프 (구상 및 진행 예정)
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        던전에서 수집한 몬스터 전리품(슬라임 점액, 가시 조각, 도토리 등)을 정비 단계에서 조합하여 전투용 소비 아이템을 생산합니다.
+                      <p className="text-sm sm:text-[15px] text-gray-700 bg-blue-50/50 border border-blue-100 rounded-lg px-4 py-2.5 mb-4 leading-relaxed">
+                        <b className="text-blue-700">기획 의도 :</b> 로그라이트의 ‘사망 시 가방 초기화 + 영구 스펙 보존’ 규칙과 ‘주인공 외형 교체’를 단순 시스템이 아닌 세계관 스토리텔링과 유기적으로 결합
                       </p>
-                      <ul className="list-disc list-inside space-y-1.5 text-xs sm:text-sm text-gray-700">
+                      <ul className="list-disc pl-5 space-y-2.5 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
                         <li>
-                          <b>회복 물약:</b> 즉시 체력 회복 및 지속 재생 효과
+                          <b>선대 토벌사의 빈집과 0번째 묘비 :</b> 마을 이장이 “몸만 들어와 살라”며 준 가구 딸린 자취방은 사실 숲에서 실종된 선대 토벌사의 집이며, 마을 외곽 묘지에는 유저의 <b>최초 게임 실행 시각(`firstGameLaunchTime`)</b>이 각인된 ‘0대 토벌사 비석’이 세워져 환경 스토리텔링 제공
                         </li>
                         <li>
-                          <b>신속의 비약:</b> 일정 시간 이동 속도 +30% 및 대시 쿨타임 감소
+                          <b>사망(HP=0) 시 비잔혹 세대교체 연출 :</b> 토벌 중 체력이 0이 되면 끔찍한 게임오버 대신 포근한 세피아 암전 후, 마차를 타고 <b>새로운 외형(종족·털 색상 팔레트 교체)의 차세대 토벌사</b>가 마을로 이사 오는 연출 재생 (이 기획과 맞물려 캐릭터 에셋을 교체·조립이 용이한 파츠 분리형 도트로 설계)
                         </li>
                         <li>
-                          <b>광폭화 영약:</b> 치명타 확률 대폭 증가 및 받는 피해 소폭 증가
+                          <b>하우징 자산 100% 영구 계승 :</b> 사망 시 가방 속 미정산 전리품은 유실되지만, 자취방에 배치된 가구(`placedFurnitures`)는 100% 보존되어 차세대 토벌사가 선대의 가구 스탯 버프를 그대로 물려받고 출발
                         </li>
                         <li>
-                          <b>강철 피부 물약:</b> 적 타격 피격 시 경직 무시(슈퍼아머 부여)
+                          <b>마을 묘지 기록소 및 위령비 :</b> 역대 토벌사 대수, 사망 일시, 사인, 캐릭터 도트 초상화를 기록하며, 누적 사망 횟수에 따라 마을 NPC 대화와 비밀 퀘스트 해금
                         </li>
                       </ul>
                     </div>
                   </div>
                 </section>
 
-                {/* 05. 스테이지 1 몬스터 도감 및 도트 아트 리소스 */}
-                <section id="section-plan-05" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      05. 스테이지 1 몬스터 도감 및 도트 아트 리소스
+                {/* 02. 코어 루프 및 익스트랙션 · 하우징 시스템 */}
+                <section
+                  id="section-plan-02"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      02
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      코어 루프 및 익스트랙션 · 하우징 시스템
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    게임에 실제로 적용된 320×180 뷰포트 기준 픽셀 아트 에셋입니다.
-                    각 몬스터의 외형적 특징과 공격 패턴이 직관적으로 매칭되도록 시각적 실루엣을 설계했습니다.
-                  </p>
-
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {/* 주인공 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/CatSide.png"
-                          alt="주인공 고양이"
-                          className="h-24 w-24 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">주인공 (Cat Hero)</h4>
-                      <p className="text-xs text-blue-600 font-medium mb-1">플레이어블 캐릭터</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        기억을 잃은 작은 털뭉치 용사. 민첩한 이동과 부채꼴 베기, 6대 무기군 전환 조작을 수행합니다.
-                      </p>
-                    </div>
-
-                    {/* 나뭇가지 검 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/weapon_twig.png"
-                          alt="나뭇가지 검"
-                          className="h-20 w-20 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">나뭇가지 검 (Twig Sword)</h4>
-                      <p className="text-xs text-blue-600 font-medium mb-1">초반 한손검 무기</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        숲 외곽에서 획득하는 기본 무기. 빠른 공속과 낮은 스태미나 소모로 히트 앤 런 템포를 익힙니다.
-                      </p>
-                    </div>
-
-                    {/* 새싹 슬라임 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/slime_sprout.png"
-                          alt="새싹 슬라임"
-                          className="h-20 w-20 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">새싹 슬라임 (Slime Sprout)</h4>
-                      <p className="text-xs text-emerald-600 font-medium mb-1">근접 돌진형 몬스터</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        지면을 통통 튀며 플레이어에게 점프 박치기를 시도합니다. 처치 시 슬라임 점액을 드랍합니다.
-                      </p>
-                    </div>
-
-                    {/* 밤송이 고슴도치 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/chestnut_hedgehog.png"
-                          alt="밤송이 고슴도치"
-                          className="h-20 w-20 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">밤송이 고슴도치</h4>
-                      <p className="text-xs text-amber-600 font-medium mb-1">방어 태세 &amp; 가시 발사형</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        피격 시 껍질 속으로 몸을 웅크려 방어력을 높이고, 8방향으로 날카로운 가시를 방출합니다.
-                      </p>
-                    </div>
-
-                    {/* 야생 다람쥐 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/feral_squirrel.png"
-                          alt="야생 다람쥐"
-                          className="h-20 w-20 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">야생 다람쥐 (Feral Squirrel)</h4>
-                      <p className="text-xs text-orange-600 font-medium mb-1">원거리 견제형 몬스터</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        플레이어와 일정한 안전 거리를 유지하며, 단단한 도토리를 원거리에서 투척합니다.
-                      </p>
-                    </div>
-
-                    {/* 보스: 썩은 나무 정령 */}
-                    <div className="border border-gray-200 rounded-xl p-4 bg-white flex flex-col items-center text-center">
-                      <div className="h-28 w-28 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center p-2 mb-3">
-                        <ImgPrefixed
-                          src="/TinyJourney/rotwood.png"
-                          alt="썩은 나무 정령"
-                          className="h-24 w-24 object-contain [image-rendering:pixelated]"
-                        />
-                      </div>
-                      <h4 className="font-bold text-gray-900 text-sm">썩은 나무 정령 (Rotwood)</h4>
-                      <p className="text-xs text-rose-600 font-medium mb-1">Stage 1 최종 보스</p>
-                      <p className="text-xs text-gray-600 leading-relaxed">
-                        지면에서 광역 가시 뿌리를 솟구치게 하고 새싹 슬라임을 소환하는 복합 광역 패턴을 구사합니다.
-                      </p>
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-
-            {/* =============================================================== */}
-            {/* [기술서] 탭 콘텐츠 */}
-            {/* =============================================================== */}
-            <div style={{ display: activeTab === "tech" ? "block" : "none" }}>
-              <div className="space-y-12 text-gray-800">
-                {/* 헤더 및 태그 */}
-                <div className="border-b border-gray-200 pb-8">
-                  <div className="text-center max-w-3xl mx-auto pt-2 mb-8">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
-                      TinyJourney 프로그래밍 기술서
-                    </h2>
-                    <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed mb-6">
-                      AI 에이전트 협업 파이프라인과 Excel 마스터 데이터 실시간 동기화,
-                      <br />
-                      2.5D 에디터 자동화 빌더 및 코어 클라이언트 아키텍처를 정리한 기술 문서입니다.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-2">
+                  {/* 코어 루프 4단계 */}
+                  <div className="mb-8">
+                    <h4 className="text-lg font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mb-4">
+                      핵심 순환 루프 (Extraction &amp; Housing Loop)
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 text-center">
                       {[
-                        "#AI 문서 파이프라인",
-                        "#MasterDataPostprocessor",
-                        "#ThemeAndPropAutoBuilder",
-                        "#ServiceLocator",
-                        "#ObjectPoolManager",
-                        "#Y-Sorting 동적 렌더링",
-                      ].map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-3.5 py-1 bg-blue-50 text-blue-700 border border-blue-200 text-xs sm:text-sm font-medium rounded-full"
+                        {
+                          step: "STEP 1 · 정비",
+                          title: "자취방 정비 & 보험",
+                          desc: "가구 배치(베이스 스탯 확보), 무기 보험 및 짐꾼 고용",
+                        },
+                        {
+                          step: "STEP 2 · 토벌",
+                          title: "방 클리어식 숲 토벌",
+                          desc: "몬스터 전멸 시 전리품 보따리 팝업 (중도 귀환 vs 강행)",
+                        },
+                        {
+                          step: "STEP 3 · 루팅",
+                          title: "10×10 테트리스 가방",
+                          desc: "블록 형태 전리품을 90도 회전(R키)하며 가방에 수동 패킹",
+                        },
+                        {
+                          step: "STEP 4 · 스펙업",
+                          title: "귀환 정산 & 하우징",
+                          desc: "전리품으로 가구·무기 제작 후 자취방 확장 및 영구 스펙업",
+                        },
+                      ].map((loop, i) => (
+                        <div
+                          key={i}
+                          className="p-4 bg-blue-50/40 border border-blue-200 rounded-lg"
                         >
-                          {tag}
-                        </span>
+                          <span className="text-xs font-bold text-blue-600">
+                            {loop.step}
+                          </span>
+                          <p className="font-bold text-base text-gray-900 mt-1">
+                            {loop.title}
+                          </p>
+                          <p className="text-xs sm:text-sm text-gray-600 mt-1 leading-relaxed">
+                            {loop.desc}
+                          </p>
+                        </div>
                       ))}
                     </div>
                   </div>
 
+                  <div className="space-y-8">
+                    {/* N x N 그리드 하우징 & 장비 슬롯 대체 */}
+                    <div>
+                      <h4 className="text-lg font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mb-3">
+                        N×N 그리드 하우징 시스템 (몸통 방어구 100% 대체)
+                      </h4>
+                      <p className="text-sm sm:text-[15px] text-gray-700 bg-blue-50/50 border border-blue-100 rounded-lg px-4 py-2.5 mb-4 leading-relaxed">
+                        <b className="text-blue-700">기획 의도 :</b> 전통적인 RPG의 ‘몸통 방어구’를 과감히 삭제하고, 자취방(N×N 타일)에 가구를 테트리스처럼 배치하는 하우징이 방어구(영구 베이스 스탯)를 100% 대체하도록 설계
+                      </p>
+
+                      <div className="grid md:grid-cols-2 gap-6 mb-4">
+                        <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                          <h5 className="font-bold text-base text-gray-900 mb-2.5">
+                            장착 및 외형(Visual) 적용 구조
+                          </h5>
+                          <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                            <li>
+                              <b>무기 (외형 100% 적용) :</b> 기본 공격력 및 고유 무기 스킬 담당 (교체 시 전투 스타일 변화)
+                            </li>
+                            <li>
+                              <b>머리 장비 (외형 100% 적용) :</b> 이동 속도·드랍률 등 유틸리티 및 업적 트로피 역할의 치장 아이템
+                            </li>
+                            <li>
+                              <b>장신구 (외형 미적용) :</b> 쿨타임 감소, 상태이상 부여 등 전투 빌드 시너지 패시브 담당
+                            </li>
+                            <li>
+                              <b>가구 (방어구 100% 대체) :</b> 자취방 격자에 배치 시 최대 HP, 방어력, 스태미나, 가방 용량 영구 상승 (`HousingBuffCalculator` 연동 완료)
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                          <h5 className="font-bold text-base text-gray-900 mb-2.5">
+                            장비 획득 3단계 등급 체계
+                          </h5>
+                          <ul className="list-disc pl-5 space-y-2.5 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                            <li>
+                              <b>1단계 (보급/마을 장비) :</b> 나뭇가지 검, 조약돌 망치 등 숲의 자연물 베이스 도구 (채집·상점 획득)
+                            </li>
+                            <li>
+                              <b>2단계 (토벌/제작 장비) :</b> 몬스터의 뼈·가죽·소재를 가공해 대장간에서 벼려낸 장비
+                            </li>
+                            <li>
+                              <b>3단계 (유물/수집 장비) :</b> <b>인간이 버린 물건(거신의 유물)</b> — 은빛 포크 창, 다 쓴 건전지 망치 등 압도적 내구도와 고유 기믹 보유
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                        <table className="w-full text-sm sm:text-[15px] text-left border-collapse">
+                          <thead>
+                            <tr className="bg-gray-100 text-gray-800 border-b border-gray-200">
+                              <th className="py-3 px-4 font-bold">가구 카테고리</th>
+                              <th className="py-3 px-4 font-bold">대표 가구 예시</th>
+                              <th className="py-3 px-4 font-bold">영구 패시브 스탯 효과</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-gray-200">
+                            <tr className="bg-white">
+                              <td className="py-3 px-4 font-semibold">침구류</td>
+                              <td className="py-3 px-4 text-gray-700">풀잎 침대, 이끼 이불</td>
+                              <td className="py-3 px-4 text-gray-800">최대 HP +5%, 토벌 복귀 시 HP 완전 회복</td>
+                            </tr>
+                            <tr className="bg-gray-50/70">
+                              <td className="py-3 px-4 font-semibold">운동 기구</td>
+                              <td className="py-3 px-4 text-gray-700">돌 아령, 나무 달리기판</td>
+                              <td className="py-3 px-4 text-gray-800">스태미나 상한 +10, 대시 쿨타임 -0.1초</td>
+                            </tr>
+                            <tr className="bg-white">
+                              <td className="py-3 px-4 font-semibold">수납장</td>
+                              <td className="py-3 px-4 text-gray-700">도토리 장롱, 버섯 서랍장</td>
+                              <td className="py-3 px-4 text-gray-800">던전 출격용 임시 가방 용량 +2칸 확장</td>
+                            </tr>
+                            <tr className="bg-gray-50/70">
+                              <td className="py-3 px-4 font-semibold">조명 / 장식</td>
+                              <td className="py-3 px-4 text-gray-700">반딧불 등, 버섯 램프, 꽃병</td>
+                              <td className="py-3 px-4 text-gray-800">숲 시야 범위 +15% 및 마을 NPC 방문 이벤트 확률 증가</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    {/* 전리품 보따리 & 런 내부 성장 & 저점 방어 */}
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                        <h5 className="font-bold text-base text-gray-900 mb-2.5">
+                          전리품 보따리(`LootBundle`) &amp; 분할 루팅 UX (구현 완료)
+                        </h5>
+                        <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                          <li>
+                            <b>룸 클리어 단일 보따리 :</b> 전투 템포를 해치는 바닥 개별 드랍을 없애고, 방 내 몬스터 전멸 시 중앙에 황금 보따리(`LootBundle`) 단일 팝업
+                          </li>
+                          <li>
+                            <b>좌우 분할 루팅(`UI_Looting`) :</b> 좌측 수직 스크롤 리스트에서 아이템을 잡아 우측 <b>10×10 테트리스 가방</b>에 드래그 앤 드롭 (`R`키 90도 회전, 정밀 알파 픽셀 레이캐스트 적용)
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                        <h5 className="font-bold text-base text-gray-900 mb-2.5">
+                          런(Run) 내부 성장 딜레마 &amp; 저점 방어 안전망 (기획 구상)
+                        </h5>
+                        <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                          <li>
+                            <b>촉매 유물 (연소 딜레마) :</b> 던전에서 주운 전리품을 미니 격자에 끼우면 즉시 특수 능력 발동, 단 귀환 시 소멸(단기 보스 돌파 vs 장기 제작 재료 보존의 선택)
+                          </li>
+                          <li>
+                            <b>야생화 오염도 (0~100%) :</b> 처치 시 오염도가 쌓여 공격력·이속이 폭증하지만 방어력이 급감하는 하이 리스크 광폭화
+                          </li>
+                          <li>
+                            <b>사망 복구 및 비전투 루트 :</b> 무기 보험(호구스)·전리품 구조대(심도별 비용 차등) 및 고철 낚시·마을 텃밭·용병 파견 등 저점 방어 경제 설계
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                {/* 03. 전투 시스템 및 2.5D 레이맨 리깅 연출 */}
+                <section
+                  id="section-plan-03"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      03
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      전투 시스템 및 2.5D 레이맨 리깅 연출
+                    </h3>
+                  </div>
+
+                  <p className="text-sm sm:text-[15px] text-gray-700 bg-blue-50/50 border border-blue-100 rounded-lg px-4 py-2.5 mb-6 leading-relaxed">
+                    <b className="text-blue-700">기획 의도 :</b> 1인 개발의 아트 리소스 병목을 해결하고 향후 주인공 외형 변경 및 다양한 무기 추가에 즉시 대응하기 위해, 프레임 바이 프레임 무기 애니메이션을 배제하고 <b>트랜스폼 연산 기반 ‘2.5D 레이맨 리깅(Rayman Rigging)’</b>과 묵직한 타격 피드백을 구축
+                  </p>
+
+                  {/* 2.5D 레이맨 리깅 & 타격감 피드백 (구현 완료) */}
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        2.5D 레이맨 리깅 및 스윙 메커니즘 (구현 완료)
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>최소 에셋 파츠 조립 :</b> 캐릭터 1체 기준 몸통(11장) + 공용 팔(1장) + 공용 다리(5장) + 무기 종류당 단일 스프라이트(1장)로 구성
+                        </li>
+                        <li>
+                          <b>5단 레이어 깊이감 :</b> `BackArm(5) → Body(10) → WeaponVisual(12) → FrontArm(15) → SlashVisual(20)` 순으로 정렬해 앞손이 손잡이를 덮어 쥐는 90도 L자 파지세 구현
+                        </li>
+                        <li>
+                          <b>일관된 오버핸드 풀 스윙 :</b> 목/어깨 높이(`Y: 0.28f`) 회전축을 기준으로 좌/우 시선 반전 시에도 항상 머리 위(`-60°`)에서 바닥(`+120°`)으로 내리찍는 풀 스윙 및 뒷손 카운터 반동(`+25°`) 구현
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        타격감 피드백 규격 및 전투 메카닉 (구현 완료)
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>64×64 와이드 슬래시 이펙트 :</b> 공격 시 스케일 `0.9 → 1.25` 펀치 확장 및 무기 속성별 컬러 틴트 동적 곱연산
+                        </li>
+                        <li>
+                          <b>역경직(HitStop) &amp; 카메라 셰이크 :</b> 적중 순간 `Time.timeScale = 0.02f` 극단 정지(`0.09초`) 및 Cinemachine 3.x 6D Shake(진폭 `4.5f`, `0.18초`) 발동
+                        </li>
+                        <li>
+                          <b>피격 넉백 펄스 (`ApplyKnockback`) :</b> 타격 시 질량 100의 몬스터에 `8.5f` 임펄스와 `0.18초` 넉백 보호 타이머를 부여해 호쾌한 밀림 피지컬 구현
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* 구상 중인 무기 카테고리 방향성 */}
+                  <div>
+                    <h4 className="text-base font-bold text-gray-900 mb-3">
+                      무기 카테고리 구상안 (인간의 유물 콘셉트 · 세부 무기군 확장 예정)
+                    </h4>
+                    <div className="overflow-x-auto border border-gray-200 rounded-lg">
+                      <table className="w-full text-sm sm:text-[15px] text-left border-collapse">
+                        <thead>
+                          <tr className="bg-gray-100 text-gray-800 border-b border-gray-200">
+                            <th className="py-3 px-4 font-bold">카테고리</th>
+                            <th className="py-3 px-4 font-bold">대표 무기 콘셉트 (인간의 유물)</th>
+                            <th className="py-3 px-4 font-bold">전투 특성 및 방향성</th>
+                            <th className="py-3 px-4 font-bold">고유 스킬 구상 예시</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                          <tr className="bg-white">
+                            <td className="py-3 px-4 font-semibold">참격 (Slash)</td>
+                            <td className="py-3 px-4 text-gray-700">나뭇가지 검(구현), 부러진 커터칼날, 굽은 바늘</td>
+                            <td className="py-3 px-4 text-gray-700">중거리 부채꼴 호 타격, 2~3히트 콤보</td>
+                            <td className="py-3 px-4 text-gray-700">회전참 (360도 광역 참격)</td>
+                          </tr>
+                          <tr className="bg-gray-50/70">
+                            <td className="py-3 px-4 font-semibold">타격 (Blunt)</td>
+                            <td className="py-3 px-4 text-gray-700">녹슨 티스푼, 낡은 육각 렌치</td>
+                            <td className="py-3 px-4 text-gray-700">느린 공속, 단일 고데미지 및 기절치(그로기) 누적 특화</td>
+                            <td className="py-3 px-4 text-gray-700">지진강타 (전방 충격파 + 기절)</td>
+                          </tr>
+                          <tr className="bg-white">
+                            <td className="py-3 px-4 font-semibold">찌르기 (Thrust)</td>
+                            <td className="py-3 px-4 text-gray-700">쇠포크, 이쑤시개 묶음</td>
+                            <td className="py-3 px-4 text-gray-700">빠른 연타 및 긴 직선 사거리, 출혈 중첩과 시너지</td>
+                            <td className="py-3 px-4 text-gray-700">연속자상 (고속 5회 찌르기)</td>
+                          </tr>
+                          <tr className="bg-gray-50/70">
+                            <td className="py-3 px-4 font-semibold">원거리 / 마법</td>
+                            <td className="py-3 px-4 text-gray-700">고무줄 새총, 볼펜 스프링, 다 쓴 건전지</td>
+                            <td className="py-3 px-4 text-gray-700">탄환·MP 자원 소모 기반 원거리 견제 및 속성 장판 부여</td>
+                            <td className="py-3 px-4 text-gray-700">관통사격 / 누전 폭발</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+
+                {/* 04. 절차적 아레나(96×56) 및 레벨 디자인 */}
+                <section
+                  id="section-plan-04"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      04
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      절차적 아레나(96×56) 및 레벨 디자인
+                    </h3>
+                  </div>
+
+                  <p className="text-sm sm:text-[15px] text-gray-700 bg-blue-50/50 border border-blue-100 rounded-lg px-4 py-2.5 mb-6 leading-relaxed">
+                    <b className="text-blue-700">기획 의도 :</b> 단일 화면에 갇히는 답답함을 벗어나기 위해 <b>96×56 대형 오픈형 절차적 아레나(`OrthographicSize 6.5`)</b>를 구축하고, 현재 <b>1구역 ‘얕은 숲’을 확정 구현</b>(습지·바위 동굴·깊은 숲은 후속 구상 중)
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        96×56 절차적 아레나 &amp; Wall-First 파이프라인
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>다층 지그재그 절벽 경계 :</b> 일자 벽의 단조로움을 피하기 위해 최소 3스텝 지그재그 규칙(`dy &gt;= 3`) 기반 유기적 절벽 단차 생성
+                        </li>
+                        <li>
+                          <b>Wall-First 3단계 순행 생성 :</b> ① 외벽 토폴로지 확정 ➔ ② 내부 한정 바닥 타일링(외곽 암흑 보이드 처리로 약 3,500타일 드로우콜 절감) ➔ ③ 안전 반경(플레이어로부터 $\ge 12$타일) 기반 몬스터·프랍 분산 스폰
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        전역 타일셋 표준 규격 &amp; 인게임 프랍 파괴 채집
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>타일셋 표준 규격 :</b> Ground($5\times 4$, 20타일) 및 Wall($5\times 8$, 40타일)을 `Ground Lower → Ground Upper(=Wall Lower) → Wall Upper` 3단계 높이 레이어로 연결
+                        </li>
+                        <li>
+                          <b>프랍 마스터(`PropMaster`) 및 전투 중 채집 :</b> 대형 수목(`Scale 2.0~2.5`)부터 소인국 단추·병뚜껑(`0.5~0.7`)까지 스케일 대비감을 부여하고, 파괴 가능 프랍 타격 시 자석 루팅(Magnet Pickup)으로 소재 수급
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                {/* 05. 몬스터 생태계(3+1+1) 및 1구역 몬스터 명세 */}
+                <section
+                  id="section-plan-05"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      05
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      몬스터 생태계(3+1+1) 및 1구역(얕은 숲) 몬스터 명세
+                    </h3>
+                  </div>
+
+                  <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg mb-6">
+                    <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                      테마당 5종 황금 비율 (3 일반 + 1 엘리트 + 1 보스) &amp; 노 곤충(No Bugs) 원칙
+                    </h4>
+                    <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                      <li>
+                        <b>생태계 밸런스 기준 :</b> 4종 미만 시 3회 이상 반복 런에서 패턴이 단조로워지고, 6종 초과 시 시각적 노이즈와 1인 개발 아트 병목이 발생하므로 <b>[근접 추적 1 + 돌진 돌파 1 + 원거리 포격 1 + 엘리트 1 + 구역 보스 1]</b>의 5종 비율로 규격화
+                      </li>
+                      <li>
+                        <b>아트 철칙 (No Bugs Rule) :</b> 유저에게 혐오감을 주는 곤충·벌레형을 일절 배제하고, 자연물(씨앗·열매·버섯)과 숲속 소동물·슬라임·정령 위주의 코지 판타지 기조 유지
+                      </li>
+                      <li>
+                        <b>피격 반응형 체력바 :</b> 평시에는 체력바를 숨기고(`Alpha = 0`), 피격 즉시 머리 위에 2단 감쇠 슬라이더를 3초간 팝업 (보스는 화면 하단 전용 3페이즈 HUD 사용)
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* 1구역 몬스터 4종 + 주인공 + 초반 무기 실제 도트 및 명세 카드 */}
+                  <h4 className="text-base font-bold text-gray-900 mb-4">
+                    1구역 ‘얕은 숲’ 구현 완료 몬스터 4종 및 코어 아트 리소스
+                  </h4>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {[
+                      {
+                        img: "/TinyJourney/slime_sprout.png",
+                        name: "새싹 슬라임 (mon_slime_sprout)",
+                        role: "Normal / Tracker (무속성)",
+                        desc: "머리 위에 새싹이 돋은 연두색 젤리 슬라임. 별도 공격 선딜 없이 바닥을 통통 튀며 지속 추적해 몸통 박치기 수행 (드랍: 슬라임 젤리)",
+                      },
+                      {
+                        img: "/TinyJourney/chestnut_hedgehog.png",
+                        name: "밤송이 고슴도치 (mon_chestnut_hedgehog)",
+                        role: "Normal / Charger (대지 속성)",
+                        desc: "사거리 4.8m 진입 시 정지해 팽이처럼 제자리 와인드업 충전 후, 구체 형태로 Z축 초고속 회전(DORotate)하며 3.5배속 볼링공 돌진! 벽 충돌 시 1초간 벽 쿵 기절(Stun)",
+                      },
+                      {
+                        img: "/TinyJourney/feral_squirrel.png",
+                        name: "꽃꼬리 다람쥐 (mon_feral_squirrel)",
+                        role: "Named / Tracker & Shooter (맹독 속성)",
+                        desc: "사거리 5.5m를 유지하며 뛰어다니다가, 꼬리 끝 보라색 독꽃에서 기를 모아 양손을 뻗는 순간 전방으로 독 포자 투사체(Poison Spore) 발사",
+                      },
+                      {
+                        img: "/TinyJourney/rotwood.png",
+                        name: "뒤틀린 수호 고목 (boss_rotwood)",
+                        role: "Boss / Charger & Area (대지 속성)",
+                        desc: "1구역 보스. ① 양손 지면 강타(충격파 AOE), ② 루비 촉매(불꽃 속성) 드랍과 연계된 화염 지면 강타, ③ 전신 분노 광역 폭발의 3종 전용 패턴 구사",
+                      },
+                      {
+                        img: "/TinyJourney/CatSide.png",
+                        name: "토벌사 캐릭터 베이스",
+                        role: "Player / 2.5D 파츠 분리형",
+                        desc: "몸통·공용 팔·공용 다리 파츠 분리 구조로 설계되어, 사망 후 차세대 토벌사 이사 연출 및 종족·색상 팔레트 교체에 유연하게 대응",
+                      },
+                      {
+                        img: "/TinyJourney/weapon_twig.png",
+                        name: "단단한 나뭇가지 검 (weapon_twig)",
+                        role: "1단계 보급 무기 / 참격(Slash)",
+                        desc: "초반 기본 참격 무기. 어깨 회전축 기반 360도 조준 및 오버핸드 풀 스윙, 64×64 와이드 슬래시 연둣빛 틴트 이펙트 연동",
+                      },
+                    ].map((asset, idx) => (
+                      <div
+                        key={idx}
+                        className="p-4 bg-gray-50 border border-gray-200 rounded-lg flex flex-col"
+                      >
+                        <div className="h-32 bg-white border border-gray-100 rounded flex items-center justify-center p-4 mb-3">
+                          <ImgPrefixed
+                            src={asset.img}
+                            alt={asset.name}
+                            className="max-h-24 max-w-24 [image-rendering:pixelated] object-contain"
+                          />
+                        </div>
+                        <div className="mb-1.5">
+                          <span className="text-xs font-semibold px-2 py-0.5 bg-blue-100 text-blue-800 rounded">
+                            {asset.role}
+                          </span>
+                          <h5 className="font-bold text-base text-gray-900 mt-1.5">
+                            {asset.name}
+                          </h5>
+                        </div>
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {asset.desc}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                {/* 하단 기술서 탭 전환 배너 */}
+                <div className="p-5 bg-blue-50/60 border border-blue-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <p className="text-sm sm:text-[15px] font-medium text-gray-800">
+                    통합 엑셀(`GameData.xlsx`) 0.6초 자동 빌드 파이프라인, 몬스터 전략 패턴(`IMonsterAttackModule`), 2.5D 절벽 깊이감 제어 및 마일스톤 현황은{" "}
+                    <b className="text-blue-700">[기술서]</b> 탭에서 확인하실 수 있습니다.
+                  </p>
+                  <button
+                    onClick={() => {
+                      setActiveTab("tech");
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm rounded-lg transition shrink-0"
+                  >
+                    기술서 탭 보기 →
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* =============================================================== */}
+            {/* TAB 2: 기술서 */}
+            {/* =============================================================== */}
+            <div style={{ display: activeTab === "tech" ? "block" : "none" }}>
+              <div className="space-y-12 text-gray-800">
+                {/* 헤더 & 목차 */}
+                <div className="border-b border-gray-200 pb-8">
+                  <div className="max-w-3xl pt-2 mb-8">
+                    <h2 className="text-3xl font-extrabold text-gray-900 mb-3">
+                      TinyJourney 기술 설계 및 데이터 파이프라인
+                    </h2>
+                    <p className="text-sm sm:text-[15px] text-gray-600 leading-relaxed">
+                      기획서(`기획.md`) ➔ 설계서(`프로그래밍_설계.md`) ➔ 작업지시서(`작업지시.md`) 3단계 문서화를 통해 AI 에이전트와 협업하며 구축한 데이터 드리븐 파이프라인 및 핵심 아키텍처 명세입니다.
+                    </p>
+                  </div>
+
                   {/* 기술서 목차 박스 */}
-                  <div className="max-w-4xl mx-auto bg-gray-50 border border-gray-200 rounded-xl p-5">
+                  <div className="max-w-4xl bg-gray-50 border border-gray-200 rounded-xl p-5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-3 mb-4">
                       <h3 className="text-base font-bold text-gray-900 border-l-4 border-blue-500 pl-2.5">
                         기술서 목차
@@ -769,191 +811,217 @@ export default function TinyJourneyPage() {
                   </div>
                 </div>
 
-                {/* 01. AI 에이전트 협업을 위한 3단계 문서 파이프라인 */}
-                <section id="section-tech-01" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      01. AI 에이전트 협업을 위한 3단계 문서 파이프라인
+                {/* 01. 통합 엑셀 마스터 데이터 파이프라인 */}
+                <section
+                  id="section-tech-01"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      01
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      통합 엑셀 마스터 데이터 파이프라인 (GameData.xlsx)
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    1인 개발 환경에서 AI 에이전트와의 협업 효율을 극대화하고, 기획 의도 왜곡 및 대형 모델의 컨텍스트 유실(Hallucination)을 방지하기 위해 
-                    <b> 기획서 ➔ 프로그래밍 설계서 ➔ 원자적 작업 지시서</b>로 이어지는 3단계 문서 파이프라인을 구축했습니다.
-                  </p>
+                  <ul className="list-disc pl-5 space-y-2.5 text-sm sm:text-[15px] text-gray-800 mb-6 leading-relaxed">
+                    <li>
+                      <b>단일 진실 공급원 (`Assets/03_Data/GameData.xlsx`) :</b> 아이템, 가구, 몬스터, 속성 상성표, 다국어 텍스트를 단일 엑셀 파일 내 6개 시트(`ItemMaster`, `ItemEffects`, `Definitions`, `MonsterMaster`, `ElementChart`, `Localization`)로 통합 관리
+                    </li>
+                    <li>
+                      <b>0.6초 원스톱 자동 빌드 (`MasterDataPostprocessor.cs`) :</b> 엑셀 파일 저장(`Ctrl+S`) 시 백그라운드 포스트프로세서가 즉시 감지하여 CSV 추출 및 `MonsterDataSO`, `LootTableSO`, `ElementChartSO` 에셋을 자동 생성·동기화
+                    </li>
+                    <li>
+                      <b>와이드 테이블 동적 파싱 &amp; 테트리스 행렬 변환 :</b> 17개 이상의 스탯 열을 `Enum.TryParse&lt;StatType&gt;`으로 동적 파싱하며, `010/111/010`(십자가) 같은 문자열을 `List&lt;Vector2Int&gt;` 테트리스 좌표로 자동 변환
+                    </li>
+                    <li>
+                      <b>인라인 드랍 포맷 (`DropTable`) :</b> 셀 하나에 `item_slime_gel:0.8:1-2;item_oak_wood:0.3:1-1` 형식으로 작성하면 몬스터 전용 `LootTableSO`를 자동 조립 및 바인딩
+                    </li>
+                  </ul>
 
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 text-xs font-bold bg-blue-500 text-white rounded">
-                          단계 1
-                        </span>
-                        <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                          기획.md
-                        </h4>
-                      </div>
-                      <p className="text-xs font-semibold text-blue-600">
-                        단일 진실 공급원 (SSOT)
-                      </p>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        게임 규칙, 세계관, 6대 무기군 메커니즘, 몬스터 스탯 파라미터 및 레벨 디자인 원칙을 엄격하게 수록합니다.
-                      </p>
+                  {/* 데미지 및 5원소 상성 공식 */}
+                  <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h4 className="font-bold text-base text-gray-900 mb-3">
+                      데이터 기반 5원소 대칭 상성(`ElementChart`) 및 피해량 연산 공식
+                    </h4>
+                    <div className="p-4 bg-white border border-blue-200 rounded-lg text-center font-mono text-sm sm:text-base font-bold text-blue-700 mb-4">
+                      FinalDamage = RawDamage × [ 100 / (100 + Defense × (1 - ArmorPen_Rate)) ] × ElementMultiplier
+                    </div>
+                    <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700 leading-relaxed">
+                      <li>
+                        <b>5원소 대칭 상성 환 :</b> `Fire → Earth → Lightning → Poison → Ice → Fire` (유리 상성 `1.5x`, 불리 역상성 `0.7x`, 동일 속성 `0.5x`, 무속성 `1.0x`)
+                      </li>
+                      <li>
+                        <b>런타임 $O(1)$ 조회 :</b> 상성 배율을 코드에 하드코딩하지 않고 엑셀 `ElementChart` 2D 바둑판 시트에서 `ElementChartSO`로 구워내어 런타임 $O(1)$ 인덱싱으로 조회
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                {/* 02. 몬스터 전략 패턴 모듈화 및 물리 아키텍처 */}
+                <section
+                  id="section-tech-02"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      02
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      몬스터 전략 패턴 모듈화 및 물리 바디 아키텍처
+                    </h3>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        공격 모듈 전략 패턴 분리 (`IMonsterAttackModule`)
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          `EnemyBase.cs` 내부의 비대한 분기문을 제거하고 OCP(개방-폐쇄 원칙)를 준수하는 4종 전략 모듈로 분리
+                        </li>
+                        <li>
+                          <b>`ContactAttackModule` :</b> 새싹 슬라임의 지속 추적 및 접촉 몸통 박치기
+                        </li>
+                        <li>
+                          <b>`ChargeAttackModule` :</b> 밤송이 고슴도치의 4.8m 와인드업 팽이 회전, 3.5배속 볼링공 돌진 및 벽 충돌 스턴
+                        </li>
+                        <li>
+                          <b>`RangedShooterModule` :</b> 꽃꼬리 다람쥐의 5.5m 거리 유지 및 모션 프레임 동기화 독 포자 발사
+                        </li>
+                        <li>
+                          <b>`BossPhaseModule` :</b> 뒤틀린 수호 고목의 체력 구간별 3종 광역 패턴 분기
+                        </li>
+                      </ul>
                     </div>
 
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 text-xs font-bold bg-blue-500 text-white rounded">
-                          단계 2
-                        </span>
-                        <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                          프로그래밍_설계.md
-                        </h4>
-                      </div>
-                      <p className="text-xs font-semibold text-blue-600">
-                        소프트웨어 아키텍처
-                      </p>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        인터페이스 추상화, 씬/프리팹 계층 구조, 네트워크 RPC 권한 분리 및 시스템 간 데이터 흐름 다이어그램을 정의합니다.
-                      </p>
-                    </div>
-
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <div className="flex items-center gap-2">
-                        <span className="px-2 py-0.5 text-xs font-bold bg-blue-500 text-white rounded">
-                          단계 3
-                        </span>
-                        <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                          작업지시.md
-                        </h4>
-                      </div>
-                      <p className="text-xs font-semibold text-blue-600">
-                        원자적 태스크 (78단계)
-                      </p>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        코드 작성 시 실수를 방지하도록 78단계의 원자적 태스크로 쪼개어, 각 스크립트별 제약 조건과 검증 규칙을 지시합니다.
-                      </p>
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        무할당 조향 엔진(`EnemyMotor2D`) &amp; 바위형 물리(`mass=100`)
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          <b>8방향 레이캐스트 스티어링 :</b> GC 할당 없는 장애물 우회 조향 및 시야선(Line of Sight) 검사로 벽 너머 헛돌진 원천 차단
+                        </li>
+                        <li>
+                          <b>고정 체급 물리 바디 (`mass = 100`, Friction 0) :</b> 플레이어가 이동(WASD)만으로 몬스터를 밀어내지 못하게 고정하되, 마찰력 0 머티리얼로 몸통 둘레를 매끄럽게 미끄러지도록 처리
+                        </li>
+                        <li>
+                          <b>피격 넉백 분리 :</b> 오직 무기 타격 적중 시에만 `ApplyKnockback(8.5f, 0.18s)` 충격량과 `knockbackTimer`로 밀려나도록 물리 계층 분리
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </section>
 
-                {/* 02. Excel 마스터 데이터 실시간 동기화 파이프라인 */}
-                <section id="section-tech-02" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      02. Excel 마스터 데이터 실시간 동기화 파이프라인 (MasterDataPostprocessor)
+                {/* 03. 2.5D 절벽 깊이감 제어 및 공격 정렬 승격 */}
+                <section
+                  id="section-tech-03"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      03
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      2.5D 절벽 깊이감 제어 및 공격 정렬 승격
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    기획자가 <code className="text-xs bg-gray-100 border px-1.5 py-0.5 rounded text-blue-600 font-mono">GameData.xlsx</code>를 수정하고 저장하면, Unity 에디터가 이를 즉각 감지하여 <code className="text-xs bg-gray-100 border px-1.5 py-0.5 rounded text-blue-600 font-mono">MasterDataSO</code> ScriptableObject 에셋으로 자동 파싱·직렬화하는 무코드(No-code) 밸런싱 파이프라인을 구축했습니다.
-                  </p>
-
-                  <div className="bg-gray-900 text-gray-100 rounded-xl p-5 overflow-x-auto leading-relaxed border border-gray-800">
-                    <pre><code className="font-mono text-xs sm:text-sm text-gray-100">{`// MasterDataPostprocessor.cs 핵심 로직 요약
-public class MasterDataPostprocessor : AssetPostprocessor
-{
-    private static void OnPostprocessAllAssets(string[] importedAssets, ...)
-    {
-        foreach (var assetPath in importedAssets)
-        {
-            if (assetPath.EndsWith("GameData.xlsx"))
-            {
-                // 1. ExcelDataReader로 몬스터·무기·아이템 시트 역직렬화
-                var data = ExcelParser.ParseMasterData(assetPath);
-                // 2. ScriptableObject에 데이터 주입 후 즉시 직렬화 저장
-                MasterDataSO.Instance.Sync(data);
-                EditorUtility.SetDirty(MasterDataSO.Instance);
-                AssetDatabase.SaveAssets();
-            }
-        }
-    }
-}`}</code></pre>
-                  </div>
-
-                  <ul className="list-disc list-inside space-y-2 text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+                  <ul className="list-disc pl-5 space-y-2.5 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
                     <li>
-                      <b>무코드 실시간 밸런싱:</b> 코드 재컴파일이나 Unity 재실행 없이 엑셀 저장 즉시 인스펙터 및 게임 런타임에 몬스터 HP, 무기 공격력, 드랍률이 반영됩니다.
+                      <b>남쪽 절벽 턱 전면 레이어 분리 (`Wall_Front_Tilemap`, SortingOrder: 10005) :</b> 캐릭터가 남쪽 절벽 턱 뒤로 걸어 내려갈 때 캐릭터의 하체와 발이 절벽 턱 타일 뒤로 자연스럽게 가려지도록(`Wall &gt; Player`) 3단 타일맵 레이어링(`Floor`, `Wall`, `Wall_Front_Tilemap`) 및 `Custom Physics Shape` 접지선 보정 구현
                     </li>
                     <li>
-                      <b>런타임 오버헤드 0%:</b> 런타임에 엑셀이나 JSON을 파싱하지 않고 사전 직렬화된 ScriptableObject 바이너리를 직접 참조하므로 모바일/PC 로딩 지연이 발생하지 않습니다.
+                      <b>공격 중 무기·슬래시 최상위 정렬 승격 (`attackBoost = +1000`) :</b> 플레이어가 몬스터보다 위쪽(`Player.y &gt; Enemy.y`)에 서서 아래쪽 적을 벨 때 Y-Sorting으로 인해 무기나 슬래시 이펙트가 몬스터 등 뒤로 가려지는 문제를 해결하기 위해, 공격 중(`isAttacking == true`) 렌더 오더에 `+1000`을 동적 가산
+                    </li>
+                    <li>
+                      <b>에디터 자동화 도구 :</b> `MonsterSpritePostprocessor.cs`(스프라이트 시트 자동 슬라이싱 및 애니메이터 컨트롤러 자동 생성) 및 `Bake Current Positions`(씬 뷰에서 조정한 앞손·뒷손·무기·슬래시 좌표를 원클릭 베이킹) 구현
                     </li>
                   </ul>
                 </section>
 
-                {/* 03. 2.5D 절벽 타일셋 및 물리 콜라이더 자동 빌더 */}
-                <section id="section-tech-03" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      03. 2.5D 절벽 타일셋 및 물리 콜라이더 자동 빌더 (ThemeAndPropAutoBuilder)
+                {/* 04. NGO 서버 권한 아키텍처 및 개발 마일스톤 현황 */}
+                <section
+                  id="section-tech-04"
+                  className="scroll-mt-20 bg-white rounded-xl border border-gray-200 shadow-sm p-6 sm:p-8"
+                >
+                  <div className="flex items-center gap-2.5 border-b border-gray-200 pb-4 mb-6">
+                    <span className="px-2.5 py-1 text-xs font-bold bg-blue-500 text-white rounded">
+                      04
+                    </span>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      NGO 서버 권한 아키텍처 및 개발 마일스톤 현황
                     </h3>
                   </div>
 
-                  <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                    2D 탑다운 환경에서 입체적인 절벽 높낮이를 구현하려면 지면, 절벽 윗면, 수직 암벽의 타일 배치 및 충돌체 설정에 막대한 수작업이 소요됩니다.
-                    이를 해결하기 위해 <code className="text-xs bg-gray-100 border px-1.5 py-0.5 rounded text-blue-600 font-mono">ThemeAndPropAutoBuilder</code> 에디터 자동화 툴을 자체 개발했습니다.
-                  </p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        Netcode(NGO) 기반 서버 권한 분리 (`GameBootstrap`)
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          향후 Steam P2P Co-op 확장을 대비해 싱글플레이 실행 시에도 자동으로 Listen Server Host(`StartHost()`) 개설
+                        </li>
+                        <li>
+                          AI 이동, 데미지 연산(`IDamageable.TakeDamage`), 체력 동기화(`NetworkVariable`)는 100% 서버(`IsServer`)에서 수행하고, 타격 피드백(`HitStop`, `CameraShake`)은 공격자 로컬에서 0ms 즉시 발동
+                        </li>
+                      </ul>
+                    </div>
 
-                  <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-3">
-                    <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                      에디터 자동화 파이프라인 핵심 기능
-                    </h4>
-                    <div className="space-y-2.5 text-sm sm:text-[15px] text-gray-700">
-                      <div className="flex items-start gap-2">
-                        <span className="font-bold text-blue-600 shrink-0">1.</span>
-                        <p>
-                          <b>타일시트 슬라이싱 및 3계층 분리:</b> 5×8 규격의 테마별 타일 텍스처를 분석하여 1층 지면(Ground), 2층 절벽 상단(Cliff Top), 수직 암벽(Cliff Wall)으로 자동 분류 및 타일 에셋을 생성합니다.
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="font-bold text-blue-600 shrink-0">2.</span>
-                        <p>
-                          <b>Custom Physics Shape 자동 생성:</b> 보행 불가 영역인 수직 암벽과 낭떠러지 가장자리에 맞춤형 물리 충돌체를 자동 연산하여 부착합니다.
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <span className="font-bold text-blue-600 shrink-0">3.</span>
-                        <p>
-                          <b>복합 충돌체 최적화:</b> <code className="text-xs bg-gray-200 px-1 py-0.5 rounded">CompositeCollider2D</code>와의 연동을 통해 개별 타일의 콜라이더 버텍스를 병합하여 물리 연산 비용을 대폭 절감했습니다.
-                        </p>
-                      </div>
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-2.5">
+                        Zero-DontDestroyOnLoad JSON 데이터 영속성
+                      </h4>
+                      <ul className="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
+                        <li>
+                          씬 전환 시 객체 강결합을 유발하는 `DontDestroyOnLoad` 매니저 참조를 배제
+                        </li>
+                        <li>
+                          하우징 씬(`Scene_Housing`)에서 가구 배치 시 `HousingBuffCalculator`가 스탯을 합산해 `SaveData.json`에 기록하고, 전투 씬(`Scene_Combat`) 로드 시 순수 C# 모델(`PlayerSaveData`)로 읽어와 베이스 스탯 주입
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </section>
 
-                {/* 04. 코어 클라이언트 아키텍처 및 렌더링 최적화 */}
-                <section id="section-tech-04" className="scroll-mt-24 space-y-4">
-                  <div className="border-l-4 border-blue-500 pl-3">
-                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                      04. 코어 클라이언트 아키텍처 및 렌더링 최적화
-                    </h3>
-                  </div>
-
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                        ServiceLocator 기반 DI
+                  {/* 구현 완료 vs 차기 진행 예정 마일스톤 표 */}
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="p-5 bg-blue-50/40 border border-blue-200 rounded-lg">
+                      <h4 className="font-bold text-base text-blue-900 mb-3">
+                        구현 완료 마일스톤 (Completed · Step 1~11)
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        전역 싱글톤의 강결합을 해소하기 위해 중앙 인터페이스 레지스트리를 구축했습니다. UIManager, AudioManager, PoolManager를 인터페이스로 주입받아 모듈 간 결합도를 최소화했습니다.
-                      </p>
+                      <ul className="list-disc pl-5 space-y-2 text-sm text-gray-800 leading-relaxed">
+                        <li>엑셀(`GameData.xlsx`) 6개 시트 통합 및 `MasterDataPostprocessor` 0.6초 자동 빌드</li>
+                        <li>하우징 스탯 계산기(`HousingBuffCalculator`) ↔ 전투 씬 JSON 영속성 연동</li>
+                        <li>17개 스탯 와이드 테이블 파싱 및 테트리스 블록 행렬 변환기</li>
+                        <li>방 클리어 황금 보따리(`LootBundle`) 및 좌우 분할 10×10 테트리스 루팅 UI(`UI_Looting`)</li>
+                        <li>2.5D 레이맨 리깅(5단 레이어, 오버핸드 스윙, 뒷손 반동, `attackBoost +1000`)</li>
+                        <li>96×56 대형 절차적 아레나(`DungeonRoomGenerator`) 및 남쪽 절벽 턱 전면 레이어 분리</li>
+                        <li>1구역 몬스터 4종(슬라임·고슴도치·다람쥐·수호 고목) 애니메이션 및 전략 패턴(`IMonsterAttackModule`)·바위형 물리(`mass=100`) 구현</li>
+                      </ul>
                     </div>
 
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                        ObjectPoolManager (Zero-GC)
+                    <div className="p-5 bg-gray-50 border border-gray-200 rounded-lg">
+                      <h4 className="font-bold text-base text-gray-900 mb-3">
+                        차기 진행 예정 로드맵 (Upcoming · P1~P7)
                       </h4>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        빈번하게 생성·소멸하는 투사체(화살, 마법탄), 데미지 플로팅 텍스트, 피격 파티클을 제네릭 큐 기반으로 재사용하여 런타임 가비지 컬렉션(GC Alloc) 스파이크를 원천 차단했습니다.
-                      </p>
-                    </div>
-
-                    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 space-y-2">
-                      <h4 className="font-bold text-gray-900 text-sm sm:text-[15px]">
-                        동적 Y-Sorting 렌더 순서 제어
-                      </h4>
-                      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                        모든 움직이는 오브젝트의 Y 좌표를 기반으로 실시간 정렬 순서를 갱신하며, 무기 휘두르기 시 공격 판정 시인성을 보장하기 위해 일시적 렌더 오더 가중치를 동적으로 부여합니다.
-                      </p>
+                      <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700 leading-relaxed">
+                        <li>
+                          <b>P1~P2 :</b> 외벽 너머 바닥 타일 완전 차단(`floorBuffer = null`), 외곽 암흑 보이드 및 QOT 6분할 구획·MST 엘보 협곡 다양화 엔진
+                        </li>
+                        <li>
+                          <b>P3 :</b> 피격 반응형 몬스터 체력바(3초 노출), `PropMaster` 파괴/자석 루팅 채집 및 ESC 설정 모달
+                        </li>
+                        <li>
+                          <b>P4~P5 :</b> AudioMixer 4계층 버스 &amp; `SoundEvents` 디커플링 버스, 1구역 엘리트 몬스터 추가(5종 황금 비율 완성)
+                        </li>
+                        <li>
+                          <b>P6~P7 :</b> 잔디벌 마을(Hub) 4대 NPC 구축, 0대 선대 묘비 타임스탬프 및 사망 시 마차 이사 세대교체·묘비 기록소 구현
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </section>
@@ -961,7 +1029,7 @@ public class MasterDataPostprocessor : AssetPostprocessor
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   );
 }

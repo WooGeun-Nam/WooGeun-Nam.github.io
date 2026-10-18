@@ -109,11 +109,11 @@ export default function PortfolioHome() {
                   TinyJourney (가제 · 개발 중)
                 </h3>
                 <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
-                  2D 탑다운 액션 RPG ( Unity, C#, 1인 개발 )
+                  2D 탑뷰 액션 RPG + 익스트랙션/하우징 ( Unity, C#, 1인 개발 )
                 </p>
                 <p className="text-sm text-gray-700 text-left">
-                  6대 무기군 아키타입과 2.5D 절벽 고도 레벨 디자인을 결합하고,
-                  AI 에이전트 및 Excel 마스터 데이터 자동화 파이프라인으로 개발 중인 액션 RPG
+                  방어구를 대체하는 N×N 그리드 하우징과 익스트랙션 테트리스 파밍을 결합하고,
+                  2.5D 레이맨 리깅 및 통합 엑셀 데이터 파이프라인으로 개발 중인 프로젝트
                 </p>
               </Link>
 
@@ -464,15 +464,15 @@ export default function PortfolioHome() {
               {/* TinyJourney */}
               <div className="mb-6">
                 <h5 className="text-lg font-semibold">
-                  TinyJourney (2D 탑다운 액션 RPG, Unity, 개인 프로젝트 · 진행 중)
+                  TinyJourney (2D 탑뷰 액션 RPG + 파밍/하우징, Unity, 개인 프로젝트 · 진행 중)
                 </h5>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
                   <li>개발 기간 : 2026.03 ~ 진행 중</li>
                   <li>
-                    6대 무기군 전투 메커니즘, 스테이지 환경 기믹 및 2.5D 고도(Elevation) 레벨 디자인 설계
+                    익스트랙션 테트리스 루팅, 방어구를 대체하는 N×N 하우징 스펙업 및 세대 계승 내러티브 루프 설계
                   </li>
                   <li>
-                    기획-설계-구현 3단계 AI 문서 파이프라인 구축 및 Excel 마스터 데이터 실시간 동기화·타일셋 자동 빌더 구현
+                    2.5D 레이맨 리깅 액션 연출, 96×56 절차적 아레나 및 통합 엑셀(GameData.xlsx) 실시간 자동 빌드 파이프라인 구현
                   </li>
                 </ul>
               </div>

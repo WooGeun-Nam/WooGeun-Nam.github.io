@@ -37,33 +37,26 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
   const TooltipTrigger = codeAssets.TooltipTrigger ?? "";
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10 text-gray-800">
       {/* 헤더 섹션 */}
-      <div className="border-b border-slate-200 pb-6">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <span className="inline-block px-2.5 py-0.5 text-xs font-bold tracking-wider text-slate-700 bg-slate-100 border border-slate-300 rounded mb-2">
-              TECHNICAL SPECIFICATION
-            </span>
-            <h1 className="text-3xl font-extrabold text-slate-900">
-              RogueTower 기술 설계서
-            </h1>
-            <p className="text-sm text-slate-600 mt-1">
-              클라이언트 아키텍처, 디자인 패턴 적용, 절차적 맵 생성 알고리즘 및 PlayFab 백엔드 연동 명세
-            </p>
-          </div>
-        </div>
+      <div className="border-b border-gray-200 pb-6">
+        <h1 className="text-3xl font-extrabold text-gray-900">
+          RogueTower 기술 설계서
+        </h1>
+        <p className="text-sm sm:text-[15px] text-gray-600 mt-2 leading-relaxed">
+          클라이언트 아키텍처, 디자인 패턴 적용, 절차적 맵 생성 알고리즘 및 PlayFab 백엔드 연동 명세
+        </p>
       </div>
 
       {/* 개발 도구 */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4 border-l-4 border-slate-700 pl-3">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">
           개발 환경 및 도구
         </h3>
 
-        <ul className="list-disc pl-5 text-sm text-slate-800 mb-4 space-y-1">
+        <ul className="list-disc pl-5 text-sm sm:text-[15px] text-gray-800 mb-5 space-y-2 leading-relaxed">
           <li>
-            <b>엔진 :</b> Unity (2D URP)
+            <b>엔진 :</b> Unity
           </li>
           <li>
             <b>언어 :</b> C#
@@ -72,30 +65,30 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
             <b>디자인 도구 :</b> Aseprite
           </li>
           <li>
-            <b>백엔드 서비스 (BaaS) :</b> PlayFab (글로벌 리더보드, 텔레메트리 로그, 원격 에러 수집)
+            <b>백엔드 서비스 (BaaS) :</b> PlayFab (글로벌 리더보드, 전투 텔레메트리 로그, 원격 에러 수집)
           </li>
         </ul>
 
         <div className="grid grid-cols-4 gap-4 w-full sm:w-1/2">
-          <div className="rounded-lg overflow-hidden border border-slate-100">
+          <div className="rounded-lg overflow-hidden border border-gray-100">
             <ImgPrefixed
               src="/icon/unity.png"
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="rounded-lg overflow-hidden border border-slate-100">
+          <div className="rounded-lg overflow-hidden border border-gray-100">
             <ImgPrefixed
               src="/icon/csharp.png"
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="rounded-lg overflow-hidden border border-slate-100">
+          <div className="rounded-lg overflow-hidden border border-gray-100">
             <ImgPrefixed
               src="/icon/ase.png"
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="rounded-lg overflow-hidden border border-slate-100">
+          <div className="rounded-lg overflow-hidden border border-gray-100">
             <ImgPrefixed
               src="/icon/PlayFab.jpg"
               className="h-full w-full object-cover"
@@ -105,11 +98,11 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       </div>
 
       {/* 프로젝트 목표 및 설계 철학 */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4 border-l-4 border-slate-700 pl-3">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">
           프로젝트 목표 및 설계 철학
         </h3>
-        <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
+        <div className="space-y-3 text-sm sm:text-[15px] text-gray-700 leading-relaxed">
           <p>
             이 프로젝트는 Unity와 C#에 대한 깊은 이해를 바탕으로, 단순한 기능
             구현을 넘어 <b>상용화 수준의 게임 개발 파이프라인 전체를 경험</b>
@@ -134,18 +127,18 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       </div>
 
       {/* 기술 요약 */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4 border-l-4 border-slate-700 pl-3">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">
           기술 요약
         </h3>
-        <p className="text-sm text-slate-700 leading-relaxed">
+        <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
           이번 프로젝트는 <b>모듈형 구조와 이벤트 기반 설계</b>를 통해
           유지보수성과 확장성을 극대화한 2D 로그라이크 타워 디펜스 게임입니다.
           타워와 스킬은 <b>State 패턴</b>을 적용하여 행동(탐색·공격)을 명확히
           분리하였고, 주요 UI는 <b>이벤트 기반 갱신</b>으로 처리되어 불필요한
           연산을 최소화했습니다.
         </p>
-        <p className="text-sm text-slate-700 leading-relaxed mt-2">
+        <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed mt-3">
           또한, <b>절차적 맵 생성 알고리즘</b>을 직접 설계하여 매번 새로운
           플레이 경험을 제공하며, <b>데이터 기반 설계</b>로 리플레이성과
           유지보수성을 높였습니다. 특히, `Time.timeScale` 오염으로 인한 게임
@@ -156,11 +149,11 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       </div>
 
       {/* 주요 성과 */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4 border-l-4 border-slate-700 pl-3">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">
           주요 성과
         </h3>
-        <ul className="list-disc pl-5 space-y-2 text-sm text-slate-800">
+        <ul className="list-disc pl-5 space-y-2.5 text-sm sm:text-[15px] text-gray-800 leading-relaxed">
           <li>
             오브젝트 풀링 적용 → 100개 투사체 타워 동시 발사에도 안정적인
             프레임 유지
@@ -183,7 +176,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 onTabChange("devlog");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="text-amber-700 font-semibold hover:underline"
+              className="text-blue-600 font-semibold hover:underline"
             >
               개발일지
             </a>
@@ -193,13 +186,13 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       </div>
 
       {/* 기술적 특징 */}
-      <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-        <h3 className="text-xl font-bold text-slate-900 mb-4 border-l-4 border-slate-700 pl-3">
+      <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+        <h3 className="text-xl font-bold text-gray-900 mb-4 border-l-4 border-blue-500 pl-3">
           핵심 기술 구현 상세
         </h3>
 
         <div className="space-y-6">
-          <ul className="list-disc pl-5 text-sm text-slate-800 space-y-4">
+          <ul className="list-disc pl-5 text-sm sm:text-[15px] text-gray-800 space-y-5 leading-relaxed">
             <li>
               <b>모듈형 타워 시스템 (State 패턴)</b> : `IWeaponState`
               인터페이스를 기반으로 타워의 행동(탐색, 공격)을 명확하게
@@ -239,9 +232,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/Pooling1.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     풀링 성능 테스트 1 (148.19 FPS)
                   </figcaption>
                 </div>
@@ -249,9 +242,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/Pooling2.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     풀링 성능 테스트 2 (175.48 FPS)
                   </figcaption>
                 </div>
@@ -283,7 +276,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
             </li>
             <li>
               <b>절차적 맵 생성 및 난이도 정량화 시스템</b>
-              <ul className="list-decimal pl-6 mt-1 space-y-1 text-xs text-slate-700">
+              <ul className="list-decimal pl-6 mt-2 space-y-2 text-sm text-gray-700">
                 <li>
                   <b>경로 생성 :</b> `RandomPathGenerator.cs`를 통해 매 게임
                   시작 시 새로운 적 이동 경로를 동적으로 생성하며, 생성된
@@ -323,19 +316,19 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/RandomMap1.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
                 </div>
                 <div>
                   <ImgPrefixed
                     src="/Desc/RandomMap2.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
                 </div>
                 <div>
                   <ImgPrefixed
                     src="/Desc/RandomMap3.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
                 </div>
               </div>
@@ -361,7 +354,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
 
             <li>
               <b>타워 및 장비 스킬 고도화</b>
-              <ul className="pl-6 mt-1 space-y-3">
+              <ul className="pl-6 mt-2 space-y-3">
                 <li>
                   - 타워 데이터와 스킬 데이터를 한쌍으로 TowerArchetype로 통합
                   <div className="mt-3 space-y-4">
@@ -405,7 +398,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
             </li>
             <li>
               <b>데이터 관리 시스템 (암호화 및 마이그레이션)</b>
-              <p className="pl-4 text-xs text-slate-700 mt-1">
+              <p className="pl-4 text-sm text-gray-700 mt-1 leading-relaxed">
                 `GameDataManager.cs`를 통해 플레이어의 저장 데이터를 XOR
                 암호화하여 로컬 파일 변조를 방지했습니다. 또한, 과거
                 버전(암호화 미적용)의 세이브 파일을 불러올 경우, 자동으로 최신
@@ -421,7 +414,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
             </li>
             <li>
               <b>툴팁 시스템 : 툴팁을 통한 유저 편의적인 UI 제공</b>
-              <p className="pl-4 text-xs text-slate-700 mt-1">
+              <p className="pl-4 text-sm text-gray-700 mt-1">
                 툴팁이 필요한 객체에 `TooltipTrigger.cs` 컴포넌트를 이용하여
                 정보제공
               </p>
@@ -429,9 +422,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/Tooltip1.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     툴팁 예시1 (타워 정보)
                   </figcaption>
                 </div>
@@ -439,27 +432,27 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/Tooltip3.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     툴팁 예시2 (특수 장비 인게임 정보 실시간 표기)
                   </figcaption>
                 </div>
                 <div>
                   <ImgPrefixed
                     src="/Desc/Tooltip2.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     툴팁 예시3 (장비 옵션)
                   </figcaption>
                 </div>
                 <div>
                   <ImgPrefixed
                     src="/Desc/Tooltip4.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     툴팁 예시4 (도감에서 장비 옵션)
                   </figcaption>
                 </div>
@@ -488,9 +481,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/PlayFabCombatData.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     PlayFab을 통한 전투 데이터 수집
                   </figcaption>
                 </div>
@@ -498,9 +491,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
                 <div>
                   <ImgPrefixed
                     src="/Desc/PlayFabError.png"
-                    className="w-full object-cover rounded border border-slate-200"
+                    className="w-full object-cover rounded border border-gray-200"
                   />
-                  <figcaption className="text-center text-sm text-slate-600 mt-2">
+                  <figcaption className="text-center text-xs text-gray-600 mt-2">
                     PlayFab을 통한 에러 데이터 수집 쿼리
                   </figcaption>
                 </div>

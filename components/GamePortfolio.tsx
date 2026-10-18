@@ -37,7 +37,7 @@ const GamePortfolio = ({ codeAssets }: Props) => {
               className={`flex-1 py-2.5 font-semibold transition border border-b-0
               ${
                 activeTab === tab.id
-                  ? "bg-white text-slate-900 border-gray-300 shadow-[inset_0_3px_0_0_#d97706]"
+                  ? "bg-white text-blue-600 border-gray-300 shadow-[inset_0_3px_0_0_#3b82f6]"
                   : "bg-gray-100 text-gray-600 border-gray-200 hover:bg-gray-200"
               }
               ${index === 0 ? "rounded-tl-lg" : ""}

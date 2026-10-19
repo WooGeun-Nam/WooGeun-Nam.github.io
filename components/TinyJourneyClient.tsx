@@ -32,7 +32,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
   const planSections = [
     { id: "plan-01", tag: "개요 & 필라", title: "프로젝트 개요 및 3대 디자인 필라" },
     { id: "plan-02", tag: "내러티브 룰북", title: "세계관 스토리텔링과 세대 계승 규칙" },
-    { id: "plan-03", tag: "하우징 명세", title: "N×N 하우징 스펙트럼 (방어구 완전 대체)" },
+    { id: "plan-03", tag: "하우징 시스템", title: "마이홈 하우징 시스템 (몸통 방어구 대체)" },
     { id: "plan-04", tag: "액션 피드백", title: "2.5D 레이맨 리깅과 타격 피지컬 규격" },
     { id: "plan-05", tag: "레벨 디자인", title: "절차적 전장 생성 및 지형 위계" },
     { id: "plan-06", tag: "몬스터 명세", title: "프로토타입 몬스터 4종 기획 도감" },
@@ -138,16 +138,16 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 찹쌀떡 소동물이 몸체만 한 인간의 유물을 온몸으로 휘두르는 묵직한 액션
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
-                <span className="font-bold text-blue-900 block mb-1">상냥한 세대 계승</span>
-                0번째 선대 묘비와 선대의 빈집, 17-Part 파츠 분리형 비잔혹 세대교체
+                <span className="font-bold text-blue-900 block mb-1">캐주얼 세대 계승</span>
+                0번째 선대 묘비와 선대의 빈집, 17-Part 파츠 분리형 세대교체 연출
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
-                <span className="font-bold text-blue-900 block mb-1">N×N 하우징 스펙업</span>
-                몸통 방어구를 100% 대체하는 오두막 가구 테트리스 배치 및 영구 스탯 누적
+                <span className="font-bold text-blue-900 block mb-1">마이홈 하우징 스펙업</span>
+                몸통 방어구를 대체하는 마이홈 가구 테트리스 배치 및 영구 스탯 누적
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
                 <span className="font-bold text-blue-900 block mb-1">절차적 지형 위계</span>
-                Wall-First 3단계 파이프라인(지그재그 외벽, 보이드 마감, 안전거리 스폰)
+                탐험 가치를 높이는 절차적 전장 구조와 안전거리 스폰 규칙
               </div>
             </div>
           </section>
@@ -203,7 +203,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200/70 text-xs font-semibold text-blue-600">
-                  타격감 · 물리 피드백 극대화
+                  타격 피드백과 조작감 전달
                 </div>
               </div>
 
@@ -230,12 +230,12 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </div>
                   <h3 className="text-lg font-bold text-gray-900">돌아올 곳이 있다</h3>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                    치열한 토벌 후 마을 자취방으로 복귀. 인간의 쓰레기(병뚜껑, 골무, 성냥갑)로 
-                    만든 가구를 오두막에 배치하는 행위 자체가 영구 방어구 스펙업이 되는 안식처 루프.
+                    토벌 후 마을의 마이홈(집)으로 복귀. 수집한 전리품(고철, 병뚜껑, 목재 등)으로 
+                    제작한 가구를 집에 배치하는 행위 자체가 영구 방어구 스펙업이 되는 안식처 루프.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200/70 text-xs font-semibold text-blue-600">
-                  하우징이 곧 방어구 스펙업
+                  마이홈 하우징과 영구 스탯 누적
                 </div>
               </div>
             </div>
@@ -283,20 +283,20 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               <div className="space-y-4">
                 <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm space-y-2">
                   <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">세대 계승 규칙 1</span>
-                  <h4 className="text-base font-bold text-gray-900">비잔혹·평화적 세대교체</h4>
+                  <h4 className="text-base font-bold text-gray-900">캐주얼한 세대교체 연출</h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                    체력이 0이 되어도 피가 튀는 잔혹한 연출 대신 따뜻한 세피아 톤 암전 후, 
-                    마을 어귀 마차에서 새로운 외형(종족·색상 팔레트 스왑)의 차세대 토벌사가 이사 오는 컷신이 재생됩니다. 
+                    체력이 0이 되어도 잔혹한 연출을 지양하고 차분한 암전 후, 
+                    마을 어귀에서 새로운 외형(종족·색상 팔레트 스왑)의 차세대 토벌사가 부임하는 연출이 이어집니다. 
                     (주인공 캐릭터를 17개 파츠 분리형 도트로 제작한 설계 배경)
                   </p>
                 </div>
 
                 <div className="p-5 rounded-xl border border-blue-200 bg-blue-50/40 shadow-sm space-y-2">
                   <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">세대 계승 규칙 2</span>
-                  <h4 className="text-base font-bold text-blue-950">하우징 자산의 100% 영구 보존</h4>
+                  <h4 className="text-base font-bold text-blue-950">마이홈 가구 자산의 영구 보존</h4>
                   <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                    던전에 들고 간 미정산 가방 전리품은 유실되지만, 자취방에 배치한 모든 가구와 오두막 확장은 영구 보존됩니다. 
-                    새로 부임한 토벌사는 선대가 피땀 흘려 마련한 가구의 스탯 버프를 그대로 물려받아 모험을 이어갑니다.
+                    던전에 들고 간 미정산 가방 전리품은 유실되지만, 마이홈에 이미 배치한 모든 가구와 스탯은 영구 보존됩니다. 
+                    새로 부임한 토벌사는 선대가 배치해 둔 가구의 스탯 효과를 그대로 이어받아 모험을 이어갑니다.
                   </p>
                 </div>
               </div>
@@ -305,24 +305,24 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 03. 코어 루프 & N×N 하우징 스펙업 */}
+          {/* 03. 코어 루프 & 마이홈 하우징 시스템 */}
           <section id="plan-03" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                03 · 코어 루프와 N×N 하우징 스펙업
+                03 · 코어 루프와 마이홈 하우징 시스템
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                코어 루프와 N×N 하우징 스펙트럼 (몸통 방어구 완전 대체)
+                코어 루프와 마이홈 하우징 시스템 (몸통 방어구 대체)
               </h2>
             </header>
 
             {/* 프로세스 흐름도 */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { step: "01", name: "자취방 정비", desc: "가구 배치로 기초 스탯을 확보하고, 출격 전 장비 보험을 세팅합니다." },
-                { step: "02", name: "절차적 숲 토벌", desc: "필드 방을 전멸시키면 보스 및 몬스터 전리품 보따리가 즉시 드랍됩니다." },
-                { step: "03", name: "테트리스 루팅", desc: "10×10 배낭에 다양한 모양의 고철·씨앗 블록을 R키로 회전 패킹합니다." },
-                { step: "04", name: "귀환 & 영구 스펙업", desc: "가구 제작으로 오두막을 확장하고 영구 기초 스탯을 누적합니다." },
+                { step: "01", name: "마이홈 정비", desc: "가구 배치로 기초 스탯을 확보하고, 출격 전 장비를 점검합니다." },
+                { step: "02", name: "절차적 전장 토벌", desc: "필드 방을 공략하고 몬스터 전리품과 자원을 획득합니다." },
+                { step: "03", name: "인벤토리 파밍", desc: "제한된 배낭 그리드에 다양한 모양의 전리품 블록을 효율적으로 패킹합니다." },
+                { step: "04", name: "귀환 & 영구 스펙업", desc: "가구 제작 및 마이홈 배치를 통해 영구 기초 스탯을 누적합니다." },
               ].map((stage, idx) => (
                 <div key={idx} className="relative p-5 rounded-2xl bg-gray-50/70 border border-gray-200 flex flex-col justify-between">
                   <div>
@@ -337,53 +337,41 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               ))}
             </div>
 
+            {/* 하우징 기반 영구 스탯 시스템 기획 방향성 */}
             <div className="space-y-4 pt-2">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-3">
+              <div className="border-b border-gray-200 pb-3">
                 <h3 className="text-lg font-bold text-gray-900">
-                  가구 분류별 영구 스탯 산출 공식 및 기획 의도
+                  하우징 기반 영구 스탯 시스템 기획 방향성
                 </h3>
-                <span className="text-xs text-gray-500 font-mono">
-                  HousingBuffCalculator ↔ PlayerStats
-                </span>
+                <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                  몸통 방어구를 분리하고, 마이홈 가구 배치를 핵심 영구 성장 축으로 설계한 의도
+                </p>
               </div>
 
-              <div className="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
-                <table className="w-full text-left text-xs sm:text-sm divide-y divide-gray-200">
-                  <thead className="bg-gray-50 text-gray-700 font-semibold">
-                    <tr>
-                      <th className="py-3 px-4">가구 분류</th>
-                      <th className="py-3 px-4">대표 아이템 예시</th>
-                      <th className="py-3 px-4">영구 스탯 효과</th>
-                      <th className="py-3 px-4">기획 의도 및 밸런스 역할</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100 bg-white">
-                    <tr className="hover:bg-blue-50/30 transition">
-                      <td className="py-3.5 px-4 font-bold text-gray-900">침구류</td>
-                      <td className="py-3.5 px-4 text-gray-600">풀잎 침대, 이끼 이불</td>
-                      <td className="py-3.5 px-4 font-semibold text-blue-700">최대 HP +5%, 마을 복귀 시 체력 완충</td>
-                      <td className="py-3.5 px-4 text-gray-500 text-xs">생존 안정성 확보 및 복귀 시 회복 포션 비용 절감</td>
-                    </tr>
-                    <tr className="hover:bg-blue-50/30 transition bg-gray-50/30">
-                      <td className="py-3.5 px-4 font-bold text-gray-900">운동 기구</td>
-                      <td className="py-3.5 px-4 text-gray-600">돌 아령, 쳇바퀴 달리기판</td>
-                      <td className="py-3.5 px-4 font-semibold text-blue-700">스태미나 상한 +10, 대시 쿨타임 -0.1s</td>
-                      <td className="py-3.5 px-4 text-gray-500 text-xs">보스전 탄막 회피 빈도 및 조작 기동성 향상</td>
-                    </tr>
-                    <tr className="hover:bg-blue-50/30 transition">
-                      <td className="py-3.5 px-4 font-bold text-gray-900">수납장</td>
-                      <td className="py-3.5 px-4 text-gray-600">도토리 장롱, 버섯 서랍장</td>
-                      <td className="py-3.5 px-4 font-semibold text-blue-700">임시 배낭 그리드 +2칸 확장</td>
-                      <td className="py-3.5 px-4 text-gray-500 text-xs">1회 출격 시 고철·재료 파밍 효율 극대화</td>
-                    </tr>
-                    <tr className="hover:bg-blue-50/30 transition bg-gray-50/30">
-                      <td className="py-3.5 px-4 font-bold text-gray-900">조명 및 트로피</td>
-                      <td className="py-3.5 px-4 text-gray-600">반딧불 유리병, 보스 박제</td>
-                      <td className="py-3.5 px-4 font-semibold text-blue-700">필드 시야 +15%, 상점 할인 보너스</td>
-                      <td className="py-3.5 px-4 text-gray-500 text-xs">암흑 구역 탐색 안정성 및 상위 재화 절약</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div className="grid md:grid-cols-3 gap-5">
+                <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-2.5">
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">01 · 방어구 대체</span>
+                  <h4 className="text-base font-bold text-gray-900">캐릭터 외형과 스탯의 분리</h4>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    착용 장비에 따라 캐릭터의 도트 외형이 가려지거나 어색해지는 문제를 방지하기 위해, 몸통 방어구를 배제하고 가구 배치를 통해 캐릭터의 방어력 및 생존 스탯을 보완하도록 기획했습니다.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-2.5">
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">02 · 영구 보존 자산</span>
+                  <h4 className="text-base font-bold text-gray-900">사망 페널티를 완화하는 영구 버프</h4>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    탐험 중 사망 시 가방의 미정산 전리품은 유실되지만, 마이홈에 이미 배치된 가구의 스탯 효과는 영구 보존됩니다. 이를 통해 반복 플레이와 세대교체 속에서도 지속적인 성취감을 제공합니다.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-2.5">
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">03 · 공간 테트리스 퍼즐</span>
+                  <h4 className="text-base font-bold text-gray-900">그리드 기반 배치 고민 유도</h4>
+                  <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                    단순한 수치 합산에 그치지 않고, 마이홈의 유한한 그리드 공간에 가구를 어떻게 효율적으로 채워 넣을지 고민하게 만드는 인벤토리/공간 테트리스의 재미를 결합하는 방향으로 연구 중입니다.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -423,12 +411,12 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               {/* 물리 피지컬 파라미터 규격 */}
               <div className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-4">
                 <h3 className="font-bold text-blue-950 text-base">
-                  절정의 타격감을 만드는 4대 피드백 파라미터 규격
+                  타격 피드백을 구성하는 4대 파라미터 규격
                 </h3>
                 <dl className="grid grid-cols-[110px_1fr] gap-x-3 gap-y-3 text-xs sm:text-sm">
                   <dt className="font-bold text-blue-900">역경직 (HitStop)</dt>
                   <dd className="text-gray-700">
-                    적중 순간 <code className="font-mono text-blue-700 bg-white px-1 py-0.5 rounded">Time.timeScale = 0.02f</code> (0.09초 정지)로 뼈 때리는 손맛 구현
+                    적중 순간 <code className="font-mono text-blue-700 bg-white px-1 py-0.5 rounded">Time.timeScale = 0.02f</code> (0.09초 정지)로 명확한 적중 피드백 구현
                   </dd>
 
                   <dt className="font-bold text-blue-900">카메라 셰이크</dt>
@@ -452,28 +440,27 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 05. 절차적 전투 필드 & 유기적 지형 구조 */}
+          {/* 05. 절차적 전장 생성 및 레벨 디자인 */}
           <section id="plan-05" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                05 · 절차적 전장 생성 및 지형 위계
+                05 · 절차적 전장 생성 및 레벨 디자인
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                절차적 전장 생성 및 지형 위계
+                절차적 전장 생성 및 레벨 디자인
               </h2>
             </header>
 
             <div className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
               <p>
-                단조롭고 갇힌 느낌을 주는 사각형 방 형태를 벗어나, 자연스러운 암벽과 언덕이 살아 숨 쉬는 전장을 목표로 합니다. 
-                현재 프로토타입은 <strong>96×56 광활한 전장 규격(가상 카메라 직교 뷰 6.5)</strong>을 기준으로 지형 무결성을 철저히 검증하고 있으며, 
-                향후 테마에 맞춰 더욱 넓게 개방되거나 유기적으로 연결되는 복합 필드로 확장될 예정입니다.
+                단조롭고 갇힌 느낌을 주는 단순 사각형 방 구조를 탈피하여, 유저가 탐험할 가치를 느낄 수 있는 유기적인 전장 구조를 목표로 합니다. 
+                절차적 맵 생성 규칙을 통해 지형의 단차와 동선을 유연하게 형성하고, 향후 바이옴 테마에 맞춰 탐험의 재미를 제공할 수 있도록 맵 생성 방식을 지속적으로 연구 및 조정하고 있습니다.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 pt-2">
               <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">생성 파이프라인</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">지형 생성 규칙</span>
                 <h3 className="font-bold text-gray-900 text-base">Wall-First 3단계 순행 생성 파이프라인</h3>
                 <div className="space-y-2.5 text-xs sm:text-sm text-gray-600">
                   <div className="flex gap-2">
@@ -482,24 +469,24 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </div>
                   <div className="flex gap-2">
                     <span className="font-bold text-blue-600 shrink-0">2.</span>
-                    <span><strong>바닥 타일링 &amp; 암흑 보이드:</strong> 외벽 내부 보행 구역만 타일링하고 외곽은 칠흑 공허(#050508)로 마감해 약 3,500타일 드로우콜 절감</span>
+                    <span><strong>보행 구역 타일링:</strong> 외벽 내부 보행 구역만 타일링하고 외곽은 보이드로 마감하여 렌더링 부하 최소화</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="font-bold text-blue-600 shrink-0">3.</span>
-                    <span><strong>안전거리 스폰:</strong> 플레이어 시작점으로부터 12타일 안전 반경 밖 유효 바닥에서만 몬스터와 오브젝트 분산 배치</span>
+                    <span><strong>안전거리 스폰:</strong> 플레이어 시작점으로부터 안전 반경 밖 유효 바닥에서만 몬스터와 오브젝트 분산 배치</span>
                   </div>
                 </div>
               </div>
 
               <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">입체 렌더링 솔루션</span>
-                <h3 className="font-bold text-gray-900 text-base">2.5D 남쪽 절벽 턱 전면 분리 렌더링</h3>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">레벨 디자인 의도</span>
+                <h3 className="font-bold text-gray-900 text-base">탐험 가치와 안전 동선 확보</h3>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  탑뷰 2.5D 환경에서 남쪽 벽 뒤로 걸어갈 때 플레이어 전신이 벽 위에 붕 떠 보이는 이질감을 해결하기 위해, 
-                  남쪽 절벽 턱을 전면 타일맵(<code className="font-mono text-blue-700 bg-white px-1.5 py-0.5 rounded border border-gray-200">Wall_Front_Tilemap</code>, SortingOrder: 10005)으로 분리했습니다.
+                  방 진입 직후의 불합리한 기습 피격을 방지하기 위해 플레이어 시작 위치를 기준으로 안전 반경을 확보하며, 
+                  지형의 굴곡과 단차를 통해 자연스러운 전투 구역과 회피 공간이 형성되도록 유도합니다.
                 </p>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  플레이어의 발끝과 하체만 절벽 턱 뒤로 가려지며, Custom Physics Shape 콜라이더와 정확히 맞물려 자연스러운 공간 깊이감을 완성합니다.
+                  반복적인 플레이에서도 예측하기 어려운 탐험의 긴장감을 유지하면서, 조작과 전략이 개입할 수 있는 필드 환경을 구축하는 것이 핵심 기획 목표입니다.
                 </p>
               </div>
             </div>
@@ -840,7 +827,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </p>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mt-3">
                     남쪽 절벽 턱을 전면 타일맵(SortingOrder: 10005)으로 분리하여 캐릭터의 발끝과 하체만 자연스럽게 가려지도록 처리하고, 
-                    <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Custom Physics Shape</code>를 통해 접지선에서 물리 이동이 정확히 멈추도록 구현했습니다.
+                    <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Custom Physics Shape</code>를 통해 접지선에서 물리 이동이 정확히 멈추도록 구현했습니다. 
+                    더불어 Cinemachine 가상 카메라의 직교 뷰(Orthographic Size: 6.5)를 2.5D 타일맵 규격에 정밀하게 튜닝하여 픽셀 왜곡 없는 안정적인 시야각과 깊이감을 완성했습니다.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200 text-xs font-semibold text-blue-600">

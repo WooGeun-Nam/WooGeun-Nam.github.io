@@ -32,33 +32,30 @@ const GamePortfolio = ({ codeAssets, initialTab = "plan" }: Props) => {
   };
 
   const tabs = [
-    { id: "plan", label: "기획서 (Game Design Document)" },
-    { id: "tech", label: "기술서 (Engineering & Architecture)" },
-    { id: "deploy", label: "배포 (Deployment & Builds)" },
-    { id: "devlog", label: "개발일지 (Changelog)" },
+    { id: "plan", label: "기획서" },
+    { id: "tech", label: "기술서" },
+    { id: "deploy", label: "배포" },
+    { id: "devlog", label: "개발일지" },
   ] as const;
 
   return (
     <div className="w-full space-y-8">
-      {/* 탭 바: TinyJourney와 완벽히 통일된 모던 언더라인 탭 */}
-      <nav className="border-b border-zinc-200">
-        <div className="flex gap-6 sm:gap-8 overflow-x-auto scrollbar-none">
+      {/* 탭 네비게이션: 가로 스크롤 없이 4등분 균등 배치 + 블루 키컬러 */}
+      <nav className="w-full border-b border-gray-200">
+        <div className="grid grid-cols-4 w-full text-center">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
                 onClick={() => handleTabChange(tab.id)}
-                className={`pb-3 text-sm sm:text-base font-semibold transition-all relative shrink-0 ${
+                className={`py-3.5 text-sm sm:text-base font-bold transition-all relative ${
                   isActive
-                    ? "text-zinc-950"
-                    : "text-zinc-400 hover:text-zinc-700"
+                    ? "text-blue-600 border-b-2 border-blue-500 bg-blue-50/40"
+                    : "text-gray-500 hover:text-gray-900 hover:bg-gray-50/60"
                 }`}
               >
                 {tab.label}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-zinc-950 rounded-full" />
-                )}
               </button>
             );
           })}

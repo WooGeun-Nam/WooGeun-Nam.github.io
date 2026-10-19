@@ -1,4 +1,4 @@
-import GamePortfolio from "../../../components/GamePortfolio";
+import GamePortfolio, { RogueTowerTab } from "../../../components/GamePortfolio";
 import ImgPrefixed from "../../../components/ImgPrefixed";
 
 const SOURCES = [
@@ -85,13 +85,16 @@ const SOURCES = [
 ] as const;
 
 async function fetchRaw(url: string) {
-  // 정적 빌드가 가능하도록 기본 캐시(또는 force-cache)로 호출
   const res = await fetch(url, { cache: "force-cache" });
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   return res.text();
 }
 
-export default async function RogueTowerPage() {
+interface RogueTowerPageProps {
+  initialTab?: RogueTowerTab;
+}
+
+export default async function RogueTowerPage({ initialTab = "plan" }: RogueTowerPageProps) {
   const entries = await Promise.all(
     SOURCES.map(async ({ key, url }) => {
       const full = await fetchRaw(url);
@@ -102,58 +105,77 @@ export default async function RogueTowerPage() {
   const codeAssets = Object.fromEntries(entries) as Record<string, string>;
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-16 space-y-12">
-      {/* 상단: 소개 이미지 / 기본 정보 */}
-      <section className="grid gap-8 md:grid-cols-2 items-stretch">
-        {/* 메인 미리보기 */}
-        <div className="rounded-xl overflow-hidden shadow-sm">
-          <ImgPrefixed
-            src="/SiteLogo.png"
-            alt="RogueTower 메인"
-            className="w-full h-full object-cover"
-          />
-        </div>
+    <main className="mx-auto max-w-5xl px-4 sm:px-6 py-12 space-y-12 text-zinc-900 font-sans antialiased">
+      {/* ===================================================================== */}
+      {/* 1. 상단 히어로: TinyJourney와 통일된 미니멀 테크 헤더 & 메타 스펙 */}
+      {/* ===================================================================== */}
+      <header className="space-y-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          {/* 대표 썸네일 */}
+          <div className="relative w-44 h-44 rounded-2xl bg-zinc-100 border border-zinc-200/80 overflow-hidden shrink-0 shadow-sm flex items-center justify-center">
+            <ImgPrefixed
+              src="/SiteLogo.png"
+              alt="RogueTower 메인 로고"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-        {/* 정보 + 버튼 */}
-        <div className="flex flex-col justify-between">
-          <div>
-            <h1 className="text-4xl font-bold underline decoration-blue-500 underline-offset-8">
+          {/* 타이틀 및 핵심 소개 */}
+          <div className="flex-1 space-y-3 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-xs font-mono text-zinc-700">
+              <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+              SHIPPED · PC RELEASE (ITCH.IO)
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-950">
               RogueTower
             </h1>
+            <p className="text-base sm:text-lg text-zinc-600 font-medium">
+              절차적 맵 생성 및 데이터 드리븐 밸런싱의 3D 타워 디펜스
+            </p>
+            <p className="text-sm text-zinc-600 leading-relaxed max-w-2xl">
+              매 판 무작위로 생성되는 9×16 타일맵 경로 위에서 6종의 타워와 장비를 조합해 20웨이브를 방어하는 전략 디펜스 게임입니다. 
+              수식 기반 맵 난이도 평가 시스템과 PlayFab 텔레메트리 로그 지표 분석을 통해 픽률 편중 문제를 정량적으로 해결했습니다.
+            </p>
 
-            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-6 text-gray-800 mt-8">
-              <dt className="font-semibold text-gray-600">ROLE</dt>
-              <dd>기획, 개발, 디자인</dd>
-
-              <dt className="font-semibold text-gray-600">DURATION</dt>
-              <dd>2024.10 ~ 2025.08</dd>
-
-              <dt className="font-semibold text-gray-600">TEAM</dt>
-              <dd>1인 개발</dd>
-
-              <dt className="font-semibold text-gray-600">PLATFORM</dt>
-              <dd>PC</dd>
-            </dl>
-          </div>
-
-          <div className="mt-6 flex gap-4">
-            <a
-              href="https://github.com/WooGeun-Nam/RogueTower-Code"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold
-                   bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:outline-none
-                   focus-visible:ring-2 focus-visible:ring-blue-300"
-            >
-              GitHub Source
-            </a>
+            <div className="pt-2">
+              <a
+                href="https://github.com/WooGeun-Nam/RogueTower-Code"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white text-xs sm:text-sm font-semibold transition"
+              >
+                GitHub Source Code →
+              </a>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* 하단 상세 섹션 */}
-      <section className="pt-8">
-        <GamePortfolio codeAssets={codeAssets} />
+        {/* 메타 스펙 바 (Linear 스타일 4열 그리드) */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 border-y border-zinc-200/80 text-xs sm:text-sm">
+          <div>
+            <dt className="text-zinc-400 font-mono text-[11px] uppercase tracking-wider">Role</dt>
+            <dd className="font-semibold text-zinc-800 mt-0.5">기획 · 클라이언트 · 그래픽</dd>
+          </div>
+          <div>
+            <dt className="text-zinc-400 font-mono text-[11px] uppercase tracking-wider">Timeline</dt>
+            <dd className="font-semibold text-zinc-800 mt-0.5">2024.10 ~ 2025.08 (1인 개발)</dd>
+          </div>
+          <div>
+            <dt className="text-zinc-400 font-mono text-[11px] uppercase tracking-wider">Genre</dt>
+            <dd className="font-semibold text-zinc-800 mt-0.5">3D 타워 디펜스 · 로그라이크</dd>
+          </div>
+          <div>
+            <dt className="text-zinc-400 font-mono text-[11px] uppercase tracking-wider">Platform</dt>
+            <dd className="font-semibold text-zinc-800 mt-0.5">PC (Unity · Itch.io 배포)</dd>
+          </div>
+        </div>
+      </header>
+
+      {/* ===================================================================== */}
+      {/* 2. 하단 탭 콘텐츠: GamePortfolio */}
+      {/* ===================================================================== */}
+      <section>
+        <GamePortfolio codeAssets={codeAssets} initialTab={initialTab} />
       </section>
     </main>
   );

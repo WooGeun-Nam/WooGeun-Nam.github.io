@@ -47,57 +47,49 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
   ];
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-14 space-y-10 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+    <main className="mx-auto max-w-6xl px-4 py-16 space-y-12 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
       {/* ===================================================================== */}
-      {/* 1. 상단 메타 헤더 (사이트 기본 규격 및 Others 프로젝트와 100% 일치) */}
+      {/* 1. 상단 메타 헤더 (RogueTower 및 Others 프로젝트와 100% 동일한 규격) */}
       {/* ===================================================================== */}
       <section className="grid gap-8 md:grid-cols-2 items-stretch">
-        <div className="rounded-2xl overflow-hidden shadow-sm flex flex-col items-center justify-center p-8 bg-gradient-to-b from-gray-50 to-gray-100/70 border border-gray-200">
+        <div className="rounded-xl overflow-hidden shadow-sm flex items-center justify-center bg-gray-50 border border-gray-200 min-h-[220px]">
           <ImgPrefixed
             src="/TinyJourney/CatSide.png"
-            alt="TinyJourney 토벌사 베이스 캐릭터"
-            className="w-36 h-36 [image-rendering:pixelated] object-contain drop-shadow transition-transform duration-300 hover:scale-105"
+            alt="TinyJourney 썸네일"
+            className="w-44 h-44 [image-rendering:pixelated] object-contain"
           />
-          <p className="text-xs text-gray-500 mt-4 text-center font-medium">
-            17-Part 파츠 분리형 베이스 캐릭터 · 세대 계승 및 외형 교체 지원
-          </p>
         </div>
 
-        <div className="flex flex-col justify-between py-1">
+        <div className="flex flex-col justify-between">
           <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-700 tracking-wide uppercase">
-                Prototype Active
-              </span>
-              <span className="text-xs text-gray-400">·</span>
-              <span className="text-xs text-gray-500 font-medium">Steam PC Targeted</span>
-            </div>
-            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 underline decoration-blue-500 underline-offset-8">
-              TinyJourney <span className="text-xl sm:text-2xl font-medium text-gray-400">(가제)</span>
+            <h1 className="text-4xl font-bold underline decoration-blue-500 underline-offset-8">
+              TinyJourney <span className="text-2xl font-normal text-gray-400">(가제)</span>
             </h1>
             <p className="text-sm sm:text-[15px] text-gray-600 mt-3 font-medium">
-              부제 : 털뭉치 토벌대의 본격 생계형 토벌 일지 <span className="text-gray-400">(Tiny Paws, Heavy Hits)</span>
+              털뭉치 토벌대의 생계형 토벌 일지 (2D 탑뷰 액션 RPG + 파밍/하우징)
             </p>
 
-            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-3 text-gray-800 mt-6 text-sm sm:text-[15px]">
-              <dt className="font-semibold text-gray-500 text-xs tracking-wider uppercase pt-0.5">ROLE</dt>
-              <dd className="font-medium text-gray-900">기획, 클라이언트 프로그래밍, 도트 그래픽 (1인 개발)</dd>
+            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]">
+              <dt className="font-semibold text-gray-600">ROLE</dt>
+              <dd>기획, 클라이언트 개발, 그래픽</dd>
 
-              <dt className="font-semibold text-gray-500 text-xs tracking-wider uppercase pt-0.5">DURATION</dt>
-              <dd className="font-medium text-gray-900">2026.03 ~ 진행 중 (프로토타입 개발)</dd>
+              <dt className="font-semibold text-gray-600">DURATION</dt>
+              <dd>2026.10 ~ 진행 중</dd>
 
-              <dt className="font-semibold text-gray-500 text-xs tracking-wider uppercase pt-0.5">PLATFORM</dt>
-              <dd className="font-medium text-gray-900">PC (Unity 6 · 2D URP · C# · Steam 타깃)</dd>
+              <dt className="font-semibold text-gray-600">TEAM</dt>
+              <dd>1인 개발</dd>
 
-              <dt className="font-semibold text-gray-500 text-xs tracking-wider uppercase pt-0.5">CORE TECH</dt>
-              <dd className="font-medium text-gray-900">MasterData Pipeline, 2.5D Rigging, Netcode NGO, Strategy AI</dd>
+              <dt className="font-semibold text-gray-600">PLATFORM</dt>
+              <dd>PC (Windows · Steam 타깃)</dd>
             </dl>
           </div>
 
-          <div className="pt-4 border-t border-gray-150">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold text-blue-800 bg-blue-50/80 px-3 py-1.5 rounded-lg border border-blue-200/70">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              핵심 프로토타입 11개 스텝 구현 완료 · 시스템 고도화 진행 중
+          <div className="mt-6 flex flex-wrap gap-4">
+            <span
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold
+                         bg-blue-100 text-blue-800"
+            >
+              프로토타입 개발 중
             </span>
           </div>
         </div>
@@ -220,7 +212,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <div className="w-8 h-8 rounded-lg bg-gray-800 text-white flex items-center justify-center font-bold text-sm mb-4 shadow-sm">
                     2
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900">내 손으로 벼린다</h3>
+                  <h3 className="text-lg font-bold text-gray-900">직접 수집하고 만든다</h3>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
                     필드에서 주워 온 몬스터 전리품과 고철을 모아 무기를 직접 제작·개조. 
                     단순 스탯 뻥튀기 대신 타격 범위와 조작감의 명확한 확장을 체감하는 파밍 구조.

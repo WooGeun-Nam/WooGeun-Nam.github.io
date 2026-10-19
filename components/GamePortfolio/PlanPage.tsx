@@ -366,68 +366,68 @@ const PlanPage = ({ onTabChange }: Props) => {
               <thead className="bg-gray-50 text-gray-700 font-semibold">
                 <tr>
                   <th className="py-3 px-4">난이도 구간</th>
-                  <th className="py-3 px-4 text-center">일반</th>
-                  <th className="py-3 px-4 text-center">고급</th>
-                  <th className="py-3 px-4 text-center">희귀</th>
-                  <th className="py-3 px-4 text-center text-purple-700">서사</th>
-                  <th className="py-3 px-4 text-center text-blue-700">전설</th>
+                  <th className="py-3 px-4 text-center text-gray-600">일반</th>
+                  <th className="py-3 px-4 text-center text-emerald-600">고급</th>
+                  <th className="py-3 px-4 text-center text-blue-600">희귀</th>
+                  <th className="py-3 px-4 text-center text-purple-600">서사</th>
+                  <th className="py-3 px-4 text-center text-amber-600">전설</th>
                   <th className="py-3 px-4">구간별 설계 의도</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100 bg-white">
-                <tr className="hover:bg-blue-50/20 transition">
+                <tr className="hover:bg-gray-50/50 transition">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 0</td>
                   <td className="py-3 px-4 text-center text-gray-600">70%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">25%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">5%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">25%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">5%</td>
                   <td className="py-3 px-4 text-center text-gray-300">0%</td>
                   <td className="py-3 px-4 text-center text-gray-300">0%</td>
                   <td className="py-3 px-4 text-gray-500 text-xs">초반 기초 장비 세팅 구간</td>
                 </tr>
-                <tr className="hover:bg-blue-50/20 transition bg-purple-50/20">
+                <tr className="hover:bg-purple-50/30 transition bg-purple-50/20">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 20</td>
                   <td className="py-3 px-4 text-center text-gray-600">50%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">32%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">15%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">32%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">15%</td>
                   <td className="py-3 px-4 text-center font-bold text-purple-700">3% (최초 해금)</td>
                   <td className="py-3 px-4 text-center text-gray-300">0%</td>
                   <td className="py-3 px-4 text-purple-900 text-xs font-medium">1차 목표: 서사 등급 드랍 풀 개방</td>
                 </tr>
-                <tr className="hover:bg-blue-50/20 transition">
+                <tr className="hover:bg-gray-50/50 transition">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 40</td>
                   <td className="py-3 px-4 text-center text-gray-600">35%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">35%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">22%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">35%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">22%</td>
                   <td className="py-3 px-4 text-center font-semibold text-purple-700">8%</td>
                   <td className="py-3 px-4 text-center text-gray-300">0%</td>
                   <td className="py-3 px-4 text-gray-500 text-xs">중반 성장: 고급·희귀 장비 비중 확대</td>
                 </tr>
-                <tr className="hover:bg-blue-50/20 transition bg-blue-50/30">
+                <tr className="hover:bg-amber-50/30 transition bg-amber-50/20">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 60</td>
                   <td className="py-3 px-4 text-center text-gray-600">20%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">30%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">30%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">30%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">30%</td>
                   <td className="py-3 px-4 text-center font-semibold text-purple-700">15%</td>
-                  <td className="py-3 px-4 text-center font-bold text-blue-700">5% (최초 해금)</td>
-                  <td className="py-3 px-4 text-blue-900 text-xs font-medium">2차 목표: 전설 등급 드랍 풀 개방</td>
+                  <td className="py-3 px-4 text-center font-bold text-amber-600">5% (최초 해금)</td>
+                  <td className="py-3 px-4 text-amber-900 text-xs font-medium">2차 목표: 전설 등급 드랍 풀 개방</td>
                 </tr>
-                <tr className="hover:bg-blue-50/20 transition">
+                <tr className="hover:bg-gray-50/50 transition">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 80</td>
                   <td className="py-3 px-4 text-center text-gray-600">10%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">20%</td>
-                  <td className="py-3 px-4 text-center text-gray-600">35%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">20%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">35%</td>
                   <td className="py-3 px-4 text-center font-semibold text-purple-700">25%</td>
-                  <td className="py-3 px-4 text-center font-semibold text-blue-700">10%</td>
+                  <td className="py-3 px-4 text-center font-semibold text-amber-600">10%</td>
                   <td className="py-3 px-4 text-gray-500 text-xs">후반 안정화: 희귀 이상 확률 70% 보장</td>
                 </tr>
-                <tr className="hover:bg-blue-50/20 transition bg-blue-100/40">
+                <tr className="hover:bg-amber-100/40 transition bg-amber-50/30">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 100</td>
                   <td className="py-3 px-4 text-center text-red-600 font-bold">0% (완전 배제)</td>
-                  <td className="py-3 px-4 text-center text-gray-700">15%</td>
-                  <td className="py-3 px-4 text-center text-gray-700">35%</td>
+                  <td className="py-3 px-4 text-center text-emerald-700 font-medium">15%</td>
+                  <td className="py-3 px-4 text-center text-blue-700 font-medium">35%</td>
                   <td className="py-3 px-4 text-center text-purple-700 font-bold">30%</td>
-                  <td className="py-3 px-4 text-center text-blue-700 font-bold">20%</td>
-                  <td className="py-3 px-4 text-blue-950 font-bold text-xs">최종 엔드 파밍: 일반 장비 소멸 &amp; 무한모드 개방</td>
+                  <td className="py-3 px-4 text-center text-amber-600 font-bold">20%</td>
+                  <td className="py-3 px-4 text-amber-950 font-bold text-xs">최종 엔드 파밍: 일반 장비 소멸 &amp; 무한모드 개방</td>
                 </tr>
               </tbody>
             </table>

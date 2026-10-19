@@ -467,7 +467,7 @@ export default function PortfolioHome() {
                   TinyJourney (2D 탑뷰 액션 RPG + 파밍/하우징, Unity, 개인 프로젝트 · 진행 중)
                 </h5>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                  <li>개발 기간 : 2026.03 ~ 진행 중</li>
+                  <li>개발 기간 : 2026.10 ~ 진행 중</li>
                   <li>
                     익스트랙션 테트리스 루팅, 방어구를 대체하는 N×N 하우징 스펙업 및 세대 계승 내러티브 루프 설계
                   </li>

@@ -23,24 +23,39 @@ const PlanPage = ({ onTabChange }: Props) => {
 
   return (
     <article className="space-y-16 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
-      {/* GDD 명세서 메타 헤더 */}
-      <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 flex flex-wrap items-center justify-between gap-3 text-xs">
-        <div className="flex items-center gap-3">
-          <span className="px-2 py-0.5 font-mono font-bold bg-gray-200 text-gray-800 rounded">DOC: GDD-RT-01</span>
-          <span className="font-medium text-gray-600">Category: System, Combat &amp; Mathematical Balancing</span>
+      {/* 기획 부문 핵심 요약 카드 */}
+      <section className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-3">
+        <div className="flex items-center justify-between border-b border-blue-200/70 pb-2.5">
+          <h3 className="font-bold text-blue-950 text-base">기획 핵심 요약</h3>
+          <span className="text-xs font-semibold text-blue-700 bg-white px-2.5 py-1 rounded-full border border-blue-200">
+            시스템 기획 &amp; 밸런스 설계
+          </span>
         </div>
-        <div className="flex items-center gap-2 text-gray-500">
-          <span>Status: <strong className="text-emerald-600">PC Windows Beta Tested</strong></span>
-          <span>·</span>
-          <span>Scope: Core Loop, Towers, Map Math, Drop Budget, Telemetry Postmortem</span>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
+          <div className="p-3 rounded-xl bg-white border border-blue-150">
+            <span className="font-bold text-blue-900 block mb-1">코어 루프 기획</span>
+            단기 랜덤 변동성(첫 웨이브 특성)과 장기 가중치 파밍을 결합해 빌드 고착화 해소
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-blue-150">
+            <span className="font-bold text-blue-900 block mb-1">타워 상성 분리</span>
+            단일 타워 도배를 차단하기 위해 6종 타워 역할군(단일·다중, 물리·마법) 분리
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-blue-150">
+            <span className="font-bold text-blue-900 block mb-1">난이도 정량화</span>
+            지형 3요소(50/8/5) 가중치 수식으로 유불리를 보정하고 0~100 드랍 곡선 설계
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-blue-150">
+            <span className="font-bold text-blue-900 block mb-1">데이터 포스트모템</span>
+            PlayFab 전투 로그 분석으로 과점 타워(궁수 29% ➔ 20%) 픽률 정상화
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* ===================================================================== */}
       {/* 1. 미니 인덱스 바 */}
       {/* ===================================================================== */}
       <div className="flex flex-wrap items-center gap-2 pb-2 border-b border-gray-200/70 text-xs sm:text-[13px]">
-        <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">SECTION</span>
+        <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">목차</span>
         {tocItems.map((item, idx) => (
           <a
             key={item.id}
@@ -58,8 +73,8 @@ const PlanPage = ({ onTabChange }: Props) => {
       {/* ===================================================================== */}
       <section id="section-overview" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-            1.0 CORE LOOP &amp; DESIGN INTENT
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            01 · 게임 개요 및 코어 루프
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             게임 개요 및 4단계 순환 코어 루프
@@ -168,12 +183,12 @@ const PlanPage = ({ onTabChange }: Props) => {
       {/* 02. 핵심 시스템 및 밸런스 설계 */}
       {/* ===================================================================== */}
       <section id="section-systems" className="scroll-mt-14 space-y-6">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Section 02 · Systems &amp; Balancing
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            02 · 핵심 시스템 및 밸런스 설계
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            타워 아키텍처 및 밸런스 설계
+            타워 시스템 및 밸런스 설계
           </h2>
         </header>
 
@@ -437,9 +452,9 @@ const PlanPage = ({ onTabChange }: Props) => {
       {/* 03. 무한모드 엔드 콘텐츠 */}
       {/* ===================================================================== */}
       <section id="section-infinity" className="scroll-mt-14 space-y-6">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Section 03 · Endgame Infinity Mode
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            03 · 무한모드 엔드 콘텐츠
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             무한모드 엔드 콘텐츠 및 글로벌 리더보드
@@ -497,9 +512,9 @@ const PlanPage = ({ onTabChange }: Props) => {
       {/* 04. 데이터 기반 포스트모템 */}
       {/* ===================================================================== */}
       <section id="section-postmortem" className="scroll-mt-14 space-y-6">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Section 04 · Data-Driven Balancing
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            04 · 데이터 기반 포스트모템
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             PlayFab 텔레메트리 기반 밸런싱 포스트모템
@@ -610,9 +625,9 @@ const PlanPage = ({ onTabChange }: Props) => {
       {/* 05. 픽셀 아트 및 게임 사운드 */}
       {/* ===================================================================== */}
       <section id="section-art-audio" className="scroll-mt-14 space-y-6">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Section 05 · Pixel Art &amp; Audio
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            05 · 픽셀 아트 및 게임 사운드
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             1인 제작 픽셀 아트 및 오리지널 BGM

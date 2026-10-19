@@ -45,24 +45,39 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
 
   return (
     <article className="space-y-16 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
-      {/* Tech Whitepaper 문서 메타 헤더 */}
-      <div className="p-4 rounded-xl bg-gray-900 text-white flex flex-wrap items-center justify-between gap-3 text-xs shadow-sm font-mono">
-        <div className="flex items-center gap-3">
-          <span className="px-2 py-0.5 font-bold bg-blue-600 text-white rounded">SPEC: ENG-RT-01</span>
-          <span className="text-gray-300">Engine: Unity (C#) · PC Windows</span>
+      {/* 기술 부문 핵심 요약 카드 */}
+      <section className="p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-3">
+        <div className="flex items-center justify-between border-b border-gray-200 pb-2.5">
+          <h3 className="font-bold text-gray-900 text-base">기술 핵심 요약</h3>
+          <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
+            클라이언트 아키텍처 &amp; 최적화
+          </span>
         </div>
-        <div className="flex items-center gap-2 text-gray-400">
-          <span>Profiling: <strong className="text-emerald-400">Zero-GC / 175 FPS Defense</strong></span>
-          <span>·</span>
-          <span>Architecture: State Pattern / Event-Driven UI / PlayFab BaaS</span>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
+          <div className="p-3 rounded-xl bg-white border border-gray-200">
+            <span className="font-bold text-gray-900 block mb-1">성능 및 프레임 방어</span>
+            제네릭 ObjectPool 기반 100개 투사체 동시 교전 175 FPS 방어 및 GC 할당 제로화
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-gray-200">
+            <span className="font-bold text-gray-900 block mb-1">모듈형 상태 머신</span>
+            State 패턴으로 타워 탐색/공격 분리 및 UIEventManager 이벤트 버스로 결합도 0% 달성
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-gray-200">
+            <span className="font-bold text-gray-900 block mb-1">절차적 생성 알고리즘</span>
+            DFS 백트래킹 기반 유효 경로 검증 및 테마별 타일맵 동적 빌드 파이프라인
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-gray-200">
+            <span className="font-bold text-gray-900 block mb-1">라이브 인프라 연동</span>
+            PlayFab 텔레메트리 세션 로그 쿼리 및 XOR 로컬 세이브 암호화·마이그레이션
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* ===================================================================== */}
       {/* 1. 미니 인덱스 바 */}
       {/* ===================================================================== */}
       <div className="flex flex-wrap items-center gap-2 pb-2 border-b border-gray-200/70 text-xs sm:text-[13px]">
-        <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">SECTION</span>
+        <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">목차</span>
         {techToc.map((item, idx) => (
           <a
             key={item.id}
@@ -80,8 +95,8 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       {/* ===================================================================== */}
       <section id="tech-env" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-            ENGINEERING SPEC 01 · TECH STACK &amp; PHILOSOPHY
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            01 · 개발 환경 및 설계 철학
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             개발 환경 및 3대 설계 원칙
@@ -138,9 +153,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       {/* 02. 모듈형 아키텍처 및 주요 성과 */}
       {/* ===================================================================== */}
       <section id="tech-architecture" className="scroll-mt-14 space-y-6">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Architecture 02 · Engineering Metrics
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            02 · 모듈형 아키텍처 및 주요 성과
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             모듈형 아키텍처 및 정량적 엔지니어링 성과
@@ -150,7 +165,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
         <div className="grid md:grid-cols-2 gap-6 items-stretch">
           <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 flex flex-col justify-between">
             <div className="space-y-3">
-              <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Core Structure</span>
+              <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">핵심 설계 구조</span>
               <h3 className="font-bold text-gray-900 text-base">디커플링 기반 모듈형 설계</h3>
               <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                 모듈형 구조와 이벤트 기반 설계를 통해 게임 로직과 UI 간의 결합도를 0%로 분리했습니다. 
@@ -165,7 +180,7 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
 
           <div className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 flex flex-col justify-between">
             <div className="space-y-3">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Quantified Results</span>
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">측정 지표</span>
               <h3 className="font-bold text-blue-950 text-base">측정된 정량적 성과 지표</h3>
               <ul className="space-y-2 text-xs sm:text-sm text-gray-700 leading-relaxed">
                 <li className="flex items-start gap-2">
@@ -207,9 +222,9 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
       {/* 03. 핵심 기술 구현 및 코드 스니펫 */}
       {/* ===================================================================== */}
       <section id="tech-details" className="scroll-mt-14 space-y-10">
-        <header className="space-y-2">
-          <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-            Architecture 03 · Deep Dive &amp; Codebases
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            03 · 핵심 기술 구현 및 소스 코드
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             핵심 기술 구현 및 실제 소스 코드

@@ -104,33 +104,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
       </section>
 
       {/* ===================================================================== */}
-      {/* ⚡ 채용담당자용 10초 핵심 성과 메트릭 바 (Top 4 Metrics) */}
-      {/* ===================================================================== */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
-          <span className="text-xl sm:text-2xl font-black text-blue-600 font-mono">0.6s</span>
-          <p className="text-xs font-bold text-gray-800 mt-1">엑셀 직렬화 파이프라인</p>
-          <p className="text-[11px] text-gray-500 mt-0.5">6개 시트 자동 SO 에셋 변환</p>
-        </div>
-        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
-          <span className="text-xl sm:text-2xl font-black text-gray-900 font-mono">100%</span>
-          <p className="text-xs font-bold text-gray-800 mt-1">하우징 = 방어구 스펙업</p>
-          <p className="text-[11px] text-gray-500 mt-0.5">N×N 가구 배치로 스탯 대체</p>
-        </div>
-        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
-          <span className="text-xl sm:text-2xl font-black text-blue-600 font-mono">17-Part</span>
-          <p className="text-xs font-bold text-gray-800 mt-1">2.5D 레이맨 모듈러 리깅</p>
-          <p className="text-[11px] text-gray-500 mt-0.5">세대 계승 팔레트 스왑 완벽 지원</p>
-        </div>
-        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
-          <span className="text-xl sm:text-2xl font-black text-gray-900 font-mono">~3,500</span>
-          <p className="text-xs font-bold text-gray-800 mt-1">드로우콜 절감 (Tiles)</p>
-          <p className="text-[11px] text-gray-500 mt-0.5">외곽 암흑 보이드 마감 처리</p>
-        </div>
-      </section>
-
-      {/* ===================================================================== */}
-      {/* 2. 탭 네비게이션: 가로 스크롤 없는 2등분 균등 배치 + 서브 타이틀 */}
+      {/* 2. 탭 바: 가로 스크롤 없는 2등분 균등 배치 */}
       {/* ===================================================================== */}
       <nav className="w-full border-b border-gray-200">
         <div className="grid grid-cols-2 w-full text-center">
@@ -140,16 +114,13 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               <button
                 key={tab.id}
                 onClick={() => handleTabChange(tab.id)}
-                className={`py-3.5 px-2 transition-all relative ${
+                className={`py-3.5 text-sm sm:text-base font-bold transition-all relative ${
                   isActive
                     ? "text-blue-600 border-b-2 border-blue-500 bg-blue-50/40"
                     : "text-gray-500 hover:text-gray-900 hover:bg-gray-50/60"
                 }`}
               >
-                <span className="text-sm sm:text-base font-bold block">{tab.label}</span>
-                <span className="text-[11px] text-gray-400 font-normal hidden sm:block">
-                  {tab.id === "plan" ? "기획자 공고 저격 · 시스템 명세서(GDD)" : "프로그래머 공고 저격 · 엔지니어링 백서"}
-                </span>
+                {tab.label}
               </button>
             );
           })}
@@ -157,26 +128,41 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
       </nav>
 
       {/* ===================================================================== */}
-      {/* TAB 1: 기획서 (정통 게임 기획 명세서 GDD 형식 · 기획자 공고 저격) */}
+      {/* TAB 1: 기획서 */}
       {/* ===================================================================== */}
       {activeTab === "plan" && (
         <article className="space-y-16">
-          {/* GDD 문서 메타 헤더 */}
-          <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 flex flex-wrap items-center justify-between gap-3 text-xs">
-            <div className="flex items-center gap-3">
-              <span className="px-2 py-0.5 font-mono font-bold bg-gray-200 text-gray-800 rounded">DOC: GDD-TJ-01</span>
-              <span className="font-medium text-gray-600">Category: System &amp; Combat Design</span>
+          {/* 기획 부문 핵심 요약 카드 */}
+          <section className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-3">
+            <div className="flex items-center justify-between border-b border-blue-200/70 pb-2.5">
+              <h3 className="font-bold text-blue-950 text-base">기획 핵심 요약</h3>
+              <span className="text-xs font-semibold text-blue-700 bg-white px-2.5 py-1 rounded-full border border-blue-200">
+                게임 기획 &amp; 시스템 설계
+              </span>
             </div>
-            <div className="flex items-center gap-2 text-gray-500">
-              <span>Status: <strong className="text-emerald-600">Prototype Validated</strong></span>
-              <span>·</span>
-              <span>Scope: Core Loop, Housing, Level, Bestiary</span>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
+              <div className="p-3 rounded-xl bg-white border border-blue-150">
+                <span className="font-bold text-blue-900 block mb-1">코어 갭 모에 감성</span>
+                찹쌀떡 소동물이 몸체만 한 인간의 유물을 온몸으로 휘두르는 묵직한 액션
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-blue-150">
+                <span className="font-bold text-blue-900 block mb-1">상냥한 세대 계승</span>
+                0번째 선대 묘비와 선대의 빈집, 17-Part 파츠 분리형 비잔혹 세대교체
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-blue-150">
+                <span className="font-bold text-blue-900 block mb-1">N×N 하우징 스펙업</span>
+                몸통 방어구를 100% 대체하는 오두막 가구 테트리스 배치 및 영구 스탯 누적
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-blue-150">
+                <span className="font-bold text-blue-900 block mb-1">절차적 지형 위계</span>
+                Wall-First 3단계 파이프라인(지그재그 외벽, 보이드 마감, 안전거리 스폰)
+              </div>
             </div>
-          </div>
+          </section>
 
-          {/* 미니 인덱스 */}
+          {/* 미니 목차 바 */}
           <div className="flex flex-wrap items-center gap-2 pb-2 border-b border-gray-200/70 text-xs sm:text-[13px]">
-            <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">SECTION</span>
+            <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">목차</span>
             {planSections.map((sec, idx) => (
               <a
                 key={sec.id}
@@ -192,8 +178,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 01. 프로젝트 개요 & 디자인 필라 */}
           <section id="plan-01" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                1.0 DESIGN PILLARS &amp; CORE CONCEPT
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                01 · 프로젝트 개요 및 3대 디자인 필라
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 프로젝트 개요 및 3대 핵심 디자인 필라
@@ -268,8 +254,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 02. 세계관 내러티브 & 상냥한 세대 계승 */}
           <section id="plan-02" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                2.0 NARRATIVE &amp; SUCCESSION RULESET
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                02 · 세계관 환경 스토리텔링 및 상냥한 세대 계승
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 세계관 환경 스토리텔링 및 상냥한 세대 계승 규칙
@@ -304,7 +290,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
               <div className="space-y-4">
                 <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm space-y-2">
-                  <span className="text-xs font-bold text-gray-500 uppercase tracking-wide font-mono">RULE 2.1 · PEACEFUL SHIFT</span>
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">세대 계승 규칙 1</span>
                   <h4 className="text-base font-bold text-gray-900">비잔혹·평화적 세대교체</h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     체력이 0이 되어도 피가 튀는 잔혹한 연출 대신 따뜻한 세피아 톤 암전 후, 
@@ -314,7 +300,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 </div>
 
                 <div className="p-5 rounded-xl border border-blue-200 bg-blue-50/40 shadow-sm space-y-2">
-                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide font-mono">RULE 2.2 · ASSET PERMANENCE</span>
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">세대 계승 규칙 2</span>
                   <h4 className="text-base font-bold text-blue-950">하우징 자산의 100% 영구 보존</h4>
                   <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                     던전에 들고 간 미정산 가방 전리품은 유실되지만, 자취방에 배치한 모든 가구와 오두막 확장은 영구 보존됩니다. 
@@ -330,8 +316,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 03. 코어 루프 & N×N 하우징 스펙업 */}
           <section id="plan-03" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                3.0 CORE LOOP &amp; HOUSING SPECIFICATION
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                03 · 코어 루프와 N×N 하우징 스펙업
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 코어 루프와 N×N 하우징 스펙트럼 (몸통 방어구 완전 대체)
@@ -415,8 +401,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 04. 2.5D 레이맨 리깅 & 묵직한 액션 연출 */}
           <section id="plan-04" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                4.0 ACTION FEEL &amp; FEEDBACK SPECIFICATION
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                04 · 2.5D 레이맨 리깅과 타격 피지컬
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 2.5D 레이맨 리깅과 타격 피지컬 규격
@@ -477,8 +463,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 05. 절차적 전투 필드 & 유기적 지형 구조 */}
           <section id="plan-05" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                5.0 PROCEDURAL LEVEL DESIGN &amp; TOPOLOGY
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                05 · 절차적 전장 생성 및 지형 위계
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 절차적 전장 생성 및 지형 위계
@@ -495,7 +481,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
             <div className="grid md:grid-cols-2 gap-6 pt-2">
               <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide font-mono">PIPELINE SPEC</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">생성 파이프라인</span>
                 <h3 className="font-bold text-gray-900 text-base">Wall-First 3단계 순행 생성 파이프라인</h3>
                 <div className="space-y-2.5 text-xs sm:text-sm text-gray-600">
                   <div className="flex gap-2">
@@ -514,7 +500,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               </div>
 
               <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide font-mono">SPATIAL RENDERING</span>
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">입체 렌더링 솔루션</span>
                 <h3 className="font-bold text-gray-900 text-base">2.5D 남쪽 절벽 턱 전면 분리 렌더링</h3>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   탑뷰 2.5D 환경에서 남쪽 벽 뒤로 걸어갈 때 플레이어 전신이 벽 위에 붕 떠 보이는 이질감을 해결하기 위해, 
@@ -532,8 +518,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 06. 몬스터 메커니즘 & 프로토타입 4종 도감 */}
           <section id="plan-06" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                6.0 MONSTER BESTIARY &amp; BEHAVIOR SPEC
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                06 · 몬스터 메커니즘과 프로토타입 기획 도감
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 몬스터 메커니즘과 프로토타입 기획 도감
@@ -646,26 +632,41 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
       )}
 
       {/* ===================================================================== */}
-      {/* TAB 2: 기술서 (엔지니어링 테크 백서 형식 · 프로그래머 공고 저격) */}
+      {/* TAB 2: 기술서 */}
       {/* ===================================================================== */}
       {activeTab === "tech" && (
         <article className="space-y-16">
-          {/* Tech Whitepaper 문서 메타 헤더 */}
-          <div className="p-4 rounded-xl bg-gray-900 text-white flex flex-wrap items-center justify-between gap-3 text-xs shadow-sm font-mono">
-            <div className="flex items-center gap-3">
-              <span className="px-2 py-0.5 font-bold bg-blue-600 text-white rounded">SPEC: ENG-TJ-01</span>
-              <span className="text-gray-300">Target: Unity 6 · 2D URP · C#</span>
+          {/* 기술 부문 핵심 요약 카드 */}
+          <section className="p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-3">
+            <div className="flex items-center justify-between border-b border-gray-200 pb-2.5">
+              <h3 className="font-bold text-gray-900 text-base">기술 핵심 요약</h3>
+              <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
+                클라이언트 아키텍처 &amp; 최적화
+              </span>
             </div>
-            <div className="flex items-center gap-2 text-gray-400">
-              <span>Profiling: <strong className="text-emerald-400">Zero-GC / 175 FPS</strong></span>
-              <span>·</span>
-              <span>Architecture: Strategy / NGO Host / Postprocessor</span>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
+              <div className="p-3 rounded-xl bg-white border border-gray-200">
+                <span className="font-bold text-gray-900 block mb-1">데이터 파이프라인</span>
+                GameData.xlsx 6개 시트 0.6초 백그라운드 자동 직렬화 &amp; O(1) 상성 매트릭스
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-gray-200">
+                <span className="font-bold text-gray-900 block mb-1">전략 패턴 AI &amp; 물리</span>
+                IMonsterAttackModule 전략 패턴 4종 분리 및 8방향 무할당 조향 레이캐스트
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-gray-200">
+                <span className="font-bold text-gray-900 block mb-1">2.5D 소팅 &amp; 렌더링</span>
+                하향 공격 무기 정렬 승격(+1000) 및 남쪽 절벽 턱 3단 레이어 분리
+              </div>
+              <div className="p-3 rounded-xl bg-white border border-gray-200">
+                <span className="font-bold text-gray-900 block mb-1">네트워크 &amp; 인프라</span>
+                Netcode NGO 서버 권한 분리 및 0ms 로컬 예측, Zero-Camera 픽셀 미니맵
+              </div>
             </div>
-          </div>
+          </section>
 
-          {/* 미니 인덱스 */}
+          {/* 미니 목차 바 */}
           <div className="flex flex-wrap items-center gap-2 pb-2 border-b border-gray-200/70 text-xs sm:text-[13px]">
-            <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">SECTION</span>
+            <span className="font-bold text-gray-400 mr-1 text-[11px] uppercase tracking-wider">목차</span>
             {techSections.map((sec, idx) => (
               <a
                 key={sec.id}
@@ -681,8 +682,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 01. 통합 엑셀 마스터 데이터 파이프라인 */}
           <section id="tech-01" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                ENGINEERING SPEC 01 · DATA PIPELINE
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                01 · 통합 엑셀 마스터 데이터 파이프라인
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 통합 엑셀 마스터 데이터 파이프라인 (GameData.xlsx)
@@ -746,8 +747,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 02. 몬스터 전략 패턴 & 무할당 물리 아키텍처 */}
           <section id="tech-02" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                ENGINEERING SPEC 02 · ARCHITECTURE &amp; PHYSICS
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                02 · 몬스터 전략 패턴 및 무할당 물리 아키텍처
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 몬스터 전략 패턴 &amp; 무할당 물리 아키텍처
@@ -756,7 +757,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
             <div className="grid md:grid-cols-2 gap-6 items-start">
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wider font-mono">OOP STRATEGY PATTERN</span>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">객체지향 설계</span>
                 <h3 className="font-bold text-gray-900 text-base">
                   공격 모듈 전략 패턴 분리 (IMonsterAttackModule)
                 </h3>
@@ -781,7 +782,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               </div>
 
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wider font-mono">ZERO-ALLOCATION PHYSICS</span>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">물리 튜닝</span>
                 <h3 className="font-bold text-gray-900 text-base">
                   무할당 조향 엔진 &amp; 바위형 물리 고정
                 </h3>
@@ -805,8 +806,8 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 03. 2.5D 절벽 깊이감 & 하향 공격 소팅 보정 */}
           <section id="tech-03" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                ENGINEERING SPEC 03 · 2.5D SORTING &amp; RENDERING
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                03 · 2.5D 깊이감 표현과 하향 공격 소팅 보정
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 2.5D 깊이감 표현과 하향 공격 소팅 보정
@@ -816,7 +817,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
             <div className="grid md:grid-cols-2 gap-6 items-stretch">
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold text-blue-600 uppercase font-mono">PROBLEM &amp; SOLUTION</span>
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">문제 해결</span>
                   <h3 className="font-bold text-gray-900 text-base my-2">
                     공격 중 무기·슬래시 정렬 승격 (attackBoost = +1000)
                   </h3>
@@ -837,7 +838,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-bold text-blue-600 uppercase font-mono">OCCLUSION LAYERING</span>
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">차폐 레이어링</span>
                   <h3 className="font-bold text-gray-900 text-base my-2">
                     남쪽 절벽 턱 3단 레이어 분리 (Wall_Front_Tilemap)
                   </h3>
@@ -862,11 +863,63 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
           {/* 04. Netcode(NGO) 서버 권한 분리 & 오디오·세이브 */}
           <section id="tech-04" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                ENGINEERING SPEC 04 · INFRASTRUCTURE &amp; NGO
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                04 · Netcode 권한 분리 및 시스템 인프라
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
                 Netcode 권한 분리 및 시스템 인프라
+              </h2>
+            </header>
+
+            <div className="grid md:grid-cols-2 gap-6 items-start">
+              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">네트워크 동기화</span>
+                <h3 className="font-bold text-gray-900 text-base">Netcode P2P Host 환경 및 권한 분리</h3>
+                <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  <p>
+                    <strong className="text-gray-900">자동 Host 개설:</strong> 싱글플레이 환경에서도 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">GameBootstrap.cs</code>가 
+                    자동으로 Listen Server를 열어 향후 Steam P2P Co-op 전환 시 코드 재작성을 최소화합니다.
+                  </p>
+                  <p>
+                    <strong className="text-gray-900">서버 권한 연산:</strong> AI 길찾기, 피격 데미지 연산, 체력 동기화는 100% 서버에서 통제하여 판정 무결성을 보장합니다.
+                  </p>
+                  <p>
+                    <strong className="text-gray-900">로컬 0ms 피드백:</strong> 역경직, 화면 진동, 피격 플래시는 공격자의 로컬 클라이언트에서 네트워크 지연 없이 즉각 실행됩니다.
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">메모리 &amp; 무결성</span>
+                <h3 className="font-bold text-gray-900 text-base">초경량 미니맵과 세이브 무결성</h3>
+                <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
+                  <p>
+                    <strong className="text-gray-900">Zero-Camera 미니맵:</strong> 별도의 보조 카메라를 띄우지 않고, 
+                    그리드 데이터를 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Texture2D</code> 픽셀에 직접 구워 UI RawImage에 바인딩합니다. (반경 9타일 안개 무할당 갱신)
+                  </p>
+                  <p>
+                    <strong className="text-gray-900">사운드 디커플링:</strong> AudioMixer 4계층 버스 라우팅 및 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">SoundEvents</code> 이벤트 버스를 통해 
+                    사운드 매니저 부재 시에도 컴파일/런타임 에러를 원천 차단합니다.
+                  </p>
+                  <p>
+                    <strong className="text-gray-900">방 단위 자동 저장 및 강종 방지:</strong> 다음 방 진입 시 자동 저장되며, 
+                    위기 상황 시 Alt+F4 악용을 막기 위해 재시작 시 해당 방 입구에서 몬스터가 리셋된 상태로 시작됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <hr className="border-gray-200/80" />
+
+          {/* 05. 실시간 구현 마일스톤 및 로드맵 */}
+          <section id="tech-05" className="scroll-mt-14 space-y-6">
+            <header className="space-y-1">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+                05 · 실시간 구현 마일스톤 및 로드맵
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+                실시간 구현 마일스톤 및 기술 로드맵
               </h2>
             </header>
 

@@ -167,6 +167,32 @@ export default async function RogueTowerPage({ initialTab = "plan" }: RogueTower
       </section>
 
       {/* ===================================================================== */}
+      {/* ⚡ 채용담당자용 10초 핵심 성과 메트릭 바 (Top 4 Metrics) */}
+      {/* ===================================================================== */}
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
+          <span className="text-xl sm:text-2xl font-black text-blue-600 font-mono">175 FPS</span>
+          <p className="text-xs font-bold text-gray-800 mt-1">Zero-GC 오브젝트 풀링</p>
+          <p className="text-[11px] text-gray-500 mt-0.5">100개 투사체 동시 교전 방어</p>
+        </div>
+        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
+          <span className="text-xl sm:text-2xl font-black text-gray-900 font-mono">29% ➔ 20%</span>
+          <p className="text-xs font-bold text-gray-800 mt-1">PlayFab 픽률 편중 해소</p>
+          <p className="text-[11px] text-gray-500 mt-0.5">사거리 가중치 50% 축소 패치</p>
+        </div>
+        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
+          <span className="text-xl sm:text-2xl font-black text-blue-600 font-mono">0 ~ 100</span>
+          <p className="text-xs font-bold text-gray-800 mt-1">지형 3요소 난이도 정량화</p>
+          <p className="text-[11px] text-gray-500 mt-0.5">길이·코너·간격 가중치 수식</p>
+        </div>
+        <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 text-center">
+          <span className="text-xl sm:text-2xl font-black text-gray-900 font-mono">100여 종</span>
+          <p className="text-xs font-bold text-gray-800 mt-1">장비 파밍 &amp; 도감 시스템</p>
+          <p className="text-[11px] text-gray-500 mt-0.5">가중치 예산 기반 옵션 부여</p>
+        </div>
+      </section>
+
+      {/* ===================================================================== */}
       {/* 하단 탭 콘텐츠: GamePortfolio */}
       {/* ===================================================================== */}
       <section>

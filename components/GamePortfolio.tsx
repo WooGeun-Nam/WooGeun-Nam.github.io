@@ -49,13 +49,19 @@ const GamePortfolio = ({ codeAssets, initialTab = "plan" }: Props) => {
               <button
                 key={tab.id}
                 onClick={() => handleTabChange(tab.id)}
-                className={`py-3.5 text-sm sm:text-base font-bold transition-all relative ${
+                className={`py-3.5 px-1 transition-all relative ${
                   isActive
                     ? "text-blue-600 border-b-2 border-blue-500 bg-blue-50/40"
                     : "text-gray-500 hover:text-gray-900 hover:bg-gray-50/60"
                 }`}
               >
-                {tab.label}
+                <span className="text-sm sm:text-base font-bold block">{tab.label}</span>
+                <span className="text-[10px] sm:text-[11px] text-gray-400 font-normal hidden sm:block truncate">
+                  {tab.id === "plan" && "기획 명세서 (GDD)"}
+                  {tab.id === "tech" && "엔지니어링 백서"}
+                  {tab.id === "deploy" && "PC 클라이언트"}
+                  {tab.id === "devlog" && "개발일지 아카이브"}
+                </span>
               </button>
             );
           })}

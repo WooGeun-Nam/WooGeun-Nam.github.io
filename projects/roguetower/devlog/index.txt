@@ -1,0 +1,3889 @@
+1:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+2:HL["/_next/static/css/43fd846278e4f202.css","style"]
+0:["UAopL_osITmiuX8lS74Gb",[[["",{"children":["projects",{"children":["roguetower",{"children":[["tab","devlog","d"],{"children":["__PAGE__?{\"tab\":\"devlog\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/43fd846278e4f202.css","precedence":"next"}]],"$L4"]]]]
+5:HL["/_next/static/css/38dd37bd4890d94c.css","style"]
+6:I{"id":66,"chunks":["185:static/chunks/app/layout-aa2beb2473ae24d8.js"],"name":"","async":false}
+7:I{"id":7885,"chunks":["185:static/chunks/app/layout-aa2beb2473ae24d8.js"],"name":"","async":false}
+8:I{"id":1443,"chunks":["272:static/chunks/webpack-a26fb95435142ba5.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
+9:I{"id":8639,"chunks":["272:static/chunks/webpack-a26fb95435142ba5.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
+a:I{"id":3891,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","570:static/chunks/app/projects/layout-f9b70510a9b28a17.js"],"name":"","async":false}
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WooGeun Nam"}],["$","meta","2",{"name":"description","content":"웹 포트폴리오"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"./../Logo.ico"}],["$","meta","5",{"name":"next-size-adjust"}]]
+3:[null,["$","html",null,{"lang":"ko","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"}],["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"}]]}],["$","body",null,{"className":"__className_d8ebd1 min-h-dvh bg-gray-100 antialiased","children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":[null,["$","section",null,{"children":[["$","$La",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-6xl pt-16","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children",["tab","devlog","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lb","$Lc",null],"segment":"__PAGE__?{\"tab\":\"devlog\"}"},"styles":[]}],"segment":["tab","devlog","d"]},"styles":[]}],"segment":"roguetower"},"styles":[]}]}],["$","footer",null,{"className":"py-6 pr-6 text-right text-sm text-gray-500","children":"Copyright © 2025. WooGeun-Nam All rights reserved."}]]}],null],"segment":"projects"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/38dd37bd4890d94c.css","precedence":"next"}]]}]]}]]}],null]
+c:"$Ld"
+b:null
+e:I{"id":2148,"chunks":["214:static/chunks/214-8fe61e808d71ee3f.js","474:static/chunks/app/projects/roguetower/[tab]/page-9be98ebe98853c38.js"],"name":"","async":false}
+f:I{"id":8150,"chunks":["214:static/chunks/214-8fe61e808d71ee3f.js","474:static/chunks/app/projects/roguetower/[tab]/page-9be98ebe98853c38.js"],"name":"","async":false}
+10:T34c3,using UnityEngine;
+using UnityEngine.Audio;
+using System.Collections.Generic;
+using System.Linq;
+using System.Collections;
+
+public class SoundManager : MonoBehaviour
+{
+    public static SoundManager Instance { get; private set; }
+
+    public AudioMixer masterMixer;
+
+    private AudioSource bgmPlayer;
+    private List<AudioSource> sfxSources = new List<AudioSource>();
+    private Dictionary<GameObject, AudioSource> loopingSfxSources = new Dictionary<GameObject, AudioSource>();
+    [Tooltip("동시에 재생할 수 있는 최대 효과음 개수")]
+    [SerializeField] private int maxSfxSources = 20; // 인스펙터에서 조절 가능
+    
+    // 사운드 쿨다운(재생 조절)을 위한 변수들
+    [Tooltip("동일한 사운드를 다시 재생하기까지 필요한 최소 시간 간격 (초)")]
+    [SerializeField] private float sfxThrottleTime = 0.05f;
+    private Dictionary<string, float> _sfxCooldowns = new Dictionary<string, float>();
+
+    private string currentBgmName; // BGM이 바뀔 때마다 이 변수에 이름을 저장
+    
+    // 오디오 클립 및 분석 데이터를 관리할 Dictionary
+    private Dictionary<string, AudioClip[]> audioClips;
+    private Dictionary<string, float> clipPeakVolumes = new Dictionary<string, float>(); // 오디오 클립의 피크 볼륨을 캐싱
+
+    private const float TARGET_PEAK_VOLUME = 0.7f; // 볼륨 정규화를 위한 목표 피크 값 (오디오 클리핑 방지를 위해 1.0f 보다 낮게 설정)
+
+    // === 추가된 상수 정의 ===
+    private const string GAME_BGM_PREFIX = "BGM_Game_"; // 인게임 BGM 파일을 식별하기 위한 접두사
+    private const string TUTORIAL_BGM_NAME = "BGM_Game_1"; // 튜토리얼에서 사용할 BGM 이름
+    
+    // 초기화 상태를 외부에 알릴 수 있는 변수
+    public bool IsInitialized { get; private set; } = false;
+    
+    public float InitializationProgress { get; private set; } = 0f; // [추가] 초기화 진행률
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+
+            bgmPlayer = gameObject.AddComponent<AudioSource>();
+            bgmPlayer.outputAudioMixerGroup = masterMixer.FindMatchingGroups("BGM")[0];
+            
+            for (int i = 0; i < maxSfxSources; i++)
+            {
+                AudioSource sfxSource = gameObject.AddComponent<AudioSource>();
+                sfxSource.outputAudioMixerGroup = masterMixer.FindMatchingGroups("SFX")[0];
+                sfxSource.loop = false;
+                sfxSources.Add(sfxSource);
+            }
+            
+            IsInitialized = false;
+            StartCoroutine(LoadAndAnalyzeAudioClipsAsync());
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    // === 볼륨 정규화 기능이 적용된 재생 함수 ===
+
+    // 동일한 BGM이 이미 재생 중일 경우 다시 시작하지 않도록 수정
+    public void PlayBGM(string clipName, bool loop = true, float volume = 1.0f, float pitch = 1.0f)
+    {
+        AudioClip clip = FindClip(clipName);
+        if (clip == null) return;
+
+        // 현재 재생 중인 클립이 요청된 클립과 동일하면 아무것도 하지 않고 리턴
+        if (bgmPlayer.isPlaying && bgmPlayer.clip != null && bgmPlayer.clip.name == clip.name)
+        {
+            return;
+        }
+
+        bgmPlayer.clip = clip;
+        bgmPlayer.loop = loop;
+        bgmPlayer.volume = GetAdjustedVolume(clipName, volume);
+        bgmPlayer.pitch = pitch;
+        bgmPlayer.Play();
+        
+        currentBgmName = clipName; // BGM 이름 저장
+    }
+    
+    // AnalyticsDebugUI에서 호출할 getter 메소드
+    public string GetCurrentBGMName()
+    {
+        if (bgmPlayer != null && bgmPlayer.isPlaying)
+        {
+            return currentBgmName;
+        }
+        return "Not Playing";
+    }
+
+    //  게임 BGM 랜덤 재생 메서드
+    public void PlayRandomGameBGM()
+    {
+        // 튜토리얼 완료 여부 확인
+        if (PlayerPrefs.GetInt("TutorialCompleted", 0) == 0)
+        {
+            // 튜토리얼 중일 경우, 지정된 튜토리얼 BGM 재생
+            PlayBGM(TUTORIAL_BGM_NAME, true);
+        }
+        else
+        {
+            // 튜토리얼 완료 시, 랜덤 BGM 재생
+            if (audioClips.TryGetValue("BGM", out AudioClip[] bgmClips))
+            {
+                // "BGM_Game_" 접두사를 가진 모든 BGM 클립을 리스트로 가져옴
+                List<AudioClip> gameBgmList = bgmClips.Where(clip => clip.name.StartsWith(GAME_BGM_PREFIX)).ToList();
+
+                if (gameBgmList.Count > 0)
+                {
+                    // 리스트에서 랜덤하게 BGM 하나를 선택
+                    AudioClip randomClip = gameBgmList[Random.Range(0, gameBgmList.Count)];
+                    PlayBGM(randomClip.name, true);
+                }
+                else
+                {
+                    Debug.LogWarning($"'{GAME_BGM_PREFIX}' 접두사를 가진 게임 BGM을 찾을 수 없습니다.");
+                }
+            }
+        }
+    }
+    
+    public void PlaySFX(string clipName, float volume = 1.0f, float pitch = 1.0f)
+    {
+        AudioClip clip = FindClip(clipName);
+        if (clip == null) return;
+        
+        // 이전에 이 사운드를 재생한 기록이 있는지 확인합니다.
+        if (_sfxCooldowns.ContainsKey(clipName))
+        {
+            // 마지막 재생 시간과 현재 시간을 비교하여, 설정된 쿨다운 시간(sfxThrottleTime)이 지나지 않았다면
+            // 소리를 재생하지 않고 즉시 함수를 종료합니다.
+            if (Time.unscaledTime - _sfxCooldowns[clipName] < sfxThrottleTime)
+            {
+                return;
+            }
+        }
+
+        // 오디오 소스 풀에서 비어있는 소스를 찾아옵니다.
+        AudioSource sourceToPlay = GetAvailableSfxSource();
+        if (sourceToPlay == null) return;
+        
+        // 재생 직전에, 현재 시간을 마지막 재생 시간으로 기록(갱신)합니다.
+        _sfxCooldowns[clipName] = Time.unscaledTime;
+
+        // 찾은 소스를 사용하여 효과음을 재생합니다.
+        sourceToPlay.pitch = pitch;
+        sourceToPlay.PlayOneShot(clip, GetAdjustedVolume(clipName, volume));
+    }
+
+    public void PlayLoopingSFX(string clipName, GameObject caller, float volume = 1.0f, float pitch = 1.0f)
+    {
+        if (loopingSfxSources.ContainsKey(caller))
+        {
+            // 이미 재생 중인 경우, 볼륨과 피치만 업데이트
+            loopingSfxSources[caller].volume = GetAdjustedVolume(clipName, volume); // 볼륨 업데이트 시에도 정규화 적용
+            loopingSfxSources[caller].pitch = pitch;
+            return;
+        }
+
+        AudioClip clip = FindClip(clipName);
+        if (clip != null)
+        {
+            GameObject obj = new GameObject($"LoopingSFX_{clipName}_{caller.name}");
+            obj.transform.SetParent(transform);
+            AudioSource source = obj.AddComponent<AudioSource>();
+            source.outputAudioMixerGroup = masterMixer.FindMatchingGroups("SFX")[0];
+            source.clip = clip;
+            source.loop = true;
+            source.volume = GetAdjustedVolume(clipName, volume); // 정규화된 볼륨 적용
+            source.pitch = pitch;
+            source.Play();
+            loopingSfxSources.Add(caller, source);
+        }
+    }
+
+    // === 오디오 클립 로드 및 분석 로직 ===
+    
+    // [수정] 동기 함수를 비동기 코루틴으로 변경
+    private IEnumerator LoadAndAnalyzeAudioClipsAsync()
+    {
+        audioClips = new Dictionary<string, AudioClip[]>();
+        clipPeakVolumes = new Dictionary<string, float>();
+
+        // 지정된 모든 경로의 오디오 클립을 비동기로 로드하고 분석
+        yield return StartCoroutine(LoadClipsFromPathAsync("BGM"));
+        yield return StartCoroutine(LoadClipsFromPathAsync("Tower"));
+        yield return StartCoroutine(LoadClipsFromPathAsync("Enemy"));
+        yield return StartCoroutine(LoadClipsFromPathAsync("Skill"));
+        yield return StartCoroutine(LoadClipsFromPathAsync("UI"));
+        yield return StartCoroutine(LoadClipsFromPathAsync("System"));
+        IsInitialized = true; // 모든 로딩이 완료되었음을 알립니다.
+    }
+
+    // [수정] 경로에서 오디오 클립을 비동기로 로드하는 코루틴
+    private IEnumerator LoadClipsFromPathAsync(string path)
+    {
+        // 1. 먼저 경로에 있는 모든 클립의 참조를 동기적으로 가져옵니다. (이 과정은 매우 빠름)
+        AudioClip[] clips = Resources.LoadAll<AudioClip>("Sound/" + path);
+
+        if (clips.Length > 0)
+        {
+            // 2. 클립 배열을 저장
+            audioClips.Add(path, clips);
+        
+            // 3. 각 클립에 대해 비동기 로딩 및 분석을 진행합니다.
+            foreach (AudioClip clip in clips)
+            {
+                if (!clipPeakVolumes.ContainsKey(clip.name))
+                {
+                    string fullPath = "Sound/" + path + "/" + clip.name;
+
+                    ResourceRequest request = Resources.LoadAsync<AudioClip>(fullPath);
+                
+                    // 로딩이 완료될 때까지 기다립니다.
+                    while (!request.isDone)
+                    {
+                        yield return null;
+                    }
+                    // 로딩이 완료된 클립을 분석합니다.
+                    float peakVolume = AnalyzeClipPeakVolume((AudioClip)request.asset);
+                    clipPeakVolumes.Add(clip.name, peakVolume);
+                }
+            }
+        }
+    }
+
+    private float AnalyzeClipPeakVolume(AudioClip clip)
+    {
+        // 클립의 모든 오디오 샘플 데이터를 가져옴
+        float[] samples = new float[clip.samples * clip.channels];
+        clip.GetData(samples, 0);
+
+        float peakVolume = 0f;
+        for (int i = 0; i < samples.Length; i++)
+        {
+            // 샘플의 절대값이 현재 피크 값보다 크면 업데이트
+            float currentSample = Mathf.Abs(samples[i]);
+            if (currentSample > peakVolume)
+            {
+                peakVolume = currentSample;
+            }
+        }
+        return peakVolume;
+    }
+
+    private float GetAdjustedVolume(string clipName, float originalVolume)
+    {
+        if (clipPeakVolumes.TryGetValue(clipName, out float peakVolume))
+        {
+            // 피크 볼륨이 매우 작으면(거의 무음이면) 과도하게 증폭되는 것을 방지
+            if (peakVolume < 0.01f)
+            {
+                return originalVolume;
+            }
+            // 목표 피크 볼륨을 기준으로 정규화된 볼륨 계산
+            return originalVolume * (TARGET_PEAK_VOLUME / peakVolume);
+        }
+        return originalVolume; // 분석 데이터가 없는 경우 원래 볼륨 사용
+    }
+
+    // === 기존 유틸리티 함수들 (변경 없음) ===
+
+    public void StopLoopingSFX(GameObject caller)
+    {
+        if (loopingSfxSources.ContainsKey(caller))
+        {
+            AudioSource source = loopingSfxSources[caller];
+            if (source != null)
+            {
+                source.Stop();
+                Destroy(source.gameObject);
+            }
+            loopingSfxSources.Remove(caller);
+        }
+    }
+
+    public void StopAllLoopingSFX()
+    {
+        foreach (var entry in loopingSfxSources)
+        {
+            entry.Value.Stop();
+            Destroy(entry.Value.gameObject);
+        }
+        loopingSfxSources.Clear();
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        float dB = ConvertVolumeToDb(volume);
+        masterMixer.SetFloat("BGMVolume", dB);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        float dB = ConvertVolumeToDb(volume);
+        masterMixer.SetFloat("SFXVolume", dB);
+    }
+
+    public void SetMasterVolume(float volume)
+    {
+        float dB = ConvertVolumeToDb(volume);
+        masterMixer.SetFloat("MasterVolume", dB);
+    }
+
+    private float ConvertVolumeToDb(float volume)
+    {
+        return volume > 0.0001f ? Mathf.Log10(volume) * 20 : -80f;
+    }
+
+    public void StopAllSounds()
+    {
+        bgmPlayer.Stop();
+        
+        // sfxPlayer.Stop(); // 기존 코드 삭제
+        foreach (var source in sfxSources)
+        {
+            source.Stop();
+        }
+
+        StopAllLoopingSFX();
+    }
+
+    public AudioClip FindClip(string clipName)
+    {
+        foreach (var key in audioClips.Keys)
+        {
+            foreach (var clip in audioClips[key])
+            {
+                if (clip.name.Equals(clipName))
+                {
+                    return clip;
+                }
+            }
+        }
+        Debug.LogWarning($"AudioClip not found: {clipName}"); // 클립을 찾지 못했을 때 경고 메시지 추가
+        return null;
+    }
+    
+    private AudioSource GetAvailableSfxSource()
+    {
+        // sfxSources 리스트를 처음부터 순회합니다.
+        foreach (var source in sfxSources)
+        {
+            // 현재 재생 중이 아닌 소스를 찾으면, 그 소스를 즉시 반환합니다.
+            if (!source.isPlaying)
+            {
+                return source;
+            }
+        }
+        
+        // 모든 소스가 사용 중이라면(위의 반복문에서 반환되지 않았다면), null을 반환합니다.
+        return null;
+    }
+}11:Te7c,using UnityEngine;
+using PlayFab;
+using PlayFab.ClientModels;
+using System.Collections.Generic;
+
+/// <summary>
+/// 게임 중 발생하는 치명적인 예외(Exception)를 감지하여 PlayFab으로 전송하는 클래스.
+/// 이 스크립트를 가진 빈 게임 오브젝트를 만들어 첫 씬에 배치하세요.
+/// </summary>
+public class ExceptionReporter : MonoBehaviour
+{
+    public static ExceptionReporter Instance { get; private set; }
+    
+    // 한 세션에서 동일한 오류가 반복적으로 전송되는 것을 막기 위한 Set
+    private HashSet<string> _sentExceptionsThisSession = new HashSet<string>();
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnEnable()
+    {
+        // Unity의 로그 메시지 이벤트를 구독합니다.
+        Application.logMessageReceived += HandleLog;
+    }
+
+    private void OnDisable()
+    {
+        // 구독을 해제합니다.
+        Application.logMessageReceived -= HandleLog;
+    }
+
+    /// <summary>
+    /// Unity의 모든 로그 메시지가 호출될 때 실행되는 핸들러 메서드입니다.
+    /// </summary>
+    /// <param name="logString">오류 메시지</param>
+    /// <param name="stackTrace">호출 스택</param>
+    /// <param name="type">로그 타입 (Log, Warning, Error, Exception 등)</param>
+    private void HandleLog(string logString, string stackTrace, LogType type)
+    {
+        // 로그 타입이 Exception일 경우에만 처리합니다.
+        // (Warning이나 Error까지 보내면 너무 많은 데이터가 쌓일 수 있습니다.)
+        if (type == LogType.Exception)
+        {
+            // 이 세션에서 이미 보낸적 있는 오류 메시지라면 건너뜁니다. (서버 과부하 방지)
+            if (_sentExceptionsThisSession.Contains(logString))
+            {
+                return;
+            }
+            
+            // PlayFab 클라이언트가 로그인 상태인지 확인합니다.
+            if (!PlayFabClientAPI.IsClientLoggedIn())
+            {
+                return;
+            }
+            
+            // 전송할 데이터를 구성합니다.
+            var request = new WriteClientPlayerEventRequest
+            {
+                EventName = "client_exception", // 이벤트 이름
+                Body = new Dictionary<string, object>
+                {
+                    { "error_message", logString }, // 실제 오류 메시지
+                    { "stack_trace", stackTrace },   // 호출 스택 (가장 중요!)
+                    { "game_version", Application.version }, // 게임 버전
+                    { "scene_name", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name } // 오류 발생 씬
+                    // 필요하다면 다른 유용한 정보 (예: 플레이어 레벨, 현재 웨이브 등)를 추가할 수 있습니다.
+                }
+            };
+            
+            // PlayFab으로 이벤트 전송
+            PlayFabClientAPI.WritePlayerEvent(request, 
+                result => {
+                    Debug.Log("<color=orange>[ExceptionReporter] 치명적 오류 정보를 PlayFab으로 전송했습니다.</color>");
+                },
+                error => {
+                    Debug.LogError("[ExceptionReporter] 오류 정보 전송 실패: " + error.GenerateErrorReport());
+                }
+            );
+            
+            // 보낸 오류 목록에 추가하여 중복 전송을 방지합니다.
+            _sentExceptionsThisSession.Add(logString);
+        }
+    }
+}12:Te78,using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
+
+/// <summary>
+/// 로딩 씬을 관리하고 비동기적으로 씬을 로드하는 클래스
+/// </summary>
+public class LoadingSceneController : MonoBehaviour
+{
+    private static string nextScene; // 다음으로 로드할 씬의 이름
+
+    [Tooltip("로딩 진행률을 표시하는 슬라이더 UI")]
+    public Slider progressBar;
+    [Tooltip("로딩 상태 텍스트를 표시하는 UI")]
+    public TextMeshProUGUI loadText;
+    
+    private void Start()
+    {
+        // ProgressBar의 값을 항상 0으로 초기화합니다.
+        progressBar.value = 0f;
+        
+        // 모든 사운드 중지
+        if (SoundManager.Instance != null)
+        {
+            SoundManager.Instance.StopAllSounds();
+        }
+
+        StartCoroutine(LoadSceneWithCleanup());
+    }
+
+    /// <summary>
+    /// 지정된 씬으로 로딩 씬을 통해 전환합니다.
+    /// </summary>
+    /// <param name="sceneName">로드할 씬의 이름</param>
+    public static void LoadScene(string sceneName)
+    {
+        nextScene = sceneName;
+        SceneManager.LoadScene("LoadingScene");
+    }
+
+    /// <summary>
+    /// [수정] 리소스 정리와 씬 로딩을 함께 처리하는 최종 코루틴입니다.
+    /// </summary>
+    private IEnumerator LoadSceneWithCleanup()
+    {
+        yield return null; // 한 프레임 대기하여 UI가 제대로 표시될 시간을 줌
+
+        // --- 1단계: 리소스 정리 (프로그레스 바 0% -> 50%) ---
+        if (loadText != null) loadText.text = "Cleaning up resources...";
+        
+        // 사용되지 않는 에셋을 메모리에서 강제로 해제합니다.
+        AsyncOperation unloadOperation = Resources.UnloadUnusedAssets();
+        while (!unloadOperation.isDone)
+        {
+            // 정리 과정 동안 프로그레스 바를 0%에서 50%까지 채웁니다.
+            if (progressBar != null) progressBar.value = unloadOperation.progress * 0.5f;
+            if (loadText != null) loadText.text = $"Cleaning up... {progressBar.value * 100:F0}%";
+            yield return null;
+        }
+
+        // 가비지 컬렉터를 수동으로 호출하여 메모리를 정리합니다.
+        System.GC.Collect();
+        // Debug.Log("리소스 정리 및 가비지 컬렉션 완료.");
+
+        // --- 2단계: 다음 씬 비동기 로드 (프로그레스 바 50% -> 100%) ---
+        if (loadText != null) loadText.text = "Loading scene...";
+        
+        AsyncOperation operation = SceneManager.LoadSceneAsync(nextScene);
+        operation.allowSceneActivation = false;
+
+        float timer = 0f;
+        while (!operation.isDone)
+        {
+            yield return null;
+
+            if (operation.progress < 0.9f)
+            {
+                // 씬 로딩 과정을 프로그레스 바의 50%에서 95%까지 채웁니다. (0.5f + progress * 0.45f)
+                progressBar.value = 0.5f + (operation.progress * 0.45f);
+                if (loadText != null) loadText.text = $"Loading... {progressBar.value * 100:F0}%";
+            }
+            else
+            {
+                // 씬 로딩이 거의 끝나면 95%에서 100%까지 부드럽게 채웁니다.
+                timer += Time.unscaledDeltaTime;
+                progressBar.value = Mathf.Lerp(0.95f, 1f, timer);
+                if (loadText != null) loadText.text = $"Loading... {progressBar.value * 100:F0}%";
+
+                if (progressBar.value >= 1f)
+                {
+                    operation.allowSceneActivation = true; // 씬 활성화
+                    yield break;
+                }
+            }
+        }
+    }
+}
+13:T1feb,using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+
+public enum GachaType
+{
+    Normal,
+    Advanced,
+    Rare
+}
+
+public class ShopManager : MonoBehaviour
+{
+    public static ShopManager Instance { get; private set; }
+
+    [Header("Gacha Settings")]
+    [Tooltip("일반 뽑기 비용")]
+    [SerializeField] private int normalGachaCost = 50000;
+    [Tooltip("고급 뽑기 비용")]
+    [SerializeField] private int advancedGachaCost = 100000;
+    [Tooltip("희귀 뽑기 비용")]
+    [SerializeField] private int rareGachaCost = 200000;
+    [SerializeField] private float gachaAnimationDuration = 2f;
+
+    [Header("UI References")]
+    [SerializeField] private TextMeshProUGUI rCoinText;
+    [SerializeField] private Button normalDrawButton;
+    [SerializeField] private Button advancedDrawButton;
+    [SerializeField] private Button rareDrawButton;
+    
+    [Header("Animation Panel")]
+    [SerializeField] private GameObject gachaAnimationPanel;
+    [SerializeField] private Image rewardImage;
+    [SerializeField] private TextMeshProUGUI rewardNameText;
+    [SerializeField] private TextMeshProUGUI rewardDescriptionText;
+    [SerializeField] private Slider gachaSlider;
+    [SerializeField] private GameObject gachaCloseButton; // [추가] 닫기 버튼의 GameObject를 연결할 변수
+
+    private bool isGachaInProgress = false;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+    private void OnEnable()
+    {
+        UpdateRCoinDisplay();
+        if (gachaAnimationPanel != null)
+        {
+            gachaAnimationPanel.SetActive(false);
+        }
+    }
+
+    public void UpdateRCoinDisplay()
+    {
+        if (EquipmentManager.Instance != null && EquipmentManager.Instance.currentPlayerData != null)
+        {
+            int currentRCoin = EquipmentManager.Instance.currentPlayerData.rCoin;
+            rCoinText.text = currentRCoin.ToString("N0");
+            
+            if (!isGachaInProgress)
+            {
+                normalDrawButton.interactable = currentRCoin >= normalGachaCost;
+                advancedDrawButton.interactable = currentRCoin >= advancedGachaCost;
+                rareDrawButton.interactable = currentRCoin >= rareGachaCost;
+            }
+        }
+    }
+
+    public void OnClickDraw(int gachaTypeIndex)
+    {
+        if (isGachaInProgress) return;
+
+        // 숫자로 받은 타입을 Enum으로 변환
+        GachaType type = (GachaType)gachaTypeIndex;
+        int cost = 0;
+
+        // 타입에 맞는 비용 설정
+        switch (type)
+        {
+            case GachaType.Normal:
+                cost = normalGachaCost;
+                break;
+            case GachaType.Advanced:
+                cost = advancedGachaCost;
+                break;
+            case GachaType.Rare:
+                cost = rareGachaCost;
+                break;
+        }
+
+        // 재화 확인 및 차감
+        PlayerData playerData = EquipmentManager.Instance.currentPlayerData;
+        if (playerData.rCoin < cost)
+        {
+            // Debug.Log("RCoin이 부족합니다.");
+            return;
+        }
+        
+        SoundManager.Instance.PlaySFX("SFX_UI_UseCoin");
+        
+        playerData.rCoin -= cost;
+        GameDataManager.Instance.SavePlayerData(playerData);
+        UpdateRCoinDisplay();
+        
+        // 애니메이션 코루틴 시작
+        StartCoroutine(StartGachaAnimation(type));
+    }
+
+    private IEnumerator StartGachaAnimation(GachaType type)
+    {
+        isGachaInProgress = true;
+        normalDrawButton.interactable = false;
+        advancedDrawButton.interactable = false;
+        rareDrawButton.interactable = false;
+
+        try
+        {
+            gachaAnimationPanel.SetActive(true);
+            SoundManager.Instance.PlaySFX("SFX_UI_Gacha");
+            
+            gachaSlider.value = 0;
+            if (rewardDescriptionText != null) rewardDescriptionText.text = "";
+            if (gachaCloseButton != null) gachaCloseButton.SetActive(false);
+            
+            EquipmentDataModel finalRewardData = LootManager.Instance.GetRandomEquipmentFromGacha(type);
+            if (finalRewardData == null)
+            {
+                Debug.LogError("가챠에서 장비를 뽑지 못했습니다. LootManager를 확인하세요.");
+                yield break;
+            }
+
+            // 아이콘 프리로딩 시작
+            List<Sprite> droppableSprites = new List<Sprite>();
+            List<EquipmentDataModel> allEquipment = LootManager.Instance.AllDroppableEquipment;
+            
+            if (allEquipment != null)
+            {
+                foreach (var item in allEquipment)
+                {
+                    Sprite loadedSprite = Resources.Load<Sprite>(item.iconPath);
+                    if (loadedSprite != null) droppableSprites.Add(loadedSprite);
+                }
+            }
+            
+            float elapsedTime = 0f;
+            float slotChangeTimer = 0f;
+            while (elapsedTime < gachaAnimationDuration)
+            {
+                elapsedTime += Time.deltaTime;
+                gachaSlider.value = elapsedTime / gachaAnimationDuration;
+                slotChangeTimer -= Time.deltaTime;
+                if (slotChangeTimer <= 0f)
+                {
+                    slotChangeTimer = Random.Range(0.02f, 0.1f);
+                    if (droppableSprites.Count > 0)
+                    {
+                        rewardImage.sprite = droppableSprites[Random.Range(0, droppableSprites.Count)];
+                        EquipmentDataModel randomItem = allEquipment[Random.Range(0, allEquipment.Count)];
+                        string rarityColor = GetColorForRarity(randomItem.rarity);
+                        rewardNameText.text = $"<color={rarityColor}>{randomItem.equipmentName}</color>";
+                    }
+                }
+                yield return null;
+            }
+
+            // 최종 결과 표시
+            gachaSlider.value = 1;
+            rewardImage.sprite = Resources.Load<Sprite>(finalRewardData.iconPath);
+            string finalRarityColor = GetColorForRarity(finalRewardData.rarity);
+            rewardNameText.text = $"<color={finalRarityColor}>{finalRewardData.equipmentName}</color>";
+            if (rewardDescriptionText != null) rewardDescriptionText.text = finalRewardData.description;
+            SoundManager.Instance.PlaySFX("SFX_System_WaveClear");
+
+            PlayerEquipmentInstance newInstance = EquipmentManager.Instance.CreateRandomizedEquipmentInstance(finalRewardData);
+            EquipmentManager.Instance.AddEquipmentToPlayer(newInstance, false);
+        }
+        finally
+        {
+            if (gachaCloseButton != null) gachaCloseButton.SetActive(true);
+            isGachaInProgress = false;
+            UpdateRCoinDisplay();
+        }
+    }
+    
+    /// <summary>
+    /// 뽑기 '결과' 패널만 닫는 메소드입니다.
+    /// </summary>
+    public void CloseGachaPanel()
+    {
+        // 뽑기 애니메이션 중에는 닫히지 않도록 방지
+        if (gachaAnimationPanel != null && !isGachaInProgress)
+        {
+            gachaAnimationPanel.SetActive(false);
+        }
+    }
+    
+    /// <summary>
+    /// 상점 패널 전체를 닫는 메소드입니다.
+    /// </summary>
+    // 상점 패널을 닫는 기능을 하는 메소드
+    public void CloseShopPanel()
+    {
+        // 뽑기 애니메이션 중에는 닫히지 않도록 방지
+        if (isGachaInProgress) return;
+
+        // this.gameObject는 ShopManager.cs 스크립트가 붙어있는 'ShopPanel' 프리팹 전체를 의미합니다.
+        this.gameObject.SetActive(false);
+        SoundManager.Instance.PlaySFX("SFX_UI_ButtonClick");
+    }
+    
+    private string GetColorForRarity(Rarity rarity)
+    {
+        switch (rarity)
+        {
+            case Rarity.Common: return "#808080";
+            case Rarity.Uncommon: return "green";
+            case Rarity.Rare: return "blue";
+            case Rarity.Epic: return "purple";
+            case Rarity.Legendary: return "orange";
+            default: return "white";
+        }
+    }
+}14:T9bc,using UnityEngine;
+using System;
+using System.Collections.Generic;
+using Random = UnityEngine.Random;
+
+[CreateAssetMenu(fileName = "Skill_StatueOfDestructionGod", menuName = "SpecialSkills/Passive/StatueOfDestructionGod")]
+public class Skill_StatueOfDestructionGod : EquipmentPassiveSkill
+{
+    [Header("파괴신의 조각상 설정")]
+    [Range(0f, 1f)]
+    public float activationChance = 0.05f; // 5% 확률
+    [Range(0f, 1f)]
+    public float damagePercentage = 0.10f; // 최대 체력의 10% 데미지
+
+    // 스킬 발동 횟수를 저장할 변수
+    // NonSerialized 어트리뷰트는 플레이 모드를 종료해도 런타임에 변경된 값이 저장되지 않도록 합니다.
+    [NonSerialized]
+    public int activationCount = 0;
+    
+    public override void ApplyGameEffect()
+    {
+        // 스킬 효과가 적용될 때(게임 시작, 장착 시) 발동 횟수를 초기화
+        activationCount = 0;
+        EnemySpawner.OnEnemyKilled += OnEnemyKilled; // 적 처치 이벤트 구독
+    }
+
+    public override void RemoveGameEffect()
+    {
+        EnemySpawner.OnEnemyKilled -= OnEnemyKilled; // 적 처치 이벤트 구독 해제
+    }
+
+    private void OnEnemyKilled()
+    {
+        if (Random.value <= activationChance)
+        {
+            activationCount++;
+            UIEventManager.Instance.ShowSystemMessage(SystemType.StatueOfDestructionGod);
+            SoundManager.Instance.PlaySFX("SFX_Skill_Explosion");
+        
+            if (GameManager.Instance != null && GameManager.Instance.enemySpawner != null)
+            {
+                // 원본 리스트의 '복사본'을 만듭니다.
+                var enemyListCopy = new List<Enemy>(GameManager.Instance.enemySpawner.EnemyList);
+
+                // 이제 원본이 아닌 '복사본' 리스트를 순회하여 안전합니다.
+                foreach (Enemy enemy in enemyListCopy)
+                {
+                    if (enemy != null)
+                    {
+                        EnemyHP enemyHP = enemy.GetComponent<EnemyHP>();
+                        if (enemyHP != null)
+                        {
+                            enemyHP.TakeDamage(enemyHP.MaxHP * damagePercentage);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogWarning("[Skill_StatueOfDestructionGod] Required references (GameManager, EnemySpawner) are null. Cannot apply damage to enemies.");
+            }
+        }
+    }
+}
+15:T5cf9,using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using TowerDefense.Enums;
+using UnityEngine.UI;
+using System.Linq;
+
+/// <summary>
+/// 게임의 전반적인 흐름과 맵 생성을 관리하는 클래스
+/// </summary>
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance { get; private set; }
+
+    public EnemySpawner enemySpawner; // 적 스포너 참조
+    
+    [Header("Required Components")]
+    private RandomPathGenerator pathGenerator; // 랜덤 경로 생성기 참조
+    private MapGenerator mapGenerator;         // 맵 생성기 참조
+
+    public int enemiesKilled; // 처치한 적의 수
+    public float gameTime; // 게임 시간
+    public float totalDamageTaken; // 받은 총 데미지
+    public int middleBossesKilled; // 처치한 중간 보스 수
+    public int bossesKilled; // 처치한 최종 보스 수
+    public int bonusScore; // 보너스 점수
+    private MapDifficulty _currentMapDifficulty; // 현재 맵 난이도 정보
+    public GameObject currentWaveEnemyPrefabSample;
+
+    [Header("Real-time Score UI")]
+    [Tooltip("최종 점수를 표시할 텍스트")]
+    [SerializeField] private TMP_Text finalScoreText;
+    
+    [Header("Infinite Mode UI")]
+    [Tooltip("무한 모드 웨이브 타이머를 포함하는 부모 패널")]
+    [SerializeField] private GameObject infiniteModeTimerPanel; // [수정] 타이머 텍스트를 담는 패널
+    
+    [Tooltip("플레이어 HP 참조 (패널티 적용용)")]
+    [SerializeField] private PlayerHP playerHP;
+    
+    public long infiniteModeScore = 0; // 무한 모드 점수 (값이 매우 커질 수 있으므로 long 사용)
+    // 무한 모드 세부 점수를 저장할 변수들
+    private long _infiniteKillScore = 0;
+    private long _infiniteWaveClearScore = 0;
+    private long _infiniteTimeBonusScore = 0;
+    
+    private TextMeshProUGUI _timerTextComponent; // [추가] 타이머 패널 하위의 텍스트 컴포넌트를 저장할 변수
+    
+    public MapDifficulty CurrentMapDifficulty => _currentMapDifficulty;
+
+    [Header("UI References for Buttons")]
+    [Tooltip("타워 버튼 UI 프리팹")]
+    [SerializeField] private GameObject towerButtonPrefab;
+    [Tooltip("스킬 버튼 UI 프리팹")]
+    [SerializeField] private GameObject skillButtonPrefab;
+    [Tooltip("타워 버튼들이 배치될 UI 부모 Transform")]
+    [SerializeField] private Transform towerButtonParent;
+    [Tooltip("스킬 버튼들이 배치될 UI 부모 Transform")]
+    [SerializeField] private Transform skillButtonParent;
+    [Tooltip("표시할 랜덤 보상 패널의 개수")]
+    public int numberOfRewardsToShow = 2; // 기본값 2
+    public static bool isSPRewardFixed = false; // SP 보상 고정 플래그
+    public static bool isTowerSellCostFixed = false; // 타워 판매 비용 고정 플래그
+
+    [Header("Data References")]
+    [Tooltip("모든 타워 아키타입 ScriptableObject")]
+    [SerializeField] private TowerArchetype[] towerArchetypes;
+    public TowerArchetype[] TowerArchetypes => towerArchetypes;
+
+    [Tooltip("플레이어 업그레이드 참조")]
+    [SerializeField] private PlayerUpgrade playerUpgrade;
+    
+    public PlayerUpgrade PlayerUpgrade => playerUpgrade;
+    
+    [Tooltip("스킬 매니저 참조")]
+    public SkillManager skillManager;
+    [Tooltip("웨이브 시스템 참조")]
+    public WaveSystem waveSystem;
+    [Tooltip("타워 스포너 참조")]
+    public TowerSpawner towerSpawner;
+    
+    [Tooltip("현재 게임 속도를 표시하는 UI 텍스트")]
+    public TextMeshProUGUI textGameSpeed;
+    
+    // 생성된 버튼들을 관리할 변수
+    private List<Button> towerButtons = new List<Button>();
+    private List<Button> skillButtons = new List<Button>();
+    
+    public List<Button> TowerButtons => towerButtons;
+    public List<Button> SkillButtons => skillButtons;
+    
+    public Vector3 startCastlePosition;
+    public Vector3 endCastlePosition;
+    
+    private float gameSpeed = 1f; // 현재 게임 속도 (1x, 2x, 4x)
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        
+        ClearSceneData.Reset();
+        Time.timeScale = gameSpeed;
+    }
+    
+    private void Start()
+    {
+        // 새 게임 기본 분석정보 기록
+        if (GameAnalyticsManager.Instance != null)
+        {
+            GameAnalyticsManager.Instance.StartNewSession();
+            string mode = GameModeManager.CurrentMode == GameMode.Normal ? "Normal" : "Infinite";
+            int diff = DifficultyManager.Instance.CurrentDifficultyLevel;
+            float mapDiff = CurrentMapDifficulty != null ? CurrentMapDifficulty.TotalScore : 0;
+            GameAnalyticsManager.Instance.SetInitialGameInfo(mode, diff, mapDiff);
+        }
+        
+        PerkManager.Instance.ResetPerks();
+        
+        enemiesKilled = 0; // 게임 시작 시 초기화
+        gameTime = 0f; // 게임 시간 초기화
+        totalDamageTaken = 0f; // 받은 총 데미지 초기화
+        middleBossesKilled = 0; // 중간 보스 처치 수 초기화
+        bossesKilled = 0; // 최종 보스 처치 수 초기화
+        bonusScore = 0; // 보너스 점수 초기화
+
+        // 필요한 컴포넌트 초기화
+        pathGenerator = GetComponent<RandomPathGenerator>();
+        mapGenerator = GetComponent<MapGenerator>();
+        
+        // 게임 모드에 따라 UI 상태를 설정합니다.
+        if (GameModeManager.CurrentMode == GameMode.Infinite)
+        {
+            // 타이머 패널 하위의 Text 컴포넌트를 찾아 저장합니다.
+            if (infiniteModeTimerPanel != null)
+            {
+                _timerTextComponent = infiniteModeTimerPanel.GetComponentInChildren<TextMeshProUGUI>();
+                infiniteModeTimerPanel.SetActive(true);
+            }
+        }
+        else // 일반 모드
+        {
+            if (infiniteModeTimerPanel != null)
+            {
+                infiniteModeTimerPanel.SetActive(false);
+            }
+        }
+        
+        // 점수판은 항상 켜져 있도록 합니다.
+        if(finalScoreText != null) finalScoreText.gameObject.SetActive(true);
+        
+        // 게임 시작 시 새로운 맵 생성
+        GenerateNewMap();
+
+        // UI 초기화 코루틴 시작
+        StartCoroutine(InitializeGameUI());
+    }
+    
+    private void Update()
+    {
+        gameTime += Time.deltaTime;
+        
+        // [수정] 모드에 따라 다른 점수판을 업데이트
+        if (GameModeManager.CurrentMode == GameMode.Infinite)
+        {
+            if (GameModeManager.CurrentMode == GameMode.Infinite)
+            {
+                // 무한 모드일 경우: infiniteModeScore를 표시
+                finalScoreText.text = $"점 수 : {infiniteModeScore:N0}";
+            }
+        }
+        else
+        {
+            if (finalScoreText != null)
+            {
+                int clearedDifficultyLevel = DifficultyManager.Instance.CurrentDifficultyLevel;
+            
+                float currentScore =
+                    (clearedDifficultyLevel * 10000f) +
+                    (_currentMapDifficulty.TotalScore * 100f) +
+                    (enemiesKilled * 10f) +
+                    (totalDamageTaken * -500f) + // 받은 데미지는 감점
+                    (middleBossesKilled * 1000f) +
+                    (bossesKilled * 10000f) +
+                    (bonusScore * 1f);
+                finalScoreText.text = $"점 수 : {currentScore:N0}";
+            }
+        }
+    }
+
+    // 무한 모드 점수 추가 메소드들
+    public void AddScore_Infinite_Kill(int baseGold)
+    {
+        // 적 처치 점수 = (적이 주는 기본 골드 * 맵 난이도 배율)
+        long score = (long)(baseGold * _currentMapDifficulty.TotalScore * 0.01f);
+        _infiniteKillScore += score;
+        infiniteModeScore += score;
+    }
+
+    public void AddScore_Infinite_WaveClear()
+    {
+        // 웨이브 클리어 기본 점수
+        long score = (long)(100 * Mathf.Pow(1.1f, waveSystem.CurrentWave));
+        _infiniteWaveClearScore += score;
+        infiniteModeScore += score;
+    }
+
+    public void AddScore_Infinite_TimeBonus(float remainingTime)
+    {
+        // 남은 시간 1초당 1000점 (예시)
+        long score = (long)(remainingTime * 10);
+        _infiniteTimeBonusScore += score;
+        infiniteModeScore += score;
+    }
+    
+    private IEnumerator InitializeGameUI()
+    {
+        // 필요한 매니저들이 준비될 때까지 대기
+        yield return new WaitUntil(() => EquipmentManager.IsReady && playerUpgrade != null && skillManager != null && towerSpawner != null);
+        
+        // 타워 버튼 생성 및 설정
+        for (int i = 0; i < towerArchetypes.Length; i++)
+        {
+            if (towerArchetypes[i] == null) continue;
+            SetupButton(towerButtonPrefab, towerButtonParent, towerArchetypes[i], true, i);
+        }
+        
+        // 스킬 버튼 생성 및 설정
+        for (int i = 0; i < towerArchetypes.Length; i++)
+        {
+            if (towerArchetypes[i] == null || towerArchetypes[i].skillPrefab == null) continue;
+            SetupButton(skillButtonPrefab, skillButtonParent, towerArchetypes[i], false, i);
+        }
+    }
+
+    /// <summary>
+    /// 인게임 '시작' 버튼을 눌렀을 때 호출될 통합 메소드입니다.
+    /// </summary>
+    public void StartGameFlow()
+    {
+        Time.timeScale = gameSpeed;
+        
+        // 시작 버튼을 찾아서 비활성화합니다. (중복 클릭 방지)
+        // 버튼 이름이 "ButtonStartWave"라고 가정합니다. 실제 이름에 맞게 수정해주세요.
+        GameObject startButton = GameObject.Find("ButtonStartWave");
+        if (startButton != null)
+        {
+            startButton.SetActive(false);
+        }
+
+        // 현재 게임 모드를 확인하고 그에 맞는 게임 루프를 시작합니다.
+        if (GameModeManager.CurrentMode == GameMode.Infinite)
+        {
+            // 무한 모드 일때는 타워 코스트 보상이 0
+            PerkManager.Instance.perk_towerCostPerWave = 0;
+            
+            StartCoroutine(InfiniteModeLoop());
+        }
+        else // 일반 모드
+        {
+            waveSystem.StartWave();
+        }
+    }
+    
+    /// <summary>
+    /// 타워 또는 스킬 버튼을 설정하는 헬퍼 메서드
+    /// </summary>
+    /// <param name="prefab">버튼 프리팹</param>
+    /// <param name="parent">버튼이 배치될 부모 Transform</param>
+    /// <param name="archetype">관련된 TowerArchetype</param>
+    /// <param name="isTowerButton">타워 버튼인지 스킬 버튼인지 여부</param>
+    private void SetupButton(GameObject prefab, Transform parent, TowerArchetype archetype, bool isTowerButton, int index)
+    {
+        GameObject buttonGO = Instantiate(prefab, parent);
+
+        // 이미지 설정
+        string imageName = isTowerButton ? "ImageTower" : "ImageSkill";
+        Transform imageTransform = buttonGO.transform.Find(imageName);
+        if (imageTransform != null)
+        {
+            Image buttonImage = imageTransform.GetComponent<Image>();
+            Sprite icon = isTowerButton ? archetype.towerIcon : archetype.skillIcon;
+            if (buttonImage != null && icon != null) buttonImage.sprite = icon;
+        }
+
+        // 텍스트 설정
+        TextMeshProUGUI buttonText = buttonGO.GetComponentInChildren<TextMeshProUGUI>();
+        if (buttonText != null)
+        {
+            if (isTowerButton)
+            {
+                buttonText.text = $"{archetype.towerWeaponStats.cost}"; 
+            }
+            else
+            {
+                buttonText.text = $"<color=blue>{archetype.skillPointCost}SP</color>";
+            }
+        }
+
+        // TooltipTrigger 설정
+        TooltipTrigger tooltipTrigger = buttonGO.GetComponent<TooltipTrigger>();
+        if (tooltipTrigger == null)
+        {
+            tooltipTrigger = buttonGO.AddComponent<TooltipTrigger>();
+        }
+        tooltipTrigger.SetHeader(isTowerButton ? archetype.archetypeDisplayName : archetype.skillDisplayName);
+        tooltipTrigger.GetContentCallback = () =>
+        {
+            return isTowerButton ?
+                archetype.GetFormattedTowerDescription(playerUpgrade, EquipmentManager.Instance.currentPlayerData) :
+                archetype.GetFormattedSkillDescription(playerUpgrade, EquipmentManager.Instance.currentPlayerData);
+        };
+
+        // 클릭 이벤트 연결
+        UnityEngine.UI.Button uiButton = buttonGO.GetComponent<UnityEngine.UI.Button>();
+        if (isTowerButton)
+        {
+            uiButton.onClick.AddListener(() => towerSpawner.ReadyToSpawnTower(buttonGO.transform, archetype, false)); // 일반 타워
+            towerButtons.Add(uiButton);
+        }
+        else
+        {
+            uiButton.onClick.AddListener(() => skillManager.UseSkill(buttonGO.transform, archetype));
+            skillManager.RegisterSkillButton(archetype.archetypeID, uiButton, index); // SkillManager에 버튼 등록
+            skillButtons.Add(uiButton);
+        }
+    }
+
+    /// <summary>
+    /// 새로운 맵을 생성하고 관련 컴포넌트들을 설정합니다。
+    /// 이 메소드는 웨이브 시스템에서 다음 스테이지로 넘어갈 때 호출될 수 있습니다。
+    /// </summary>
+    [ContextMenu("Generate New Map")] // 유니티 에디터에서 쉽게 호출할 수 있도록 ContextMenu 추가
+    public void GenerateNewMap() {
+        // 1. 랜덤 경로 생성
+        Vector2Int[] path = pathGenerator.GenerateWaypoints();
+        bool isLeftToRight = pathGenerator.IsLeftToRight;
+        
+        // 2. 맵 난이도 계산 및 저장
+        _currentMapDifficulty = MapDifficulty.CalculateDifficulty(path, pathGenerator.SegmentCount);
+        // Debug.Log($"맵 난이도: {_currentMapDifficulty.TotalScore}");
+
+        // 3. 생성된 경로를 기반으로 맵 타일 생성
+        mapGenerator.GenerateMap(path, isLeftToRight);
+
+        // 4. 생성된 경로 정보를 적 스포너에 전달하여 적 이동 경로 설정
+        enemySpawner.SetupWaypoints(path);
+    }
+    
+    /// <summary>
+    /// '희생 전략' 특성에 의해 선택된 타워와 스킬 UI 버튼을 비활성화합니다.
+    /// </summary>
+    /// <param name="towerIndex">비활성화할 타워의 인덱스</param>
+    public void DisableSacrificedTowerUI(int towerIndex)
+    {
+        if (PerkManager.Instance == null || !PerkManager.Instance.perk_isSacrificeEnabled)
+        {
+            // 특성이 활성화되지 않았다면, 이 메서드가 호출되었더라도 아무것도 하지 않고 즉시 종료합니다.
+            return;
+        }
+        
+        // 타워 버튼 비활성화
+        if (towerIndex >= 0 && towerIndex < towerButtons.Count)
+        {
+            // [수정] SetActive(false) 대신 interactable을 false로 변경
+            towerButtons[towerIndex].interactable = false;
+        }
+
+        // 스킬 버튼 비활성화
+        if (towerIndex >= 0 && towerIndex < skillButtons.Count)
+        {
+            // [수정] SetActive(false) 대신 interactable을 false로 변경
+            skillButtons[towerIndex].interactable = false;
+        }
+    
+        // Debug.Log($"Sacrifice Perk Activated: Tower/Skill at index {towerIndex} has been disabled.");
+    }
+    
+    /// <summary>
+    /// 게임 속도를 다음 단계로 변경합니다. (1x -> 2x -> 4x -> 1x 순환)
+    /// </summary>
+    public void SpeedUp()
+    {
+        // 게임 속도 변경 로직
+        if (gameSpeed == 1f)
+        {
+            gameSpeed = 2f;
+        }
+        else if (gameSpeed == 2f)
+        {
+            gameSpeed = 4f;
+        }
+        else
+        {
+            gameSpeed = 1f;
+        }
+
+        // UI 텍스트 업데이트 및 실제 게임 속도 적용
+        textGameSpeed.text = gameSpeed.ToString() + "x";
+        Time.timeScale = gameSpeed;
+    }
+    
+    /// <summary>
+    /// 무한 모드의 메인 게임 루프를 관리하는 코루틴입니다.
+    /// </summary>
+    private IEnumerator InfiniteModeLoop()
+    {
+        while (playerHP.CurrentHP > 0)
+        {
+            waveSystem.StartNextInfiniteWave();
+            float waveTimer = 120f;
+
+            while (waveTimer > 0)
+            {
+                waveTimer -= Time.deltaTime;
+                
+                // 캐시해둔 텍스트 컴포넌트를 업데이트합니다.
+                if (_timerTextComponent != null)
+                {
+                    int minutes = (int)waveTimer / 60;
+                    int seconds = (int)waveTimer % 60;
+                    _timerTextComponent.text = $"{minutes:00}:{seconds:00}";
+                }
+                
+                if (enemySpawner.ActiveEnemyCount == 0 && enemySpawner.SpawnEnemyCount >= waveSystem.GetCurrentWaveMaxEnemies())
+                {
+                    // 점수 추가 로직 (기존과 동일)
+                    AddScore_Infinite_WaveClear();
+                    AddScore_Infinite_TimeBonus(waveTimer);
+
+                    // 타이머 루프를 빠져나가 다음 웨이브로 진행
+                    break;
+                }
+                yield return null;
+            }
+            
+            // 먼저 타임 오버 시 패널티를 적용합니다.
+            if (waveTimer <= 0)
+            {
+                int remainingEnemies = enemySpawner.ActiveEnemyCount;
+                if (remainingEnemies > 0)
+                {
+                    playerHP.TakeDamage(remainingEnemies);
+                }
+            }
+        
+            // 패널티 적용 후에도 플레이어가 살아있는지 확인합니다.
+            if (playerHP.CurrentHP <= 0)
+            {
+                break; // 루프를 탈출하여 게임 오버 처리
+            }
+
+            // 웨이브 시작 전 남은 적 처리
+            enemySpawner.ClearAllEnemies();
+            
+            // 살아있다면, 이제 모든 경우에 보상 패널을 호출하고 선택을 기다립니다.
+            waveSystem.WaveReward();
+            yield return new WaitUntil(() => !waveSystem.isWaitingForRewardSelection);
+
+            // 다음 웨이브 시작 전 짧은 대기 시간
+            UIEventManager.Instance.ShowSystemMessage(SystemType.WaveStart);
+            yield return new WaitForSecondsRealtime(3f);
+        }
+        
+        EndInfiniteModeRun();
+    }
+    
+    /// <summary>
+    /// 무한 모드 게임 오버 시 호출될 메소드
+    /// </summary>
+    private void EndInfiniteModeRun()
+    {
+        Time.timeScale = 0f; // 게임 정지
+
+        // 무한 모드 종료 시 데이터 수집 및 전송
+        if (GameAnalyticsManager.Instance != null)
+        {
+            // 샘플 몬스터 정보로 최종 몬스터 정보 저장
+            List<object> finalEnemies = new List<object>();
+            if (currentWaveEnemyPrefabSample != null)
+            {
+                var enemyInfo = currentWaveEnemyPrefabSample.GetComponent<Enemy>();
+                var enemyHP = currentWaveEnemyPrefabSample.GetComponent<EnemyHP>();
+                if (enemyInfo != null && enemyHP != null)
+                {
+                    finalEnemies.Add(new {
+                        type = enemyInfo.enemyType.ToString(),
+                        hp = enemyHP.MaxHP, // 샘플이므로 MaxHP를 기록
+                        physicDef = enemyHP.CurrentPhysicArmor,
+                        magicDef = enemyHP.CurrentMagicArmor
+                    });
+                }
+            }
+            GameAnalyticsManager.Instance.SetFinalWaveEnemies(finalEnemies);
+            
+            // 무한 모드 세부 점수를 정확하게 기록
+            GameAnalyticsManager.Instance.RecordScoreDetail("killScore", _infiniteKillScore);
+            GameAnalyticsManager.Instance.RecordScoreDetail("waveClearScore", _infiniteWaveClearScore);
+            GameAnalyticsManager.Instance.RecordScoreDetail("timeBonusScore", _infiniteTimeBonusScore);
+            GameAnalyticsManager.Instance.RecordScoreDetail("reachedWave", waveSystem.CurrentWave);
+            
+            // --- 최종 데이터 설정 ---
+            GameAnalyticsManager.Instance.SetFinalUpgradeLevels(playerUpgrade.physicUpgrade, playerUpgrade.magicUpgrade);
+            CollectAndSetFinalEquipmentStats();
+            CollectAndSetFinalTowerDps();
+
+            // --- 데이터 전송 ---
+            GameAnalyticsManager.Instance.FinalizeAndSendEvent("N/A", waveSystem.CurrentWave, infiniteModeScore);
+        }
+        
+        // ClearSceneData에 무한 모드 결과 데이터를 저장
+        ClearSceneData.IsInfiniteModeResult = true; // 무한 모드 결과임을 알림
+        ClearSceneData.InfiniteModeScore = infiniteModeScore;
+        ClearSceneData.ReachedWave = waveSystem.CurrentWave;
+
+        // 결과창으로 이동
+        LoadingSceneController.LoadScene("ClearScene");
+    }
+    
+    // 데이터 분석 관련 메소드
+    private void CollectAndSetFinalEquipmentStats()
+    {
+        if (EquipmentManager.Instance == null || EquipmentManager.Instance.currentPlayerData == null) return;
+
+        var playerData = EquipmentManager.Instance.currentPlayerData;
+
+        // 2. PlayerData에 최종 합산된 모든 스탯 정보들을 Dictionary 형태로 수집합니다.
+        Dictionary<string, object> finalAggregatedStats = new Dictionary<string, object>
+        {
+            // 글로벌 스탯 (곱연산 보너스 %)
+            { "attackDamage_Mul", playerData.attackDamage },
+            { "attackSpeed_Mul", playerData.attackSpeed },
+            { "attackRange_Mul", playerData.attackRange },
+            { "skillDamage_Mul", playerData.skillDamage },
+        
+            // 타워 개별 데미지 증가량 (곱연산 보너스 %)
+            { "defaultTowerDamage_Mul", playerData.defaultTowerDamage },
+            { "arrowTowerDamage_Mul", playerData.arrowTowerDamage },
+            { "laserTowerDamage_Mul", playerData.laserTowerDamage },
+            { "priestsTowerDamage_Mul", playerData.priestsTowerDamage },
+            { "spearTowerDamage_Mul", playerData.spearTowerDamage },
+            { "swordTowerDamage_Mul", playerData.swordTowerDamage },
+        
+            // 부가 스탯 (합연산)
+            { "goldPerSecond", playerData.goldPerSecond },
+            { "finalMaxHP", playerData.maxHP }, // 장비 효과가 적용된 최종 MaxHP
+            { "finalStartSP", playerData.startSP },
+            { "finalMaxSP", playerData.maxSP },
+            { "finalStartGold", playerData.startGold }
+        };
+
+        // 3. 수집된 장비 이름 리스트와 최종 스탯 딕셔너리를 분석 매니저로 보냅니다.
+        GameAnalyticsManager.Instance.SetFinalEquipment(new List<string>(), finalAggregatedStats);
+    }
+
+    private void CollectAndSetFinalTowerDps()
+    {
+        Dictionary<string, float> dpsDict = new Dictionary<string, float>();
+        GameObject[] towers = GameObject.FindGameObjectsWithTag("Tower");
+        foreach (var towerGO in towers)
+        {
+            var weapon = towerGO.GetComponent<TowerWeapon>();
+            if (weapon != null)
+            {
+                // "타워이름_고유ID" 형태로 저장하여 구분
+                string uniqueTowerID = $"{weapon.towerArchetype.archetypeDisplayName}_{towerGO.GetInstanceID()}";
+                dpsDict[uniqueTowerID] = weapon.Damage;
+            }
+        }
+        GameAnalyticsManager.Instance.SetFinalTowerDps(dpsDict);
+    }
+
+    public TowerArchetype GetTowerArchetypeByName(string name)
+    {
+       return towerArchetypes.FirstOrDefault(a => a.archetypeDisplayName == name);
+    }
+}16:T1ad3,using UnityEngine;
+using System.IO;
+using System.Text; // 암호화를 위해 System.Text
+using System;     // Action 이벤트를 위해 필요 (PlayerData 로드 이벤트용)
+
+public class GameDataManager : MonoBehaviour
+{
+    public static GameDataManager Instance { get; private set; }
+    public static bool IsReady { get; private set; }
+
+    private string savePath; // 저장 경로
+    
+    // 암호화에 사용할 비밀 키
+    private readonly string encryptionKey = "???";
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            IsReady = false; // 준비 안됨으로 초기화
+
+            // Application.persistentDataPath의 상위 디렉토리 (LocalLow)를 가져옴
+            string baseAppDataPath = Path.GetDirectoryName(Path.GetDirectoryName(Application.persistentDataPath));
+            // 원하는 게임 저장 디렉토리 경로를 구성
+            string gameSaveDirectory = Path.Combine(baseAppDataPath, "RogueTower");
+
+            // 저장 디렉토리가 없으면 생성
+            if (!Directory.Exists(gameSaveDirectory))
+            {
+                Directory.CreateDirectory(gameSaveDirectory);
+            }
+
+            savePath = Path.Combine(gameSaveDirectory, "playerData.json");
+            // Debug.Log($"저장 경로: {savePath}");
+
+            IsReady = true; // 모든 준비 완료
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    /// <summary>
+    /// 플레이어 데이터를 파일에 저장합니다.
+    /// </summary>
+    /// <param name="playerData">저장할 PlayerData 객체</param>
+    public void SavePlayerData(PlayerData playerData)
+    {
+        string json = JsonUtility.ToJson(playerData, true);
+        //File.WriteAllText(savePath, json);
+        
+        // JSON 데이터를 파일에 저장하기 전에 암호화합니다.
+        string encryptedJson = EncryptDecrypt(json);
+        
+        // 암호화된 데이터를 파일에 씁니다.
+        File.WriteAllText(savePath, encryptedJson);
+    }
+
+    /// <summary>
+    /// [수정] 파일에서 플레이어 데이터를 불러옵니다. 구버전(암호화 안됨) 데이터의 마이그레이션을 지원합니다.
+    /// </summary>
+    /// <returns>불러온 PlayerData 객체, 파일이 없으면 새로운 PlayerData 객체 반환</returns>
+    public PlayerData LoadPlayerData()
+    {
+        // PlayerData를 담을 변수를 미리 선언합니다.
+        PlayerData loadedData;
+
+        if (File.Exists(savePath))
+        {
+            // 일단 파일의 모든 내용을 문자열로 읽어옵니다.
+            string fileContents = File.ReadAllText(savePath);
+
+            try
+            {
+                // 1. 먼저, 데이터가 '암호화된 최신 버전'이라고 가정하고 복호화를 시도합니다.
+                string decryptedJson = EncryptDecrypt(fileContents);
+                loadedData = JsonUtility.FromJson<PlayerData>(decryptedJson);
+                
+                // JsonUtility가 null을 반환하는 경우(파일 내용이 있지만 유효한 JSON이 아님)를 대비하여 예외를 발생시킵니다.
+                if (loadedData == null)
+                {
+                    throw new System.Exception("Decrypted data is not valid JSON.");
+                }
+
+                // Debug.Log("암호화된 최신 세이브 파일을 성공적으로 불러왔습니다.");
+            }
+            catch (System.Exception)
+            {
+                // 2. 복호화 또는 JSON 파싱에 실패하면, '암호화되지 않은 구버전' 데이터로 간주합니다.
+                Debug.LogWarning("데이터 복호화 실패, 구버전 세이브 파일로 간주하고 마이그레이션을 시도합니다.");
+                
+                try
+                {
+                    // 파일 내용을 일반 JSON 텍스트로 다시 파싱합니다.
+                    loadedData = JsonUtility.FromJson<PlayerData>(fileContents);
+
+                    if (loadedData != null)
+                    {
+                        // [핵심] 즉시 새로운 암호화된 파일로 다시 저장하여 데이터를 최신 버전으로 마이그레이션합니다.
+                        SavePlayerData(loadedData);
+                        Debug.Log("구버전 데이터를 최신 암호화 버전으로 마이그레이션하고 저장했습니다.");
+                    }
+                    else
+                    {
+                        // 구버전 데이터조차 파싱할 수 없다면, 파일이 손상된 것입니다.
+                        Debug.LogError("세이브 파일이 손상되어 데이터를 읽을 수 없습니다. 새로운 데이터를 생성합니다.");
+                        loadedData = new PlayerData();
+                    }
+                }
+                catch (System.Exception innerEx)
+                {
+                    // 구버전 데이터 파싱도 실패하는 최악의 경우
+                    Debug.LogError($"구버전 데이터 파싱에도 실패했습니다. 파일이 심각하게 손상되었습니다. 오류: {innerEx.Message}");
+                    loadedData = new PlayerData();
+                }
+            }
+        }
+        else
+        {
+            // 세이브 파일이 없으면 새로 생성
+            Debug.LogWarning("저장된 플레이어 데이터가 없습니다. 새로운 데이터 생성.");
+            loadedData = new PlayerData();
+        }
+        
+        // --- 불러온 데이터 안전성 검사 (기존 코드 유지) ---
+        if (loadedData.ownedEquipmentInstances == null)
+        {
+            loadedData.ownedEquipmentInstances = new System.Collections.Generic.List<PlayerEquipmentInstance>();
+        }
+        if (loadedData.equippedSlots == null || loadedData.equippedSlots.Count == 0)
+        {
+            loadedData.equippedSlots = new System.Collections.Generic.List<EquipmentSlotEntry>();
+            foreach (EquipmentType type in System.Enum.GetValues(typeof(EquipmentType)))
+            {
+                loadedData.equippedSlots.Add(new EquipmentSlotEntry(type, null));
+            }
+        }
+
+        // 최종적으로 처리된 PlayerData 객체를 반환합니다.
+        return loadedData;
+    }
+    
+    /// <summary>
+    /// XOR 연산을 사용하여 문자열을 암호화하거나 복호화합니다.
+    /// </summary>
+    private string EncryptDecrypt(string data)
+    {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < data.Length; i++)
+        {
+            // 데이터의 각 문자를 키의 문자와 XOR 연산합니다.
+            result.Append((char)(data[i] ^ encryptionKey[i % encryptionKey.Length]));
+        }
+        return result.ToString();
+    }
+}
+17:T3820,using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+
+/// <summary>
+/// 게임 내 UI 패널의 표시, 전환, 애니메이션을 관리하는 클래스
+/// </summary>
+public class UIManager : MonoBehaviour
+{
+    [Header("UI Panels")]
+    [Tooltip("타워 선택 패널의 RectTransform")]
+    public RectTransform TowerPanel;
+    [Tooltip("스킬 선택 패널의 RectTransform")]
+    public RectTransform SkillPanel;
+    [Tooltip("설정 패널 GameObject")]
+    public GameObject panelMenu;
+    [Tooltip("메뉴 버튼")]
+    public Button buttonMenu;
+
+    public Sprite buttonSpriteOpen;
+    public Sprite buttonSpriteClose;
+
+    public GameObject scorePanel;
+    public GameObject timePanel;
+    
+    [Tooltip("게임 매니저 참조")]
+    public GameManager gameManager; // GameManager 참조 추가
+
+    private bool switchState = false; // 현재 활성화된 패널 상태 (false: TowerPanel, true: SkillPanel)
+    private bool isSwitching = false; // 패널 전환 애니메이션 진행 중 여부
+    private bool isPanelMenu = false; // 설정 패널 활성화 여부
+    private bool isUIVisible = true; // 하단 UI 그룹의 가시성 여부
+    private bool isAnimating = false; // UI 표시/숨김 애니메이션 진행 중 여부
+    
+    [Header("Bottom UI Elements")]
+    [Tooltip("하단 UI 그룹의 부모 GameObject")]
+    public GameObject bottomUIGroup;
+    [Tooltip("하단 UI 그룹 내의 모든 패널 RectTransform 배열")]
+    public RectTransform[] bottomUIPanels;
+    
+    // 새로 추가할 변수
+    [Header("Animation Settings")]
+    [Range(0.1f, 2f)]
+    [Tooltip("UI 애니메이션의 총 지속 시간 (초)")]
+    public float animationDuration = 0.15f; // 0.15초 동안 애니메이션이 재생되도록 설정
+
+    private Vector2[] originalPositions;  // 각 하단 UI 패널의 초기 위치 저장
+    private Vector2 towerPanelOriginalPos;  // TowerPanel의 초기 위치
+    private Vector2 skillPanelOriginalPos;  // SkillPanel의 초기 위치
+    private float hideOffset = -350f;     // UI를 숨길 때 이동할 Y축 거리
+    
+    private void Start()
+    {
+        // 모든 하단 UI 패널의 초기 위치 저장
+        originalPositions = new Vector2[bottomUIPanels.Length];
+        for(int i = 0; i < bottomUIPanels.Length; i++)
+        {
+            originalPositions[i] = bottomUIPanels[i].anchoredPosition;
+        }
+
+        // 타워/스킬 패널의 초기 위치도 따로 저장
+        towerPanelOriginalPos = TowerPanel.anchoredPosition;
+        skillPanelOriginalPos = SkillPanel.anchoredPosition;
+        
+        // 게임 시작 시 스킬 패널을 아래로 숨김
+        SkillPanel.anchoredPosition += new Vector2(0, hideOffset);
+        
+        // 초기 상태 설정
+        switchState = false;
+    }
+
+    private void Update()
+    {
+        // 숫자 키 (1-6)를 이용한 타워/스킬 사용
+        if (Input.GetKeyDown(KeyCode.Alpha1)) HandleArchetypeInput(0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) HandleArchetypeInput(1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) HandleArchetypeInput(2);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) HandleArchetypeInput(3);
+        if (Input.GetKeyDown(KeyCode.Alpha5)) HandleArchetypeInput(4);
+        if (Input.GetKeyDown(KeyCode.Alpha6)) HandleArchetypeInput(5);
+
+        // 'T' 키로 타워 패널 전환
+        if (Keyboard.current.tKey.wasPressedThisFrame)
+        {
+            SwitchTowerPanel();
+        }
+
+        // 'S' 키로 스킬 패널 전환
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            SwitchSkillPanel();
+        }
+
+        // 'Tab' 키로 하단 UI 그룹 토글 (표시/숨김)
+        if (Keyboard.current.tabKey.wasPressedThisFrame)
+        {
+            ToggleUI();
+        }
+
+        // 'Q' 키로 게임속도 단축키
+        if (Keyboard.current.qKey.wasPressedThisFrame)
+        {
+            GameManager.Instance.SpeedUp();
+        }
+        
+        // 'Escape' 키 처리
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            // 설정 패널이 열려있으면 닫기
+            if(isPanelMenu)
+            {
+                ButtonMenu();
+            }
+            // 하단 UI가 숨겨져 있으면 다시 표시
+            else if(!isUIVisible)  
+            {
+                ToggleUI();
+            }
+        }
+    }
+
+    private void HandleArchetypeInput(int index)
+    {
+        var buttonList = !switchState ? gameManager.TowerButtons : gameManager.SkillButtons;
+
+        if (buttonList != null && index < buttonList.Count)
+        {
+            Button targetButton = buttonList[index];
+            if (targetButton != null && targetButton.interactable)
+            {
+                targetButton.onClick.Invoke();
+            }
+        }
+    }
+
+    /// <summary>
+    /// 타워 패널로 전환합니다.
+    /// </summary>
+    public void SwitchTowerPanel()
+    {
+        // 이미 타워 패널이 활성화되어 있거나 전환 애니메이션 중이면 무시
+        if (!switchState || isSwitching)
+        {
+            return;
+        }
+        switchState = false; // 타워 패널 상태로 설정
+        StartCoroutine(SwitchPanel(TowerPanel, SkillPanel)); // 패널 전환 애니메이션 시작
+    }
+
+    /// <summary>
+    /// 스킬 패널로 전환합니다.
+    /// </summary>
+    public void SwitchSkillPanel()
+    {
+        // 이미 스킬 패널이 활성화되어 있거나 전환 애니메이션 중이면 무시
+        if (switchState || isSwitching)
+        {
+            return;
+        }
+        switchState = true; // 스킬 패널 상태로 설정
+        StartCoroutine(SwitchPanel(SkillPanel,TowerPanel)); // 패널 전환 애니메이션 시작
+    }
+
+    /// <summary>
+    /// 설정 패널을 토글합니다. (열기/닫기)
+    /// </summary>
+    public void ButtonMenu()
+    {
+        isPanelMenu = !isPanelMenu;
+        panelMenu.SetActive(isPanelMenu);
+
+        if (isPanelMenu)
+        {
+            buttonMenu.GetComponent<Image>().sprite = buttonSpriteClose;
+        }
+        else
+        {
+            buttonMenu.GetComponent<Image>().sprite = buttonSpriteOpen;
+        }
+        
+        SoundManager.Instance.PlaySFX("SFX_UI_PanelOpen"); // UI 버튼 클릭 사운드 재생
+    }
+
+    public void ButtonHome()
+    {
+        SoundManager.Instance.PlaySFX("SFX_UI_ButtonClick"); // UI 버튼 클릭 사운드 재생
+        SceneManager.LoadScene("Lobby");
+    }
+    
+    public void ButtonWaitingRoom()
+    {
+        SoundManager.Instance.PlaySFX("SFX_UI_ButtonClick"); // UI 버튼 클릭 사운드 재생
+        SceneManager.LoadScene("WaitingRoom");
+    }
+    
+    /// <summary>
+    /// 현재 씬을 다시 로드하여 게임을 재시작합니다.
+    /// </summary>
+    public void ButtonRetry()
+    {
+        SoundManager.Instance.PlaySFX("SFX_UI_ButtonClick"); // UI 버튼 클릭 사운드 재생
+        LoadingSceneController.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
+    /// <summary>
+    /// 하단 UI 그룹의 가시성을 토글합니다. (표시/숨김)
+    /// </summary>
+    private void ToggleUI()
+    {
+        // 애니메이션 진행 중이면 무시
+        if(isAnimating || isSwitching) return;
+
+        isUIVisible = !isUIVisible;
+        
+        if(isUIVisible)
+        {
+            bottomUIGroup.SetActive(true); // UI 그룹 활성화
+            StartCoroutine(ShowUIAnimation()); // UI 표시 애니메이션 시작
+        }
+        else
+        {
+            StartCoroutine(HideUIAnimation()); // UI 숨김 애니메이션 시작
+        }
+        
+        SoundManager.Instance.PlaySFX("SFX_UI_Switching");
+    }
+    
+   /// <summary>
+   /// 하단 UI 그룹을 부드럽게 표시하는 애니메이션 코루틴 (수정된 버전)
+   /// </summary>
+   private IEnumerator ShowUIAnimation()
+   { 
+       isAnimating = true;
+       bottomUIGroup.SetActive(true);
+       
+       float elapsedTime = 0f;
+
+       // 애니메이션 시작 시점의 위치들을 저장
+       Vector2[] startPositions = new Vector2[bottomUIPanels.Length];
+       for(int i = 0; i < bottomUIPanels.Length; i++)
+       {
+           startPositions[i] = bottomUIPanels[i].anchoredPosition;
+       }
+       
+       // switchState를 기반으로 각 패널의 최종 목표 위치를 동적으로 계산합니다.
+       Vector2[] targetPositions = new Vector2[bottomUIPanels.Length];
+       for(int i=0; i < bottomUIPanels.Length; i++)
+       {
+           // 기본적으로는 원래 저장된 위치를 목표로 설정
+           targetPositions[i] = originalPositions[i]; 
+
+           // 만약 현재 패널이 TowerPanel이라면
+           if (bottomUIPanels[i] == TowerPanel)
+           {
+               // switchState가 false(타워 활성)일 때만 원래 위치로, 아니면 숨김 위치로 설정
+               targetPositions[i] = !switchState ? towerPanelOriginalPos : towerPanelOriginalPos + new Vector2(0, hideOffset);
+           }
+           // 만약 현재 패널이 SkillPanel이라면
+           else if (bottomUIPanels[i] == SkillPanel)
+           {
+               // switchState가 true(스킬 활성)일 때만 원래 위치로, 아니면 숨김 위치로 설정
+               targetPositions[i] = switchState ? skillPanelOriginalPos : skillPanelOriginalPos + new Vector2(0, hideOffset);
+           }
+       }
+       
+       while(elapsedTime < animationDuration)
+       {
+           elapsedTime += Time.deltaTime;
+           float progress = Mathf.Clamp01(elapsedTime / animationDuration);
+
+           // 모든 패널을 동시에 계산된 목표 위치로 움직임
+           for(int i = 0; i < bottomUIPanels.Length; i++)
+           {
+               bottomUIPanels[i].anchoredPosition = Vector2.Lerp(startPositions[i], targetPositions[i], progress);
+           }
+           yield return null;
+       }
+       
+       // 애니메이션 종료 후 정확한 위치로 고정
+       for(int i = 0; i < bottomUIPanels.Length; i++)
+       {
+           bottomUIPanels[i].anchoredPosition = targetPositions[i];
+       }
+
+       if (scorePanel != null)
+       {
+           scorePanel.SetActive(true);
+       }
+
+       if (timePanel != null && GameModeManager.CurrentMode == GameMode.Infinite)
+       {
+           timePanel.SetActive(true);
+       }
+       
+       isAnimating = false;
+   }
+
+   /// <summary>
+   /// 하단 UI 그룹을 부드럽게 숨기는 애니메이션 코루틴 (프레임률 독립적으로 수정)
+   /// </summary>
+   private IEnumerator HideUIAnimation()
+   {
+       isAnimating = true;
+       
+       float elapsedTime = 0f;
+
+       // 시작 위치와 목표 위치를 미리 계산
+       Vector2[] startPositions = new Vector2[bottomUIPanels.Length];
+       Vector2[] targetPositions = new Vector2[bottomUIPanels.Length];
+       for(int i = 0; i < bottomUIPanels.Length; i++)
+       {
+           startPositions[i] = bottomUIPanels[i].anchoredPosition;
+           targetPositions[i] = originalPositions[i] + new Vector2(0, hideOffset);
+       }
+
+       while(elapsedTime < animationDuration)
+       {
+           elapsedTime += Time.deltaTime;
+           float progress = Mathf.Clamp01(elapsedTime / animationDuration);
+
+           // 모든 패널을 동시에 움직임
+           for(int i = 0; i < bottomUIPanels.Length; i++)
+           {
+               bottomUIPanels[i].anchoredPosition = Vector2.Lerp(startPositions[i], targetPositions[i], progress);
+           }
+           yield return null;
+       }
+       
+       // 애니메이션 종료 후 정확한 위치로 고정하고 그룹을 비활성화
+       for(int i = 0; i < bottomUIPanels.Length; i++)
+       {
+            bottomUIPanels[i].anchoredPosition = targetPositions[i];
+       }
+       bottomUIGroup.SetActive(false);
+
+       if (scorePanel != null)
+       {
+           scorePanel.SetActive(false);
+       }
+
+       if (timePanel != null && GameModeManager.CurrentMode == GameMode.Infinite)
+       {
+           timePanel.SetActive(false);
+       }
+       
+       isAnimating = false;
+   }
+
+   /// <summary>
+   /// 두 UI 패널을 서로 전환하는 애니메이션 코루틴 (프레임률 독립적으로 수정)
+   /// </summary>
+   /// <param name="UpPanel">위로 올라올 패널</param>
+   /// <param name="DownPanel">아래로 내려갈 패널</param>
+   private IEnumerator SwitchPanel(RectTransform UpPanel, RectTransform DownPanel)
+   {
+       // UI가 숨겨져 있거나 다른 애니메이션 중이면 전환하지 않음
+       if(!isUIVisible || isAnimating) yield break;
+
+       isSwitching = true; // 전환 애니메이션 시작
+       
+       float elapsedTime = 0f; // 애니메이션 경과 시간 측정용 변수
+
+       // 각 패널의 시작 위치와 목표 위치를 미리 계산
+       Vector2 upStartPos = UpPanel.anchoredPosition;
+       Vector2 downStartPos = DownPanel.anchoredPosition;
+       Vector2 upTargetPos = (UpPanel == TowerPanel) ? towerPanelOriginalPos : skillPanelOriginalPos;
+       Vector2 downTargetPos = (DownPanel == TowerPanel) ? towerPanelOriginalPos + new Vector2(0, hideOffset) 
+           : skillPanelOriginalPos + new Vector2(0, hideOffset);
+       
+       SoundManager.Instance.PlaySFX("SFX_UI_Switching");
+       
+       // 경과 시간이 설정한 애니메이션 지속 시간보다 작을 동안 반복
+       while(elapsedTime < animationDuration)
+       {
+           // 매 프레임의 실제 시간만큼 경과 시간을 더해줌
+           elapsedTime += Time.deltaTime;
+           
+           // 애니메이션 진행률 (0.0 ~ 1.0) 계산
+           float progress = Mathf.Clamp01(elapsedTime / animationDuration);
+
+           // 진행률에 따라 시작 위치에서 목표 위치로의 중간 지점을 계산하여 적용
+           UpPanel.anchoredPosition = Vector2.Lerp(upStartPos, upTargetPos, progress);
+           DownPanel.anchoredPosition = Vector2.Lerp(downStartPos, downTargetPos, progress);
+
+           // 다음 프레임까지 대기
+           yield return null; 
+       }
+
+       // 애니메이션 종료 후, 정확한 최종 위치로 설정
+       UpPanel.anchoredPosition = upTargetPos;
+       DownPanel.anchoredPosition = downTargetPos;
+       
+       isSwitching = false; // 전환 애니메이션 종료
+   }
+}
+18:T126c,using System;
+using UnityEngine;
+
+/// <summary>
+/// UI 관련 이벤트를 중앙에서 관리하고 다른 스크립트들이 구독할 수 있도록 하는 싱글톤 클래스
+/// </summary>
+public class UIEventManager : MonoBehaviour
+{
+    private static UIEventManager instance; // 싱글톤 인스턴스
+    private static bool isQuitting = false; // 애플리케이션 종료 중인지 확인하는 플래그
+    
+    // UI 이벤트 처리를 위한 Action 델리게이트 선언
+    /// <summary>
+    /// 플레이어 HP가 변경될 때 발생하는 이벤트 (현재 HP, 최대 HP)
+    /// </summary>
+    public Action<float, float> OnPlayerHPChanged;
+    /// <summary>
+    /// 플레이어 SP가 변경될 때 발생하는 이벤트 (현재 SP, 최대 SP)
+    /// </summary>
+    public Action<float, float> OnPlayerSPChanged;
+    /// <summary>
+    /// 플레이어 골드가 변경될 때 발생하는 이벤트 (현재 골드)
+    /// </summary>
+    public Action<int> OnPlayerGoldChanged;
+    /// <summary>
+    /// 플레이어 타워 코스트가 변경될 때 발생하는 이벤트 (현재 타워 코스트, 최대 타워 코스트)
+    /// </summary>
+    public Action<int> OnTowerCostChanged; // 이 이벤트는 더 이상 사용되지 않음
+    /// <summary>
+    /// 시스템 메시지가 발생할 때 발생하는 이벤트 (메시지 타입)
+    /// </summary>
+    public Action<SystemType> OnSystemMessage;
+    
+    public static event Action<int> OnRCoinAcquired; // RCoin 획득량 알림 이벤트
+
+    /// <summary>
+    /// UIEventManager의 싱글톤 인스턴스를 반환합니다.
+    /// 애플리케이션 종료 중에는 null을 반환하여 MissingReferenceException을 방지합니다.
+    /// </summary>
+    public static UIEventManager Instance
+    {
+        get
+        {
+            if (isQuitting) 
+            {
+                return null;
+            }
+            if (instance == null)
+            {
+                instance = FindFirstObjectByType<UIEventManager>();
+                if (instance == null)
+                {
+                    Debug.LogError("UIEventManager 인스턴스를 찾을 수 없습니다. 씬에 배치되었는지 확인하세요.");
+                }
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        isQuitting = false; // 새로운 플레이 세션 시작 시 플래그 초기화
+        // 싱글톤 패턴 구현
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); // 씬이 변경되어도 오브젝트 유지
+        }
+        else
+        {
+            Destroy(gameObject); // 중복 생성 방지
+        }
+    }
+
+    /// <summary>
+    /// 애플리케이션이 종료될 때 호출됩니다.
+    /// 싱글톤 인스턴스 접근 시 MissingReferenceException을 방지하기 위해 플래그를 설정합니다.
+    /// </summary>
+    private void OnApplicationQuit()
+    {
+        isQuitting = true; 
+    }
+
+    /// <summary>
+    /// 플레이어 HP 변경 이벤트를 발생시킵니다.
+    /// </summary>
+    /// <param name="currentHP">현재 HP</param>
+    /// <param name="maxHP">최대 HP</param>
+    public void UpdatePlayerHP(float currentHP, float maxHP)
+    {
+        OnPlayerHPChanged?.Invoke(currentHP, maxHP);
+    }
+
+    /// <summary>
+    /// 플레이어 SP 변경 이벤트를 발생시킵니다.
+    /// </summary>
+    /// <param name="currentSP">현재 SP</param>
+    /// <param name="maxSP">최대 SP</param>
+    public void UpdatePlayerSP(float currentSP, float maxSP)
+    {
+        OnPlayerSPChanged?.Invoke(currentSP, maxSP);
+    }
+
+    /// <summary>
+    /// 플레이어 골드 변경 이벤트를 발생시킵니다.
+    /// </summary>
+    /// <param name="gold">현재 골드</param>
+    public void UpdatePlayerGold(int gold)
+    {
+        OnPlayerGoldChanged?.Invoke(gold);
+    }
+
+    /// <summary>
+    /// 시스템 메시지 이벤트를 발생시킵니다.
+    /// </summary>
+    /// <param name="type">시스템 메시지 타입</param>
+    public void ShowSystemMessage(SystemType type)
+    {
+        OnSystemMessage?.Invoke(type);
+    }
+
+    /// <summary>
+    /// 플레이어 타워 코스트 변경 이벤트를 발생시킵니다.
+    /// </summary>
+    /// <param name="currentTowerCost">현재 타워 코스트</param>
+    /// <param name="maxTowerCost">최대 타워 코스트</param>
+    public void UpdateTowerCost(int currentTowerCost)
+    {
+        OnTowerCostChanged?.Invoke(currentTowerCost);
+    }
+    
+    // RCoin 획득 이벤트를 발생시키는 메소드
+    public static void NotifyRCoinAcquired(int amount)
+    {
+        OnRCoinAcquired?.Invoke(amount);
+    }
+}19:T1e3d,using TMPro;
+using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement; // SceneManagement 네임스페이스 추가
+
+/// <summary>
+/// 툴팁 UI를 관리하는 싱글톤 클래스입니다.
+/// </summary>
+public class TooltipManager : MonoBehaviour
+{
+    public static TooltipManager Instance { get; private set; }
+
+    [Header("UI References")]
+    [Tooltip("툴팁 패널 프리팹")] 
+    [SerializeField] private GameObject tooltipPanelPrefab;
+    private GameObject tooltipPanelInstance; // 인스턴스화된 툴팁 패널 
+    private TextMeshProUGUI headerText;
+    private TextMeshProUGUI contentText;
+    
+    [Tooltip("화면 좌우 가장자리와 툴팁 사이의 최소 여유 공간(픽셀)")]
+    public float horizontalPadding = 10f;
+    
+    [Tooltip("마우스 포인터와 툴팁 사이의 수직 간격")]
+    public float verticalOffset = 10f;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnEnable()
+    {
+        // 씬 로드 이벤트 구독
+        SceneManager.sceneLoaded += OnSceneLoaded; 
+        // 현재 씬이 로드된 상태라면 즉시 툴팁 패널을 설정
+        // (Awake/Start보다 OnEnable이 먼저 호출될 수 있으므로)
+        if (gameObject.scene.isLoaded)
+        {
+            OnSceneLoaded(gameObject.scene, LoadSceneMode.Single);
+        }
+    }
+
+    private void OnDisable()
+    {
+        // 씬 로드 이벤트 구독 해제
+        SceneManager.sceneLoaded -= OnSceneLoaded; 
+        // 씬이 언로드될 때 현재 툴팁 인스턴스 파괴
+        if (tooltipPanelInstance != null) 
+        {
+            Destroy(tooltipPanelInstance);
+            tooltipPanelInstance = null;
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // 이전 씬의 툴팁 인스턴스가 남아있다면 파괴
+        if (tooltipPanelInstance != null)
+        {
+            Destroy(tooltipPanelInstance);
+            tooltipPanelInstance = null;
+        }
+
+        // 현재 씬의 Canvas를 찾아서 툴팁 패널을 그 자식으로 인스턴스화
+        Canvas canvas = FindFirstObjectByType<Canvas>();
+        if (canvas == null)
+        {
+            Debug.LogWarning("[TooltipManager] No Canvas found in the current scene. Tooltip will not be displayed.");
+            return;
+        }
+
+        tooltipPanelInstance = Instantiate(tooltipPanelPrefab, canvas.transform); // Canvas의 자식으로 인스턴스화
+        // CanvasGroup 컴포넌트 추가 및 Raycast 비활성화
+        CanvasGroup canvasGroup = tooltipPanelInstance.AddComponent<CanvasGroup>();
+        canvasGroup.blocksRaycasts = false;
+
+        tooltipPanelInstance.GetComponent<RectTransform>().anchoredPosition = Vector2.zero; // 중앙으로 초기화
+        tooltipPanelInstance.name = "TooltipPanel_RuntimeInstance"; // 디버깅을 위해 이름 지정
+
+        // 인스턴스화된 툴팁 패널의 자식에서 TextMeshProUGUI 컴포넌트 찾기
+        headerText = tooltipPanelInstance.transform.Find("TooltipHeader").GetComponent<TextMeshProUGUI>();
+        contentText = tooltipPanelInstance.transform.Find("TooltipContent").GetComponent<TextMeshProUGUI>();
+
+        if (headerText == null) Debug.LogError("[TooltipManager] headerText not found! Make sure 'TooltipHeader' is a child of tooltipPanelPrefab.");
+        if (contentText == null) Debug.LogError("[TooltipManager] contentText not found! Make sure 'TooltipContent' is a child of tooltipPanelPrefab.");
+
+        HideTooltip(); // 시작 시 툴팁 숨기기
+    }
+
+    private void Update()
+    {
+        // Update 메서드에서는 툴팁 위치를 지속적으로 업데이트하지 않습니다.
+        // 위치 설정은 ShowTooltip에서 한 번만 이루어집니다.
+    }
+
+    /// <summary>
+    /// 툴팁을 표시하고 내용을 설정합니다。
+    /// </summary>
+    /// <param name="header">툴팁 제목</param>
+    /// <param name="content">툴팁 내용</param>
+    // [수정 1] 클래스 상단에 패딩 값을 조절할 수 있는 public 변수 추가
+    // 이렇게 하면 유니티 인스펙터 창에서 값을 쉽게 바꿀 수 있습니다.
+    public void ShowTooltip(string header, string content)
+    {
+        if (tooltipPanelInstance == null) return;
+        if (tooltipPanelInstance.activeSelf && headerText.text == header && contentText.text == content) return;
+
+        StopAllCoroutines();
+        StartCoroutine(ShowTooltipRoutine(header, content));
+    }
+
+    private IEnumerator ShowTooltipRoutine(string header, string content)
+    {
+        // 1. 초기 설정 (이전과 동일)
+        tooltipPanelInstance.SetActive(true);
+        headerText.text = header;
+        contentText.text = content;
+
+        // 2. 캔버스 동적 탐색 및 크기 강제 업데이트 (이전과 동일)
+        Canvas rootCanvas = tooltipPanelInstance.GetComponentInParent<Canvas>();
+        if (rootCanvas == null)
+        {
+            Debug.LogError("툴팁이 어떤 Canvas에도 속해있지 않습니다!");
+            yield break;
+        }
+        Canvas.ForceUpdateCanvases();
+        yield return null;
+
+        // 3. 툴팁의 실제 픽셀 크기 계산 (이전과 동일)
+        RectTransform panelRect = tooltipPanelInstance.GetComponent<RectTransform>();
+        Vector2 panelPixelSize = new Vector2(
+            panelRect.sizeDelta.x * rootCanvas.scaleFactor,
+            panelRect.sizeDelta.y * rootCanvas.scaleFactor
+        );
+
+        Vector2 mousePos = Input.mousePosition;
+        Vector2 desiredPosition;
+
+        // 4. [핵심 로직 변경] 수직 위치 동적 결정
+        // 마우스 커서 아래쪽의 사용 가능한 공간이, 툴팁의 실제 높이 + 약간의 간격보다 작은지 확인합니다.
+        float requiredVerticalSpace = panelPixelSize.y + verticalOffset;
+
+        if (mousePos.y < requiredVerticalSpace)
+        {
+            // 공간이 부족하면 툴팁을 마우스 위로 올립니다.
+            desiredPosition = new Vector2(mousePos.x, mousePos.y + verticalOffset);
+            panelRect.pivot = new Vector2(0.5f, 0f); // Pivot을 하단으로 변경
+        }
+        else
+        {
+            // 공간이 충분하면 기본값인 마우스 아래에 배치합니다.
+            desiredPosition = new Vector2(mousePos.x, mousePos.y - verticalOffset);
+            panelRect.pivot = new Vector2(0.5f, 1f); // Pivot을 상단으로 변경
+        }
+
+        // 5. 수평 위치 결정 (좌우 경계는 고정된 패딩 값 사용)
+        float panelLeftEdge = desiredPosition.x - panelPixelSize.x * panelRect.pivot.x;
+        if (panelLeftEdge < horizontalPadding)
+        {
+            desiredPosition.x = horizontalPadding + panelPixelSize.x * panelRect.pivot.x;
+        }
+
+        float panelRightEdge = desiredPosition.x + panelPixelSize.x * (1 - panelRect.pivot.x);
+        if (panelRightEdge > Screen.width - horizontalPadding)
+        {
+            desiredPosition.x = Screen.width - horizontalPadding - panelPixelSize.x * (1 - panelRect.pivot.x);
+        }
+
+        // 6. 최종 위치 적용
+        panelRect.position = desiredPosition;
+    }
+    
+    /// <summary>
+    /// 툴팁을 숨깁니다.
+    /// </summary>
+    public void HideTooltip()
+    {
+        StopAllCoroutines();
+        
+        if (tooltipPanelInstance == null) return; // 인스턴스가 없으면 숨기지 않음
+        if (!tooltipPanelInstance.activeSelf) return; // 이미 비활성화되어 있으면 중복 호출 방지
+
+        tooltipPanelInstance.SetActive(false);
+    }
+}1a:T9a0,using UnityEngine;
+using UnityEngine.EventSystems;
+
+/// <summary>
+/// UI 요소에 마우스 오버 시 툴팁을 표시하는 트리거 스크립트입니다.
+/// </summary>
+public class TooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+{
+    [Tooltip("툴팁에 표시될 제목")]
+    [SerializeField] private string header;
+    [Tooltip("툴팁에 표시될 내용")]
+    [SerializeField] [TextArea(3, 10)] private string content;
+
+    public System.Func<string> GetContentCallback; // 툴팁 내용을 동적으로 가져올 콜백 함수
+
+    /// <summary>
+    /// 툴팁의 제목을 설정합니다.
+    /// </summary>
+    /// <param name="newHeader">새로운 제목</param>
+    public void SetHeader(string newHeader)
+    {
+        header = newHeader;
+    }
+
+    /// <summary>
+    /// 툴팁의 내용을 설정합니다.
+    /// </summary>
+    /// <param name="newContent">새로운 내용</param>
+    public void SetContent(string newContent)
+    {
+        content = newContent;
+    }
+
+    /// <summary>
+    /// 마우스 포인터가 UI 요소에 진입했을 때 호출됩니다.
+    /// </summary>
+    /// <param name="eventData">이벤트 데이터</param>
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        string currentContent = content; // 기본적으로 content 필드 사용
+        if (GetContentCallback != null)
+        {
+            currentContent = GetContentCallback.Invoke(); // 콜백이 할당되어 있으면 콜백 호출
+        }
+
+        // 헤더나 내용이 비어있지 않을 때만 툴팁 표시
+        if (!string.IsNullOrEmpty(header) || !string.IsNullOrEmpty(currentContent))
+        {
+            if (TooltipManager.Instance != null)
+            {
+                TooltipManager.Instance.ShowTooltip(header, currentContent);
+            }
+            else
+            {
+                Debug.LogWarning("[TooltipTrigger] TooltipManager.Instance is null.");
+            }
+        }
+    }
+
+    /// <summary>
+    /// 마우스 포인터가 UI 요소에서 벗어났을 때 호출됩니다.
+    /// </summary>
+    /// <param name="eventData">이벤트 데이터</param>
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (TooltipManager.Instance != null)
+        {
+            TooltipManager.Instance.HideTooltip();
+        }
+        else
+        {
+            Debug.LogWarning("[TooltipTrigger] TooltipManager.Instance is null.");
+        }
+    }
+}
+1b:T202c,using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// 타워와 그에 연관된 스킬 정보를 포함하는 ScriptableObject입니다.
+/// </summary>
+[CreateAssetMenu(fileName = "NewTowerArchetype", menuName = "Tower Defense/Tower Archetype")]
+public class TowerArchetype : ScriptableObject
+{
+    [Header("General Info")]
+    public string archetypeID; // 아키타입 고유 ID
+    public string archetypeDisplayName; // UI에 표시될 이름
+    [TextArea(3, 10)]
+    public string archetypeDescription; // 아키타입 전체 설명
+
+    [Header("Tower Data")]
+    [Tooltip("타워 아이콘")]
+    public Sprite towerIcon;
+    [Tooltip("이 아키타입에 해당하는 타워 프리팹")]
+    public GameObject towerPrefab;
+    [Tooltip("타워의 무기 관련 스탯")]
+    public TowerTemplate.Weapon towerWeaponStats; // TowerTemplate의 Weapon 구조체 재사용
+    [Tooltip("업그레이드 계수")]
+    public TowerTemplate.UpgradeCoefficient upgradeCoefficient;
+    [Tooltip("타워의 데미지 타입")]
+    public DamageType towerDamageType; // TowerDefense.Enums.DamageType
+    [Tooltip("타워가 다중 공격 타워인지 여부")]
+    public bool isMultiTargetTower;
+
+    [Header("Associated Skill Data")]
+    [Tooltip("스킬 아이콘")]
+    public Sprite skillIcon;
+    [Tooltip("이 타워 아키타입에 연관된 스킬 프리팹")]
+    public GameObject skillPrefab;
+    [Tooltip("스킬 타입 (타워, 액티브, 패시브)")]
+    public SkillManager.SkillType skillType; // SkillManager의 SkillType 열거형 재사용
+    [Tooltip("스킬 지속 시간")]
+    public float skillDuration;
+    [Tooltip("스킬 범위")]
+    public float skillRange;
+    [Tooltip("스킬 사용에 필요한 스킬 포인트")]
+    public int skillPointCost;
+    [Tooltip("스킬 이름")]
+    public string skillDisplayName;
+    [TextArea(3, 10)]
+    public string skillDescription; // 스킬 설명
+
+    /// <summary>
+    /// 현재 플레이어 스탯을 반영한 타워의 상세 설명을 반환합니다.
+    /// </summary>
+    public string GetFormattedTowerDescription(PlayerUpgrade playerUpgrade, PlayerData playerData)
+    {
+        // TowerWeapon.cs의 Damage 프로퍼티 계산 로직을 여기에 통합
+        // 기본 데미지
+        float baseDamage = towerWeaponStats.damage;
+        string damageText = $"데미지 : {Mathf.FloorToInt(baseDamage)}";
+
+        // 업그레이드 증가 데미지
+        float upgradeDamage = GetUpgradeDamage(towerDamageType, playerUpgrade);
+        if (upgradeDamage > 0)
+        {
+            damageText += $"(<color=red>+{upgradeDamage:F0}</color>";
+        }
+
+        // 장비로 증가한 데미지 (TowerWeapon의 Damage 프로퍼티 로직 참고)
+        float currentTowerDamage = (baseDamage + upgradeDamage) * (1 + playerData.attackDamage / 100f);
+        
+        float specificTowerDamageBonus = 0f;
+        // TowerArchetype의 ID나 이름을 기반으로 특정 타워 데미지 보너스 가져오기
+        if (archetypeID.Contains("Default")) specificTowerDamageBonus = playerData.defaultTowerDamage;
+        else if (archetypeID.Contains("Arrow")) specificTowerDamageBonus = playerData.arrowTowerDamage;
+        else if (archetypeID.Contains("Laser")) specificTowerDamageBonus = playerData.laserTowerDamage;
+        else if (archetypeID.Contains("Priests")) specificTowerDamageBonus = playerData.priestsTowerDamage;
+        else if (archetypeID.Contains("Spear")) specificTowerDamageBonus = playerData.spearTowerDamage;
+        else if (archetypeID.Contains("Sword")) specificTowerDamageBonus = playerData.swordTowerDamage;
+
+        currentTowerDamage *= (1 + specificTowerDamageBonus / 100f);
+
+        // 버프 데미지는 현재 TowerWeapon에서 직접 관리되므로, 여기서는 포함하지 않음.
+        // 만약 버프 데미지도 툴팁에 포함하려면 GameManager 등에서 버프 정보를 가져와야 함.
+
+        float equipmentDamageBonus = currentTowerDamage - (baseDamage + upgradeDamage); // 순수 장비로 인한 증가량
+
+        if (equipmentDamageBonus > 0)
+        {
+            if (upgradeDamage <= 0) damageText += " ("; // 업그레이드 데미지가 없으면 괄호 시작
+            damageText += "<color=green>+" + Mathf.FloorToInt(equipmentDamageBonus) + "</color>";
+        }
+
+        // 버프 데미지는 현재 TowerWeapon에서 직접 관리되므로, 여기서는 포함하지 않음.
+        // 툴팁에 포함하려면 GameManager 등에서 버프 정보를 가져와야 함.
+        // if (currentTower.BuffDamage > 0) { ... }
+
+        // 괄호 닫기
+        if (upgradeDamage > 0 || equipmentDamageBonus > 0)
+        {
+            damageText += ")";
+        }
+
+        string content = damageText + "\n";
+        if (towerWeaponStats.attackSpeed == 0f)
+        {
+            content += $"공격 속도: 지속\n";
+        }
+        else
+        {
+            content += $"공격 속도: {towerWeaponStats.attackSpeed * (1 + playerData.attackSpeed / 100f):F1}\n";
+        }
+        
+        content += $"공격 범위: {towerWeaponStats.range * (1 + playerData.attackRange / 100f):F1}\n";
+        content += $"타입: {GetDamageTypeString(towerDamageType)}";
+        content += $"\n{archetypeDescription}"; // 아키타입 전체 설명
+
+        return content;
+    }
+
+    /// <summary>
+    /// 현재 플레이어 스탯을 반영한 스킬의 상세 설명을 반환합니다.
+    /// </summary>
+    public string GetFormattedSkillDescription(PlayerUpgrade playerUpgrade, PlayerData playerData)
+    {
+        // string content = $"스킬 포인트 소모: {skillPointCost}\n";
+        string content = $"지속 시간: {skillDuration:F1}초\n";
+
+        if (skillRange == 0)
+        {
+            content += $"범위: (적 존재 시)즉시 발동\n";
+        }
+        else
+        {
+            content += $"범위: {skillRange:F1}\n";
+        }
+        content += $"\n{skillDescription}";
+
+        // 스킬 데미지 등 플레이어 스탯에 영향을 받는 부분이 있다면 여기에 추가
+        // 예: 스킬 데미지: {baseSkillDamage * (1 + playerData.skillDamage / 100f)}
+
+        return content;
+    }
+
+    // DamageType을 문자열로 변환하는 헬퍼 함수 (TowerWeapon.cs에서 복사)
+    private string GetDamageTypeString(DamageType type)
+    {
+        switch (type)
+        {
+            case DamageType.PhysicalType: return "물리";
+            case DamageType.MagicalType: return "마법";
+            case DamageType.HybridType: return "복합";
+            default: return "알 수 없음";
+        }
+    }
+
+    private float GetUpgradeDamage(DamageType damageType, PlayerUpgrade playerUpgrade)
+    {
+        float addedDamage = 0f;
+        var coefficient = upgradeCoefficient;
+
+        switch (damageType)
+        {
+            case DamageType.PhysicalType:
+                // 제곱 성장(damageQuadratic) 공식을 추가합니다.
+                addedDamage = (coefficient.damage * playerUpgrade.PhysicUpgrade) +
+                              (coefficient.damageQuadratic * playerUpgrade.PhysicUpgrade * playerUpgrade.PhysicUpgrade);
+                break;
+
+            case DamageType.MagicalType:
+                // 제곱 성장(damageQuadratic) 공식을 추가합니다.
+                addedDamage = (coefficient.damage * playerUpgrade.MagicUpgrade) +
+                              (coefficient.damageQuadratic * playerUpgrade.MagicUpgrade * playerUpgrade.MagicUpgrade);
+                break;
+
+            case DamageType.HybridType:
+                // 하이브리드 타입에도 제곱 성장 공식을 적용합니다.
+                float totalPhysicDmg = (coefficient.damage * playerUpgrade.PhysicUpgrade) +
+                                       (coefficient.damageQuadratic * playerUpgrade.PhysicUpgrade * playerUpgrade.PhysicUpgrade);
+                float totalMagicDmg = (coefficient.damage * playerUpgrade.MagicUpgrade) +
+                                      (coefficient.damageQuadratic * playerUpgrade.MagicUpgrade * playerUpgrade.MagicUpgrade);
+
+                addedDamage = (totalPhysicDmg + totalMagicDmg) * 0.6f;
+                break;
+        }
+        return addedDamage;
+    }
+}1c:T17fc,using System.Collections;
+using UnityEngine;
+
+public enum EnemyDestroyType { Kill = 0, Arrive }
+public class Enemy : MonoBehaviour
+{
+    public EnemyType enemyType; // 적의 종류를 나타내는 필드 추가
+
+    private int wayPointCount; // 이동 경로 개수
+    private Transform[] wayPoints; // 이동 경로 정보
+    private int currentIndex = 0; // 현재 목표지점 인덱스
+    private EnemySpawner enemySpawner; // 적의 삭제를 본인이 하지 않고 EnemySpawner에서 제어
+    private SpriteRenderer spriteRenderer;
+
+    public SliderPositionAutoSetter HpSlider { get; set; } // 추가: HP 슬라이더 참조
+
+    public float moveSpeed;
+    private float baseMoveSpeed;  // 추가
+
+    private int _gold; // Private backing field for gold
+    public int Gold // Public property for gold
+    {
+        get { return _gold; }
+        private set { _gold = value; } // Make setter private to control modification
+    }
+    
+    public void Setup(EnemySpawner enemySpawer, Transform[] wayPoints, int waveIndex, EnemyType type) // Add EnemyType parameter
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        baseMoveSpeed = moveSpeed;  // 추가: 초기 속도 저장
+        
+        // '위험 수당' 특성의 이동 속도 증가를 적용합니다.
+        if (PerkManager.Instance != null)
+        {
+            moveSpeed *= PerkManager.Instance.perk_enemySpeedModifier;
+        }
+        
+        this.enemySpawner = enemySpawer;
+        this.enemyType = type; // EnemyType 설정
+
+        // 적 이동 경로 WayPoints 정보 생성
+        wayPointCount = wayPoints.Length;
+        this.wayPoints = new Transform[wayPointCount];
+        this.wayPoints = wayPoints;
+
+        // 적이 위치를 첫번째 wayPoint 위치로 설정
+        transform.position = wayPoints[currentIndex].position;
+
+        setWaveGoldValue(waveIndex); // Call the new method here
+
+        // 적 이동/목표지점 설정 코루틴 함수 시작
+        NextMoveTo();
+    }
+    
+    public void setWaveGoldValue(int index)
+    {
+        // Base gold amount
+        int calculatedGold = 10; // Starting gold
+
+        // Linear increase
+        calculatedGold += (5 * index); // 5 gold per wave
+
+        // Threshold for increased scaling (e.g., after wave 20)
+        int thresholdWave = 20;
+        if (index >= thresholdWave)
+        {
+            int effectiveIndex = index - thresholdWave + 1;
+            calculatedGold += (10 * effectiveIndex * effectiveIndex); // Additional quadratic increase
+        }
+
+        Gold = calculatedGold;
+        
+        // '위험 수당' 특성의 골드 획득량 증가를 적용합니다.
+        if (PerkManager.Instance != null)
+        {
+            Gold = (int)(calculatedGold * PerkManager.Instance.perk_goldModifier);
+        }
+        else
+        {
+            Gold = calculatedGold; // PerkManager가 없을 경우 대비
+        }
+    }
+    
+    // 추가: 속도 리셋 메서드
+    public void ResetMoveSpeed() 
+    {
+        moveSpeed = baseMoveSpeed;
+    }
+
+    private void NextMoveTo()
+    {
+        // 아직 이동할 wayPoints가 남아있다면
+        if (currentIndex < wayPointCount - 1)
+        {
+            // 적의 위치를 정확하게 목표 위치로 설정
+            transform.position = wayPoints[currentIndex].position;
+            // 이동 방향 설정 => 다음 목표지점(wayPoints)
+            currentIndex++;
+
+            if (spriteRenderer != null)
+            {
+                Vector3 nextPosition = wayPoints[currentIndex].position;
+                if (nextPosition.x > transform.position.x)
+                {
+                    // 다음 목적지가 오른쪽에 있으면 flipX = false (오른쪽을 봄)
+                    spriteRenderer.flipX = false;
+                }
+                else if (nextPosition.x < transform.position.x)
+                {
+                    // 다음 목적지가 왼쪽에 있으면 flipX = true (왼쪽을 봄)
+                    spriteRenderer.flipX = true;
+                }
+                // x축 이동이 없으면 (수직 이동) 현재 방향을 유지합니다.
+            }
+            
+            StartCoroutine(MoveTo());
+        }
+        // 현재 위치가 마지막 wayPoints이면
+        else 
+        {
+            // 무한 모드인지 확인
+            if (GameModeManager.CurrentMode == GameMode.Infinite)
+            {
+                // 적 재순환: 위치와 인덱스를 처음으로 되돌립니다.
+                transform.position = wayPoints[0].position;
+                currentIndex = 0;
+                // 다시 이동을 시작합니다.
+                NextMoveTo();
+            }
+            else
+            {
+                // [기존 로직] 일반 모드일 경우
+                Gold = 0;
+                OnDie(EnemyDestroyType.Arrive);
+            }
+        }
+    }
+
+    public void OnDie(EnemyDestroyType type)
+    {
+        // 무한 모드이고, 적이 '처치'되었을 경우 '무한 모드 전용 점수'를 추가합니다.
+        if (GameModeManager.CurrentMode == GameMode.Infinite && type == EnemyDestroyType.Kill)
+        {
+            // GameManager에 적 처치 점수를 추가해달라고 요청합니다.
+            // (점수 공식: 적 골드 * 맵 난이도 배율)
+            GameManager.Instance.AddScore_Infinite_Kill(this.Gold);
+        }
+
+        // EnemySpawner에 죽음을 알리는 것은 모든 모드에서 동일하게 실행됩니다.
+        enemySpawner.DestroyEnemy(type, this, Gold);
+    }
+
+    private IEnumerator MoveTo()
+    {
+        float distance = 1f;
+
+        while (distance > 0.04f)
+        {
+            distance = Vector3.Distance(transform.position, wayPoints[currentIndex].position);
+
+            if(distance < 0.04f)
+            {
+                transform.position = wayPoints[currentIndex].position;
+                NextMoveTo();
+                yield break;
+            }
+
+            transform.position = Vector3.MoveTowards(transform.position, wayPoints[currentIndex].position, Time.deltaTime * moveSpeed);
+
+            yield return null;
+        }
+    }
+}1d:T79e,using System.Collections.Generic;
+using UnityEngine;
+
+// 오브젝트 풀링 시스템
+// 게임 오브젝트의 생성과 파괴를 최소화하여 성능을 최적화
+public class ObjectPool<T> where T : UnityEngine.Object
+{
+    private readonly Stack<T> _pool = new Stack<T>();
+    private readonly T _prefab;
+    private readonly Transform _parent;
+
+    public ObjectPool(T prefab, int initialSize, Transform parent = null)
+    {
+        _prefab = prefab;
+        _parent = parent;
+
+        for (int i = 0; i < initialSize; i++)
+        {
+            T obj = Object.Instantiate(prefab, parent);
+            // T가 GameObject 또는 Component일 경우에만 SetActive 호출
+            if (obj is GameObject go) go.SetActive(false);
+            else if (obj is Component comp) comp.gameObject.SetActive(false);
+            _pool.Push(obj);
+        }
+    }
+
+    public T Get()
+    {
+        T obj;
+        while (_pool.Count > 0)
+        {
+            obj = _pool.Pop();
+            if (obj) // 유효성 검사
+            {
+                // T가 GameObject 또는 Component일 경우에만 SetActive 호출
+                if (obj is GameObject go1) go1.SetActive(true);
+                else if (obj is Component comp1) comp1.gameObject.SetActive(true);
+                return obj;
+            }
+        }
+        obj = Object.Instantiate(_prefab, _parent);
+        // T가 GameObject 또는 Component일 경우에만 SetActive 호출
+        if (obj is GameObject go2) go2.SetActive(true);
+        else if (obj is Component comp2) comp2.gameObject.SetActive(true);
+        return obj;
+    }
+
+    public void Return(T obj)
+    {
+        if (obj) // 유효성 검사
+        {
+            // T가 GameObject 또는 Component일 경우에만 SetActive 호출
+            if (obj is GameObject go) go.SetActive(false);
+            else if (obj is Component comp) comp.gameObject.SetActive(false);
+            _pool.Push(obj);
+        }
+    }
+}
+1e:T12b2,using UnityEngine;
+
+/// <summary>
+/// 생성된 맵의 난이도를 계산하고 저장하는 클래스
+/// </summary>
+public class MapDifficulty
+{
+    // 난이도 계산에 사용되는 기본 값 및 가중치
+    [Header("Base Values for Difficulty")]
+    private const float BASE_PATH_LENGTH = 50f;    // 경로 길이의 기준 값
+    private const float BASE_SEGMENT_COUNT = 8f;   // 세그먼트 수의 기준 값
+    private const float BASE_GAP = 5f;             // 경로 간격의 기준 값
+
+    [Header("Weight Values")]
+    private const float LENGTH_WEIGHT = 40f;       // 경로 길이 점수의 가중치
+    private const float SEGMENT_WEIGHT = 30f;      // 세그먼트 수 점수의 가중치
+    private const float GAP_WEIGHT = 30f;          // 경로 간격 점수의 가중치
+
+    // 계산된 맵 정보
+    public float TotalScore { get; private set; }      // 최종 난이도 점수
+    public float PathLength { get; private set; }      // 전체 경로의 길이
+    public int SegmentCount { get; private set; }      // 경로를 구성하는 주요 꺾임(세그먼트)의 수
+    public float AverageGap { get; private set; }      // 경로의 평행 구간 사이의 평균 간격
+
+    /// <summary>
+    /// 주어진 웨이포인트와 세그먼트 수로 맵의 난이도를 계산합니다.
+    /// </summary>
+    /// <param name="waypoints">맵의 경로를 구성하는 웨이포인트 배열</param>
+    /// <param name="segmentCount">경로의 세그먼트 수</param>
+    /// <returns>계산된 난이도 정보를 담은 MapDifficulty 객체</returns>
+    public static MapDifficulty CalculateDifficulty(Vector2Int[] waypoints, int segmentCount)
+    {
+        MapDifficulty difficulty = new MapDifficulty();
+        
+        difficulty.SegmentCount = segmentCount;
+        CalculatePathLength(waypoints, difficulty);
+        CalculateAverageGap(waypoints, difficulty);
+        CalculateTotalScore(difficulty);
+        
+        return difficulty;
+    }
+
+    /// <summary>
+    /// 웨이포인트 배열을 기반으로 전체 경로 길이를 계산합니다.
+    /// </summary>
+    private static void CalculatePathLength(Vector2Int[] waypoints, MapDifficulty difficulty)
+    {
+        float pathLength = 0f;
+        for (int i = 1; i < waypoints.Length; i++)
+        {
+            pathLength += Vector2.Distance(waypoints[i - 1], waypoints[i]);
+        }
+        difficulty.PathLength = pathLength;
+    }
+
+    /// <summary>
+    /// 웨이포인트 배열을 기반으로 경로의 평균 간격을 계산합니다.
+    /// </summary>
+    private static void CalculateAverageGap(Vector2Int[] waypoints, MapDifficulty difficulty)
+    {
+        float totalGap = 0f;
+        int gapCount = 0;
+        
+        // y축이 평행한 두 세그먼트 간의 간격을 계산
+        for (int i = 2; i < waypoints.Length - 1; i += 2)
+        {
+            float gap = Mathf.Abs(waypoints[i].y - waypoints[i - 2].y);
+            totalGap += gap;
+            gapCount++;
+        }
+        
+        difficulty.AverageGap = gapCount > 0 ? totalGap / gapCount : 0f;
+    }
+
+    /// <summary>
+    /// 각 요소별 점수를 합산하여 최종 난이도 점수를 계산합니다.
+    /// </summary>
+    private static void CalculateTotalScore(MapDifficulty difficulty)
+    {
+        float lengthScore = GetLengthScore(difficulty.PathLength);
+        float segmentScore = GetSegmentScore(difficulty.SegmentCount);
+        float gapScore = GetGapScore(difficulty.AverageGap);
+        
+        difficulty.TotalScore = lengthScore + segmentScore + gapScore;
+    }
+
+    // 각 점수 계산을 위한 private static 메소드
+    private static float GetLengthScore(float pathLength) => (BASE_PATH_LENGTH / Mathf.Max(pathLength, 1f)) * LENGTH_WEIGHT;
+    private static float GetSegmentScore(int segmentCount) => (BASE_SEGMENT_COUNT / Mathf.Max(segmentCount, 1)) * SEGMENT_WEIGHT;
+    private static float GetGapScore(float averageGap) => (BASE_GAP / Mathf.Max(averageGap, 0.1f)) * GAP_WEIGHT;
+
+    /// <summary>
+    /// 난이도 정보를 문자열로 반환합니다. (디버그용)
+    /// </summary>
+    /// <returns>포맷팅된 난이도 정보 문자열</returns>
+    public override string ToString()
+    {
+        return string.Format(
+            "난이도 정보:\n" +
+            "- 총 점수: {0:F1}\n" +
+            "- 길이 점수: {1:F1} (실제 길이: {2:F1})\n" +
+            "- 세그먼트 점수: {3:F1} (세그먼트 수: {4})\n" +
+            "- 간격 점수: {5:F1} (평균 간격: {6:F1})",
+            TotalScore,
+            GetLengthScore(PathLength),
+            PathLength,
+            GetSegmentScore(SegmentCount),
+            SegmentCount,
+            GetGapScore(AverageGap),
+            AverageGap
+        );
+    }
+}1f:T2027,using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// 맵의 랜덤 경로를 생성하는 클래스
+/// </summary>
+public class RandomPathGenerator : MonoBehaviour 
+{
+    [Header("Path Generation Settings")]
+    [SerializeField] [Tooltip("경로 세그먼트의 최소 개수")]
+    private int minSegments = 4;
+    [SerializeField] [Tooltip("경로 세그먼트의 최대 개수")]
+    private int maxSegments = 8;
+   
+    
+
+    private int _segmentCount; // 실제로 사용된 세그먼트 수
+    public int SegmentCount => _segmentCount; // 외부 접근용 프로퍼티
+
+    // 맵의 시작점과 끝점 정의
+    private readonly Vector2Int LEFT_POINT = new Vector2Int(-(GameConstants.MAP_WIDTH/2) + 1, 4);
+    private readonly Vector2Int RIGHT_POINT = new Vector2Int((GameConstants.MAP_WIDTH/2) - 2, 4);
+
+    private Vector2Int START_POINT; // 실제 경로 시작점
+    private Vector2Int END_POINT;   // 실제 경로 끝점
+    private bool isLeftToRight;     // 경로가 왼쪽에서 오른쪽으로 진행하는지 여부
+
+    // 경로 방향 확인용 프로퍼티
+    public bool IsLeftToRight => isLeftToRight;
+
+    /// <summary>
+    /// 랜덤 웨이포인트 경로를 생성하고 난이도를 계산합니다.
+    /// </summary>
+    /// <returns>생성된 웨이포인트 배열</returns>
+    public Vector2Int[] GenerateWaypoints()
+    {
+        // 시작 방향을 랜덤하게 결정 (왼쪽에서 오른쪽 또는 오른쪽에서 왼쪽)
+        isLeftToRight = Random.value > 0.5f;
+        START_POINT = isLeftToRight ? LEFT_POINT : RIGHT_POINT;
+        END_POINT = isLeftToRight ? RIGHT_POINT : LEFT_POINT;
+    
+        Vector2Int[] path;
+        int attempts = 0;
+        const int MAX_ATTEMPTS = 100; // 최대 경로 생성 시도 횟수
+        int currentMaxSegments = maxSegments; // 현재 시도에서 사용할 최대 세그먼트 수
+        int usedSegments = 0;  // 실제로 사용된 세그먼트 수
+
+        // 유효한 경로가 생성될 때까지 반복 시도
+        do
+        {
+            path = GeneratePath(currentMaxSegments, out usedSegments);
+            attempts++;
+
+            // 일정 횟수 이상 실패 시 세그먼트 수를 줄여서 재시도
+            if (attempts % 20 == 0 && currentMaxSegments > minSegments)
+            {
+                currentMaxSegments--;
+            }
+
+            // 최대 시도 횟수를 초과하면 단순 경로로 대체
+            if(attempts >= MAX_ATTEMPTS)
+            {
+                return GenerateSimplePath();
+            }
+        } 
+        while (!ValidateWaypoints(path)); // 생성된 경로가 유효한지 검증
+
+        _segmentCount = usedSegments; // 사용된 세그먼트 수 저장
+    
+        return path;
+    }
+
+    /// <summary>
+    /// 경로 생성에 실패했을 때 대체로 사용되는 단순 경로를 생성합니다.
+    /// </summary>
+    /// <returns>단순 웨이포인트 배열</returns>
+    private Vector2Int[] GenerateSimplePath()
+    {
+        List<Vector2Int> waypoints = new List<Vector2Int>();
+        
+        // 시작점에서 중간 높이로 이동 후 끝점으로 이어지는 단순 경로
+        waypoints.Add(START_POINT);
+        waypoints.Add(new Vector2Int(START_POINT.x, 0));
+        waypoints.Add(new Vector2Int(END_POINT.x, 0));
+        waypoints.Add(END_POINT);
+        
+        return waypoints.ToArray();
+    }
+    
+    /// <summary>
+    /// 실제 랜덤 경로를 생성하는 핵심 메소드
+    /// </summary>
+    /// <param name="currentMaxSegments">현재 시도에서 사용할 최대 세그먼트 수</param>
+    /// <param name="usedSegments">실제로 사용된 세그먼트 수 (out 파라미터)</param>
+    /// <returns>생성된 웨이포인트 배열</returns>
+    private Vector2Int[] GeneratePath(int currentMaxSegments, out int usedSegments)
+    {
+        List<Vector2Int> waypoints = new List<Vector2Int>();
+        waypoints.Add(START_POINT);
+
+        // 첫 번째 수직 이동 지점 결정
+        int firstVerticalDepth = Random.Range(-(GameConstants.MAP_HEIGHT/2), START_POINT.y - 1);
+        waypoints.Add(new Vector2Int(START_POINT.x, firstVerticalDepth));
+
+        int currentX = START_POINT.x;
+        int currentY = firstVerticalDepth;
+
+        // 남은 X축 이동 거리를 기반으로 실제 사용할 세그먼트 수 결정
+        int remainingX = Mathf.Abs(END_POINT.x - currentX);
+        usedSegments = Mathf.Min(currentMaxSegments, Mathf.Max(minSegments, remainingX));
+
+        for (int i = 0; i < usedSegments; i++)
+        {
+            // X 이동 거리 계산 (남은 세그먼트 수와 남은 X 거리를 고려)
+            int remainingSegments = usedSegments - i;
+            int minStep = Mathf.Max(1, remainingX / remainingSegments);
+            int maxStep = Mathf.Min(2, remainingX);
+            int xStep = Random.Range(minStep, maxStep + 1);
+
+            // 경로 방향에 따라 X 좌표 업데이트
+            if(isLeftToRight)
+                currentX = Mathf.Min(currentX + xStep, END_POINT.x - 1);
+            else
+                currentX = Mathf.Max(currentX - xStep, END_POINT.x + 1);
+
+            remainingX = Mathf.Abs(END_POINT.x - currentX);
+
+            // Y 위치 결정 (맵 경계 및 다음 세그먼트 고려)
+            int minY = -(GameConstants.MAP_HEIGHT/2);
+            int maxY = (i == usedSegments - 1) ? END_POINT.y - 1 : (GameConstants.MAP_HEIGHT/2) - 1;
+
+            int newY;
+            int attempts = 0;
+            // 유효한 Y 위치를 찾을 때까지 반복 시도
+            do 
+            {
+                newY = Random.Range(minY, maxY + 1);
+                attempts++;
+
+                // 특정 시도 횟수 이상 실패 시, 현재 Y에서 1칸 이동 시도
+                if(attempts > 5)
+                {
+                    newY = currentY + (Random.value > 0.5f ? 1 : -1);
+                    newY = Mathf.Clamp(newY, minY, maxY); // 맵 경계 내로 클램프
+                    break;
+                }
+            } 
+            while (Mathf.Abs(newY - currentY) < 1); // 현재 Y와 최소 1칸 이상 차이나도록
+
+            // 현재 X 좌표와 이전 Y 좌표로 웨이포인트 추가
+            waypoints.Add(new Vector2Int(currentX, currentY));
+
+            // 마지막 세그먼트가 아니면 새로운 Y 좌표로 웨이포인트 추가
+            if (i < usedSegments - 1)
+            {
+                waypoints.Add(new Vector2Int(currentX, newY));
+                currentY = newY;
+            }
+        }
+
+        // 최종 끝점 추가
+        waypoints.Add(new Vector2Int(END_POINT.x, currentY));
+        waypoints.Add(END_POINT);
+
+        return waypoints.ToArray();
+    }
+   
+    /// <summary>
+    /// 생성된 웨이포인트 경로의 유효성을 검사합니다.
+    /// </summary>
+    /// <param name="waypoints">검사할 웨이포인트 배열</param>
+    /// <returns>경로가 유효하면 true, 그렇지 않으면 false</returns>
+    private bool ValidateWaypoints(Vector2Int[] waypoints)
+    {
+        // 1. 최소 웨이포인트 개수 체크
+        if (waypoints.Length < 3)
+        {
+            return false;
+        }
+           
+        // 2. 시작점과 끝점 일치 여부 검사
+        if (waypoints[0] != START_POINT || waypoints[waypoints.Length - 1] != END_POINT)
+        {
+            return false;
+        }
+           
+        // 3. 모든 웨이포인트가 맵 경계 내에 있는지 검사
+        for (int i = 0; i < waypoints.Length; i++)
+        {
+            if (waypoints[i].x < -(GameConstants.MAP_WIDTH/2) || waypoints[i].x > (GameConstants.MAP_WIDTH/2) - 1 ||
+                waypoints[i].y < -(GameConstants.MAP_HEIGHT/2) || waypoints[i].y > (GameConstants.MAP_HEIGHT/2) - 1)
+            {
+                return false;
+            }
+        }
+       
+        // 4. 연속된 웨이포인트 간의 최소 거리 검사 (너무 가까운 포인트 방지)
+        for (int i = 1; i < waypoints.Length; i++)
+        {
+            float distance = Vector2.Distance(waypoints[i], waypoints[i-1]);
+            if (distance < 1)
+            {
+                return false;
+            }
+        }
+       
+        return true;
+    }
+}20:T2e28,using UnityEngine;
+using UnityEngine.Tilemaps;
+using System.Collections.Generic; // List를 사용하기 위해 추가
+
+// [추가] 타일셋을 관리하기 위한 새로운 구조체를 정의합니다.
+[System.Serializable]
+public struct TileSet
+{
+    public string name; // 타일셋의 이름
+    private string bgmClipName; // 이 타일셋(맵)에서 재생할 BGM 오디오 클립의 이름
+    public string BgmClipName { get; private set; }
+    
+    [Header("Path Tiles")]
+    public TileBase horizontalPathTile;    // 가로 길
+    public TileBase verticalPathTile;      // 세로 길
+    public TileBase cornerTopRightTile;    // ┗ 
+    public TileBase cornerTopLeftTile;     // ┛
+    public TileBase cornerBottomRightTile; // ┏
+    public TileBase cornerBottomLeftTile;  // ┓
+    
+    [Header("Building Tiles")]
+    public TileBase startCastleTile; // 시작 성 타일
+    public TileBase endCastleTile;   // 도착 성 타일
+    
+    [Header("Wall Sprites")]
+    public Sprite baseWallSprite; // 기본 벽 (단일)
+    public Sprite[] decorativeWallSprites; // 장식 벽 (배열)
+    
+    // 구조체의 필드 값을 초기화하고 BGM 이름을 생성
+    public void Initialize()
+    {
+        // 이름 필드가 비어있지 않다면, "BGM_" 접두사와 이름을 조합하여 BGM 클립 이름을 만듭니다.
+        if (!string.IsNullOrEmpty(name))
+        {
+            BgmClipName = "BGM_Game_" + name;
+        }
+        else
+        {
+            BgmClipName = string.Empty;
+        }
+    }
+}
+
+/// <summary>
+/// 랜덤 경로 데이터를 기반으로 타일맵에 맵을 생성하는 클래스
+/// </summary>
+public class MapGenerator : MonoBehaviour
+{
+    [Header("Tilemap References")]
+    [SerializeField] private Transform groundParent;   // 타일 벽(장애물)이 생성될 부모 Transform
+    [SerializeField] private Tilemap pathTilemap;      // 경로 타일맵
+    [SerializeField] private Tilemap buildingTilemap;  // 건물(성) 타일맵
+
+    [Header("Prefab References")]
+    [SerializeField] private GameObject tileWallPrefab; // 타일 벽 프리팹
+    
+    [Header("Tile Sets")]
+    [SerializeField] private TileSet[] tileSets; // 사용할 모든 타일셋 테마 배열
+    
+    [Range(0, 1)]
+    [SerializeField] private float decorativeTileChance = 0.05f; // 장식 타일이 나타날 확률 (5%)
+    
+    private TileSet selectedTileSet; // 이번 게임에서 선택된 타일셋
+    
+    // 맵의 경계를 정의하는 상수
+    private readonly int startX = -(GameConstants.MAP_WIDTH / 2);
+    private readonly int endX = (GameConstants.MAP_WIDTH / 2) - 1;
+    private readonly int startY = -(GameConstants.MAP_HEIGHT / 2);
+    private readonly int endY = (GameConstants.MAP_HEIGHT / 2) - 1;
+    
+    /// <summary>
+    /// 맵 생성을 시작하는 메인 메소드
+    /// </summary>
+    /// <param name="waypoints">생성할 경로의 웨이포인트 배열</param>
+    /// <param name="isLeftToRight">경로의 방향 (왼쪽에서 오른쪽으로)</param>
+    public void GenerateMap(Vector2Int[] waypoints, bool isLeftToRight)
+    {
+        if (tileSets == null || tileSets.Length == 0)
+        {
+            Debug.LogError("MapGenerator에 타일셋이 설정되지 않았습니다!");
+            return;
+        }
+
+        // 게임 시작 시 사용할 타일셋을 무작위로 하나 선택하여 저장합니다.
+        if (PlayerPrefs.GetInt("TutorialCompleted", 0) == 0)
+        {
+            // 튜토리얼 중에는 항상 첫 번째 타일셋을 사용합니다.
+            selectedTileSet = tileSets[0];
+        }
+        else
+        {
+            // 1. 현재 게임 난이도를 가져옵니다.
+            int difficultyLevel = DifficultyManager.Instance.CurrentDifficultyLevel;
+
+            // 2. 난이도에 따라 잠금 해제된 맵의 개수를 결정합니다.
+            int unlockedMapCount;
+            if (difficultyLevel < 25)
+            {
+                unlockedMapCount = 1;
+            }
+            else if (difficultyLevel < 50)
+            {
+                unlockedMapCount = 2;
+            }
+            else if (difficultyLevel < 75)
+            {
+                unlockedMapCount = 3;
+            }
+            else // 75 이상
+            {
+                unlockedMapCount = 4;
+            }
+
+            // 3. (안전 장치) 실제 설정된 타일셋 배열의 크기를 넘지 않도록 합니다.
+            // 예를 들어, 타일셋을 3개만 설정했다면 4개가 선택되는 오류를 방지합니다.
+            unlockedMapCount = Mathf.Min(unlockedMapCount, tileSets.Length);
+
+            // 4. 잠금 해제된 맵 중에서만 무작위로 하나를 선택합니다.
+            int randomIndex = Random.Range(0, unlockedMapCount);
+            selectedTileSet = tileSets[randomIndex];
+        }
+        
+        selectedTileSet.Initialize();
+        
+        if (SoundManager.Instance != null && !string.IsNullOrEmpty(selectedTileSet.BgmClipName))
+        {
+            SoundManager.Instance.PlayBGM(selectedTileSet.BgmClipName, true);
+        }
+
+        ClearAllTilemaps();
+        ClearTileWalls();
+        PlacePathTiles(waypoints); // 직선 및 코너 경로 타일 배치
+        PlaceCastles(waypoints[0], waypoints[waypoints.Length - 1]);
+        FillWithTileWalls();
+    }
+
+    /// <summary>
+    /// 모든 타일맵을 초기화합니다.
+    /// </summary>
+    private void ClearAllTilemaps()
+    {
+        pathTilemap.ClearAllTiles();
+        buildingTilemap.ClearAllTiles();
+    }
+
+    /// <summary>
+    /// 기존에 생성된 타일 벽을 모두 제거합니다.
+    /// </summary>
+    private void ClearTileWalls()
+    {
+        foreach (Transform child in groundParent)
+        {
+            Destroy(child.gameObject);
+        }
+    }
+
+    /// <summary>
+    /// 웨이포인트를 따라 직선 및 코너 경로 타일을 배치합니다.
+    /// </summary>
+    /// <param name="waypoints">경로 웨이포인트 배열</param>
+    private void PlacePathTiles(Vector2Int[] waypoints)
+    {
+        // 1. Fill straight paths first
+        for (int i = 0; i < waypoints.Length - 1; i++)
+        {
+            Vector2Int currentPoint = waypoints[i];
+            Vector2Int nextPoint = waypoints[i + 1];
+
+            if (currentPoint.x == nextPoint.x) // Vertical
+            {
+                int startY = Mathf.Min(currentPoint.y, nextPoint.y);
+                int endY = Mathf.Max(currentPoint.y, nextPoint.y);
+                for (int y = startY; y <= endY; y++)
+                {
+                    pathTilemap.SetTile(new Vector3Int(currentPoint.x, y, 0), selectedTileSet.verticalPathTile);
+                }
+            }
+            else if (currentPoint.y == nextPoint.y) // Horizontal
+            {
+                int startX = Mathf.Min(currentPoint.x, nextPoint.x);
+                int endX = Mathf.Max(currentPoint.x, nextPoint.x);
+                for (int x = startX; x <= endX; x++)
+                {
+                    pathTilemap.SetTile(new Vector3Int(x, currentPoint.y, 0), selectedTileSet.horizontalPathTile);
+                }
+            }
+        }
+
+        // 2. Place corner tiles, overwriting the straight tiles at the corner point
+        for (int i = 1; i < waypoints.Length - 1; i++)
+        {
+            Vector2Int previousPoint = waypoints[i - 1];
+            Vector2Int currentPoint = waypoints[i];
+            Vector2Int nextPoint = waypoints[i + 1];
+
+            Vector2Int dirTo = currentPoint - previousPoint;
+            Vector2Int dirFrom = nextPoint - currentPoint;
+
+            TileBase cornerTile = null;
+
+            // ┏ (cornerBottomRightTile): Below -> Right or Right -> Below
+            if ((dirTo.y > 0 && dirFrom.x > 0) || (dirTo.x < 0 && dirFrom.y < 0))
+            {
+                cornerTile = selectedTileSet.cornerBottomRightTile;
+            }
+            // ┓ (cornerBottomLeftTile): Below -> Left or Left -> Below
+            else if ((dirTo.y > 0 && dirFrom.x < 0) || (dirTo.x > 0 && dirFrom.y < 0))
+            {
+                cornerTile = selectedTileSet.cornerBottomLeftTile;
+            }
+            // ┗ (cornerTopRightTile): Above -> Right or Right -> Above
+            else if ((dirTo.y < 0 && dirFrom.x > 0) || (dirTo.x < 0 && dirFrom.y > 0))
+            {
+                cornerTile = selectedTileSet.cornerTopRightTile;
+            }
+            // ┛ (cornerTopLeftTile): Above -> Left or Left -> Above
+            else if ((dirTo.y < 0 && dirFrom.x < 0) || (dirTo.x > 0 && dirFrom.y > 0))
+            {
+                cornerTile = selectedTileSet.cornerTopLeftTile;
+            }
+
+            if (cornerTile != null)
+            {
+                pathTilemap.SetTile(new Vector3Int(currentPoint.x, currentPoint.y, 0), cornerTile);
+            }
+        }
+    }
+    
+    /// <summary>
+    /// 시작점과 도착점에 성 타일을 배치합니다.
+    /// </summary>
+    private void PlaceCastles(Vector2Int start, Vector2Int end)
+    {
+        Vector3Int startCell = new Vector3Int(start.x, start.y, 0);
+        Vector3Int endCell = new Vector3Int(end.x, end.y, 0);
+        
+        buildingTilemap.SetTile(new Vector3Int(start.x, start.y, 0), selectedTileSet.startCastleTile);
+        buildingTilemap.SetTile(new Vector3Int(end.x, end.y, 0), selectedTileSet.endCastleTile);
+        
+        // [추가] 타일의 월드 좌표를 GameManager에 저장합니다.
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.startCastlePosition = buildingTilemap.GetCellCenterWorld(startCell);
+            GameManager.Instance.endCastlePosition = buildingTilemap.GetCellCenterWorld(endCell);
+        }
+    }
+
+    /// <summary>
+    /// 경로가 아닌 모든 공간을 타일 벽으로 채웁니다.
+    /// </summary>
+    private void FillWithTileWalls()
+    {
+        int border = 2;
+        
+        for (int x = startX-border; x <= endX+border; x++)
+        {
+            for (int y = startY-border; y <= endY+border; y++)
+            {
+                Vector3Int cellPosition = new Vector3Int(x, y, 0);
+                if (!pathTilemap.HasTile(cellPosition) && !buildingTilemap.HasTile(cellPosition))
+                {
+                    Vector3 position = new Vector3(x + 0.5f, y + 0.5f, 0);
+                    GameObject tileWall = Instantiate(tileWallPrefab, position, Quaternion.identity, groundParent);
+                
+                    SpriteRenderer sr = tileWall.GetComponent<SpriteRenderer>();
+                    
+                    if (sr != null)
+                    {
+                        // 1. 현재 선택된 타일셋에서 벽 스프라이트 정보를 가져옵니다.
+                        Sprite[] decoratives = selectedTileSet.decorativeWallSprites;
+                        Sprite baseSprite = selectedTileSet.baseWallSprite; // 배열이 아닌 단일 스프라이트
+
+                        // 2. 장식 타일 배열이 비어있지 않고, 설정된 확률을 통과했는지 확인합니다.
+                        if (decoratives != null && decoratives.Length > 0 && Random.value < decorativeTileChance)
+                        {
+                            // 장식 타일 중 하나를 무작위로 선택하여 적용합니다.
+                            sr.sprite = decoratives[Random.Range(0, decoratives.Length)];
+                        }
+                        // 3. 그렇지 않고, 기본 벽 스프라이트가 설정되어 있다면 그것을 적용합니다.
+                        else if (baseSprite != null)
+                        {
+                            // 단일 기본 스프라이트를 직접 적용합니다.
+                            sr.sprite = baseSprite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+21:T4df2,using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class WeightedRandomReward : MonoBehaviour
+{
+    [Header("Player References")]
+    public PlayerHP playerHP;
+    public PlayerSP playerSP;
+    public PlayerTowerCost playerTowerCost;
+    public PlayerGold playerGold;
+    public PlayerUpgrade playerUpgrade;
+    public TowerSpawner towerSpawner;
+    public GameManager gameManager;
+    public WaveSystem waveSystem;
+
+    [Header("Reward UI Elements")]
+    public GameObject rewardUIPrefab;
+    public Transform rewardUIParent;
+
+    private Reward[] randRewards;
+
+    private void OnEnable()
+    {
+        foreach (Transform child in rewardUIParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        bool isFirstWavePerk = (waveSystem != null && waveSystem.CurrentWave == 1);
+        List<Reward> rewardPoolSource;
+        Reward skipOption = null;
+
+        // [수정] 1 웨이브와 일반 웨이브 모두에 적용할 '스킵' 옵션을 미리 찾습니다.
+        List<Reward> normalRewards = RewardFactory.GetNormalRewards();
+
+        if (isFirstWavePerk)
+        {
+            rewardPoolSource = RewardFactory.GetFirstWavePerks();
+            // 1 웨이브의 스킵 옵션은 '최종 점수 증가(index 6)'를 사용합니다.
+            skipOption = normalRewards.Find(r => r.index == 6);
+        }
+        else
+        {
+            rewardPoolSource = new List<Reward>(normalRewards);
+            
+            // 2 웨이브 이후의 스킵 옵션은 '보상 스킵(index 8)'을 사용합니다.
+            skipOption = rewardPoolSource.Find(r => r.index == 8);
+            if (skipOption != null)
+            {
+                rewardPoolSource.Remove(skipOption); // 추첨 목록에서는 제거
+            }
+        }
+
+        List<Reward> temporaryRewardPool = new List<Reward>(rewardPoolSource);
+        int numRewardsToShow = gameManager != null ? gameManager.numberOfRewardsToShow : 2;
+    
+        // 최종 UI 패널 개수는 랜덤 보상 + 스킵 보상(있을 경우)
+        int finalPanelCount = skipOption != null ? numRewardsToShow + 1 : numRewardsToShow;
+        randRewards = new Reward[finalPanelCount];
+
+        // 1. 랜덤 보상 생성 (중복 방지)
+        // 1웨이브가 아니면서 '과부하 코어'가 활성화된 경우를 확인하는 조건문 추가
+        if (!isFirstWavePerk && GameManager.isSPRewardFixed)
+        {
+            // '과부하 코어' 활성화 시: 첫 보상을 SP로 고정합니다.
+            Reward spReward = FixSPReward();
+            if (spReward != null)
+            {
+                randRewards[0] = spReward; // 첫 번째 슬롯(index 0)에 SP 보상을 고정
+                temporaryRewardPool.RemoveAll(r => r.index == 2); // 중복을 막기 위해 추첨 목록에서 SP 보상(index 2) 제거
+            }
+
+            // 나머지 보상(numRewardsToShow - 1개)만 랜덤으로 추첨합니다.
+            for (int i = 0; i < numRewardsToShow - 1; i++)
+            {
+                if (temporaryRewardPool.Count == 0) break;
+                Reward selectedReward = RandomReward(temporaryRewardPool);
+                if (selectedReward == null) continue;
+        
+                temporaryRewardPool.RemoveAll(r => r.index == selectedReward.index);
+                randRewards[i + 1] = selectedReward; // 두 번째 슬롯(index 1)부터 채워나갑니다.
+            }
+        }
+        else
+        {
+            // '과부하 코어'가 비활성화되었거나 1웨이브일 경우, 기존의 완전 랜덤 로직을 실행합니다.
+            for (int i = 0; i < numRewardsToShow; i++)
+            {
+                if (temporaryRewardPool.Count == 0) break;
+                Reward selectedReward = RandomReward(temporaryRewardPool);
+                if (selectedReward == null) continue;
+        
+                temporaryRewardPool.RemoveAll(r => r.index == selectedReward.index);
+                randRewards[i] = selectedReward;
+            }
+        }
+
+        // 2. 고정 스킵 보상 추가
+        if (skipOption != null)
+        {
+            randRewards[numRewardsToShow] = skipOption;
+        }
+        
+        // 3. 최종적으로 randRewards 배열에 담긴 모든 보상들을 UI로 생성합니다.
+        for (int i = 0; i < randRewards.Length; i++)
+        {
+            // 배열에 이미 저장된 보상을 순서대로 가져옵니다. (다시 뽑지 않음)
+            Reward selectedReward = randRewards[i]; 
+            if (selectedReward == null) continue;
+
+            GameObject rewardUI = Instantiate(rewardUIPrefab, rewardUIParent);
+            Button rewardButton = rewardUI.GetComponent<Button>();
+            int buttonIndex = i;
+            rewardButton.onClick.AddListener(() => RewardButton(buttonIndex));
+
+            Image panelBackground = rewardUI.GetComponent<Image>();
+            Image rewardImage = rewardUI.transform.Find("ImageReward").GetComponent<Image>();
+            TextMeshProUGUI rewardText = rewardUI.transform.Find("TextReward").GetComponent<TextMeshProUGUI>();
+
+            // 웨이브 보상 로직
+            if (isFirstWavePerk)
+            {
+                if (panelBackground != null) panelBackground.color = new Color(0.53f, 0.81f, 0.98f);
+                if (rewardImage != null) rewardImage.gameObject.SetActive(false);
+                if (rewardText != null) rewardText.text = selectedReward.desc;
+            }
+            else
+            {
+                
+                
+                if (panelBackground != null) panelBackground.color = Color.white;
+                if (rewardImage != null)
+                {
+                    rewardImage.gameObject.SetActive(true);
+                    rewardImage.sprite = selectedReward.sprite;
+                }
+
+                if (selectedReward.index == 1)
+                {
+                    selectedReward.value = CalculateRewardGold(waveSystem.CurrentWave - 1);
+                }
+
+                if (rewardText != null)
+                {
+                    if (selectedReward.index == 7)
+                    {
+                        panelBackground.color = Color.yellow; // 장비 보상은 노란색 배경
+                        float scoreForLoot = (DifficultyManager.Instance.CurrentDifficultyLevel * 10000f) + (gameManager.CurrentMapDifficulty.TotalScore * 10f);
+                        PlayerEquipmentInstance droppedEquipment = LootManager.Instance.DropRewardEquipment(scoreForLoot);
+                        if (droppedEquipment != null)
+                        {
+                            // 획득할 장비가 이미 보유 중인지 확인
+                            bool isDuplicate = EquipmentManager.Instance.currentPlayerData.ownedEquipmentInstances.Any(e => e.equipmentID == droppedEquipment.equipmentID);
+
+                            if (isDuplicate)
+                            {
+                                // 중복일 경우, 보상 정보를 RCoin으로 변환!
+                                EquipmentDataModel data = droppedEquipment.equipmentData;
+                                int rCoinAmount = 0;
+                                switch (data.rarity)
+                                {
+                                    case Rarity.Common: rCoinAmount = 10000; break;
+                                    case Rarity.Uncommon: rCoinAmount = 20000; break;
+                                    case Rarity.Rare: rCoinAmount = 50000; break;
+                                    case Rarity.Epic: rCoinAmount = 100000; break;
+                                    case Rarity.Legendary: rCoinAmount = 200000; break;
+                                }
+
+                                selectedReward.index = 999; // RCoin 변환을 위한 임의의 인덱스 설정
+                                selectedReward.value = rCoinAmount;
+                                
+                                if(rewardImage != null) rewardImage.sprite = Resources.Load<Sprite>(data.iconPath);
+                                
+                                string rarityColor = GetColorForRarity(data.rarity);
+                                string equipmentNameText = $"<color={rarityColor}>{data.equipmentName}\n(중복)</color>";
+                                string rCoinText = $"RCoin\n+{rCoinAmount}";
+                                rewardText.text = $"{equipmentNameText}\n{rCoinText}";
+                            }
+                            else
+                            {
+                                selectedReward.acquiredEquipment = droppedEquipment;
+                                if(rewardImage != null) rewardImage.sprite = Resources.Load<Sprite>(droppedEquipment.equipmentData.iconPath);
+                                rewardText.text = $"{droppedEquipment.equipmentData.equipmentName} ({droppedEquipment.equipmentData.rarity})";
+                            }
+                        }
+                    }
+                    else if (selectedReward.index == 6 || selectedReward.index == 8)
+                    {
+                        rewardText.text = selectedReward.desc;
+                    }
+                    else if (selectedReward.index == 3 || selectedReward.index == 4) // 업그레이드 설명 추가
+                    {
+                        rewardText.text = selectedReward.desc + "\n+" + playerUpgrade.GetUpgradeCountByWave();
+                    }
+                    else if (selectedReward.value != 0)
+                    {
+                        rewardText.text = selectedReward.value + selectedReward.desc;
+                    }
+                    else
+                    {
+                        rewardText.text = selectedReward.desc;
+                    }
+                }
+            }
+        }
+    }
+
+    public Reward RandomReward(List<Reward> rewardPool)
+    {
+        List<Reward> availableRewards = new List<Reward>(rewardPool);
+        if (playerHP.CurrentHP >= playerHP.MaxHP)
+        {
+            availableRewards.RemoveAll(r => r.index == 0);
+        }
+        
+        // '타워 전문가' 특성 활성화 시 SP 보상을 제외합니다.
+        if (PerkManager.Instance != null && PerkManager.Instance.perk_isTowerSpecialistEnabled)
+        {
+            availableRewards.RemoveAll(r => r.index == 2); // SP 보상(index 2) 제외
+        }
+        
+        int currentTotalWeight = 0;
+        foreach(var reward in availableRewards) currentTotalWeight += reward.weight;
+        if(currentTotalWeight <= 0) return null;
+
+        int selectNum = Random.Range(0, currentTotalWeight) + 1;
+        int weight = 0;
+        
+        foreach(var reward in availableRewards)
+        {
+            weight += reward.weight;
+            if (selectNum <= weight)
+            {
+                Reward temp = new Reward(reward);
+                if (temp.index < 3 || temp.index == 5)
+                {
+                    if(reward.maxRange > reward.minRange)
+                        temp.value = reward.value * (Random.Range(reward.minRange, reward.maxRange));
+                }
+                return temp;
+            }
+        }
+        return null;
+    }
+
+    public void RewardButton(int type)
+    {
+        // 플레이어가 선택한 보상 기록 (수정됨)
+        if (GameAnalyticsManager.Instance != null)
+        {
+            string rewardName = randRewards[type].name;
+
+            // rewardName이 비어있는 경우를 대비한 방어 코드
+            if (string.IsNullOrEmpty(rewardName))
+            {
+                // 이름이 없으면 설명(desc)을 대신 사용
+                rewardName = randRewards[type].desc;
+
+                // 설명도 비어있으면 임시 이름 사용
+                if (string.IsNullOrEmpty(rewardName))
+                {
+                    rewardName = $"Unnamed_Reward_Index_{randRewards[type].index}";
+                }
+            }
+            
+            // 장비 보상의 경우, 실제 장비 이름으로 기록 (기존 로직 유지)
+            if (randRewards[type].index == 7 && randRewards[type].acquiredEquipment != null)
+            {
+                rewardName = randRewards[type].acquiredEquipment.equipmentData.equipmentName;
+            }
+            GameAnalyticsManager.Instance.RecordRandomRewardChoice(rewardName);
+        }
+        
+        int index = randRewards[type].index;
+        
+        switch (index)
+        {
+            // --- 기존 일반 보상 ---
+            case 0: playerHP.HealHP(randRewards[type].value); break;
+            case 1: playerGold.CurrentGold += randRewards[type].value; break;
+            case 2: playerSP.CurrentSkillPoint = Mathf.Min(playerSP.MaxSP, playerSP.CurrentSkillPoint + randRewards[type].value); break;
+            case 3: playerUpgrade.RewardPhysicUpgrade(); break;
+            case 4: playerUpgrade.RewardMagicUpgrade(); break;
+            case 5: 
+                if (gameManager != null && gameManager.TowerArchetypes != null && gameManager.TowerArchetypes.Length > 0)
+                {
+                    towerSpawner.SpawnRewardTower(gameManager.TowerArchetypes[Random.Range(0, gameManager.TowerArchetypes.Length)]);
+                }
+                break;
+            case 6: // 최종 점수 증가
+            case 8: // 보상 스킵
+                if (GameManager.Instance != null)
+                {
+                    if (GameModeManager.CurrentMode == GameMode.Normal)
+                    {
+                        // 보상 객체에 저장된 value 값을 가져와 더해줍니다.
+                        GameManager.Instance.bonusScore += randRewards[type].value;
+                    }
+                    else
+                    {
+                        GameManager.Instance.infiniteModeScore += randRewards[type].value;
+                    }
+                }
+                break;
+            case 7: 
+                if (randRewards[type].acquiredEquipment != null)
+                {
+                    EquipmentManager.Instance.AddEquipmentToPlayer(randRewards[type].acquiredEquipment);
+                }
+                break;
+                
+            // --- 새로운 시작 특성 활성화 ---
+            case 201: PerkManager.Instance.perk_isExplosionEnabled = true; break;
+            case 202: PerkManager.Instance.perk_isExecutionerEnabled = true; break;
+            case 203: // 희생 전략
+                if (gameManager != null && gameManager.TowerArchetypes != null && gameManager.TowerArchetypes.Length > 0)
+                {
+                    int sacrificedIndex = Random.Range(0, gameManager.TowerArchetypes.Length);
+                    PerkManager.Instance.perk_isSacrificeEnabled = true;
+                    PerkManager.Instance.perk_sacrificedTowerIndex = sacrificedIndex;
+                    PerkManager.Instance.perk_sacrificeDamageBonus = 0.25f; // 25%
+        
+                    // GameManager의 함수를 호출하여 UI를 비활성화합니다.
+                    GameManager.Instance.DisableSacrificedTowerUI(sacrificedIndex);
+                }
+                break;
+            case 204: PerkManager.Instance.perk_hasInterest = true; break;
+            case 205: 
+                PerkManager.Instance.perk_upgradeCostModifier = 0.75f; 
+                playerUpgrade.RewardPhysicUpgrade();
+                playerUpgrade.RewardMagicUpgrade();
+                break; // 25% 할인
+            case 206: // 위험 수당
+                PerkManager.Instance.perk_enemySpeedModifier = 1.15f; // 15% 증가
+                PerkManager.Instance.perk_goldModifier = 1.2f;      // 20% 증가
+                break;
+            case 207: PerkManager.Instance.perk_isFirstStrikeEnabled = true; break;
+            case 208: // 자원 증폭
+                if (GameModeManager.CurrentMode == GameMode.Normal)
+                {
+                    PerkManager.Instance.perk_towerCostPerWave = 130;
+                }
+                else
+                {
+                    PerkManager.Instance.perk_towerCostPerWave = 30;
+                }
+                playerTowerCost.AddTowerCost(30);
+                break;
+            case 209: // 타워 전문가
+                PerkManager.Instance.perk_isTowerSpecialistEnabled = true;
+                if (GameModeManager.CurrentMode == GameMode.Normal)
+                {
+                    PerkManager.Instance.perk_towerCostPerWave = 200;
+                }
+                else
+                {
+                    PerkManager.Instance.perk_towerCostPerWave = 100;
+                }
+                playerTowerCost.AddTowerCost(100); // 즉시 1회 지급
+                break;
+            case 210: PerkManager.Instance.perk_hasIndomitableWill = true; break;
+            case 999:
+                EquipmentManager.Instance.currentPlayerData.rCoin += randRewards[type].value;
+                // UIEventManager를 통해 RCoin 획득 알림을 보낼 수도 있습니다.
+                break;
+        }
+        
+        if (TutorialManager.Instance != null && TutorialManager.Instance.isActiveAndEnabled)
+        {
+            // 시간을 다시 흐르게 하고 다음 튜토리얼 단계로 진행시킵니다.
+            Time.timeScale = 1f;
+            TutorialManager.Instance.ProceedToNextStep();
+        }
+        
+        SoundManager.Instance.PlaySFX("SFX_UI_ButtonClick2"); // 보상패널 선택 사운드
+        
+        gameObject.SetActive(false);
+        if (waveSystem != null)
+        {
+            waveSystem.OnRewardSelected();
+        }
+    }
+
+    private int CalculateRewardGold(int waveIndex)
+    {
+        int calculatedGold = 200;
+        calculatedGold += (50 * waveIndex);
+        int thresholdWave = 20;
+        if (waveIndex >= thresholdWave)
+        {
+            int effectiveIndex = waveIndex - thresholdWave + 1;
+            calculatedGold += (200 * effectiveIndex * effectiveIndex);
+        }
+        return calculatedGold;
+    }
+
+    private Reward FixSPReward()
+    {
+        Reward spRewardTemplate = RewardFactory.GetNormalRewards().Find(r => r.index == 2);
+        if (spRewardTemplate != null)
+        {
+            Reward spReward = new Reward(spRewardTemplate);
+            if (playerSP != null)
+            {
+                spReward.value = Mathf.FloorToInt(playerSP.MaxSP * 0.2f); 
+                if (spReward.value == 0) spReward.value = 20;
+            }
+            else
+            {
+                spReward.value = 50;
+            }
+            return spReward;
+        }
+        return null;
+    }
+    
+    /// <summary>
+    /// 장비 등급에 맞는 색상 코드를 반환합니다.
+    /// </summary>
+    private string GetColorForRarity(Rarity rarity)
+    {
+        switch (rarity)
+        {
+            case Rarity.Common: return "#808080"; // 회색
+            case Rarity.Uncommon: return "green";   // 초록색
+            case Rarity.Rare: return "blue";    // 파란색
+            case Rarity.Epic: return "purple";  // 보라색
+            case Rarity.Legendary: return "orange";  // 주황색
+            default: return "black";   // 기본값
+        }
+    }
+
+    [System.Serializable]
+    public class Reward
+    {
+        public int index;
+        public Sprite sprite;
+        public string name;
+        public string desc;
+        public int value;
+        public int minRange;
+        public int maxRange;
+        public int weight;
+        public TowerArchetype towerArchetype;
+        public PlayerEquipmentInstance acquiredEquipment;
+        public Reward() {}
+        public Reward(Reward reward)
+        {
+            this.index = reward.index;
+            this.sprite = reward.sprite;
+            this.name = reward.name;
+            this.desc = reward.desc;
+            this.value = reward.value;
+            this.minRange = reward.minRange;
+            this.maxRange = reward.maxRange;
+            this.weight = reward.weight;
+            this.towerArchetype = reward.towerArchetype;
+        }
+    }
+}d:["$","main",null,{"className":"mx-auto max-w-5xl px-4 sm:px-6 py-12 space-y-12 text-zinc-900 font-sans antialiased","children":[["$","header",null,{"className":"space-y-8","children":[["$","div",null,{"className":"flex flex-col md:flex-row items-center md:items-start gap-8","children":[["$","div",null,{"className":"relative w-44 h-44 rounded-2xl bg-zinc-100 border border-zinc-200/80 overflow-hidden shrink-0 shadow-sm flex items-center justify-center","children":["$","$Le",null,{"src":"/SiteLogo.png","alt":"RogueTower 메인 로고","className":"w-full h-full object-cover"}]}],["$","div",null,{"className":"flex-1 space-y-3 text-center md:text-left","children":[["$","div",null,{"className":"inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-xs font-mono text-zinc-700","children":[["$","span",null,{"className":"w-2 h-2 rounded-full bg-blue-500"}],"SHIPPED · PC RELEASE (ITCH.IO)"]}],["$","h1",null,{"className":"text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-950","children":"RogueTower"}],["$","p",null,{"className":"text-base sm:text-lg text-zinc-600 font-medium","children":"절차적 맵 생성 및 데이터 드리븐 밸런싱의 3D 타워 디펜스"}],["$","p",null,{"className":"text-sm text-zinc-600 leading-relaxed max-w-2xl","children":"매 판 무작위로 생성되는 9×16 타일맵 경로 위에서 6종의 타워와 장비를 조합해 20웨이브를 방어하는 전략 디펜스 게임입니다. 수식 기반 맵 난이도 평가 시스템과 PlayFab 텔레메트리 로그 지표 분석을 통해 픽률 편중 문제를 정량적으로 해결했습니다."}],["$","div",null,{"className":"pt-2","children":["$","a",null,{"href":"https://github.com/WooGeun-Nam/RogueTower-Code","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white text-xs sm:text-sm font-semibold transition","children":"GitHub Source Code →"}]}]]}]]}],["$","div",null,{"className":"grid grid-cols-2 sm:grid-cols-4 gap-4 py-4 border-y border-zinc-200/80 text-xs sm:text-sm","children":[["$","div",null,{"children":[["$","dt",null,{"className":"text-zinc-400 font-mono text-[11px] uppercase tracking-wider","children":"Role"}],["$","dd",null,{"className":"font-semibold text-zinc-800 mt-0.5","children":"기획 · 클라이언트 · 그래픽"}]]}],["$","div",null,{"children":[["$","dt",null,{"className":"text-zinc-400 font-mono text-[11px] uppercase tracking-wider","children":"Timeline"}],["$","dd",null,{"className":"font-semibold text-zinc-800 mt-0.5","children":"2024.10 ~ 2025.08 (1인 개발)"}]]}],["$","div",null,{"children":[["$","dt",null,{"className":"text-zinc-400 font-mono text-[11px] uppercase tracking-wider","children":"Genre"}],["$","dd",null,{"className":"font-semibold text-zinc-800 mt-0.5","children":"3D 타워 디펜스 · 로그라이크"}]]}],["$","div",null,{"children":[["$","dt",null,{"className":"text-zinc-400 font-mono text-[11px] uppercase tracking-wider","children":"Platform"}],["$","dd",null,{"className":"font-semibold text-zinc-800 mt-0.5","children":"PC (Unity · Itch.io 배포)"}]]}]]}]]}],["$","section",null,{"children":["$","$Lf",null,{"codeAssets":{"SoundManager":"$10","ExceptionReporter":"$11","LoadingSceneController":"$12","ShopManager":"$13","StatueOfDestructionGod":"$14","GameManager":"$15","GameDataManager":"$16","UIManager":"$17","UIEventManager":"$18","TooltipManager":"$19","TooltipTrigger":"$1a","TowerArchetype":"$1b","Enemy":"$1c","IWeaponState":"using System.Collections;\nusing UnityEngine;\n\n/// <summary>\n/// 타워 무기의 상태를 정의하는 인터페이스입니다.\n/// 각 상태는 이 인터페이스를 구현하여 무기의 특정 행동을 정의합니다.\n/// </summary>\npublic interface IWeaponState\n{\n    /// <summary>\n    /// 현재 상태의 로직을 실행합니다.\n    /// </summary>\n    /// <param name=\"weapon\">상태를 실행할 TowerWeapon 인스턴스</param>\n    /// <returns>상태 로직을 위한 코루틴</returns>\n    IEnumerator Execute(TowerWeapon weapon);\n}\n","ObjectPool":"$1d","MapDifficulty":"$1e","RandomPathGenerator":"$1f","MapGenerator":"$20","WeightedRandomReward":"$21","SpecialSkillBase":"using UnityEngine;\n\n// 스킬의 종류를 정의하는 Enum\npublic enum SkillType\n{\n    Passive,        // 장착 시 지속적으로 효과 적용\n    Active,         // 플레이어가 직접 사용 (버튼 클릭 등)\n    Tower    // 특정 타워 설치\n}\n\npublic abstract class SpecialSkillBase : ScriptableObject\n{\n    [Header(\"스킬 기본 정보\")]\n    public string skillID;\n    public string skillName;\n    [TextArea]\n    public string description;\n    public Sprite icon;\n    public SkillType skillType; // 스킬 타입 추가\n\n    // 모든 특수 스킬이 구현해야 할 기능들 (추상 메서드)\n    public abstract void Activate();    // 스킬 활성화 (장착 시) - 씬 독립적인 초기화/정리\n    public abstract void Deactivate();  // 스킬 비활성화 (해제 시) - 씬 독립적인 초기화/정리\n\n    // 스킬 타입에 따라 선택적으로 구현될 메서드\n    public virtual void UseSkill(GameObject skillButton) { } // 사용형 스킬 (Active)에서 오버라이드\n    public virtual GameObject GetTowerPrefab() { return null; } // 타워 설치형 스킬 (TowerInstall)에서 오버라이드\n\n    // 인게임에서 실제 게임 플레이 효과를 적용/제거하는 메서드 (씬 종속적)\n    public virtual void ApplyGameEffect() { }\n    public virtual void RemoveGameEffect() { }\n}\n"},"initialTab":"devlog"}]}]]}]

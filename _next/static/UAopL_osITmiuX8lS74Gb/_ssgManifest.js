@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fprojects\u002Froguetower\u002F[tab]","\u002Fprojects\u002Ftinyjourney\u002F[tab]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

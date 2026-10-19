@@ -43,7 +43,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
     { id: "tech-02", tag: "AI & 물리 모듈", title: "IMonsterAttackModule 전략 패턴 및 무할당 물리" },
     { id: "tech-03", tag: "2.5D 소팅 & 렌더링", title: "하향 공격 소팅 보정(+1000) 및 전면 절벽 분리" },
     { id: "tech-04", tag: "네트워크 & 인프라", title: "Netcode NGO 권한 분리와 오디오·세이브 무결성" },
-    { id: "tech-05", tag: "엔지니어링 마일스톤", title: "구현 현황 (Step 1~11) 및 차기 로드맵" },
+    { id: "tech-05", tag: "프로토타입 로드맵", title: "프로토타입 구현 현황 및 개발 로드맵" },
   ];
 
   return (
@@ -892,128 +892,72 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 05. 실시간 구현 마일스톤 및 로드맵 */}
+          {/* 05. 프로토타입 구현 현황 및 개발 로드맵 */}
           <section id="tech-05" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                05 · 실시간 구현 마일스톤 및 로드맵
+                05 · 프로토타입 구현 현황 및 개발 로드맵
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                실시간 구현 마일스톤 및 기술 로드맵
-              </h2>
-            </header>
-
-            <div className="grid md:grid-cols-2 gap-6 items-start">
-              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-blue-600 uppercase font-mono">NETWORKING SPEC</span>
-                <h3 className="font-bold text-gray-900 text-base">Netcode P2P Host 환경 및 권한 분리</h3>
-                <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  <p>
-                    <strong className="text-gray-900">자동 Host 개설:</strong> 싱글플레이 환경에서도 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">GameBootstrap.cs</code>가 
-                    자동으로 Listen Server를 열어 향후 Steam P2P Co-op 전환 시 코드 재작성을 최소화합니다.
-                  </p>
-                  <p>
-                    <strong className="text-gray-900">서버 권한 연산:</strong> AI 길찾기, 피격 데미지 연산, 체력 동기화는 100% 서버에서 통제하여 판정 무결성을 보장합니다.
-                  </p>
-                  <p>
-                    <strong className="text-gray-900">로컬 0ms 피드백:</strong> 역경직, 화면 진동, 피격 플래시는 공격자의 로컬 클라이언트에서 네트워크 지연 없이 즉각 실행됩니다.
-                  </p>
-                </div>
-              </div>
-
-              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-blue-600 uppercase font-mono">MEMORY &amp; INTEGRITY</span>
-                <h3 className="font-bold text-gray-900 text-base">초경량 미니맵과 세이브 무결성</h3>
-                <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  <p>
-                    <strong className="text-gray-900">Zero-Camera 미니맵:</strong> 별도의 보조 카메라를 띄우지 않고, 
-                    그리드 데이터를 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Texture2D</code> 픽셀에 직접 구워 UI RawImage에 바인딩합니다. (반경 9타일 안개 무할당 갱신)
-                  </p>
-                  <p>
-                    <strong className="text-gray-900">사운드 디커플링:</strong> AudioMixer 4계층 버스 라우팅 및 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">SoundEvents</code> 이벤트 버스를 통해 
-                    사운드 매니저 부재 시에도 컴파일/런타임 에러를 원천 차단합니다.
-                  </p>
-                  <p>
-                    <strong className="text-gray-900">방 단위 자동 저장 및 강종 방지:</strong> 다음 방 진입 시 자동 저장되며, 
-                    위기 상황 시 Alt+F4 악용을 막기 위해 재시작 시 해당 방 입구에서 몬스터가 리셋된 상태로 시작됩니다.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <hr className="border-gray-200/80" />
-
-          {/* 05. 실시간 구현 마일스톤 및 로드맵 */}
-          <section id="tech-05" className="scroll-mt-14 space-y-6">
-            <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest font-mono">
-                ENGINEERING SPEC 05 · MILESTONE CHANGELOG
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                실시간 구현 마일스톤 및 기술 로드맵
+                프로토타입 구현 현황 및 개발 로드맵
               </h2>
             </header>
 
             <div className="grid md:grid-cols-2 gap-6 pt-2">
-              <div className="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200/80 space-y-4">
-                <div className="flex items-center justify-between border-b border-emerald-200/60 pb-3">
-                  <h3 className="font-bold text-emerald-950 text-base">구현 완료 내역 (Step 1~11)</h3>
-                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-200 text-emerald-800 font-mono">
-                    100% COMPLETE
+              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
+                <div className="flex items-center justify-between border-b border-gray-200 pb-3">
+                  <h3 className="font-bold text-gray-900 text-base">핵심 메커니즘 프로토타입 검증</h3>
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800">
+                    검증 진행 중
                   </span>
                 </div>
-                <ul className="space-y-2 text-xs sm:text-sm text-gray-700">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>엑셀(GameData.xlsx) 6개 시트 및 MasterDataPostprocessor 0.6초 자동 빌드</span>
+                    <span className="text-blue-600 font-bold">✓</span>
+                    <span><strong>마스터데이터 파이프라인:</strong> GameData.xlsx 6개 시트 및 백그라운드 0.6초 자동 직렬화</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>하우징 스탯 계산기(HousingBuffCalculator) ↔ 전투 씬 JSON 영속성 연동</span>
+                    <span className="text-blue-600 font-bold">✓</span>
+                    <span><strong>2.5D 레이맨 리깅:</strong> 5단 레이어 파츠 분리형 애니메이션 및 타격 판정 기초 구현</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>방 클리어 황금 보따리(LootBundle) 및 10×10 테트리스 루팅 UI(UI_Looting)</span>
+                    <span className="text-blue-600 font-bold">✓</span>
+                    <span><strong>몬스터 공격 전략 패턴:</strong> IMonsterAttackModule 기반 행동 분리 및 무할당 조향 레이캐스트</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>2.5D 레이맨 리깅 (5단 레이어, 오버핸드 풀 스윙, 뒷손 반동, attackBoost +1000)</span>
+                    <span className="text-blue-600 font-bold">✓</span>
+                    <span><strong>2.5D 정렬 &amp; 차폐 렌더링:</strong> 공격 시 무기 정렬 승격(+1000) 및 남쪽 절벽 턱 전면 분리</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>절차적 전투 필드 생성기(DungeonRoomGenerator) 및 남쪽 절벽 턱 전면 분리</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-600 font-bold">✓</span>
-                    <span>1구역 몬스터 4종 애니메이션, 전략 패턴(IMonsterAttackModule), 고정 물리(mass=100)</span>
+                    <span className="text-blue-600 font-bold">✓</span>
+                    <span><strong>테트리스 루팅 UI:</strong> 10×10 배낭 그리드 회전 패킹 로직 프로토타이핑</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-4">
-                <div className="flex items-center justify-between border-b border-blue-200/60 pb-3">
-                  <h3 className="font-bold text-blue-950 text-base">차기 진행 로드맵 (Upcoming · P1~P7)</h3>
-                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-blue-200 text-blue-800 font-mono">
-                    IN PROGRESS
+              <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
+                <div className="flex items-center justify-between border-b border-gray-200 pb-3">
+                  <h3 className="font-bold text-gray-900 text-base">차기 개발 로드맵 (Upcoming)</h3>
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-gray-200 text-gray-800">
+                    개발 예정
                   </span>
                 </div>
-                <ul className="space-y-2 text-xs sm:text-sm text-gray-700">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-gray-700">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold">→</span>
-                    <span><strong>P1~P2 지형 고도화:</strong> 외곽 암흑 보이드(#050508) 및 QOT 6구획 무작위 스탬핑·MST 협곡 굴착</span>
+                    <span className="text-gray-500 font-bold">→</span>
+                    <span><strong>마이홈 하우징 시스템:</strong> 마이홈 가구 배치 씬 및 영구 스탯 누적 시스템 구축</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold">→</span>
-                    <span><strong>P3 전투 UI &amp; 미니맵:</strong> 피격 반응형 체력바(3초 페이드아웃), Zero-Camera 픽셀 미니맵</span>
+                    <span className="text-gray-500 font-bold">→</span>
+                    <span><strong>절차적 전장 고도화:</strong> 맵 생성 알고리즘 고도화 및 바이옴 테마별 전장 확장</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold">→</span>
-                    <span><strong>P4~P5 오디오 &amp; 몬스터 라인업:</strong> FMOD/AudioMixer 버스 연동 및 테마별 몬스터 행동 모듈 확장</span>
+                    <span className="text-gray-500 font-bold">→</span>
+                    <span><strong>전투 액션 피지컬:</strong> 무기 5단계 진화 트리 및 조작감·타격 피드백 세부 튜닝</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500 font-bold">→</span>
-                    <span><strong>P6~P7 무기 티어 &amp; 하우징 씬:</strong> 무기 5단계 진화 트리 및 자취방 가구 배치 씬 구현</span>
+                    <span className="text-gray-500 font-bold">→</span>
+                    <span><strong>네트워크 인프라:</strong> Steam P2P Co-op 멀티플레이어(Netcode NGO) 확장 대비 인프라 고도화</span>
                   </li>
                 </ul>
               </div>

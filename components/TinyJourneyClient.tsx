@@ -30,19 +30,19 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
   ] as const;
 
   const planSections = [
-    { id: "plan-01", tag: "개요 & 필라", title: "프로젝트 개요 및 3대 디자인 필라" },
-    { id: "plan-02", tag: "내러티브 룰북", title: "세계관 스토리텔링과 세대 계승 규칙" },
+    { id: "plan-01", tag: "개요 & 기획 방향", title: "프로젝트 개요 및 핵심 기획 방향" },
+    { id: "plan-02", tag: "세계관 & 사망 규칙", title: "세계관 설정 및 사망·세대교체 규칙" },
     { id: "plan-03", tag: "하우징 시스템", title: "마이홈 하우징 시스템 (몸통 방어구 대체)" },
-    { id: "plan-04", tag: "액션 피드백", title: "2.5D 레이맨 리깅과 타격 피지컬 규격" },
+    { id: "plan-04", tag: "전투 & 애니메이션", title: "파츠 분리형 캐릭터 애니메이션과 타격 피드백 설계" },
     { id: "plan-05", tag: "레벨 디자인", title: "절차적 전장 생성 및 지형 위계" },
     { id: "plan-06", tag: "몬스터 명세", title: "프로토타입 몬스터 4종 기획 도감" },
   ];
 
   const techSections = [
-    { id: "tech-01", tag: "데이터 파이프라인", title: "GameData.xlsx 0.6초 백그라운드 직렬화" },
-    { id: "tech-02", tag: "AI & 물리 모듈", title: "IMonsterAttackModule 전략 패턴 및 무할당 물리" },
+    { id: "tech-01", tag: "데이터 파이프라인", title: "GameData.xlsx 자동 직렬화 파이프라인" },
+    { id: "tech-02", tag: "AI & 물리 모듈", title: "IMonsterAttackModule 전략 패턴 및 물리 제어" },
     { id: "tech-03", tag: "2.5D 소팅 & 렌더링", title: "하향 공격 소팅 보정(+1000) 및 전면 절벽 분리" },
-    { id: "tech-04", tag: "네트워크 & 인프라", title: "Netcode NGO 권한 분리와 오디오·세이브 무결성" },
+    { id: "tech-04", tag: "네트워크 & 인프라", title: "Netcode NGO 권한 분리와 오디오·세이브 관리" },
     { id: "tech-05", tag: "프로토타입 로드맵", title: "프로토타입 구현 현황 및 개발 로드맵" },
   ];
 
@@ -66,7 +66,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               TinyJourney <span className="text-2xl font-normal text-gray-400">(가제)</span>
             </h1>
             <p className="text-sm sm:text-[15px] text-gray-600 mt-3 font-medium">
-              털뭉치 토벌대의 생계형 토벌 일지 (2D 탑뷰 액션 RPG + 파밍/하우징)
+              2D 탑뷰 액션 RPG (채집·제작·마이홈 하우징 기반 성장)
             </p>
 
             <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]">
@@ -134,16 +134,16 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
               <div className="p-3 rounded-xl bg-white border border-blue-150">
-                <span className="font-bold text-blue-900 block mb-1">코어 갭 모에 감성</span>
-                찹쌀떡 소동물이 몸체만 한 인간의 유물을 온몸으로 휘두르는 묵직한 액션
+                <span className="font-bold text-blue-900 block mb-1">캐릭터 컨셉과 전투 방향성</span>
+                소동물 캐릭터가 자신의 몸체만 한 도구를 무기로 활용하는 탑뷰 근접 액션
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
-                <span className="font-bold text-blue-900 block mb-1">캐주얼 세대 계승</span>
-                0번째 선대 묘비와 선대의 빈집, 17-Part 파츠 분리형 세대교체 연출
+                <span className="font-bold text-blue-900 block mb-1">사망 페널티와 세대교체 규칙</span>
+                전투 불능 시 가방 내 미정산 전리품은 유실되나, 차세대 캐릭터가 거점과 누적 스탯을 인계받는 구조
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
                 <span className="font-bold text-blue-900 block mb-1">마이홈 하우징 스펙업</span>
-                몸통 방어구를 대체하는 마이홈 가구 테트리스 배치 및 영구 스탯 누적
+                몸통 방어구를 대체하는 마이홈 가구 배치 및 영구 기초 스탯 누적
               </div>
               <div className="p-3 rounded-xl bg-white border border-blue-150">
                 <span className="font-bold text-blue-900 block mb-1">절차적 지형 위계</span>
@@ -167,26 +167,23 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
             ))}
           </div>
 
-          {/* 01. 프로젝트 개요 & 디자인 필라 */}
+          {/* 01. 프로젝트 개요 & 핵심 기획 방향 */}
           <section id="plan-01" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                01 · 프로젝트 개요 및 3대 디자인 필라
+                01 · 프로젝트 개요 및 핵심 기획 방향
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                프로젝트 개요 및 3대 핵심 디자인 필라
+                프로젝트 개요 및 핵심 기획 방향
               </h2>
             </header>
 
             <div className="text-base sm:text-[17px] text-gray-700 leading-relaxed font-normal">
               <p>
-                <strong className="font-bold text-gray-900">TinyJourney</strong>는 찹쌀떡처럼 무해해 보이는 털뭉치 소동물이, 
-                인간이 버리고 간 거대한 쓰레기(녹슨 스푼, 쇠포크, 부러진 나뭇가지)를 온몸으로 휘두르는 
-                <strong className="text-blue-700 font-semibold"> &apos;갭 모에(Gap Moe)&apos;</strong>를 핵심 감성으로 삼는 탑뷰 2D 액션 RPG입니다.
+                <strong className="font-bold text-gray-900">TinyJourney</strong>는 작은 동물 캐릭터가 일상 사물(나뭇가지, 스푼, 포크 등)을 무기로 활용해 숲을 탐험하는 2D 탑뷰 액션 RPG입니다.
               </p>
               <p className="mt-3 text-sm sm:text-base text-gray-600">
-                복잡하고 파편화된 전통 RPG의 수치 놀음을 걷어내고, 
-                액션의 손맛과 공간의 안식처를 하나의 유기적인 순환선으로 엮기 위해 다음 3대 설계를 지향합니다.
+                단순 반복 사냥을 통한 스탯 성장에서 벗어나, 필드 채집과 장비 제작, 그리고 거점(마이홈) 하우징을 통한 영구 성장이 하나의 루프로 순환하도록 다음 세 가지 핵심 방향성을 설계했습니다.
               </p>
             </div>
 
@@ -196,10 +193,9 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <div className="w-8 h-8 rounded-lg bg-blue-500 text-white flex items-center justify-center font-bold text-sm mb-4 shadow-sm">
                     1
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900">한 방의 쾌감</h3>
+                  <h3 className="text-lg font-bold text-gray-900">명확한 근접 타격 피드백</h3>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                    자신의 몸체만 한 인간의 유물을 온몸으로 휘두르는 풀 스윙. 
-                    적중 순간의 0.09초 역경직(HitStop)과 6D 화면 진동이 만드는 묵직한 타격 피드백.
+                    캐릭터 크기에 대비되는 큰 무기 모션과 적중 순간의 0.09초 역경직(HitStop), 카메라 흔들림, 넉백을 결합해 근접 전투의 타격 피드백을 명확하게 전달합니다.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200/70 text-xs font-semibold text-blue-600">
@@ -212,10 +208,9 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <div className="w-8 h-8 rounded-lg bg-gray-800 text-white flex items-center justify-center font-bold text-sm mb-4 shadow-sm">
                     2
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900">직접 수집하고 만든다</h3>
+                  <h3 className="text-lg font-bold text-gray-900">채집과 제작 중심의 장비 성장</h3>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                    필드에서 주워 온 몬스터 전리품과 고철을 모아 무기를 직접 제작·개조. 
-                    단순 스탯 뻥튀기 대신 타격 범위와 조작감의 명확한 확장을 체감하는 파밍 구조.
+                    필드에서 획득한 몬스터 전리품과 자원을 조합해 무기와 도구를 제작합니다. 장비 등급 상승 시 단순 수치 증가뿐만 아니라 공격 범위와 판정 방식의 변화를 체감할 수 있도록 설계했습니다.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200/70 text-xs font-semibold text-gray-700">
@@ -228,10 +223,9 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <div className="w-8 h-8 rounded-lg bg-blue-500 text-white flex items-center justify-center font-bold text-sm mb-4 shadow-sm">
                     3
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900">돌아올 곳이 있다</h3>
+                  <h3 className="text-lg font-bold text-gray-900">마이홈 하우징 기반의 영구 성장</h3>
                   <p className="text-sm text-gray-600 mt-2 leading-relaxed">
-                    토벌 후 마을의 마이홈(집)으로 복귀. 수집한 전리품(고철, 병뚜껑, 목재 등)으로 
-                    제작한 가구를 집에 배치하는 행위 자체가 영구 방어구 스펙업이 되는 안식처 루프.
+                    탐험 후 거점인 마이홈으로 귀환하여, 수집한 자원으로 가구를 제작하고 배치합니다. 방어구 장비 슬롯을 제거하는 대신 가구 배치를 통해 캐릭터의 기초 스탯이 영구적으로 상승하는 구조입니다.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200/70 text-xs font-semibold text-blue-600">
@@ -243,60 +237,55 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 02. 세계관 내러티브 & 상냥한 세대 계승 */}
+          {/* 02. 세계관 설정 및 사망·세대교체 규칙 */}
           <section id="plan-02" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                02 · 세계관 환경 스토리텔링 및 상냥한 세대 계승
+                02 · 세계관 설정 및 사망·세대교체 규칙
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                세계관 환경 스토리텔링 및 상냥한 세대 계승 규칙
+                세계관 설정 및 사망·세대교체 규칙
               </h2>
             </header>
 
             <div className="bg-gradient-to-r from-blue-50/60 to-gray-50 border-l-4 border-blue-500 p-5 rounded-r-2xl">
               <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-                로그라이트 장르의 <strong>&apos;사망 시 전리품 유실&apos;</strong>과 <strong>&apos;외형 변화&apos;</strong>를 
-                시스템적 편의로 치부하지 않고, 게임 내 환경 스토리텔링(Environmental Storytelling)과 일치시켰습니다.
+                반복 도전 과정에서 발생하는 <strong>&apos;전투 불능 시 아이템 유실&apos;</strong>과 <strong>&apos;캐릭터 교체&apos;</strong> 규칙에 
+                세계관적 개연성을 부여하여 플레이 몰입감을 높였습니다.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-4 text-sm sm:text-[15px] text-gray-700 leading-relaxed">
                 <h3 className="text-lg font-bold text-gray-900">
-                  생계형 토벌과 비극을 감춘 선대의 빈집
+                  배경 설정과 거점(마이홈) 인계 구조
                 </h3>
                 <p>
-                  거대한 인간 세상의 발밑 &apos;잔디벌 마을&apos;에서 소동물들은 도토리 나르기와 분리수거 같은 
-                  고된 단순 노동에 시달려 왔습니다. 외곽 숲에서 발생한 변이 현상 &apos;야생화(Feral Surge)&apos;를 
-                  막기 위해 촌장이 거액의 포상금을 내걸자, 텅 빈 냉장고를 본 주인공이 녹슨 나뭇가지를 쥐고 숲으로 향합니다.
+                  외곽 숲의 야생화 변이 현상을 조사하기 위해 마을에서 토벌사를 파견한다는 기본 배경을 가지고 있습니다. 
+                  플레이어에게 기본 거점으로 제공되는 마이홈은 이전 토벌사가 사용하던 집이라는 설정이며, 
+                  마을 묘지에는 최초 게임 실행 시각(<code className="font-mono text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded text-xs font-semibold">firstGameLaunchTime</code>)이 
+                  기록된 비석을 배치해 세계관 설정을 시각적으로 전달합니다.
                 </p>
                 <p>
-                  촌장이 주인공에게 무상으로 내어준 아늑한 자취방은, 사실 숲에서 목숨을 잃고 돌아오지 못한 
-                  <strong className="text-gray-900"> &apos;선대 토벌사&apos;의 빈집</strong>입니다. 
-                  마을 언덕배기 묘지에는 플레이어가 게임을 처음 설치하고 실행한 시각
-                  (<code className="font-mono text-blue-700 bg-blue-50 px-1.5 py-0.5 rounded text-xs font-semibold">firstGameLaunchTime</code>)이 
-                  각인된 <strong>0대 선대 토벌사의 비석</strong>이 묵묵히 자리를 지키고 있습니다.
+                  이를 통해 플레이어가 거점에 남긴 가구와 시설이 다음 세대 캐릭터에게 그대로 인계되는 
+                  시스템 규칙을 자연스럽게 납득할 수 있도록 설계했습니다.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="p-5 rounded-xl border border-gray-200 bg-white shadow-sm space-y-2">
-                  <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">세대 계승 규칙 1</span>
-                  <h4 className="text-base font-bold text-gray-900">캐주얼한 세대교체 연출</h4>
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">규칙 1 · 캐릭터 교체</span>
+                  <h4 className="text-base font-bold text-gray-900">전투 불능 시 차세대 토벌사 부임</h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                    체력이 0이 되어도 잔혹한 연출을 지양하고 차분한 암전 후, 
-                    마을 어귀에서 새로운 외형(종족·색상 팔레트 스왑)의 차세대 토벌사가 부임하는 연출이 이어집니다. 
-                    (주인공 캐릭터를 17개 파츠 분리형 도트로 제작한 설계 배경)
+                    체력이 0이 되어 전투 불능 상태가 되면 암전 후 마을에서 새로운 외형(색상·종족 변주)의 차세대 토벌사가 부임하여 플레이를 이어갑니다.
                   </p>
                 </div>
 
                 <div className="p-5 rounded-xl border border-blue-200 bg-blue-50/40 shadow-sm space-y-2">
-                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">세대 계승 규칙 2</span>
-                  <h4 className="text-base font-bold text-blue-950">마이홈 가구 자산의 영구 보존</h4>
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">규칙 2 · 자산 보존과 유실</span>
+                  <h4 className="text-base font-bold text-blue-950">미정산 전리품 유실 및 마이홈 스탯 인계</h4>
                   <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                    던전에 들고 간 미정산 가방 전리품은 유실되지만, 마이홈에 이미 배치한 모든 가구와 스탯은 영구 보존됩니다. 
-                    새로 부임한 토벌사는 선대가 배치해 둔 가구의 스탯 효과를 그대로 이어받아 모험을 이어갑니다.
+                    탐험 중 사망할 경우 가방에 보유한 미정산 전리품은 유실되지만, 마이홈에 배치 완료된 가구와 누적 스탯은 그대로 유지되어 다음 토벌사에게 인계됩니다.
                   </p>
                 </div>
               </div>
@@ -321,17 +310,14 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               {[
                 { step: "01", name: "마이홈 정비", desc: "가구 배치로 기초 스탯을 확보하고, 출격 전 장비를 점검합니다." },
                 { step: "02", name: "절차적 전장 토벌", desc: "필드 방을 공략하고 몬스터 전리품과 자원을 획득합니다." },
-                { step: "03", name: "인벤토리 파밍", desc: "제한된 배낭 그리드에 다양한 모양의 전리품 블록을 효율적으로 패킹합니다." },
+                { step: "03", name: "인벤토리 파밍", desc: "제한된 배낭 그리드에 다양한 모양의 전리품 블록을 효율적으로 배치합니다." },
                 { step: "04", name: "귀환 & 영구 스펙업", desc: "가구 제작 및 마이홈 배치를 통해 영구 기초 스탯을 누적합니다." },
               ].map((stage, idx) => (
                 <div key={idx} className="relative p-5 rounded-2xl bg-gray-50/70 border border-gray-200 flex flex-col justify-between">
                   <div>
-                    <span className="text-xs font-extrabold text-blue-600 tracking-wider">PHASE {stage.step}</span>
+                    <span className="text-xs font-extrabold text-blue-600 tracking-wider">{stage.step} 단계</span>
                     <h3 className="text-base font-bold text-gray-900 mt-1">{stage.name}</h3>
                     <p className="text-xs sm:text-[13px] text-gray-600 mt-2 leading-relaxed">{stage.desc}</p>
-                  </div>
-                  <div className="mt-4 pt-2 text-[11px] font-semibold text-gray-400">
-                    Step {idx + 1} of 4
                   </div>
                 </div>
               ))}
@@ -366,10 +352,10 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 </div>
 
                 <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-2.5">
-                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">03 · 공간 테트리스 퍼즐</span>
+                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">03 · 공간 배치 퍼즐</span>
                   <h4 className="text-base font-bold text-gray-900">그리드 기반 배치 고민 유도</h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                    단순한 수치 합산에 그치지 않고, 마이홈의 유한한 그리드 공간에 가구를 어떻게 효율적으로 채워 넣을지 고민하게 만드는 인벤토리/공간 테트리스의 재미를 결합하는 방향으로 연구 중입니다.
+                    단순한 수치 합산에 그치지 않고, 마이홈의 유한한 그리드 공간에 가구를 어떻게 효율적으로 채워 넣을지 고민하게 만드는 공간 배치의 재미를 결합하는 방향으로 연구 중입니다.
                   </p>
                 </div>
               </div>
@@ -378,32 +364,35 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 04. 2.5D 레이맨 리깅 & 묵직한 액션 연출 */}
+          {/* 04. 파츠 분리형 캐릭터 애니메이션과 타격 피드백 설계 */}
           <section id="plan-04" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                04 · 2.5D 레이맨 리깅과 타격 피지컬
+                04 · 파츠 분리형 캐릭터 애니메이션과 타격 피드백 설계
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                2.5D 레이맨 리깅과 타격 피지컬 규격
+                파츠 분리형 캐릭터 애니메이션과 타격 피드백 설계
               </h2>
             </header>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-4 text-sm sm:text-[15px] text-gray-700 leading-relaxed">
                 <p>
-                  1인 개발 환경에서 무기를 추가하거나 외형을 바꿀 때마다 수십 장의 도트 프레임을 새로 그리는 것은 
-                  치명적인 리소스 병목을 유발합니다. 이를 해결하기 위해 
-                  <strong>&apos;트랜스폼 연산 기반 2.5D 레이맨 리깅&apos;</strong>을 구축했습니다.
+                  1인 개발 환경에서 무기 종류가 늘어날 때마다 공격 도트 애니메이션을 개별 제작하는 리소스 부담을 줄이기 위해, 
+                  캐릭터를 <strong>&apos;머리+몸통&apos;과 &apos;팔&apos; 2개의 이미지로 분리</strong>하여 설계했습니다.
+                </p>
+                <p className="text-xs sm:text-sm text-gray-600">
+                  스프라이트 애니메이션은 &apos;머리+몸통&apos;으로만 구성된 기본 동작(Idle, Walk)만 제작하고, 
+                  &apos;팔&apos; 이미지는 유니티 엔진 내에서 트랜스폼으로 조작하여 무기 파지 및 공격 모션의 제작 비용을 낮추었습니다.
                 </p>
                 <div className="p-4 rounded-xl bg-gray-50 border border-gray-200 space-y-2">
-                  <h4 className="font-bold text-gray-900 text-sm">5단 정렬 계층 파이프라인</h4>
+                  <h4 className="font-bold text-gray-900 text-sm">렌더링 정렬 계층 구조</h4>
                   <div className="font-mono text-xs text-blue-700 bg-white p-2.5 rounded-lg border border-gray-200">
                     BackArm (5) → Body (10) → Weapon (12) → FrontArm (15) → Slash (20)
                   </div>
                   <p className="text-xs text-gray-600 mt-2">
-                    앞손이 무기 손잡이를 덮어 쥐는 완벽한 90도 L자 파지세를 유지하며, 
-                    어깨 회전축(<code className="font-mono text-gray-700">Y: 0.28f</code>)을 중심으로 무기와 팔이 일체형으로 360도 회전합니다.
+                    몸통과 무기, 팔, 참격 이펙트의 정렬 순서를 세분화하여, 
+                    어깨 회전축(<code className="font-mono text-gray-700">Y: 0.28f</code>)을 중심으로 360도 조준 및 스윙 시 파지 형태가 자연스럽게 유지되도록 구성했습니다.
                   </p>
                 </div>
               </div>
@@ -517,44 +506,44 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 {
                   img: "/TinyJourney/slime_sprout.png",
                   name: "새싹 슬라임",
-                  badge: "Contact Tracker",
+                  badge: "근접 추적형",
                   element: "무속성",
-                  desc: "머리에 새싹이 돋은 젤리 슬라임. 별도 선딜레이 없이 폴짝폴짝 뛰며 플레이어를 끈질기게 추적하여 몸통 박치기 공격을 가합니다.",
+                  desc: "별도의 선딜레이 없이 플레이어를 지속 추적하며 접촉 시 근접 피해를 주는 기본 몬스터입니다.",
                 },
                 {
                   img: "/TinyJourney/chestnut_hedgehog.png",
                   name: "밤송이 고슴도치",
-                  badge: "Charge Attack",
+                  badge: "돌진 공격형",
                   element: "대지 속성",
-                  desc: "사거리 4.8m 진입 시 팽이처럼 제자리 와인드업 후, 3.5배속 볼링공 회전 돌진을 감행합니다. 벽 충돌 시 1초간 스스로 스턴에 빠집니다.",
+                  desc: "사거리(4.8m) 진입 시 짧은 대기 동작 후 플레이어 방향으로 3.5배속 직선 돌진하며, 벽면 충돌 시 1초간 기절 상태가 됩니다.",
                 },
                 {
                   img: "/TinyJourney/feral_squirrel.png",
                   name: "꽃꼬리 다람쥐",
-                  badge: "Ranged Shooter",
+                  badge: "원거리 사격형",
                   element: "맹독 속성",
-                  desc: "사거리 5.5m를 유지하며 카이팅하다가, 보라색 꽃꼬리에서 독기를 모아 모션 타이밍에 맞춰 전방으로 독 포자 투사체를 발사합니다.",
+                  desc: "사거리(5.5m)를 유지하며 이동하다가, 공격 주기에 맞춰 전방으로 독 포자 투사체를 발사합니다.",
                 },
                 {
                   img: "/TinyJourney/rotwood.png",
                   name: "뒤틀린 수호 고목",
-                  badge: "Boss Multi-Phase",
+                  badge: "보스 (다단계 패턴)",
                   element: "대지 속성",
-                  desc: "1구역 보스. ① 양손 대지 강타(충격파 AOE), ② 루비 촉매 화염 강타, ③ 전신 분노 광역 폭발의 3단 패턴을 체력 구간별로 구사합니다.",
+                  desc: "1구역 보스 몬스터로, 체력 구간에 따라 ① 양손 대지 강타(범위 공격), ② 화염 강타, ③ 주변 광역 폭발의 3단계 패턴을 구사합니다.",
                 },
                 {
                   img: "/TinyJourney/weapon_twig.png",
                   name: "단단한 나뭇가지 검",
-                  badge: "Starter Weapon",
+                  badge: "기본 근접 무기",
                   element: "참격 (Slash)",
-                  desc: "초반 기본 무기. 어깨 축 기반 360도 에임 회전 및 오버핸드 풀 스윙, 64×64 와이드 참격 이펙트와 연둣빛 컬러 틴트가 연동됩니다.",
+                  desc: "초반 기본 무기입니다. 조준 방향에 따른 360도 스윙 판정과 64×64 규격의 참격 이펙트가 연동됩니다.",
                 },
                 {
                   img: "/TinyJourney/CatSide.png",
                   name: "토벌사 베이스 캐릭터",
-                  badge: "17-Part Rigging",
-                  element: "Player Base",
-                  desc: "몸통 11장, 공용 팔 1장, 공용 다리 5장으로 분리 설계되어 세대 계승 연출 시 종족 및 색상 팔레트 스왑에 유연하게 대응합니다.",
+                  badge: "2분할 스프라이트",
+                  element: "플레이어 캐릭터",
+                  desc: "무기 파지와 공격 모션의 제작 비용을 낮추기 위해 '머리+몸통'과 '팔' 2개의 이미지로 분리했습니다. 스프라이트 애니메이션은 머리+몸통의 Idle·Walk만 제작하고, 팔 이미지는 유니티에서 직접 조작합니다.",
                 },
               ].map((item, idx) => (
                 <div
@@ -671,16 +660,16 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
             <div className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
               <p>
-                개발자가 하드코딩하지 않고, 기획 데이터(아이템, 몬스터, 속성 상성, 다국어)를 단일 엑셀 파일에서 직관적으로 제어할 수 있도록 
-                <strong> 단일 진실 공급원(SSOT, Single Source of Truth)</strong> 기반의 자동화 파이프라인을 구축했습니다.
+                개발자가 하드코딩하지 않고, 기획 데이터(아이템, 몬스터, 속성 상성, 다국어)를 단일 엑셀 파일에서 일관되게 제어할 수 있도록 
+                <strong> 엑셀 기반 통합 데이터 관리</strong> 및 자동 동기화 파이프라인을 구축했습니다.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 pt-2">
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide font-mono">PIPELINE AUTOMATION</span>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">데이터 자동화 구조</span>
                 <h3 className="font-bold text-gray-900 text-base">
-                  0.6초 원스톱 백그라운드 직렬화
+                  엑셀 저장 시 ScriptableObject 자동 갱신
                 </h3>
                 <div className="space-y-3 text-xs sm:text-sm text-gray-600">
                   <p>
@@ -688,7 +677,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                     ItemMaster, ItemEffects, Definitions, MonsterMaster, ElementChart, Localization 시트를 통합 관리합니다.
                   </p>
                   <p>
-                    <strong className="text-gray-900">Ctrl+S 즉시 컴파일:</strong> 엑셀을 저장하는 즉시 
+                    <strong className="text-gray-900">Ctrl+S 즉시 반영:</strong> 엑셀을 저장하는 즉시 
                     Unity 백그라운드 포스트프로세서(<code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">MasterDataPostprocessor.cs</code>)가 동작하여 
                     0.6초 내에 일괄 CSV 파싱 및 ScriptableObject 에셋을 자동 갱신합니다.
                   </p>
@@ -700,7 +689,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               </div>
 
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide font-mono">RUNTIME COMPLEXITY</span>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">상성 연산 구조</span>
                 <h3 className="font-bold text-gray-900 text-base">
                   5원소 대칭 상성 매트릭스 &amp; 데미지 공식
                 </h3>
@@ -709,12 +698,12 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 </div>
                 <div className="space-y-3 text-xs sm:text-sm text-gray-600">
                   <p>
-                    <strong className="text-gray-900">5원소 대칭 환(Cycle):</strong> <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Fire → Earth → Lightning → Poison → Ice → Fire</code>
+                    <strong className="text-gray-900">5원소 순환 상성:</strong> <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Fire → Earth → Lightning → Poison → Ice → Fire</code>
                     (유리 1.5x, 불리 0.7x, 동일 0.5x, 무속성 1.0x).
                   </p>
                   <p>
-                    <strong className="text-gray-900">런타임 O(1) 초고속 조회:</strong> 상성 배율을 조건문으로 분기하지 않고, 
-                    엑셀 매트릭스를 에셋으로 미리 구워 런타임 $O(1)$ 인덱싱으로 즉각 처리합니다.
+                    <strong className="text-gray-900">배열 인덱싱 기반 상성 조회:</strong> 상성 배율을 조건문으로 분기하지 않고, 
+                    엑셀 매트릭스를 에셋으로 미리 변환해 런타임 $O(1)$ 인덱싱으로 조회합니다.
                   </p>
                 </div>
               </div>
@@ -723,14 +712,14 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
 
           <hr className="border-gray-200/80" />
 
-          {/* 02. 몬스터 전략 패턴 & 무할당 물리 아키텍처 */}
+          {/* 02. 몬스터 전략 패턴 & 물리 제어 아키텍처 */}
           <section id="tech-02" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-                02 · 몬스터 전략 패턴 및 무할당 물리 아키텍처
+                02 · 몬스터 전략 패턴 및 물리 제어 아키텍처
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                몬스터 전략 패턴 &amp; 무할당 물리 아키텍처
+                몬스터 전략 패턴 &amp; 물리 제어 아키텍처
               </h2>
             </header>
 
@@ -746,10 +735,10 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 </p>
                 <div className="grid grid-cols-1 gap-2 pt-2 text-xs">
                   <div className="p-2.5 rounded-lg bg-white border border-gray-200">
-                    <strong className="text-gray-900">ContactAttackModule:</strong> 슬라임의 지속 추적 및 접촉 몸통 박치기
+                    <strong className="text-gray-900">ContactAttackModule:</strong> 슬라임의 지속 추적 및 접촉 근접 공격
                   </div>
                   <div className="p-2.5 rounded-lg bg-white border border-gray-200">
-                    <strong className="text-gray-900">ChargeAttackModule:</strong> 고슴도치의 4.8m 와인드업, 3.5배속 볼링공 돌진 및 벽 쿵 기절
+                    <strong className="text-gray-900">ChargeAttackModule:</strong> 고슴도치의 4.8m 대기 동작, 3.5배속 직선 돌진 및 벽 충돌 기절
                   </div>
                   <div className="p-2.5 rounded-lg bg-white border border-gray-200">
                     <strong className="text-gray-900">RangedShooterModule:</strong> 다람쥐의 5.5m 거리 유지 및 모션 동기화 독 포자 발사
@@ -763,17 +752,17 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
                 <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">물리 튜닝</span>
                 <h3 className="font-bold text-gray-900 text-base">
-                  무할당 조향 엔진 &amp; 바위형 물리 고정
+                  장애물 회피 이동 &amp; 물리 충돌·넉백 분리
                 </h3>
                 <div className="space-y-3 text-xs sm:text-sm text-gray-600 leading-relaxed">
                   <p>
-                    <strong className="text-gray-900">EnemyMotor2D (8방향 레이캐스트):</strong> GC 할당이 없는 장애물 우회 조향 및 시야선(Line of Sight) 검사를 통해 벽 너머로의 헛돌진을 원천 차단합니다.
+                    <strong className="text-gray-900">EnemyMotor2D (8방향 레이캐스트):</strong> GC 할당이 없는 장애물 우회 조향 및 시야선(Line of Sight) 검사를 통해 벽 너머로의 헛돌진을 방지합니다.
                   </p>
                   <p>
-                    <strong className="text-gray-900">고정 체급 바디 (mass=100, Friction=0):</strong> 플레이어의 단순 이동으로 몬스터가 밀리지 않고 몸통 둘레를 부드럽게 미끄러지도록 고정했습니다.
+                    <strong className="text-gray-900">물리 질량 고정 (mass=100, Friction=0):</strong> 플레이어의 단순 이동 충돌로 몬스터가 밀리지 않고 외곽을 따라 자연스럽게 이동하도록 설정했습니다.
                   </p>
                   <p>
-                    <strong className="text-gray-900">넉백 타이머 분리:</strong> 오직 무기 타격 적중 시에만 <code className="font-mono text-blue-700 bg-white px-1 py-0.5 rounded border border-gray-200">ApplyKnockback(8.5f, 0.18s)</code>과 전용 보호 타이머를 통해 시원하게 밀려나도록 분리했습니다.
+                    <strong className="text-gray-900">넉백 타이머 분리:</strong> 무기 타격 적중 시에만 <code className="font-mono text-blue-700 bg-white px-1 py-0.5 rounded border border-gray-200">ApplyKnockback(8.5f, 0.18s)</code>과 전용 타이머를 통해 지정된 거리만큼 밀려나도록 분리했습니다.
                   </p>
                 </div>
               </div>
@@ -802,12 +791,12 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                     탑뷰 시점에서 플레이어가 몬스터보다 위쪽(<code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Player.y &gt; Enemy.y</code>)에 위치할 때, 
-                    일반 Y-Sorting 규칙으로 인해 아래쪽으로 휘두르는 무기나 참격 이펙트가 몬스터 몸통 뒤로 가려지는 시각적 결함이 발생했습니다.
+                    일반 Y-Sorting 규칙으로 인해 아래쪽으로 휘두르는 무기나 참격 이펙트가 몬스터 몸통 뒤로 가려지는 시각적 문제가 발생했습니다.
                   </p>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mt-3">
                     이를 해결하기 위해 공격 진행 중(<code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">isAttacking == true</code>)에는 
                     무기, 앞팔, 슬래시 스프라이트 렌더러의 정렬 오더에 <code className="font-mono text-blue-700 bg-white px-1 py-0.5 rounded border border-gray-200">+1000</code>을 동적으로 가산하여 
-                    타격 모션이 항상 몬스터 앞쪽으로 호쾌하게 베고 지나가도록 시인성을 보정했습니다.
+                    타격 모션이 몬스터 앞쪽에 가려지지 않고 명확히 표시되도록 시인성을 보정했습니다.
                   </p>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-200 text-xs font-semibold text-blue-600">
@@ -870,20 +859,20 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
               </div>
 
               <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">메모리 &amp; 무결성</span>
-                <h3 className="font-bold text-gray-900 text-base">초경량 미니맵과 세이브 무결성</h3>
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">메모리 &amp; 세이브 관리</span>
+                <h3 className="font-bold text-gray-900 text-base">텍스처 픽셀 미니맵과 세이브 관리</h3>
                 <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
                   <p>
-                    <strong className="text-gray-900">Zero-Camera 미니맵:</strong> 별도의 보조 카메라를 띄우지 않고, 
-                    그리드 데이터를 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Texture2D</code> 픽셀에 직접 구워 UI RawImage에 바인딩합니다. (반경 9타일 안개 무할당 갱신)
+                    <strong className="text-gray-900">텍스처 갱신 미니맵:</strong> 별도의 보조 카메라를 띄우지 않고, 
+                    그리드 데이터를 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">Texture2D</code> 픽셀에 직접 기록해 UI RawImage에 바인딩합니다. (반경 9타일 시야 갱신)
                   </p>
                   <p>
                     <strong className="text-gray-900">사운드 디커플링:</strong> AudioMixer 4계층 버스 라우팅 및 <code className="font-mono text-blue-700 bg-blue-50 px-1 py-0.5 rounded">SoundEvents</code> 이벤트 버스를 통해 
-                    사운드 매니저 부재 시에도 컴파일/런타임 에러를 원천 차단합니다.
+                    사운드 매니저 부재 시에도 컴파일/런타임 에러를 방지합니다.
                   </p>
                   <p>
-                    <strong className="text-gray-900">방 단위 자동 저장 및 강종 방지:</strong> 다음 방 진입 시 자동 저장되며, 
-                    위기 상황 시 Alt+F4 악용을 막기 위해 재시작 시 해당 방 입구에서 몬스터가 리셋된 상태로 시작됩니다.
+                    <strong className="text-gray-900">방 단위 자동 저장 및 강제 종료 대응:</strong> 다음 방 진입 시 자동 저장되며, 
+                    강제 종료 악용을 방지하기 위해 재시작 시 해당 방 입구에서 몬스터가 초기화된 상태로 시작됩니다.
                   </p>
                 </div>
               </div>
@@ -918,7 +907,7 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 font-bold">✓</span>
-                    <span><strong>2.5D 레이맨 리깅:</strong> 5단 레이어 파츠 분리형 애니메이션 및 타격 판정 기초 구현</span>
+                    <span><strong>파츠 분리형 캐릭터 애니메이션:</strong> 머리+몸통 및 팔 분리 제어 기반의 무기 모션 및 타격 판정 기초 구현</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 font-bold">✓</span>

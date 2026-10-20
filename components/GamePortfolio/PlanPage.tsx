@@ -17,7 +17,7 @@ const PlanPage = ({ onTabChange }: Props) => {
     { id: "section-overview", tag: "개요 & 코어루프", title: "게임 개요 및 코어 루프" },
     { id: "section-systems", tag: "타워 & 밸런스", title: "타워 시스템 및 난이도 정량화" },
     { id: "section-infinity", tag: "무한 모드", title: "무한모드 엔드 콘텐츠" },
-    { id: "section-postmortem", tag: "포스트모템", title: "PlayFab 데이터 기반 밸런싱" },
+    { id: "section-postmortem", tag: "데이터 밸런싱", title: "PlayFab 데이터 기반 밸런싱" },
     { id: "section-art-audio", tag: "아트 & 사운드", title: "픽셀 아트 및 게임 사운드" },
   ];
 
@@ -34,19 +34,19 @@ const PlanPage = ({ onTabChange }: Props) => {
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
           <div className="p-3 rounded-xl bg-white border border-blue-150">
             <span className="font-bold text-blue-900 block mb-1">코어 루프 기획</span>
-            단기 랜덤 변동성(첫 웨이브 특성)과 장기 가중치 파밍을 결합해 빌드 고착화 해소
+            단기 랜덤 보상(웨이브 특성)과 장기 가중치 장비 파밍을 결합해 빌드 고착화 완화
           </div>
           <div className="p-3 rounded-xl bg-white border border-blue-150">
             <span className="font-bold text-blue-900 block mb-1">타워 상성 분리</span>
-            단일 타워 도배를 차단하기 위해 6종 타워 역할군(단일·다중, 물리·마법) 분리
+            단일 타워 편중을 방지하기 위해 6종 타워 역할군(단일·다중, 물리·마법) 분리
           </div>
           <div className="p-3 rounded-xl bg-white border border-blue-150">
             <span className="font-bold text-blue-900 block mb-1">난이도 정량화</span>
-            지형 3요소(50/8/5) 가중치 수식으로 유불리를 보정하고 0~100 드랍 곡선 설계
+            지형 3요소(50/8/5) 가중치 수식으로 유불리를 보정하고 0~100 드랍 확률 설계
           </div>
           <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">데이터 포스트모템</span>
-            PlayFab 전투 로그 분석으로 과점 타워(궁수 29% ➔ 20%) 픽률 정상화
+            <span className="font-bold text-blue-900 block mb-1">데이터 기반 밸런싱</span>
+            PlayFab 플레이 로그 분석으로 편중 타워(궁수 29% ➔ 20%) 선택 비율 조정
           </div>
         </div>
       </section>
@@ -83,9 +83,9 @@ const PlanPage = ({ onTabChange }: Props) => {
 
         <div className="text-base sm:text-[17px] text-gray-700 leading-relaxed">
           <p>
-            정형화된 타워 디펜스 장르의 고질적 한계인 <strong>&apos;특정 타워 빌드 고착화&apos;</strong>를 깨뜨리기 위해 기획된 2D/3D 로그라이트 타워 디펜스입니다.
-            매 판 지형이 바뀌는 <strong>절차적 맵</strong> 위에서 <strong className="text-blue-700">단기적 랜덤 보상</strong>(인게임 변동성)과 
-            <strong className="text-blue-700"> 가중치 예산 기반 장비 파밍</strong>(장기적 메타 성장)을 결합하여 무한한 리플레이 가치를 확보했습니다.
+            타워 디펜스 장르에서 발생하기 쉬운 <strong>&apos;특정 타워 빌드 고착화&apos;</strong>를 완화하기 위해 기획한 2D 로그라이트 타워 디펜스입니다.
+            매 판 지형이 바뀌는 <strong>절차적 맵</strong> 위에서 <strong className="text-blue-700">웨이브별 무작위 보상</strong>(단기 성장)과 
+            <strong className="text-blue-700"> 가중치 기반 장비 파밍</strong>(장기 성장)을 결합하여 반복 플레이의 재미를 높였습니다.
           </p>
         </div>
 
@@ -96,36 +96,33 @@ const PlanPage = ({ onTabChange }: Props) => {
               phase: "01",
               name: "웨이브 방어",
               sub: "전략적 배치 & 스킬",
-              desc: "매 판 생성되는 무작위 지형을 분석하여 타워를 최적 위치에 배치하고 실시간 SP 스킬로 대응합니다.",
+              desc: "매 판 생성되는 무작위 지형을 분석하여 타워를 배치하고 SP 액티브 스킬로 위기 상황에 대응합니다.",
             },
             {
               phase: "02",
               name: "랜덤 보상 선택",
-              sub: "단기적 덱 빌딩",
-              desc: "웨이브 클리어마다 주어지는 3종 무작위 보상 중 1개를 택해 이번 판만의 고유한 타워 시너지를 완성합니다.",
+              sub: "단기 빌드 구성",
+              desc: "웨이브 클리어마다 주어지는 3종 무작위 보상 중 1개를 선택해 해당 판의 타워 시너지를 구성합니다.",
             },
             {
               phase: "03",
               name: "장비 파밍 & 도감",
-              sub: "장기적 메타 성장",
+              sub: "장기 스탯 성장",
               desc: "최종 보스 처치 후 획득한 장비를 도감에 등록하고, RCoin을 소모해 상점에서 상위 장비를 획득·장착합니다.",
             },
             {
               phase: "04",
               name: "상위 난이도 도전",
-              sub: "엔드게임 & 경쟁",
-              desc: "100단계 난이도 스케일링을 돌파하고, 전설 장비 해금 후 랭킹 기반 무한모드에서 글로벌 순위를 다툽니다.",
+              sub: "엔드 콘텐츠 & 랭킹",
+              desc: "0~100단계 난이도를 순차적으로 공략해 상위 장비를 해금하고, 무한모드에서 랭킹을 경쟁합니다.",
             },
           ].map((loop, i) => (
             <div key={i} className="p-5 rounded-2xl bg-gray-50/70 border border-gray-200 flex flex-col justify-between">
               <div>
-                <span className="text-xs font-extrabold text-blue-600 tracking-wider">PHASE {loop.phase}</span>
+                <span className="text-xs font-extrabold text-blue-600 tracking-wider">{loop.phase} 단계</span>
                 <h3 className="text-base font-bold text-gray-900 mt-1">{loop.name}</h3>
                 <span className="text-[11px] font-medium text-gray-500 block">{loop.sub}</span>
                 <p className="text-xs sm:text-[13px] text-gray-600 mt-2.5 leading-relaxed">{loop.desc}</p>
-              </div>
-              <div className="mt-4 pt-2 text-[11px] font-semibold text-gray-400">
-                Step {i + 1} of 4
               </div>
             </div>
           ))}
@@ -134,7 +131,7 @@ const PlanPage = ({ onTabChange }: Props) => {
         {/* 대기실 흐름 & 인게임 흐름 */}
         <div className="grid md:grid-cols-2 gap-6 pt-2">
           <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-3">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Out-Game Loop</span>
+            <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">아웃게임 루프</span>
             <h4 className="font-bold text-gray-900 text-base">대기실 흐름 (사전 전략 준비)</h4>
             <ol className="list-decimal pl-4 space-y-2 text-xs sm:text-sm text-gray-600 leading-relaxed">
               <li>획득한 장비를 도감에서 확인하고 캐릭터에 슬롯별 장착</li>
@@ -144,12 +141,12 @@ const PlanPage = ({ onTabChange }: Props) => {
           </div>
 
           <div className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-3">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">In-Game Loop</span>
-            <h4 className="font-bold text-blue-950 text-base">인게임 흐름 (실시간 런 빌드업)</h4>
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">인게임 루프</span>
+            <h4 className="font-bold text-blue-950 text-base">인게임 흐름 (웨이브 전투 및 성장)</h4>
             <ol className="list-decimal pl-4 space-y-2 text-xs sm:text-sm text-gray-700 leading-relaxed">
-              <li>첫 웨이브 특성을 선택하여 해당 판의 주력 타워 및 빌드 컨셉 결정</li>
+              <li>첫 웨이브 특성을 선택하여 해당 판의 주력 타워 및 빌드 방향 결정</li>
               <li><b>[타워 배치 → 적 처치 → 골드 획득 → 강화]</b> 실시간 전투 진행</li>
-              <li>10W 최종 보스 격파 시 난이도 비례 장비 드랍 획득 후 대기실 복귀</li>
+              <li>10W 최종 보스 처치 시 난이도 비례 장비 보상을 획득하고 대기실로 복귀</li>
             </ol>
           </div>
         </div>
@@ -209,37 +206,37 @@ const PlanPage = ({ onTabChange }: Props) => {
                 name: "기본 타워",
                 cost: "50TC · 복합형",
                 desc: "물리·마법 업그레이드를 모두 받는 초반 기본 단일 공격 타워",
-                role: "Single · Starter",
+                role: "초반 단일 공격",
               },
               {
                 name: "검사 타워",
                 cost: "70TC · 물리형",
-                desc: "빠른 공격 속도와 강력한 근거리 단일 관통 데미지 특화",
-                role: "Melee Single DPS",
+                desc: "빠른 공격 속도와 높은 근거리 단일 물리 피해 특화",
+                role: "근거리 단일 딜러",
               },
               {
                 name: "창술사 타워",
                 cost: "200TC · 물리형",
-                desc: "중거리에서 최대 4개 대상 동시 타격 가능한 광역 제압 딜러",
-                role: "Mid-Range Multi 4-Target",
+                desc: "중거리에서 최대 4개 대상을 동시에 타격하는 다중 공격 딜러",
+                role: "중거리 다중 공격(4타겟)",
               },
               {
                 name: "궁수 타워",
                 cost: "130TC · 물리형",
                 desc: "넓은 사거리 기반으로 경로 곳곳의 적을 분산 타격하는 원거리 딜러",
-                role: "Long-Range Multi DPS",
+                role: "원거리 다중 딜러",
               },
               {
                 name: "레이저 타워",
                 cost: "120TC · 마법형",
-                desc: "보스 및 중장갑 적을 제압하는 고DPS 지속 단일 마법 광선",
-                role: "Boss Killer · Single Magic",
+                desc: "보스 및 고방어력 적을 상대하는 지속 단일 마법 딜러",
+                role: "단일 지속 마법 딜러",
               },
               {
                 name: "사제 타워",
                 cost: "100TC · 마법형",
-                desc: "피격 대상의 방어력을 깎아 타워들의 화력을 증폭시키는 서포터",
-                role: "Armor Debuffer · Synergy",
+                desc: "피격 대상의 방어력을 낮춰 아군 타워들의 화력을 높이는 서포터",
+                role: "방어력 감소 서포터",
               },
             ].map((tower, idx) => (
               <div
@@ -271,7 +268,7 @@ const PlanPage = ({ onTabChange }: Props) => {
         {/* 2-2. 스킬 & 웨이브 시스템 */}
         <div className="grid md:grid-cols-2 gap-6 pt-4">
           <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Resource Economy</span>
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">자원 분리 설계</span>
             <h3 className="font-bold text-gray-900 text-base">스킬 시스템 (독립 SP 자원 운용)</h3>
             <div className="space-y-2.5 text-xs sm:text-sm text-gray-600 leading-relaxed">
               <p>
@@ -281,7 +278,7 @@ const PlanPage = ({ onTabChange }: Props) => {
                 <strong className="text-gray-900">상한 200 SP:</strong> 웨이브 클리어 시 기본 20 SP가 확정 충전되며, 모든 액티브 스킬은 20 SP를 소모합니다.
               </p>
               <p>
-                <strong className="text-gray-900">웨이브당 1회 제한:</strong> 스킬 난사를 방지하고 결정적인 순간에 발동하도록 스킬별 웨이브당 1회 사용 제한을 두었습니다.
+                <strong className="text-gray-900">웨이브당 1회 제한:</strong> 스킬 난사를 방지하고 필요한 시점에 발동하도록 스킬별 웨이브당 1회 사용 제한을 두었습니다.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden border border-gray-200 bg-white p-2 mt-2">
@@ -293,19 +290,19 @@ const PlanPage = ({ onTabChange }: Props) => {
           </div>
 
           <div className="p-6 rounded-2xl bg-gray-50/80 border border-gray-200 space-y-4">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Wave Pacing</span>
-            <h3 className="font-bold text-gray-900 text-base">웨이브 구성 (10 웨이브 검증)</h3>
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">웨이브 구성</span>
+            <h3 className="font-bold text-gray-900 text-base">웨이브 구성 (10 웨이브 구조)</h3>
             <div className="space-y-3">
               <div className="p-4 rounded-xl bg-white border border-gray-200">
                 <span className="text-xs font-bold text-blue-600">일반 웨이브 (1~5, 7~9W)</span>
                 <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                  웨이브당 30마리 적이 지속 유입되며, 광역 딜러 배치와 초반 기본 자원 파밍을 유도합니다.
+                  웨이브당 30마리 적이 지속 유입되며, 다중 공격 딜러 배치와 초반 기본 자원 파밍을 유도합니다.
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-white border border-gray-200">
                 <span className="text-xs font-bold text-purple-600">네임드 웨이브 (6W)</span>
                 <p className="text-xs text-gray-600 mt-1 leading-relaxed">
-                  고체력 정예 몬스터가 출현하여, 광역기 위주 빌드가 단일 딜러(검사·레이저)로 전환하도록 중간 점검을 강제합니다.
+                  고체력 정예 몬스터가 출현하여, 광역 공격 위주 빌드가 단일 딜러(검사·레이저)를 함께 갖추도록 유도합니다.
                 </p>
               </div>
               <div className="p-4 rounded-xl bg-white border border-gray-200">
@@ -324,13 +321,13 @@ const PlanPage = ({ onTabChange }: Props) => {
             <h3 className="text-lg font-bold text-gray-900">
               지형 유불리를 보정하는 맵 난이도 정량화 공식
             </h3>
-            <span className="text-xs text-gray-500 font-medium">High Risk, High Return 점수 보정</span>
+            <span className="text-xs text-gray-500 font-medium">지형 난이도 점수 산출</span>
           </div>
 
           <div className="p-6 rounded-2xl bg-gray-900 text-white space-y-4 shadow-sm">
             <div className="flex items-center justify-between border-b border-gray-800 pb-3 text-xs text-gray-400">
-              <span>Map Difficulty Metric</span>
-              <span>Weighted Formula</span>
+              <span>맵 난이도 산출 공식</span>
+              <span>가중치 연산</span>
             </div>
             <div className="font-mono text-sm sm:text-base text-emerald-400 text-center py-2">
               Score = (50 / 경로길이) × 40 + (8 / 코너횟수) × 30 + (5 / 평행간격) × 30
@@ -338,15 +335,15 @@ const PlanPage = ({ onTabChange }: Props) => {
             <div className="grid sm:grid-cols-3 gap-3 pt-2 text-xs text-gray-300">
               <div className="p-3 bg-gray-800/80 rounded-xl border border-gray-700">
                 <strong className="text-white block mb-1">① 경로 길이 (가중치 40%)</strong>
-                기준값 50타일. 경로가 짧을수록 적 노출 시간이 감소하므로 난이도 점수 대폭 상승
+                기준값 50타일. 경로가 짧을수록 적 노출 시간이 감소하므로 난이도 점수 상승
               </div>
               <div className="p-3 bg-gray-800/80 rounded-xl border border-gray-700">
                 <strong className="text-white block mb-1">② 코너 횟수 (가중치 30%)</strong>
-                기준값 8회. 꺾이는 구간이 적을수록 타워 프리딜 각도가 좁아져 난이도 상승
+                기준값 8회. 꺾이는 구간이 적을수록 타워 공격 각도가 좁아져 난이도 상승
               </div>
               <div className="p-3 bg-gray-800/80 rounded-xl border border-gray-700">
                 <strong className="text-white block mb-1">③ 평행 간격 (가중치 30%)</strong>
-                기준값 5타일. 단일 타워가 2개 라인을 동시 커버하기 어려울수록 난이도 상승
+                기준값 5타일. 단일 타워가 2개 라인을 동시에 사정권에 두기 어려울수록 난이도 상승
               </div>
             </div>
           </div>
@@ -422,12 +419,12 @@ const PlanPage = ({ onTabChange }: Props) => {
                 </tr>
                 <tr className="hover:bg-amber-100/40 transition bg-amber-50/30">
                   <td className="py-3 px-4 font-bold text-gray-900">난이도 100</td>
-                  <td className="py-3 px-4 text-center text-red-600 font-bold">0% (완전 배제)</td>
+                  <td className="py-3 px-4 text-center text-red-600 font-bold">0% (일반 제외)</td>
                   <td className="py-3 px-4 text-center text-emerald-700 font-medium">15%</td>
                   <td className="py-3 px-4 text-center text-blue-700 font-medium">35%</td>
                   <td className="py-3 px-4 text-center text-purple-700 font-bold">30%</td>
                   <td className="py-3 px-4 text-center text-amber-600 font-bold">20%</td>
-                  <td className="py-3 px-4 text-amber-950 font-bold text-xs">최종 엔드 파밍: 일반 장비 소멸 &amp; 무한모드 개방</td>
+                  <td className="py-3 px-4 text-amber-950 font-bold text-xs">최종 엔드 파밍: 일반 등급 제외 &amp; 무한모드 해금</td>
                 </tr>
               </tbody>
             </table>
@@ -435,12 +432,12 @@ const PlanPage = ({ onTabChange }: Props) => {
 
           <div className="grid sm:grid-cols-2 gap-4 text-xs sm:text-sm text-gray-600 pt-2">
             <div className="p-4 rounded-xl bg-gray-50 border border-gray-200">
-              <span className="font-bold text-gray-900 block mb-1">등급별 스탯 예산 (Stat Budget)</span>
+              <span className="font-bold text-gray-900 block mb-1">등급별 스탯 분배 기준</span>
               일반(5pt) ➔ 고급(15pt) ➔ 희귀(30pt) ➔ 서사(60pt+특수옵션) ➔ 전설(120pt+고유스킬)
             </div>
             <div className="p-4 rounded-xl bg-gray-50 border border-gray-200">
               <span className="font-bold text-gray-900 block mb-1">스탯 가중치 설계</span>
-              공격력(1.0 기본), 공격속도(0.8 오버킬 우대), 사거리(1.2 고효율 고비용) 공식 적용
+              공격력(1.0 기본), 공격속도(0.8 오버킬 보정), 사거리(1.2 고효율 고비용) 공식 적용
             </div>
           </div>
         </div>
@@ -462,30 +459,30 @@ const PlanPage = ({ onTabChange }: Props) => {
         </header>
 
         <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
-          장비 세팅을 완료한 숙련 유저가 한계 화력을 시험하고 전 세계 유저와 점수를 겨루는 순환형 엔드 콘텐츠입니다. 
-          일반 모드 100 난이도를 정복하면 해금됩니다.
+          장비 세팅을 마친 숙련 유저가 최종 화력을 시험하고 다른 유저와 점수를 겨루는 순환형 엔드 콘텐츠입니다. 
+          일반 모드 100 난이도를 클리어하면 해금됩니다.
         </p>
 
         <div className="grid md:grid-cols-3 gap-4 pt-2">
           <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200">
             <span className="text-xs font-bold text-blue-600">규칙 01</span>
-            <h4 className="font-bold text-gray-900 text-sm mt-1">2분 타임어택 &amp; 무한 순환</h4>
+            <h4 className="font-bold text-gray-900 text-sm mt-1">2분 제한 &amp; 경로 순환</h4>
             <p className="text-xs text-gray-600 mt-2 leading-relaxed">
-              최종 웨이브 없이 웨이브당 2분 제한. 적이 종점에 도달해도 죽지 않고 출발점으로 돌아와 끊임없이 순환합니다.
+              최종 웨이브 없이 웨이브당 2분 제한으로 진행되며, 적이 종점에 도달하면 출발점으로 되돌아가 경로를 계속 순환합니다.
             </p>
           </div>
           <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200">
             <span className="text-xs font-bold text-blue-600">규칙 02</span>
-            <h4 className="font-bold text-gray-900 text-sm mt-1">서바이벌 HP 패널티</h4>
+            <h4 className="font-bold text-gray-900 text-sm mt-1">잔여 적 비례 HP 차감</h4>
             <p className="text-xs text-gray-600 mt-2 leading-relaxed">
-              2분 제한 시간 종료 시 맵에 남은 적 1마리당 기지 HP가 1씩 차감되며, 0에 도달하면 즉시 최종 점수를 산출합니다.
+              2분 제한 시간 종료 시 맵에 남은 적 1마리당 기지 HP가 1씩 차감되며, 0에 도달하면 최종 점수를 산출합니다.
             </p>
           </div>
           <div className="p-5 rounded-2xl bg-gray-50/80 border border-gray-200">
             <span className="text-xs font-bold text-blue-600">규칙 03</span>
-            <h4 className="font-bold text-gray-900 text-sm mt-1">실시간 인게임 미터기</h4>
+            <h4 className="font-bold text-gray-900 text-sm mt-1">실시간 데미지 미터기</h4>
             <p className="text-xs text-gray-600 mt-2 leading-relaxed">
-              전투 중 6종 타워의 누적 데미지와 초당 피해량(DPS) 기여도를 실시간 그래프로 제공하여 빌드 효율을 즉각 피드백합니다.
+              전투 중 6종 타워의 누적 피해량과 초당 피해량(DPS) 비중을 실시간 그래프로 제공하여 빌드 효율을 확인할 수 있습니다.
             </p>
           </div>
         </div>
@@ -509,40 +506,40 @@ const PlanPage = ({ onTabChange }: Props) => {
       <hr className="border-gray-200/80" />
 
       {/* ===================================================================== */}
-      {/* 04. 데이터 기반 포스트모템 */}
+      {/* 04. 데이터 기반 밸런스 개선 */}
       {/* ===================================================================== */}
       <section id="section-postmortem" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
           <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-            04 · 데이터 기반 포스트모템
+            04 · 데이터 기반 밸런스 개선
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            PlayFab 텔레메트리 기반 밸런싱 포스트모템
+            PlayFab 플레이 로그 기반 밸런스 패치
           </h2>
         </header>
 
         <div className="grid md:grid-cols-3 gap-5 pt-2">
           <div className="p-5 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-2">
             <span className="text-xs font-bold text-rose-700 uppercase">1. 문제 진단</span>
-            <h4 className="font-bold text-gray-900 text-sm">궁수 타워 과점 (29%)</h4>
+            <h4 className="font-bold text-gray-900 text-sm">궁수 타워 편중 (29%)</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              원거리 다중 타겟인 궁수 타워와 장비의 사거리 옵션이 과도한 시너지를 내어 선택률 29%를 독점하고, 중거리 딜러인 창술사(8%)는 소외됨을 확인.
+              원거리 다중 타겟인 궁수 타워와 장비의 사거리 옵션이 높은 효율을 보여 선택률 29%로 편중되고, 중거리 딜러인 창술사(8%)는 선택률이 낮음을 확인했습니다.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-amber-50/60 border border-amber-200 space-y-2">
-            <span className="text-xs font-bold text-amber-700 uppercase">2. 정량 패치</span>
-            <h4 className="font-bold text-gray-900 text-sm">Beta_v0.2.1 밸런스 조정</h4>
+            <span className="text-xs font-bold text-amber-700 uppercase">2. 밸런스 패치</span>
+            <h4 className="font-bold text-gray-900 text-sm">Beta_v0.2.1 수치 조정</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              모든 장비의 사거리 옵션 가중치를 50% 축소하고 궁수 기본 사거리를 하향. 동시에 창술사의 기본 공격력과 관통 효율을 상향 조정.
+              장비 스탯 분배표의 사거리 옵션 가중치를 50% 축소하고 궁수 기본 사거리를 하향 조정했습니다. 동시에 창술사의 기본 공격력과 관통 효율을 상향했습니다.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200 space-y-2">
-            <span className="text-xs font-bold text-emerald-700 uppercase">3. 결과 검증</span>
-            <h4 className="font-bold text-gray-900 text-sm">선택률의 이상적 정규화</h4>
+            <span className="text-xs font-bold text-emerald-700 uppercase">3. 결과 확인</span>
+            <h4 className="font-bold text-gray-900 text-sm">타워 선택 비율 균형 회복</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              궁수 타워의 독점이 20%로 완화되고 창술사 픽률이 15%로 회복되어, 6개 타워가 12~20% 범위의 균형 잡힌 선택 분포를 달성.
+              궁수 타워의 선택 비율이 20%로 완화되고 창술사 선택률이 15%로 상승하여, 6개 타워가 12~20% 범위의 고른 선택 분포를 기록했습니다.
             </p>
           </div>
         </div>
@@ -550,7 +547,7 @@ const PlanPage = ({ onTabChange }: Props) => {
         {/* 밸런스 패치 비교 테이블 */}
         <div className="space-y-3 pt-2">
           <h3 className="text-base font-bold text-gray-900">
-            Beta_v0.2.1 패치 전후 픽률 실측 비교
+            Beta_v0.2.1 패치 전후 타워 선택 비율 비교
           </h3>
           <div className="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
             <table className="w-full text-left text-xs sm:text-sm divide-y divide-gray-200">
@@ -579,7 +576,7 @@ const PlanPage = ({ onTabChange }: Props) => {
                   <td className="py-3 px-4 text-center text-gray-600">17%</td>
                   <td className="py-3 px-4 text-center font-bold text-gray-800">16%</td>
                   <td className="py-3 px-4 text-center text-gray-500">-1%p</td>
-                  <td className="py-3 px-4 text-gray-600 text-xs">코너 구간 주력 단일 딜러 안정화</td>
+                  <td className="py-3 px-4 text-gray-600 text-xs">코너 구간 주력 단일 딜러 유지</td>
                 </tr>
                 <tr className="hover:bg-blue-50/20 transition bg-blue-50/40">
                   <td className="py-3 px-4 font-bold text-blue-950">창술사 타워</td>
@@ -587,15 +584,15 @@ const PlanPage = ({ onTabChange }: Props) => {
                   <td className="py-3 px-4 text-center text-rose-600 font-bold">8% (최저)</td>
                   <td className="py-3 px-4 text-center font-bold text-blue-700">15%</td>
                   <td className="py-3 px-4 text-center font-bold text-blue-700">+7%p</td>
-                  <td className="py-3 px-4 text-blue-900 text-xs font-medium">상향 패치로 중·후반 광역 딜러 채택률 완전 회복</td>
+                  <td className="py-3 px-4 text-blue-900 text-xs font-medium">상향 패치로 중·후반 다중 공격 딜러 채택률 회복</td>
                 </tr>
                 <tr className="hover:bg-blue-50/20 transition bg-blue-50/40">
                   <td className="py-3 px-4 font-bold text-blue-950">궁수 타워</td>
                   <td className="py-3 px-4 text-blue-800">원거리 다중 물리 딜러</td>
-                  <td className="py-3 px-4 text-center text-rose-600 font-bold">29% (과점)</td>
+                  <td className="py-3 px-4 text-center text-rose-600 font-bold">29% (편중)</td>
                   <td className="py-3 px-4 text-center font-bold text-blue-700">20%</td>
                   <td className="py-3 px-4 text-center font-bold text-blue-700">-9%p</td>
-                  <td className="py-3 px-4 text-blue-900 text-xs font-medium">사거리 효율 축소로 기형적 독점 완전 해소</td>
+                  <td className="py-3 px-4 text-blue-900 text-xs font-medium">사거리 효율 조정으로 특정 타워 편중 완화</td>
                 </tr>
                 <tr className="hover:bg-blue-50/20 transition">
                   <td className="py-3 px-4 font-bold text-gray-900">레이저 타워</td>

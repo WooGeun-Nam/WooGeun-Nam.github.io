@@ -109,11 +109,11 @@ export default function PortfolioHome() {
                   TinyJourney (가제 · 개발 중)
                 </h3>
                 <p className="mt-3 font-semibold text-sm text-gray-700 text-left">
-                  2D 탑뷰 액션 RPG + 익스트랙션/하우징 ( Unity, C#, 1인 개발 )
+                  2D 탑뷰 액션 RPG + 채집·제작·마이홈 하우징 ( Unity, C#, 1인 개발 )
                 </p>
                 <p className="text-sm text-gray-700 text-left">
-                  방어구를 대체하는 N×N 그리드 하우징과 익스트랙션 테트리스 파밍을 결합하고,
-                  2.5D 레이맨 리깅 및 통합 엑셀 데이터 파이프라인으로 개발 중인 프로젝트
+                  방어구를 대체하는 마이홈 하우징 성장과 그리드 인벤토리 파밍을 결합하고,
+                  파츠 분리형 캐릭터 애니메이션 및 통합 엑셀 데이터 파이프라인으로 개발 중인 프로젝트
                 </p>
               </Link>
 
@@ -464,15 +464,15 @@ export default function PortfolioHome() {
               {/* TinyJourney */}
               <div className="mb-6">
                 <h5 className="text-lg font-semibold">
-                  TinyJourney (2D 탑뷰 액션 RPG + 파밍/하우징, Unity, 개인 프로젝트 · 진행 중)
+                  TinyJourney (2D 탑뷰 액션 RPG + 채집·제작·마이홈 하우징, Unity, 개인 프로젝트 · 진행 중)
                 </h5>
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
                   <li>개발 기간 : 2026.10 ~ 진행 중</li>
                   <li>
-                    익스트랙션 테트리스 루팅, 방어구를 대체하는 마이홈 하우징 스펙업 및 세대 계승 내러티브 루프 설계
+                    그리드 인벤토리 파밍, 방어구를 대체하는 마이홈 하우징 성장 및 세대교체 규칙 설계
                   </li>
                   <li>
-                    2.5D 레이맨 리깅 액션 연출, 절차적 전장 생성 및 통합 엑셀(GameData.xlsx) 실시간 자동 빌드 파이프라인 구현
+                    머리+몸통·팔 분리형 캐릭터 애니메이션 제어, 절차적 전장 생성 및 통합 엑셀(GameData.xlsx) 자동 데이터 파이프라인 구현
                   </li>
                 </ul>
               </div>

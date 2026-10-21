@@ -360,11 +360,11 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                 </div>
               </div>
 
-              {/* 마이홈 8x8 공간 및 하우징 오브젝트 명세표 */}
+              {/* 마이홈 하우징 시스템 3대 기획 설계 의도 명세표 */}
               <div className="space-y-3 pt-3">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-2">
                   <h4 className="font-bold text-gray-900 text-base">
-                    마이홈 하우징 오브젝트 규격 명세표 (8×8 그리드 제한 공간)
+                    [표 2-3] 마이홈 하우징 시스템 3대 기획 설계 의도 명세
                   </h4>
                   <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
                     공간 점유 대비 스탯 최적화 설계
@@ -374,36 +374,26 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <table className="w-full text-left text-xs sm:text-sm divide-y divide-gray-200">
                     <thead className="bg-gray-50 text-gray-700 font-semibold">
                       <tr>
-                        <th className="py-3 px-4">가구 명칭</th>
-                        <th className="py-3 px-4 text-center">점유 규격</th>
-                        <th className="py-3 px-4">영구 스탯 보너스</th>
-                        <th className="py-3 px-4">상호작용 및 기획 의도</th>
+                        <th className="py-3 px-4 text-center">구분</th>
+                        <th className="py-3 px-4">항목 명칭</th>
+                        <th className="py-3 px-4">세부 시스템 규칙 및 설계 의도</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-100 bg-white">
                       <tr>
-                        <td className="py-3 px-4 font-bold text-gray-900">따뜻한 모닥불</td>
-                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×1 타일</td>
-                        <td className="py-3 px-4 font-semibold text-rose-600">공격력 +3</td>
-                        <td className="py-3 px-4 text-gray-600">요리 제작 거점 및 극초반 기초 화력 보강</td>
+                        <td className="py-3 px-4 text-center font-bold text-gray-900">하우징 설계 01</td>
+                        <td className="py-3 px-4 font-semibold text-blue-700">몸통 방어구 대체<br /><span className="text-xs text-gray-500 font-normal">(가구 배치 = 스탯 성장)</span></td>
+                        <td className="py-3 px-4 text-gray-600">몸통 방어구 슬롯을 과감히 제거하고, 거점 가구 배치를 통해 방어력 및 생존 스탯을 보완하도록 기획했습니다.</td>
                       </tr>
                       <tr>
-                        <td className="py-3 px-4 font-bold text-gray-900">연금술 가마솥</td>
-                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×1 타일</td>
-                        <td className="py-3 px-4 font-semibold text-purple-600">최대 MP +20 / 회복속도 +10%</td>
-                        <td className="py-3 px-4 text-gray-600">포션 및 버프 물약 조제, 스킬 연속 사용력 확보</td>
-                      </tr>
-                      <tr>
-                        <td className="py-3 px-4 font-bold text-gray-900">통나무 벤치</td>
-                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×2 타일</td>
-                        <td className="py-3 px-4 font-semibold text-emerald-600">이동속도 +5%</td>
-                        <td className="py-3 px-4 text-gray-600">원거리 투사체 회피 기동력 및 탐험 탐색 시간 단축</td>
+                        <td className="py-3 px-4 text-center font-bold text-gray-900">하우징 설계 02</td>
+                        <td className="py-3 px-4 font-semibold text-emerald-700">영구 보존 자산<br /><span className="text-xs text-gray-500 font-normal">(사망 페널티 완화 버프)</span></td>
+                        <td className="py-3 px-4 text-gray-600">사망 시 인벤토리 미정산품은 유실되지만 마이홈 가구의 누적 스탯은 영구 보존되어 세대교체 속에서도 지속적 성취감을 유지합니다.</td>
                       </tr>
                       <tr className="bg-blue-50/40">
-                        <td className="py-3 px-4 font-bold text-blue-950">아늑한 텐트</td>
-                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-700">2×2 타일</td>
-                        <td className="py-3 px-4 font-semibold text-blue-700">최대 HP +50</td>
-                        <td className="py-3 px-4 text-gray-700 font-medium">거점 휴식 및 세대교체 시 기초 생존력(EHP) 대폭 증강</td>
+                        <td className="py-3 px-4 text-center font-bold text-blue-950">하우징 설계 03</td>
+                        <td className="py-3 px-4 font-semibold text-purple-700">공간 배치 퍼즐<br /><span className="text-xs text-gray-500 font-normal">(그리드 기반 배치 고민)</span></td>
+                        <td className="py-3 px-4 text-gray-700 font-medium">거점 내 8×8 그리드 제한 공간에 1×1, 1×2, 2×2 등 가구 크기별 점유 형태를 고려해 방어력·체력 스탯 버프를 최적화하는 타일 배치 퍼즐의 재미를 결합했습니다.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -629,14 +619,14 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
             <div className="space-y-3 pt-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-2">
                 <h4 className="font-bold text-gray-900 text-base">
-                  몬스터 공격 행동 AI 유한 상태 머신 (FSM 4단계 시퀀스)
+                  [도식 2-2] 몬스터 AI 4단계 상태 머신(FSM) 및 피격 인지 시퀀스
                 </h4>
                 <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
-                  전조·발동·판정·후딜레이 4단계 분리
+                  전조·공격·후딜·그로기 4단계 상태 전이
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                근접 액션의 회피 타이밍과 타격감을 보장하기 위해 몬스터의 공격 사이클을 4단계 상태 머신으로 표준화했습니다.
+                모든 몬스터는 4단계 상태 전이를 거치도록 규격화하여, 불합리한 피격을 방지하고 명확한 공략 및 반격 리듬을 학습하도록 유도했습니다.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1 text-center">
@@ -644,45 +634,46 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <div className="text-xs font-extrabold text-blue-600 tracking-wider">1. 전조 (Windup)</div>
                   <h5 className="font-bold text-gray-900 text-sm mt-1">사거리 진입 인지</h5>
                   <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
-                    0.4초간 준비 모션 및 바닥 붉은색 범위 표시 (플레이어 회피 타이밍 부여)
+                    사거리 진입 시 0.4초간 준비 모션 (회피 타이밍 인지)
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-gray-50 border border-rose-200 bg-rose-50/30">
-                  <div className="text-xs font-extrabold text-rose-600 tracking-wider">2. 발동 (Execution)</div>
-                  <h5 className="font-bold text-gray-900 text-sm mt-1">돌진 및 공격 실행</h5>
+                  <div className="text-xs font-extrabold text-rose-600 tracking-wider">2. 공격 (Action)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">돌진 또는 사격</h5>
                   <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
-                    플레이어 방향으로 3.5배속 직선 돌진 또는 투사체 발사 개시
+                    3.5배속 직선 돌진 또는 전방 원거리 투사체 발사
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-gray-50 border border-purple-200 bg-purple-50/30">
-                  <div className="text-xs font-extrabold text-purple-600 tracking-wider">3. 판정 (Active Hitbox)</div>
-                  <h5 className="font-bold text-gray-900 text-sm mt-1">히트박스 충돌 연산</h5>
+                  <div className="text-xs font-extrabold text-purple-600 tracking-wider">3. 후딜 (Recovery)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">공격 직후 딜레이</h5>
                   <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
-                    물리 충돌 즉시 피해 적용, 카메라 쉐이크(0.12s) 및 넉백(0.2s) 발생
+                    공격 후 딜레이 구간에서 플레이어 회피 및 카운터 판정
                   </p>
                 </div>
                 <div className="p-4 rounded-xl bg-gray-50 border border-emerald-200 bg-emerald-50/30">
-                  <div className="text-xs font-extrabold text-emerald-600 tracking-wider">4. 후딜레이 (Recovery)</div>
-                  <h5 className="font-bold text-gray-900 text-sm mt-1">취약 무방비 구간</h5>
+                  <div className="text-xs font-extrabold text-emerald-600 tracking-wider">4. 그로기 (Groggy)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">벽 충돌 기절</h5>
                   <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
-                    1.2초간 이동 정지 및 무방비 상태 (플레이어 반격 딜타임 제공)
+                    벽면 충돌 시 1초간 기절 상태 유도 후 안전 반격 타이밍 확보
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* 전투 데미지 연산 공식 */}
+            {/* 전투 데미지 연산 공식 및 5원소 상성 */}
             <div className="p-5 rounded-2xl bg-gray-900 text-white space-y-3 shadow-sm mt-4">
               <div className="flex items-center justify-between border-b border-gray-800 pb-2 text-xs text-gray-400">
-                <span className="font-semibold text-emerald-400">[수식 2-1] 방어력 감쇄 및 속성 상성 데미지 공식</span>
+                <span className="font-semibold text-emerald-400">[수식 2-1] 비선형 방어력 감쇄 및 5원소 상성 데미지 공식</span>
                 <span>전투 메커니즘 규격</span>
               </div>
               <div className="font-mono text-xs sm:text-sm text-emerald-400 py-1 text-center">
                 FinalDamage = RawDamage × [ 100 / (100 + Defense × (1 - Pen)) ] × ElementMult
               </div>
-              <p className="text-xs text-gray-300 leading-relaxed">
-                방어력이 무한히 높아져도 최소 피해를 보장하는 점근선 감쇄 모델을 채택하였으며, 3대 상성(자연 ➔ 대지 ➔ 맹독 ➔ 자연, 1.5배 증폭)을 통해 무기 교체(Weapon Swap)를 전략적으로 유도합니다.
-              </p>
+              <ul className="text-xs text-gray-300 space-y-1 list-disc pl-4 leading-relaxed">
+                <li><strong>비선형 방어력 감쇄:</strong> 방어력(Defense)이 높아져도 데미지가 0으로 수렴하지 않으며, 방어 관통(Pen) 옵션의 효율이 일정하게 유지됩니다.</li>
+                <li><strong>5원소 대칭 순환 상성:</strong> 화(Fire) ➔ 토(Earth) ➔ 뇌(Lightning) ➔ 독(Poison) ➔ 수(Ice) ➔ 화(Fire) 순환으로 상성 우위 시 1.5배 피해를 적용해 무기 교체(Swap) 파밍을 유도합니다.</li>
+              </ul>
             </div>
           </section>
 

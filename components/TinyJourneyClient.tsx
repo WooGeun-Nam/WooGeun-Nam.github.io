@@ -355,8 +355,58 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">03 · 공간 배치 퍼즐</span>
                   <h4 className="text-base font-bold text-gray-900">그리드 기반 배치 고민 유도</h4>
                   <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                    단순한 수치 합산에 그치지 않고, 마이홈의 유한한 그리드 공간에 가구를 어떻게 효율적으로 채워 넣을지 고민하게 만드는 공간 배치의 재미를 결합하는 방향으로 연구 중입니다.
+                    단순한 수치 합산에 그치지 않고, 마이홈의 8×8 그리드 제한 공간에 가구를 어떻게 효율적으로 채워 넣을지 고민하게 만드는 공간 배치의 재미를 결합했습니다.
                   </p>
+                </div>
+              </div>
+
+              {/* 마이홈 8x8 공간 및 하우징 오브젝트 명세표 */}
+              <div className="space-y-3 pt-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-2">
+                  <h4 className="font-bold text-gray-900 text-base">
+                    마이홈 하우징 오브젝트 규격 명세표 (8×8 그리드 제한 공간)
+                  </h4>
+                  <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                    공간 점유 대비 스탯 최적화 설계
+                  </span>
+                </div>
+                <div className="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
+                  <table className="w-full text-left text-xs sm:text-sm divide-y divide-gray-200">
+                    <thead className="bg-gray-50 text-gray-700 font-semibold">
+                      <tr>
+                        <th className="py-3 px-4">가구 명칭</th>
+                        <th className="py-3 px-4 text-center">점유 규격</th>
+                        <th className="py-3 px-4">영구 스탯 보너스</th>
+                        <th className="py-3 px-4">상호작용 및 기획 의도</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100 bg-white">
+                      <tr>
+                        <td className="py-3 px-4 font-bold text-gray-900">따뜻한 모닥불</td>
+                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×1 타일</td>
+                        <td className="py-3 px-4 font-semibold text-rose-600">공격력 +3</td>
+                        <td className="py-3 px-4 text-gray-600">요리 제작 거점 및 극초반 기초 화력 보강</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4 font-bold text-gray-900">연금술 가마솥</td>
+                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×1 타일</td>
+                        <td className="py-3 px-4 font-semibold text-purple-600">최대 MP +20 / 회복속도 +10%</td>
+                        <td className="py-3 px-4 text-gray-600">포션 및 버프 물약 조제, 스킬 연속 사용력 확보</td>
+                      </tr>
+                      <tr>
+                        <td className="py-3 px-4 font-bold text-gray-900">통나무 벤치</td>
+                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-600">1×2 타일</td>
+                        <td className="py-3 px-4 font-semibold text-emerald-600">이동속도 +5%</td>
+                        <td className="py-3 px-4 text-gray-600">원거리 투사체 회피 기동력 및 탐험 탐색 시간 단축</td>
+                      </tr>
+                      <tr className="bg-blue-50/40">
+                        <td className="py-3 px-4 font-bold text-blue-950">아늑한 텐트</td>
+                        <td className="py-3 px-4 text-center font-mono font-bold text-blue-700">2×2 타일</td>
+                        <td className="py-3 px-4 font-semibold text-blue-700">최대 HP +50</td>
+                        <td className="py-3 px-4 text-gray-700 font-medium">거점 휴식 및 세대교체 시 기초 생존력(EHP) 대폭 증강</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -573,6 +623,66 @@ export default function TinyJourneyClient({ initialTab = "plan" }: TinyJourneyCl
                   </p>
                 </div>
               ))}
+            </div>
+
+            {/* 몬스터 공격 FSM 4단계 시퀀스 다이어그램 */}
+            <div className="space-y-3 pt-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-2">
+                <h4 className="font-bold text-gray-900 text-base">
+                  몬스터 공격 행동 AI 유한 상태 머신 (FSM 4단계 시퀀스)
+                </h4>
+                <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">
+                  전조·발동·판정·후딜레이 4단계 분리
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                근접 액션의 회피 타이밍과 타격감을 보장하기 위해 몬스터의 공격 사이클을 4단계 상태 머신으로 표준화했습니다.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-1 text-center">
+                <div className="p-4 rounded-xl bg-gray-50 border border-gray-200">
+                  <div className="text-xs font-extrabold text-blue-600 tracking-wider">1. 전조 (Windup)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">사거리 진입 인지</h5>
+                  <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                    0.4초간 준비 모션 및 바닥 붉은색 범위 표시 (플레이어 회피 타이밍 부여)
+                  </p>
+                </div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-rose-200 bg-rose-50/30">
+                  <div className="text-xs font-extrabold text-rose-600 tracking-wider">2. 발동 (Execution)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">돌진 및 공격 실행</h5>
+                  <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                    플레이어 방향으로 3.5배속 직선 돌진 또는 투사체 발사 개시
+                  </p>
+                </div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-purple-200 bg-purple-50/30">
+                  <div className="text-xs font-extrabold text-purple-600 tracking-wider">3. 판정 (Active Hitbox)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">히트박스 충돌 연산</h5>
+                  <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                    물리 충돌 즉시 피해 적용, 카메라 쉐이크(0.12s) 및 넉백(0.2s) 발생
+                  </p>
+                </div>
+                <div className="p-4 rounded-xl bg-gray-50 border border-emerald-200 bg-emerald-50/30">
+                  <div className="text-xs font-extrabold text-emerald-600 tracking-wider">4. 후딜레이 (Recovery)</div>
+                  <h5 className="font-bold text-gray-900 text-sm mt-1">취약 무방비 구간</h5>
+                  <p className="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                    1.2초간 이동 정지 및 무방비 상태 (플레이어 반격 딜타임 제공)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 전투 데미지 연산 공식 */}
+            <div className="p-5 rounded-2xl bg-gray-900 text-white space-y-3 shadow-sm mt-4">
+              <div className="flex items-center justify-between border-b border-gray-800 pb-2 text-xs text-gray-400">
+                <span className="font-semibold text-emerald-400">[수식 2-1] 방어력 감쇄 및 속성 상성 데미지 공식</span>
+                <span>전투 메커니즘 규격</span>
+              </div>
+              <div className="font-mono text-xs sm:text-sm text-emerald-400 py-1 text-center">
+                FinalDamage = RawDamage × [ 100 / (100 + Defense × (1 - Pen)) ] × ElementMult
+              </div>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                방어력이 무한히 높아져도 최소 피해를 보장하는 점근선 감쇄 모델을 채택하였으며, 3대 상성(자연 ➔ 대지 ➔ 맹독 ➔ 자연, 1.5배 증폭)을 통해 무기 교체(Weapon Swap)를 전략적으로 유도합니다.
+              </p>
             </div>
           </section>
 

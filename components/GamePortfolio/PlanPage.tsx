@@ -15,9 +15,11 @@ type Props = {
 const PlanPage = ({ onTabChange }: Props) => {
   const tocItems = [
     { id: "section-overview", tag: "개요 & 코어루프", title: "게임 개요 및 코어 루프" },
-    { id: "section-systems", tag: "타워 & 밸런스", title: "타워 시스템 및 난이도 정량화" },
+    { id: "section-systems", tag: "타워 & 역할군", title: "타워 역할군 및 스킬 시스템" },
+    { id: "section-growth-curve", tag: "성장곡선 & AI", title: "성장 곡선 설계 및 AI 시뮬레이션" },
+    { id: "section-map-difficulty", tag: "난이도 & 드랍", title: "맵 난이도 정량화 및 장비 드랍" },
     { id: "section-infinity", tag: "무한 모드", title: "무한모드 엔드 콘텐츠" },
-    { id: "section-postmortem", tag: "데이터 밸런싱", title: "PlayFab 데이터 기반 밸런싱" },
+    { id: "section-postmortem", tag: "데이터 밸런싱", title: "플레이 로그 기반 밸런스 패치" },
     { id: "section-art-audio", tag: "아트 & 사운드", title: "픽셀 아트 및 게임 사운드" },
   ];
 
@@ -41,12 +43,12 @@ const PlanPage = ({ onTabChange }: Props) => {
             단일 타워 편중을 방지하기 위해 6종 타워 역할군(단일·다중, 물리·마법) 분리
           </div>
           <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">난이도 정량화</span>
-            지형 3요소(50/8/5) 가중치 수식으로 유불리를 보정하고 0~100 드랍 확률 설계
+            <span className="font-bold text-blue-900 block mb-1">성장곡선 &amp; 난이도 정량화</span>
+            몬스터 지수형 체력 곡선과 AI 시뮬레이터 검증, 지형 3요소(50/8/5) 가중치 수식 설계
           </div>
           <div className="p-3 rounded-xl bg-white border border-blue-150">
             <span className="font-bold text-blue-900 block mb-1">데이터 기반 밸런싱</span>
-            PlayFab 플레이 로그 분석으로 편중 타워(궁수 29% ➔ 20%) 선택 비율 조정
+            PC 베타(N=8, 약 100회 세션) 로그 분석으로 궁수 독점(29% ➔ 18%) 및 6W 전멸률 개선
           </div>
         </div>
       </section>
@@ -177,15 +179,15 @@ const PlanPage = ({ onTabChange }: Props) => {
       <hr className="border-gray-200/80" />
 
       {/* ===================================================================== */}
-      {/* 02. 핵심 시스템 및 밸런스 설계 */}
+      {/* 02. 타워 역할군 및 스킬 시스템 */}
       {/* ===================================================================== */}
       <section id="section-systems" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
           <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-            02 · 핵심 시스템 및 밸런스 설계
+            02 · 타워 역할군 및 스킬 시스템
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-            타워 시스템 및 밸런스 설계
+            타워 역할군 및 스킬 시스템
           </h2>
         </header>
 
@@ -314,9 +316,141 @@ const PlanPage = ({ onTabChange }: Props) => {
             </div>
           </div>
         </div>
+      </section>
 
-        {/* 2-3. 무작위 맵 생성 및 난이도 정량화 공식 */}
-        <div className="space-y-4 pt-4">
+      <hr className="border-gray-200/80" />
+
+      {/* ===================================================================== */}
+      {/* 03. 성장 곡선 설계 및 AI 시뮬레이션 */}
+      {/* ===================================================================== */}
+      <section id="section-growth-curve" className="scroll-mt-14 space-y-6">
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            03 · 성장 곡선 설계 및 AI 시뮬레이션
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+            성장 곡선 설계 및 AI 시뮬레이션
+          </h2>
+        </header>
+
+        <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+          플레이어의 타워 성장 체감과 웨이브 클리어 긴장감을 극대화하기 위해, 몬스터의 유효 체력(EHP) 곡선과 타워 DPS 밀도 수렴 공식을 수학적으로 모델링하고 자체 AI 시뮬레이터(10,000회 자동 전투)로 사전 검증했습니다.
+        </p>
+
+        {/* 3-1. 성장 공식 */}
+        <div className="space-y-4 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-3">
+            <h3 className="text-lg font-bold text-gray-900">
+              웨이브 난이도 허들 및 화력 성장 수식
+            </h3>
+            <span className="text-xs text-gray-500 font-medium">지수형 난이도 &amp; TTK 수렴</span>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="p-5 rounded-2xl bg-gray-900 text-white space-y-3 shadow-sm">
+              <div className="flex items-center justify-between border-b border-gray-800 pb-2 text-xs text-gray-400">
+                <span className="font-semibold text-emerald-400">[수식 1-1] 웨이브 체력 지수형 성장 공식</span>
+                <span>난이도 허들 규격</span>
+              </div>
+              <div className="font-mono text-xs sm:text-sm text-emerald-400 py-1 text-center">
+                Monster_HP(W) = Base_HP × (1.15)<sup>W - 1</sup> × Difficulty_Mult
+              </div>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                웨이브(W)마다 몬스터 체력이 15%씩 복리 증가하여 초반 기초 빌드 구축 이후 중반(6W)과 후반(10W)에 명확한 DPS 체크 허들을 형성하도록 설계했습니다.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-2xl bg-gray-900 text-white space-y-3 shadow-sm">
+              <div className="flex items-center justify-between border-b border-gray-800 pb-2 text-xs text-gray-400">
+                <span className="font-semibold text-emerald-400">[수식 1-2] 타워 화력 성장 및 TTK 수렴 규격</span>
+                <span>목표 처치 시간</span>
+              </div>
+              <div className="font-mono text-xs sm:text-sm text-emerald-400 py-1 text-center">
+                TTK = Monster_EHP / Total_DPS_Density ≤ Path_Travel_Time
+              </div>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                몬스터가 기지에 도달하기까지 걸리는 이동 시간(Path_Travel_Time, 평균 24초) 내에 처치(TTK ≤ 24s)할 수 있도록 타워 업그레이드 비용과 공격력 증가율을 매칭했습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 3-2. AI 시뮬레이션 결과 표 */}
+        <div className="space-y-4 pt-2">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-3">
+            <h3 className="text-lg font-bold text-gray-900">
+              AI 시뮬레이션 난이도 허들 통계 (10,000회 자동 전투 검증)
+            </h3>
+            <span className="text-xs text-gray-500 font-medium">구간별 클리어율 &amp; TTK</span>
+          </div>
+
+          <div className="overflow-x-auto border border-gray-200 rounded-xl shadow-sm">
+            <table className="w-full text-left text-xs sm:text-sm divide-y divide-gray-200">
+              <thead className="bg-gray-50 text-gray-700 font-semibold">
+                <tr>
+                  <th className="py-3 px-4 text-center">웨이브</th>
+                  <th className="py-3 px-4 text-center">구간 목표</th>
+                  <th className="py-3 px-4 text-center">AI 클리어율</th>
+                  <th className="py-3 px-4 text-center">평균 TTK</th>
+                  <th className="py-3 px-4">기획 밸런스 검증 의도</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100 bg-white">
+                <tr>
+                  <td className="py-3 px-4 text-center font-bold text-gray-900">Wave 1~3</td>
+                  <td className="py-3 px-4 text-center text-gray-600">기초 빌드 안착</td>
+                  <td className="py-3 px-4 text-center font-bold text-emerald-600">94.2%</td>
+                  <td className="py-3 px-4 text-center text-gray-600">8.2초</td>
+                  <td className="py-3 px-4 text-gray-600">기본 타워 2~3기 배치로 손쉬운 초반 안착 유도</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-center font-bold text-gray-900">Wave 4~6</td>
+                  <td className="py-3 px-4 text-center text-gray-600">1차 난이도 벽 (네임드)</td>
+                  <td className="py-3 px-4 text-center font-bold text-amber-600">61.5%</td>
+                  <td className="py-3 px-4 text-center text-gray-600">18.6초</td>
+                  <td className="py-3 px-4 text-gray-600">단일 딜러(검사·레이저) 혼합 강제 및 SP 스킬 개입</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-center font-bold text-gray-900">Wave 7~9</td>
+                  <td className="py-3 px-4 text-center text-gray-600">2차 위기 (물량 공세)</td>
+                  <td className="py-3 px-4 text-center font-bold text-rose-600">38.4%</td>
+                  <td className="py-3 px-4 text-center text-gray-600">21.4초</td>
+                  <td className="py-3 px-4 text-gray-600">광역 타워(창술사·궁수) 고레벨 전직 및 시너지 요구</td>
+                </tr>
+                <tr className="bg-blue-50/50">
+                  <td className="py-3 px-4 text-center font-bold text-blue-950">Wave 10</td>
+                  <td className="py-3 px-4 text-center font-bold text-blue-900">최종 보스 결전</td>
+                  <td className="py-3 px-4 text-center font-bold text-purple-600">22.8%</td>
+                  <td className="py-3 px-4 text-center font-bold text-blue-900">23.1초</td>
+                  <td className="py-3 px-4 text-gray-700 font-medium">장비 파밍 및 시너지 극대화 유저만 클리어 허용</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <hr className="border-gray-200/80" />
+
+      {/* ===================================================================== */}
+      {/* 04. 맵 난이도 정량화 및 장비 드랍 규칙 */}
+      {/* ===================================================================== */}
+      <section id="section-map-difficulty" className="scroll-mt-14 space-y-6">
+        <header className="space-y-1">
+          <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+            04 · 맵 난이도 정량화 및 장비 드랍 규칙
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+            맵 난이도 정량화 및 장비 드랍 규칙
+          </h2>
+        </header>
+
+        <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+          매 판 적의 이동 경로를 무작위로 생성할 때 발생하는 지형적 유불리를 정량화하기 위해 경로 길이, 코너 횟수, 평행 간격 3대 요소를 결합한 가중치 산출 공식을 설계하고, 이에 비례한 단계적 장비 해금 드랍 테이블을 구축했습니다.
+        </p>
+
+        {/* 4-1. 무작위 맵 생성 및 난이도 정량화 공식 */}
+        <div className="space-y-4 pt-2">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-gray-200 pb-3">
             <h3 className="text-lg font-bold text-gray-900">
               지형 유불리를 보정하는 맵 난이도 정량화 공식
@@ -330,7 +464,7 @@ const PlanPage = ({ onTabChange }: Props) => {
               <span>가중치 연산</span>
             </div>
             <div className="font-mono text-sm sm:text-base text-emerald-400 text-center py-2">
-              Score = (50 / 경로길이) × 40 + (8 / 코너횟수) × 30 + (5 / 평행간격) × 30
+              Score = (50 / 경로길이) × 40 + (8 / 코너횟수) × 30 + (평행간격 / 5) × 30
             </div>
             <div className="grid sm:grid-cols-3 gap-3 pt-2 text-xs text-gray-300">
               <div className="p-3 bg-gray-800/80 rounded-xl border border-gray-700">
@@ -343,7 +477,7 @@ const PlanPage = ({ onTabChange }: Props) => {
               </div>
               <div className="p-3 bg-gray-800/80 rounded-xl border border-gray-700">
                 <strong className="text-white block mb-1">③ 평행 간격 (가중치 30%)</strong>
-                기준값 5타일. 단일 타워가 2개 라인을 동시에 사정권에 두기 어려울수록 난이도 상승
+                기준값 5타일. 경로 간격이 넓을수록(5타일 초과) 타워 화력이 분산되어 난이도 상승
               </div>
             </div>
           </div>
@@ -446,12 +580,12 @@ const PlanPage = ({ onTabChange }: Props) => {
       <hr className="border-gray-200/80" />
 
       {/* ===================================================================== */}
-      {/* 03. 무한모드 엔드 콘텐츠 */}
+      {/* 05. 무한모드 엔드 콘텐츠 */}
       {/* ===================================================================== */}
       <section id="section-infinity" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
           <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-            03 · 무한모드 엔드 콘텐츠
+            05 · 무한모드 엔드 콘텐츠
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             무한모드 엔드 콘텐츠 및 글로벌 리더보드
@@ -506,40 +640,44 @@ const PlanPage = ({ onTabChange }: Props) => {
       <hr className="border-gray-200/80" />
 
       {/* ===================================================================== */}
-      {/* 04. 데이터 기반 밸런스 개선 */}
+      {/* 06. 플레이 로그 분석 및 밸런스 패치 노트 */}
       {/* ===================================================================== */}
       <section id="section-postmortem" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
           <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-            04 · 데이터 기반 밸런스 개선
+            06 · 플레이 로그 분석 및 밸런스 패치 노트
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             PlayFab 플레이 로그 기반 밸런스 패치
           </h2>
         </header>
 
+        <p className="text-sm sm:text-[15px] text-gray-700 leading-relaxed">
+          PC 베타 테스트 기간(테스터 N=8명, 약 100회 인게임 플레이 세션 로그) 동안 PlayFab에 수집된 플레이 데이터를 기반으로 3대 불균형 지표(특정 타워 과점, 특정 타워 기피, 특정 웨이브 급격한 전멸)를 진단하고 수치 조정을 단행했습니다.
+        </p>
+
         <div className="grid md:grid-cols-3 gap-5 pt-2">
           <div className="p-5 rounded-2xl bg-rose-50/60 border border-rose-200 space-y-2">
-            <span className="text-xs font-bold text-rose-700 uppercase">1. 문제 진단</span>
-            <h4 className="font-bold text-gray-900 text-sm">궁수 타워 편중 (29%)</h4>
+            <span className="text-xs font-bold text-rose-700 uppercase">1. 궁수 과점 해소 (29% ➔ 18%)</span>
+            <h4 className="font-bold text-gray-900 text-sm">사거리 효율 축소 &amp; 관통 상향</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              원거리 다중 타겟인 궁수 타워와 장비의 사거리 옵션이 높은 효율을 보여 선택률 29%로 편중되고, 중거리 딜러인 창술사(8%)는 선택률이 낮음을 확인했습니다.
+              장비 옵션의 사거리 가중치를 50% 축소하고 궁수 기본 사거리를 하향 조정했습니다. 동시에 경쟁군인 창술사의 기본 공격력과 관통 효율을 상향하여 선택률을 8%에서 15%로 정상화했습니다.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-amber-50/60 border border-amber-200 space-y-2">
-            <span className="text-xs font-bold text-amber-700 uppercase">2. 밸런스 패치</span>
-            <h4 className="font-bold text-gray-900 text-sm">Beta_v0.2.1 수치 조정</h4>
+            <span className="text-xs font-bold text-amber-700 uppercase">2. 레이저 비선호 개선 (6% ➔ 15%)</span>
+            <h4 className="font-bold text-gray-900 text-sm">예열 증폭 상향 &amp; 보스 방깎 부여</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              장비 스탯 분배표의 사거리 옵션 가중치를 50% 축소하고 궁수 기본 사거리를 하향 조정했습니다. 동시에 창술사의 기본 공격력과 관통 효율을 상향했습니다.
+              지속 타격 시 틱당 데미지 증폭률을 10%에서 15%로 상향하고, 보스 몬스터 상대 시 마법 방어력을 30% 관통하는 고유 유틸리티를 부여하여 단일 극딜 타워로서의 채용 가치를 확립했습니다.
             </p>
           </div>
 
           <div className="p-5 rounded-2xl bg-emerald-50/60 border border-emerald-200 space-y-2">
-            <span className="text-xs font-bold text-emerald-700 uppercase">3. 결과 확인</span>
-            <h4 className="font-bold text-gray-900 text-sm">타워 선택 비율 균형 회복</h4>
+            <span className="text-xs font-bold text-emerald-700 uppercase">3. 6W 전멸률 완화 (42% ➔ 16%)</span>
+            <h4 className="font-bold text-gray-900 text-sm">네임드 체력 20% 하향 &amp; 스킬 유도</h4>
             <p className="text-xs text-gray-600 leading-relaxed">
-              궁수 타워의 선택 비율이 20%로 완화되고 창술사 선택률이 15%로 상승하여, 6개 타워가 12~20% 범위의 고른 선택 분포를 기록했습니다.
+              6웨이브 중간 정예 몬스터의 기본 체력을 20% 하향 조정하고, 플레이어가 모아둔 SP 액티브 스킬을 적재적소에 개입하도록 시각적 전조를 명확히 하여 부조리한 전멸을 완화했습니다.
             </p>
           </div>
         </div>
@@ -619,12 +757,12 @@ const PlanPage = ({ onTabChange }: Props) => {
       <hr className="border-gray-200/80" />
 
       {/* ===================================================================== */}
-      {/* 05. 픽셀 아트 및 게임 사운드 */}
+      {/* 07. 1인 개발 리소스 제작 (픽셀 아트 & BGM) */}
       {/* ===================================================================== */}
       <section id="section-art-audio" className="scroll-mt-14 space-y-6">
         <header className="space-y-1">
           <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
-            05 · 픽셀 아트 및 게임 사운드
+            07 · 1인 개발 리소스 제작 (픽셀 아트 &amp; BGM)
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
             1인 제작 픽셀 아트 및 오리지널 BGM

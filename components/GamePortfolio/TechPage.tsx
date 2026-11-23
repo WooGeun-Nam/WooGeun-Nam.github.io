@@ -44,31 +44,39 @@ const TechPage = ({ codeAssets, onTabChange }: Props) => {
   ];
 
   return (
-    <article className="space-y-16 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+    <article className="space-y-16 text-gray-800 antialiased selection:bg-blue-100 selection:text-blue-900">
       {/* 기술 부문 핵심 요약 카드 */}
-      <section className="p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-3">
-        <div className="flex items-center justify-between border-b border-gray-200 pb-2.5">
-          <h3 className="font-bold text-gray-900 text-base">기술 핵심 요약</h3>
+      <section className="p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-4">
+        <div className="flex items-center justify-between border-b border-gray-200 pb-3">
+          <h3 className="font-bold text-gray-900 text-base sm:text-lg">기술 핵심 요약</h3>
           <span className="text-xs font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full border border-blue-200">
             클라이언트 아키텍처 &amp; 최적화
           </span>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
-          <div className="p-3 rounded-xl bg-white border border-gray-200">
-            <span className="font-bold text-gray-900 block mb-1">성능 및 메모리 최적화</span>
-            제네릭 ObjectPool 기반 다수 투사체 동시 교전 시 140~175 FPS 유지 및 GC 할당 최소화
+        <div className="grid sm:grid-cols-2 gap-4 pt-1">
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-gray-900 block">성능 및 메모리 최적화</span>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              제네릭 ObjectPool 적용으로 다수 투사체 교전 시 140~175 FPS 유지
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-gray-200">
-            <span className="font-bold text-gray-900 block mb-1">모듈형 상태 머신</span>
-            State 패턴으로 타워 탐색/공격 분리 및 UIEventManager 이벤트 구조로 UI·로직 참조 분리
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-gray-900 block">모듈형 상태 머신 &amp; 이벤트</span>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              State 패턴 타워 상태 분리 및 UIEventManager로 UI·로직 의존성 해제
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-gray-200">
-            <span className="font-bold text-gray-900 block mb-1">절차적 생성 알고리즘</span>
-            DFS 백트래킹 기반 유효 경로 검증 및 테마별 타일맵 동적 빌드 파이프라인
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-gray-900 block">절차적 맵 생성 알고리즘</span>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              DFS 백트래킹 기반 유효 경로 생성 및 테마별 타일맵 실시간 빌드
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-gray-200">
-            <span className="font-bold text-gray-900 block mb-1">플레이 로그 연동</span>
-            PlayFab 전투 세션 로그 수집 및 XOR 로컬 세이브 암호화·마이그레이션
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-gray-900 block">플레이 로그 &amp; 세이브 관리</span>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              PlayFab 전투 세션 로그 자동 수집 및 로컬 세이브 암호화·마이그레이션
+            </p>
           </div>
         </div>
       </section>

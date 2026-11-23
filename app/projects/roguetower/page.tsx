@@ -1,3 +1,4 @@
+import Link from "next/link";
 import GamePortfolio, { RogueTowerTab } from "../../../components/GamePortfolio";
 import ImgPrefixed from "../../../components/ImgPrefixed";
 
@@ -124,7 +125,7 @@ export default async function RogueTowerPage({ initialTab = "plan" }: RogueTower
               RogueTower
             </h1>
             <p className="text-sm sm:text-[15px] text-gray-600 mt-3 font-medium">
-              절차적 맵 생성 및 데이터 드리븐 밸런싱의 2D/3D 타워 디펜스
+              절차적 맵 생성 및 데이터 드리븐 밸런싱의 2D 픽셀 아트 로그라이트 타워 디펜스
             </p>
 
             <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]">
@@ -142,7 +143,15 @@ export default async function RogueTowerPage({ initialTab = "plan" }: RogueTower
             </dl>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-4">
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/projects/gearandtower"
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold
+                         bg-blue-600 text-white hover:bg-blue-700 transition"
+            >
+              스팀 출시 리뉴얼: Gear &amp; Tower v0.3.0 보기 -&gt;
+            </Link>
+
             <a
               href="https://drive.google.com/file/d/1f3eNnKfts_eKnNyIHo1nAcWxsLohogxM/view?usp=sharing"
               target="_blank"

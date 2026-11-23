@@ -24,31 +24,39 @@ const PlanPage = ({ onTabChange }: Props) => {
   ];
 
   return (
-    <article className="space-y-16 text-gray-800 font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+    <article className="space-y-16 text-gray-800 antialiased selection:bg-blue-100 selection:text-blue-900">
       {/* 기획 부문 핵심 요약 카드 */}
-      <section className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-3">
-        <div className="flex items-center justify-between border-b border-blue-200/70 pb-2.5">
-          <h3 className="font-bold text-blue-950 text-base">기획 핵심 요약</h3>
+      <section className="p-6 rounded-2xl bg-blue-50/40 border border-blue-200/80 space-y-4">
+        <div className="flex items-center justify-between border-b border-blue-200/70 pb-3">
+          <h3 className="font-bold text-blue-950 text-base sm:text-lg">기획 핵심 요약</h3>
           <span className="text-xs font-semibold text-blue-700 bg-white px-2.5 py-1 rounded-full border border-blue-200">
             시스템 기획 &amp; 밸런스 설계
           </span>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3 pt-1 text-xs">
-          <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">코어 루프 기획</span>
-            단기 랜덤 보상(웨이브 특성)과 장기 가중치 장비 파밍을 결합해 빌드 고착화 완화
+        <div className="grid sm:grid-cols-2 gap-4 pt-1">
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-blue-900 block">코어 루프 기획</span>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              단기 랜덤 보상(웨이브 특성)과 장기 가중치 장비 파밍 결합
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">타워 상성 분리</span>
-            단일 타워 편중을 방지하기 위해 6종 타워 역할군(단일·다중, 물리·마법) 분리
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-blue-900 block">타워 역할군 분리</span>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              단일·다중, 물리·마법 6종 타워 상성 분리로 단일 타워 편중 방지
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">성장곡선 &amp; 난이도 정량화</span>
-            몬스터 지수형 체력 곡선과 AI 시뮬레이터 검증, 지형 3요소(50/8/5) 가중치 수식 설계
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-blue-900 block">성장 곡선 &amp; 지형 난이도</span>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              몬스터 지수형 체력 곡선과 경로 길이·코너·간격 기반 난이도 수식
+            </p>
           </div>
-          <div className="p-3 rounded-xl bg-white border border-blue-150">
-            <span className="font-bold text-blue-900 block mb-1">데이터 기반 밸런싱</span>
-            PC 베타(N=8, 약 100회 세션) 로그 분석으로 궁수 독점(29% ➔ 18%) 및 6W 전멸률 개선
+          <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
+            <span className="text-sm sm:text-base font-bold text-blue-900 block">플레이 로그 기반 밸런싱</span>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              PlayFab 실전 전투 로그 분석으로 궁수 과점 완화 및 전멸 구간 개선
+            </p>
           </div>
         </div>
       </section>

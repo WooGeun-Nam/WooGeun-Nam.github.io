@@ -5,12 +5,12 @@ import Script from "next/script";
 import PrismHydrator from "../components/PrismHydrator";
 import PrismLoader from "../components/PrismLoader";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "WooGeun Nam",
   description: "웹 포트폴리오",
-  icons: { icon: "./Logo.ico" },
+  icons: { icon: "/Icon.png" },
 };
 
 export default function RootLayout({
@@ -31,7 +31,19 @@ export default function RootLayout({
         />
       </head>
 
-      <body className={`${inter.className} min-h-dvh bg-gray-100 antialiased`}>
+      <body
+        className={`${inter.variable} ${inter.className} min-h-dvh bg-gray-100 antialiased`}
+      >
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0JJMLKKV3L"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0JJMLKKV3L');`}
+        </Script>
         <PrismLoader />
         <PrismHydrator />
         {children}

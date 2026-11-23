@@ -500,7 +500,9 @@ export default function PortfolioHome() {
               <div>
                 <p className="font-semibold">수상</p>
                 <ul className="list-disc pl-5 mt-2 space-y-1">
-                  <li>우수 논문 발표상 - 한국멀티미디어학회 (2022.05)</li>
+                  <li>
+                    우수 논문 발표상 - 한국멀티미디어학회 (2022.05 · 임베디드 시스템을 이용한 휴대용 전자식 악기 구현)
+                  </li>
                 </ul>
               </div>
             </div>
@@ -619,7 +621,7 @@ export default function PortfolioHome() {
                   <li>
                     음식 객체 인식 (2022.07 ~ 2022.12 · 기업 연계 산학 3인 팀
                     프로젝트) : PyTorch·Detectron2 기반 객체 인식 모델 구현 및
-                    식판 좌표 정규화 (2022.05 학회 우수 논문 발표상 연계)
+                    식판 좌표 정규화
                   </li>
                 </ul>
               </div>

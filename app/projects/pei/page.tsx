@@ -29,7 +29,7 @@ export default function PEIPage() {
               <dd>개인 프로젝트</dd>
 
               <dt className="font-semibold text-gray-600">TECH STACK</dt>
-              <dd>Python, Raspberry Pi OS​</dd>
+              <dd>Python, Raspberry Pi OS</dd>
             </dl>
           </div>
         </div>
@@ -54,15 +54,18 @@ export default function PEIPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-4">프로젝트 요약</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>악기는 Micro 5Pin을 통하여 충전할 수 있다.​</li>
+                <li>
+                  2022년도 한국멀티미디어학회 춘계학술대회 학부생 포스터 논문 발표 부문 우수논문발표상 수상 (임베디드 시스템을 이용한 휴대용 전자식 악기 구현, 2022.05)
+                </li>
+                <li>악기는 Micro 5Pin을 통하여 충전할 수 있다.</li>
                 <li>
                   상부 버튼을 통해 악기 변경이 가능하며 피아노, 기타, 드럼,
-                  하프, 오르골 순으로 소리를 출력한다.​
+                  하프, 오르골 순으로 소리를 출력한다.
                 </li>
                 <li>
-                  측면 버튼과 상부 버튼을 조합하여 음정을 출력할 수 있다.​
+                  측면 버튼과 상부 버튼을 조합하여 음정을 출력할 수 있다.
                 </li>
-                <li>전원 버튼을 통해 장치를 제어할 수 있다.​</li>
+                <li>전원 버튼을 통해 장치를 제어할 수 있다.</li>
               </ul>
             </div>
 
@@ -75,7 +78,7 @@ export default function PEIPage() {
                     <p>입력장치의 동시입력시 인식에 문제가 발생하였다.</p>
                     <p>
                       해당 문제는 Pygame 라이브러리를 사용하여 입력대기상태를
-                      병렬처리가 가능하게 만들고​ 인식된 값을 취합하여 처리를
+                      병렬처리가 가능하게 만들고 인식된 값을 취합하여 처리를
                       진행 하였다.
                     </p>
                   </div>

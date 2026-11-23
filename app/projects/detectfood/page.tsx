@@ -24,7 +24,7 @@ export default function DetectFoodPage() {
               <dd>데이터 어노테이션, 학습 알고리즘, 데이터 정규화</dd>
 
               <dt className="font-semibold text-gray-600">DURATION</dt>
-              <dd>2022.07 ~ 2022.12 (2022.05 학회 포스터 우수 논문 발표상 연계)</dd>
+              <dd>2022.07 ~ 2022.12</dd>
 
               <dt className="font-semibold text-gray-600">TEAM</dt>
               <dd>기업 연계 산학 팀 프로젝트 (3인 · 학부 연구실)</dd>
@@ -44,9 +44,6 @@ export default function DetectFoodPage() {
             <div>
               <h2 className="text-2xl font-semibold mb-4">프로젝트 요약</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>
-                  2022.05 한국멀티미디어학회 학부 포스터 우수 논문 발표상 수상 아이디어를 계기로 학부 연구실·기업 연계 산학 프로젝트로 확장
-                </li>
                 <li>인계받은 급식 이미지 라벨링 및 다 회차 학습 진행</li>
                 <li>데이터 증강(회전, 반전) 학습을 통한 정확도 상승</li>
                 <li>

@@ -21,7 +21,7 @@ export default function DetectFoodPage() {
 
             <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-6 text-gray-800 mt-8">
               <dt className="font-semibold text-gray-600">ROLE</dt>
-              <dd>팀장 (일정 조율, 데이터 라벨링 및 증강 학습, 식판 원근 변환 정규화)</dd>
+              <dd>데이터 라벨링 및 증강 학습, 식판 원근 변환 정규화 구현</dd>
 
               <dt className="font-semibold text-gray-600">DURATION</dt>
               <dd>2022.07 ~ 2022.12</dd>
@@ -98,18 +98,18 @@ export default function DetectFoodPage() {
               </ul>
             </div>
 
-            {/* 팀 협업 및 일정 조율 */}
+            {/* 팀 협업 및 기술 공유 */}
             <div>
-              <h2 className="text-2xl font-semibold mb-4">팀 협업 및 일정 조율</h2>
+              <h2 className="text-2xl font-semibold mb-4">팀 협업 및 기술 공유</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>
-                  초기 회의에서 팀원 3인의 역량을 파악해 데이터 라벨링, 모델 학습, 좌표 정규화로 역할을 분담
+                  담당 교수님 총괄 아래 학부생 3인이 데이터 라벨링 및 증강, 네트워크 학습, 면적 계산으로 파트 분담
                 </li>
                 <li>
-                  촬영 각도 편차로 추가 라벨링이 늘자, 인력 투입 대신 식판 기준 좌표 정규화를 제안해 부담 축소
+                  매주 수요일 정기 회의를 열어 한 주간 학습한 기술 원리와 작업 현안을 공유하며 모듈 간 이해도 조율
                 </li>
                 <li>
-                  주간 피드백으로 지연 구간의 작업량을 유연하게 재배분하며 계획된 산학 기간 내 모델 구현 완수
+                  촬영 각도 오차 문제를 두고 수요일 회의에서 원인을 함께 논의해 식판 꼭짓점 기준 원근 변환으로 해결
                 </li>
               </ul>
             </div>

@@ -1,19 +1,20 @@
 1:HL["/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-2:HL["/_next/static/css/7d02b0476f49f991.css","style"]
-0:["O93W3M_ibH_c-0jpSKlpC",[[["",{"children":["projects",{"children":["roguetower",{"children":[["tab","plan","d"],{"children":["__PAGE__?{\"tab\":\"plan\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7d02b0476f49f991.css","precedence":"next"}]],"$L4"]]]]
-5:HL["/_next/static/css/38dd37bd4890d94c.css","style"]
-6:I{"id":66,"chunks":["185:static/chunks/app/layout-db0bd317b1f4a906.js"],"name":"","async":false}
-7:I{"id":7885,"chunks":["185:static/chunks/app/layout-db0bd317b1f4a906.js"],"name":"","async":false}
-8:I{"id":1443,"chunks":["272:static/chunks/webpack-3c9293eeec78325b.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
-9:I{"id":8639,"chunks":["272:static/chunks/webpack-3c9293eeec78325b.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
-a:I{"id":3891,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","570:static/chunks/app/projects/layout-f9b70510a9b28a17.js"],"name":"","async":false}
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WooGeun Nam"}],["$","meta","2",{"name":"description","content":"웹 포트폴리오"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"./../Logo.ico"}],["$","meta","5",{"name":"next-size-adjust"}]]
-3:[null,["$","html",null,{"lang":"ko","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"}],["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"}]]}],["$","body",null,{"className":"__className_d8ebd1 min-h-dvh bg-gray-100 antialiased","children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":[null,["$","section",null,{"children":[["$","$La",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-6xl pt-16","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children",["tab","plan","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lb","$Lc",null],"segment":"__PAGE__?{\"tab\":\"plan\"}"},"styles":[]}],"segment":["tab","plan","d"]},"styles":[]}],"segment":"roguetower"},"styles":[]}]}],["$","footer",null,{"className":"py-6 pr-6 text-right text-sm text-gray-500","children":"Copyright © 2025. WooGeun-Nam All rights reserved."}]]}],null],"segment":"projects"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/38dd37bd4890d94c.css","precedence":"next"}]]}]]}]]}],null]
+2:HL["/_next/static/css/9d02c898e5ee8f86.css","style"]
+0:["9ghKUdcmBzv1mtXVDVQuk",[[["",{"children":["projects",{"children":["roguetower",{"children":[["tab","plan","d"],{"children":["__PAGE__?{\"tab\":\"plan\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/9d02c898e5ee8f86.css","precedence":"next"}]],"$L4"]]]]
+5:I{"id":4244,"chunks":["185:static/chunks/app/layout-f2941ff021c26780.js"],"name":"","async":false}
+6:I{"id":66,"chunks":["185:static/chunks/app/layout-f2941ff021c26780.js"],"name":"","async":false}
+7:I{"id":7885,"chunks":["185:static/chunks/app/layout-f2941ff021c26780.js"],"name":"","async":false}
+8:I{"id":1443,"chunks":["272:static/chunks/webpack-84f228ce59215e83.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
+9:I{"id":8639,"chunks":["272:static/chunks/webpack-84f228ce59215e83.js","971:static/chunks/fd9d1056-102022806532a78e.js","864:static/chunks/864-94443f6892899ca4.js"],"name":"","async":false}
+a:I{"id":3891,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","570:static/chunks/app/projects/layout-af0d6d66ecb959fc.js"],"name":"","async":false}
+4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WooGeun Nam"}],["$","meta","2",{"name":"description","content":"웹 포트폴리오"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/Icon.png"}],["$","meta","5",{"name":"next-size-adjust"}]]
+3:[null,["$","html",null,{"lang":"ko","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"}],["$","link",null,{"rel":"stylesheet","href":"https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"}]]}],["$","body",null,{"className":"__variable_d8ebd1 __className_d8ebd1 min-h-dvh bg-gray-100 antialiased","children":[["$","$L5",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-0JJMLKKV3L","strategy":"afterInteractive"}],["$","$L5",null,{"id":"ga4-init","strategy":"afterInteractive","children":"window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-0JJMLKKV3L');"}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":[null,["$","section",null,{"children":[["$","$La",null,{}],["$","main",null,{"className":"mx-auto w-full max-w-6xl pt-16","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","projects","children","roguetower","children",["tab","plan","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$Lb","$Lc",null],"segment":"__PAGE__?{\"tab\":\"plan\"}"},"styles":[]}],"segment":["tab","plan","d"]},"styles":[]}],"segment":"roguetower"},"styles":[]}]}],["$","footer",null,{"className":"py-6 pr-6 text-right text-sm text-gray-500","children":"Copyright © 2026. WooGeun-Nam All rights reserved."}]]}],null],"segment":"projects"},"styles":[]}]]}]]}],null]
 c:"$Ld"
 b:null
-e:I{"id":2148,"chunks":["214:static/chunks/214-5020647f3e511da5.js","474:static/chunks/app/projects/roguetower/[tab]/page-9be98ebe98853c38.js"],"name":"","async":false}
-f:I{"id":8150,"chunks":["214:static/chunks/214-5020647f3e511da5.js","474:static/chunks/app/projects/roguetower/[tab]/page-9be98ebe98853c38.js"],"name":"","async":false}
-10:T34c3,using UnityEngine;
+e:I{"id":2148,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","144:static/chunks/144-b0d7ee3d262b29e7.js","474:static/chunks/app/projects/roguetower/[tab]/page-e898882e9545c3f3.js"],"name":"","async":false}
+f:I{"id":4724,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","144:static/chunks/144-b0d7ee3d262b29e7.js","474:static/chunks/app/projects/roguetower/[tab]/page-e898882e9545c3f3.js"],"name":"","async":false}
+10:I{"id":8150,"chunks":["616:static/chunks/616-51c9739c6f2b78e1.js","144:static/chunks/144-b0d7ee3d262b29e7.js","474:static/chunks/app/projects/roguetower/[tab]/page-e898882e9545c3f3.js"],"name":"","async":false}
+11:T34c3,using UnityEngine;
 using UnityEngine.Audio;
 using System.Collections.Generic;
 using System.Linq;
@@ -376,7 +377,7 @@ public class SoundManager : MonoBehaviour
         // 모든 소스가 사용 중이라면(위의 반복문에서 반환되지 않았다면), null을 반환합니다.
         return null;
     }
-}11:Te7c,using UnityEngine;
+}12:Te7c,using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using System.Collections.Generic;
@@ -469,7 +470,7 @@ public class ExceptionReporter : MonoBehaviour
             _sentExceptionsThisSession.Add(logString);
         }
     }
-}12:Te78,using System.Collections;
+}13:Te78,using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -568,7 +569,7 @@ public class LoadingSceneController : MonoBehaviour
         }
     }
 }
-13:T1feb,using UnityEngine;
+14:T1feb,using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
@@ -795,7 +796,7 @@ public class ShopManager : MonoBehaviour
             default: return "white";
         }
     }
-}14:T9bc,using UnityEngine;
+}15:T9bc,using UnityEngine;
 using System;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
@@ -859,7 +860,7 @@ public class Skill_StatueOfDestructionGod : EquipmentPassiveSkill
         }
     }
 }
-15:T5cf9,using UnityEngine;
+16:T5cf9,using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -1442,7 +1443,7 @@ public class GameManager : MonoBehaviour
     {
        return towerArchetypes.FirstOrDefault(a => a.archetypeDisplayName == name);
     }
-}16:T1ad3,using UnityEngine;
+}17:T1ad3,using UnityEngine;
 using System.IO;
 using System.Text; // 암호화를 위해 System.Text
 using System;     // Action 이벤트를 위해 필요 (PlayerData 로드 이벤트용)
@@ -1601,7 +1602,7 @@ public class GameDataManager : MonoBehaviour
         return result.ToString();
     }
 }
-17:T3820,using System.Collections;
+18:T3820,using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -1998,7 +1999,7 @@ public class UIManager : MonoBehaviour
        isSwitching = false; // 전환 애니메이션 종료
    }
 }
-18:T126c,using System;
+19:T126c,using System;
 using UnityEngine;
 
 /// <summary>
@@ -2134,7 +2135,7 @@ public class UIEventManager : MonoBehaviour
     {
         OnRCoinAcquired?.Invoke(amount);
     }
-}19:T1e3d,using TMPro;
+}1a:T1e3d,using TMPro;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement; // SceneManagement 네임스페이스 추가
@@ -2326,7 +2327,7 @@ public class TooltipManager : MonoBehaviour
 
         tooltipPanelInstance.SetActive(false);
     }
-}1a:T9a0,using UnityEngine;
+}1b:T9a0,using UnityEngine;
 using UnityEngine.EventSystems;
 
 /// <summary>
@@ -2401,7 +2402,7 @@ public class TooltipTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         }
     }
 }
-1b:T202c,using System.Collections.Generic;
+1c:T202c,using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -2584,7 +2585,7 @@ public class TowerArchetype : ScriptableObject
         }
         return addedDamage;
     }
-}1c:T17fc,using System.Collections;
+}1d:T17fc,using System.Collections;
 using UnityEngine;
 
 public enum EnemyDestroyType { Kill = 0, Arrive }
@@ -2756,7 +2757,7 @@ public class Enemy : MonoBehaviour
             yield return null;
         }
     }
-}1d:T79e,using System.Collections.Generic;
+}1e:T79e,using System.Collections.Generic;
 using UnityEngine;
 
 // 오브젝트 풀링 시스템
@@ -2814,7 +2815,7 @@ public class ObjectPool<T> where T : UnityEngine.Object
         }
     }
 }
-1e:T12a1,using UnityEngine;
+1f:T12a1,using UnityEngine;
 
 /// <summary>
 /// 생성된 맵의 난이도를 계산하고 저장하는 클래스
@@ -2926,7 +2927,7 @@ public class MapDifficulty
             AverageGap
         );
     }
-}1f:T2027,using System.Collections.Generic;
+}20:T2027,using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -3134,7 +3135,7 @@ public class RandomPathGenerator : MonoBehaviour
        
         return true;
     }
-}20:T2e28,using UnityEngine;
+}21:T2e28,using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic; // List를 사용하기 위해 추가
 
@@ -3424,7 +3425,7 @@ public class MapGenerator : MonoBehaviour
         }
     }
 }
-21:T4df2,using System.Collections.Generic;
+22:T4df2,using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
@@ -3886,4 +3887,4 @@ public class WeightedRandomReward : MonoBehaviour
             this.towerArchetype = reward.towerArchetype;
         }
     }
-}d:["$","main",null,{"className":"mx-auto max-w-6xl px-4 py-16 space-y-12","children":[["$","section",null,{"className":"grid gap-8 md:grid-cols-2 items-stretch","children":[["$","div",null,{"className":"rounded-xl overflow-hidden shadow-sm flex items-center justify-center bg-gray-50 border border-gray-200","children":["$","$Le",null,{"src":"/SiteLogo.png","alt":"RogueTower 메인 로고","className":"w-full h-full object-cover"}]}],["$","div",null,{"className":"flex flex-col justify-between","children":[["$","div",null,{"children":[["$","h1",null,{"className":"text-4xl font-bold underline decoration-blue-500 underline-offset-8","children":"RogueTower"}],["$","p",null,{"className":"text-sm sm:text-[15px] text-gray-600 mt-3 font-medium","children":"절차적 맵 생성 및 데이터 드리븐 밸런싱의 2D/3D 타워 디펜스"}],["$","dl",null,{"className":"grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]","children":[["$","dt",null,{"className":"font-semibold text-gray-600","children":"ROLE"}],["$","dd",null,{"children":"기획, 개발, 디자인"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"DURATION"}],["$","dd",null,{"children":"2024.10 ~ 2025.08"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"TEAM"}],["$","dd",null,{"children":"1인 개발"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"PLATFORM"}],["$","dd",null,{"children":"PC (Windows · 개인 배포 및 베타 테스트 완료)"}]]}]]}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-4","children":[["$","a",null,{"href":"https://drive.google.com/file/d/1f3eNnKfts_eKnNyIHo1nAcWxsLohogxM/view?usp=sharing","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold bg-blue-100 text-blue-800 hover:bg-blue-200 transition","children":"Demo Download"}],["$","a",null,{"href":"https://github.com/WooGeun-Nam/RogueTower-Code","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold bg-gray-200 text-gray-900 hover:bg-gray-300 transition","children":"GitHub Source"}]]}]]}]]}],["$","section",null,{"children":["$","$Lf",null,{"codeAssets":{"SoundManager":"$10","ExceptionReporter":"$11","LoadingSceneController":"$12","ShopManager":"$13","StatueOfDestructionGod":"$14","GameManager":"$15","GameDataManager":"$16","UIManager":"$17","UIEventManager":"$18","TooltipManager":"$19","TooltipTrigger":"$1a","TowerArchetype":"$1b","Enemy":"$1c","IWeaponState":"using System.Collections;\nusing UnityEngine;\n\n/// <summary>\n/// 타워 무기의 상태를 정의하는 인터페이스입니다.\n/// 각 상태는 이 인터페이스를 구현하여 무기의 특정 행동을 정의합니다.\n/// </summary>\npublic interface IWeaponState\n{\n    /// <summary>\n    /// 현재 상태의 로직을 실행합니다.\n    /// </summary>\n    /// <param name=\"weapon\">상태를 실행할 TowerWeapon 인스턴스</param>\n    /// <returns>상태 로직을 위한 코루틴</returns>\n    IEnumerator Execute(TowerWeapon weapon);\n}\n","ObjectPool":"$1d","MapDifficulty":"$1e","RandomPathGenerator":"$1f","MapGenerator":"$20","WeightedRandomReward":"$21","SpecialSkillBase":"using UnityEngine;\n\n// 스킬의 종류를 정의하는 Enum\npublic enum SkillType\n{\n    Passive,        // 장착 시 지속적으로 효과 적용\n    Active,         // 플레이어가 직접 사용 (버튼 클릭 등)\n    Tower    // 특정 타워 설치\n}\n\npublic abstract class SpecialSkillBase : ScriptableObject\n{\n    [Header(\"스킬 기본 정보\")]\n    public string skillID;\n    public string skillName;\n    [TextArea]\n    public string description;\n    public Sprite icon;\n    public SkillType skillType; // 스킬 타입 추가\n\n    // 모든 특수 스킬이 구현해야 할 기능들 (추상 메서드)\n    public abstract void Activate();    // 스킬 활성화 (장착 시) - 씬 독립적인 초기화/정리\n    public abstract void Deactivate();  // 스킬 비활성화 (해제 시) - 씬 독립적인 초기화/정리\n\n    // 스킬 타입에 따라 선택적으로 구현될 메서드\n    public virtual void UseSkill(GameObject skillButton) { } // 사용형 스킬 (Active)에서 오버라이드\n    public virtual GameObject GetTowerPrefab() { return null; } // 타워 설치형 스킬 (TowerInstall)에서 오버라이드\n\n    // 인게임에서 실제 게임 플레이 효과를 적용/제거하는 메서드 (씬 종속적)\n    public virtual void ApplyGameEffect() { }\n    public virtual void RemoveGameEffect() { }\n}\n"},"initialTab":"plan"}]}]]}]
+}d:["$","main",null,{"className":"mx-auto max-w-6xl px-4 py-16 space-y-12","children":[["$","section",null,{"className":"grid gap-8 md:grid-cols-2 items-stretch","children":[["$","div",null,{"className":"rounded-xl overflow-hidden shadow-sm flex items-center justify-center bg-gray-50 border border-gray-200","children":["$","$Le",null,{"src":"/SiteLogo.png","alt":"RogueTower 메인 로고","className":"w-full h-full object-cover"}]}],["$","div",null,{"className":"flex flex-col justify-between","children":[["$","div",null,{"children":[["$","h1",null,{"className":"text-4xl font-bold underline decoration-blue-500 underline-offset-8","children":"RogueTower"}],["$","p",null,{"className":"text-sm sm:text-[15px] text-gray-600 mt-3 font-medium","children":"절차적 맵 생성 및 데이터 드리븐 밸런싱의 2D 픽셀 아트 로그라이트 타워 디펜스"}],["$","dl",null,{"className":"grid grid-cols-[120px_1fr] gap-x-4 gap-y-5 text-gray-800 mt-7 text-sm sm:text-[15px]","children":[["$","dt",null,{"className":"font-semibold text-gray-600","children":"ROLE"}],["$","dd",null,{"children":"기획, 개발, 디자인"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"DURATION"}],["$","dd",null,{"children":"2024.10 ~ 2025.08"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"TEAM"}],["$","dd",null,{"children":"1인 개발"}],["$","dt",null,{"className":"font-semibold text-gray-600","children":"PLATFORM"}],["$","dd",null,{"children":"PC (Windows · 개인 배포 및 베타 테스트 완료)"}]]}]]}],["$","div",null,{"className":"mt-6 flex flex-wrap gap-3","children":[["$","$Lf",null,{"href":"/projects/gearandtower","className":"inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold bg-blue-600 text-white hover:bg-blue-700 transition","children":"스팀 출시 리뉴얼: Gear & Tower v0.3.0 보기 ->"}],["$","a",null,{"href":"https://drive.google.com/file/d/1f3eNnKfts_eKnNyIHo1nAcWxsLohogxM/view?usp=sharing","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold bg-blue-100 text-blue-800 hover:bg-blue-200 transition","children":"Demo Download"}],["$","a",null,{"href":"https://github.com/WooGeun-Nam/RogueTower-Code","target":"_blank","rel":"noopener noreferrer","className":"inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold bg-gray-200 text-gray-900 hover:bg-gray-300 transition","children":"GitHub Source"}]]}]]}]]}],["$","section",null,{"children":["$","$L10",null,{"codeAssets":{"SoundManager":"$11","ExceptionReporter":"$12","LoadingSceneController":"$13","ShopManager":"$14","StatueOfDestructionGod":"$15","GameManager":"$16","GameDataManager":"$17","UIManager":"$18","UIEventManager":"$19","TooltipManager":"$1a","TooltipTrigger":"$1b","TowerArchetype":"$1c","Enemy":"$1d","IWeaponState":"using System.Collections;\nusing UnityEngine;\n\n/// <summary>\n/// 타워 무기의 상태를 정의하는 인터페이스입니다.\n/// 각 상태는 이 인터페이스를 구현하여 무기의 특정 행동을 정의합니다.\n/// </summary>\npublic interface IWeaponState\n{\n    /// <summary>\n    /// 현재 상태의 로직을 실행합니다.\n    /// </summary>\n    /// <param name=\"weapon\">상태를 실행할 TowerWeapon 인스턴스</param>\n    /// <returns>상태 로직을 위한 코루틴</returns>\n    IEnumerator Execute(TowerWeapon weapon);\n}\n","ObjectPool":"$1e","MapDifficulty":"$1f","RandomPathGenerator":"$20","MapGenerator":"$21","WeightedRandomReward":"$22","SpecialSkillBase":"using UnityEngine;\n\n// 스킬의 종류를 정의하는 Enum\npublic enum SkillType\n{\n    Passive,        // 장착 시 지속적으로 효과 적용\n    Active,         // 플레이어가 직접 사용 (버튼 클릭 등)\n    Tower    // 특정 타워 설치\n}\n\npublic abstract class SpecialSkillBase : ScriptableObject\n{\n    [Header(\"스킬 기본 정보\")]\n    public string skillID;\n    public string skillName;\n    [TextArea]\n    public string description;\n    public Sprite icon;\n    public SkillType skillType; // 스킬 타입 추가\n\n    // 모든 특수 스킬이 구현해야 할 기능들 (추상 메서드)\n    public abstract void Activate();    // 스킬 활성화 (장착 시) - 씬 독립적인 초기화/정리\n    public abstract void Deactivate();  // 스킬 비활성화 (해제 시) - 씬 독립적인 초기화/정리\n\n    // 스킬 타입에 따라 선택적으로 구현될 메서드\n    public virtual void UseSkill(GameObject skillButton) { } // 사용형 스킬 (Active)에서 오버라이드\n    public virtual GameObject GetTowerPrefab() { return null; } // 타워 설치형 스킬 (TowerInstall)에서 오버라이드\n\n    // 인게임에서 실제 게임 플레이 효과를 적용/제거하는 메서드 (씬 종속적)\n    public virtual void ApplyGameEffect() { }\n    public virtual void RemoveGameEffect() { }\n}\n"},"initialTab":"plan"}]}]]}]

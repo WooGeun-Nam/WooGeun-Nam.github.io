@@ -50,7 +50,7 @@ export default function PortfolioHome() {
             },
             {
               src: "/images/gearandtower/constellation.png",
-              alt: "Gear & Tower - 심연의 성좌",
+              alt: "Gear & Tower - 장기 특성 트리",
             },
             {
               src: "/images/tinyjourney/combat.png",
@@ -108,7 +108,7 @@ export default function PortfolioHome() {
                   2D 로그라이트 타워 디펜스 ( Unity, C#, 1인 개발 )
                 </p>
                 <p className="text-sm text-gray-700 text-left mt-1">
-                  빠른 개발을 위해 타워 디펜스에 집중했던 베타를 리뉴얼해, AI 협업으로 확보한 개발 속도를 바탕으로 대기실 거점·장비 강화·성좌 트리 등 RPG 성장 요소를 대폭 강화했습니다.
+                  빠른 개발을 위해 타워 디펜스에 집중했던 베타를 리뉴얼해, AI 협업으로 확보한 개발 속도를 바탕으로 대기실 거점, 장비 강화, 특성 트리 등 RPG 성장 요소를 대폭 강화했습니다.
                 </p>
               </Link>
 
@@ -453,18 +453,25 @@ export default function PortfolioHome() {
             <h3 className="text-2xl font-bold mb-4">자기소개</h3>
             <p className="text-sm text-gray-800">
               게임 플레이 경험을 수식과 데이터로 설계하고, 확장 가능한
-              클라이언트 구조로 직접 구현·검증하는 과정에 강점을 가지고
+              클라이언트 구조로 직접 구현 및 검증하는 과정에 강점을 가지고
               있습니다.
             </p>
             <p className="text-sm text-gray-800 mt-1">
-              1인 프로젝트 RogueTower를 베타 출시한 뒤 스팀 정식 출시 버전(Gear
-              &amp; Tower v0.3.0)으로 전면 리뉴얼하며, 확장 가능한 전투 구조
-              정리, 엑셀 데이터 통합 관리, 한국어·영어 다국어 지원을
+              1인 프로젝트 RogueTower를 베타 출시한 뒤 스팀 정식 출시를 목표로
+              Gear &amp; Tower v0.3.0으로 전면 리뉴얼하며, 확장 가능한 전투 구조
+              정리, 엑셀 데이터 통합 관리, 한국어와 영어 다국어 지원을
               구현했습니다.
             </p>
             <p className="text-sm text-gray-800 mt-1">
-              신작 TinyJourney에서는 문서 기반 설계·검증 흐름을 적용해 절차적
+              신작 TinyJourney에서는 문서 기반 설계 및 검증 흐름을 적용해 절차적
               던전과 격자 가방, 마이홈 하우징 기본 시스템을 구현했습니다.
+            </p>
+            <p className="text-sm text-gray-800 mt-1">
+              전체 시스템의 큰 틀을 먼저 설계하고 작업을 단일 기능 단위로
+              분할해 번호 우선순위로 AI에게 지시하는 개발 흐름을 정립했습니다.
+              사람(기획 의도와 밸런스 기준 결정)과 AI(분할 구현 및 데이터
+              자동화)의 역할을 명확히 구분하며 제작 속도와 구조적 안정성을 함께
+              확보하고 있습니다.
             </p>
           </section>
 
@@ -525,12 +532,12 @@ export default function PortfolioHome() {
                 <ul className="list-disc list-inside text-sm text-gray-700 space-y-1 mt-1">
                   <li>개발 기간 : 2026.11 ~</li>
                   <li>
-                    대기실 거점, 장비·성좌 이원화 성장, 선택형 타워 덱, 훈련소
-                    및 몬스터 도감 등 신규 시스템과 UI/UX 전면 리뉴얼
+                    대기실 거점, 단기 및 장기 이원화 성장, 선택형 타워 덱,
+                    훈련소 및 몬스터 도감 등 신규 시스템과 UI/UX 전면 리뉴얼
                   </li>
                   <li>
                     대형 스크립트 역할 분할 및 이벤트 기반 전투 구조 개편, 엑셀
-                    데이터 자동 연동 및 한국어·영어 실시간 전환 구현
+                    데이터 자동 연동 및 한국어와 영어 실시간 전환 구현
                   </li>
                 </ul>
               </div>

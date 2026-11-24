@@ -37,27 +37,28 @@ export default function GearAndTowerClient({
 
   const tabs: { id: ActiveGearTab; label: string }[] = [
     { id: "overview", label: "기획서 (시스템 개편)" },
-    { id: "automation", label: "기술서 (코드 · 데이터)" },
-    { id: "governance", label: "개발일지 (밸런싱 · 출시)" },
+    { id: "automation", label: "기술서 (코드 및 데이터)" },
+    { id: "governance", label: "개발일지 (밸런싱 및 출시)" },
   ];
 
   const planToc = [
+    { id: "plan-bg", tag: "리뉴얼 배경과 AI 효율" },
     { id: "plan-compare", tag: "전후 화면 비교" },
-    { id: "plan-hub", tag: "대기실 & 도감 신설" },
-    { id: "plan-armory", tag: "무기고 & 훈련소" },
-    { id: "plan-ingame", tag: "웨이브 보상 & 성좌" },
-    { id: "plan-wave", tag: "웨이브 구조 & 도전 모드" },
+    { id: "plan-hub", tag: "출격 대기실과 도감" },
+    { id: "plan-armory", tag: "무기고와 훈련소" },
+    { id: "plan-ingame", tag: "단기 보상과 특성 트리" },
+    { id: "plan-wave", tag: "웨이브와 도전 모드" },
   ];
 
   const techToc = [
-    { id: "tech-split", tag: "대형 스크립트 분할" },
-    { id: "tech-trigger", tag: "이벤트 분리 & 최적화" },
-    { id: "tech-excel", tag: "엑셀 연동 & 다국어" },
+    { id: "tech-split", tag: "대형 스크립트 분리" },
+    { id: "tech-trigger", tag: "전투 이벤트와 최적화" },
+    { id: "tech-excel", tag: "엑셀 연동과 다국어 지원" },
   ];
 
   const devlogToc = [
     { id: "log-balance", tag: "밸런스 문제 해결" },
-    { id: "log-workflow", tag: "개발 관리 규칙" },
+    { id: "log-workflow", tag: "에디터와 모듈 규칙" },
     { id: "log-status", tag: "출시 준비 현황" },
   ];
 
@@ -81,10 +82,10 @@ export default function GearAndTowerClient({
       detail: "메인, 탭, 패널, 슬롯 분리 및 장비 강화 패널 UI 별도 신설",
     },
     {
-      name: "AbyssStarChartUI (심연의 성좌)",
+      name: "AbyssStarChartUI (특성 트리)",
       before: "1,591줄 (단일 파일)",
       after: "2개 파일 / 2,158줄",
-      detail: "성좌 화면 렌더링 및 노드 표시와 드래그·줌·입력 제어 분리",
+      detail: "특성 트리 렌더링 및 노드 표시와 드래그, 줌, 입력 제어 분리",
     },
     {
       name: "TowerWeapon (타워 공격)",
@@ -107,10 +108,10 @@ export default function GearAndTowerClient({
   ];
 
   const excelSheets = [
-    { sheet: "Localization (다국어 텍스트)", rows: "629행 / 633키", target: "한국어·영어 실시간 전환 JSON 테이블" },
+    { sheet: "Localization (다국어 텍스트)", rows: "629행 / 633키", target: "한국어와 영어 실시간 전환 JSON 테이블" },
     { sheet: "Equipments (장비 데이터)", rows: "122행", target: "장비 능력치, 등급, 아이콘, 다국어 설명 데이터" },
     { sheet: "EquipmentSets (세트 효과)", rows: "8행", target: "동등 티어 8종 장비 세트 시너지 데이터" },
-    { sheet: "AbyssNodes (성좌 노드)", rows: "30행", target: "심연의 성좌 4계열 노드 효과 및 비용 데이터" },
+    { sheet: "AbyssNodes (특성 트리 노드)", rows: "30행", target: "4계열 장기 특성 트리 노드 효과 및 비용 데이터" },
     { sheet: "EnemyScaling (웨이브 성장)", rows: "26행", target: "웨이브별 체력·방어력 배율 및 도전 모드 계단식 곡선" },
     { sheet: "Enemies (몬스터 20종)", rows: "20행", target: "테마 몬스터 및 보스 종족값(bstBudget) 데이터" },
     { sheet: "Upgrades (공방 강화)", rows: "13행", target: "전투 중 물리·마법 업그레이드 수치 데이터" },
@@ -215,27 +216,27 @@ export default function GearAndTowerClient({
             </div>
             <div className="grid sm:grid-cols-2 gap-4 pt-1">
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-blue-900 block">대기실 개편 &amp; 신규 시스템</span>
+                <span className="text-sm sm:text-base font-bold text-blue-900 block">AI 협업 기반 RPG 대개편</span>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                  이동형 출격 대기실과 몬스터 도감, 훈련소, 단계별 튜토리얼 신설
+                  모델 이원화, 병렬 에이전트, MCP 활용으로 속도를 확보해 대기실, 도감, 훈련소 신설
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-blue-900 block">장비 · 성좌 이원화 성장</span>
+                <span className="text-sm sm:text-base font-bold text-blue-900 block">단기 및 장기 이원화 성장</span>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                  장비 수집·강화(장기 성장)와 4갈래 성좌 개방(빌드 성장) 결합
+                  판당 조합하는 전술 보상(단기)과 장비 강화, 4갈래 특성 트리(장기) 결합
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-blue-900 block">무기고 &amp; 훈련소 연계</span>
+                <span className="text-sm sm:text-base font-bold text-blue-900 block">무기고와 훈련소 연계</span>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                  확장성을 고려한 선택형 타워 덱 편성과 훈련소 실시간 화력 검증
+                  확장성을 고려한 선택형 타워 덱 편성과 훈련소 실시간 데미지 측정
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-blue-200/80 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-blue-900 block">웨이브 보상 &amp; 도전 모드</span>
+                <span className="text-sm sm:text-base font-bold text-blue-900 block">웨이브 보상과 도전 모드</span>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                  전술 카드·리롤 도입 및 단계별 난이도와 계단식 도전 모드 재설계
+                  전술 카드와 리롤 도입, 단계별 난이도와 계단식 도전 모드 재설계
                 </p>
               </div>
             </div>
@@ -256,33 +257,79 @@ export default function GearAndTowerClient({
             ))}
           </div>
 
-          {/* 01. 리뉴얼 전후 화면 비교 */}
-          <section id="plan-compare" className="scroll-mt-14 space-y-4">
+          {/* 01. 리뉴얼 배경과 AI 활용 방법론 */}
+          <section id="plan-bg" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">01 · 전후 화면 비교</span>
+              <span className="text-xs font-bold text-blue-600">01 / 리뉴얼 배경과 AI 효율</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                리뉴얼 전후 화면 비교 (v0.2.4 -&gt; v0.3.0)
+                리뉴얼 배경과 AI 활용 방법론
               </h2>
             </header>
-            <div className="p-5 rounded-2xl bg-blue-50/30 border border-blue-200/70 text-sm text-gray-700 leading-relaxed space-y-1.5">
+
+            <div className="p-6 rounded-2xl bg-blue-50/35 border border-blue-200/80 text-sm text-gray-700 leading-relaxed space-y-2 shadow-sm">
               <div className="font-bold text-blue-950 text-base">
-                리뉴얼 기획 배경: 타워 디펜스 중심에서 RPG 성장·수집 요소의 심화로
+                타워 디펜스 베타에서 RPG 성장 확장으로
               </div>
               <p>
-                초기 베타(RogueTower v0.2.4)에서는 1인 개발 환경에서 핵심 전투를 빠르게 구현하고 검증하기 위해 타워 디펜스 시스템에 집중했습니다. 이번 리뉴얼에서는 AI 협업과 데이터 자동화를 통해 충분한 개발 속도를 확보하면서, 기존에 타협했던 <strong>RPG적 성장과 수집 요소</strong>(상호작용형 대기실 거점, 장비 강화와 세트 파밍, 4갈래 성좌 특성 트리, 몬스터 도감, 훈련소 화력 검증)를 본격적으로 확장했습니다.
+                초기 베타(RogueTower v0.2.4)에서는 1인 개발 시간 제약 때문에 핵심 전투를 빠르게 구현하려고 타워 디펜스 루프에만 집중했습니다. 이후 AI 도구를 작업 방식에 맞게 최적화해 제작 속도를 끌어올리면서, 미뤄두었던 <strong>RPG 성장과 수집 요소</strong>(상호작용 대기실, 장비 강화와 세트 파밍, 4갈래 장기 특성 트리, 몬스터 도감, 훈련소)를 온전히 구현하기 위해 스팀 출시 목표로 리뉴얼을 진행했습니다.
               </p>
             </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-sm leading-relaxed">
+              <div className="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
+                <div className="font-bold text-blue-700">1. 난이도별 모델 이원화</div>
+                <p className="text-gray-600">
+                  기획과 전체 구조 설계처럼 기반이 중요한 작업에는 고수준 추론 모델을 사용하고, 단순 반복이나 개별 구현은 경량 모델로 배분해 속도와 품질 균형을 맞췄습니다.
+                </p>
+              </div>
+              <div className="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
+                <div className="font-bold text-blue-700">2. 역할별 채팅 세션 분리</div>
+                <p className="text-gray-600">
+                  기획, 디자인, 개발 채팅 세션을 목적별로 분리해 독립된 기록을 유지함으로써, 한 대화 안에 여러 주제가 섞여 작업 방향이 흔들리는 혼선을 방지했습니다.
+                </p>
+              </div>
+              <div className="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
+                <div className="font-bold text-blue-700">3. 병렬 서브에이전트 활용</div>
+                <p className="text-gray-600">
+                  대량 코드 작업 시 고수준 모델로 먼저 수정 파일이 중복되지 않도록 작업 단위를 나누어 계획한 뒤, 저수준 모델 서브에이전트에게 코드 구현만 병렬 할당했습니다.
+                </p>
+              </div>
+              <div className="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
+                <div className="font-bold text-blue-700">4. 명령어 기반 작업 가속</div>
+                <p className="text-gray-600">
+                  grill-me로 기획 빈틈을 먼저 점검하고, plan과 boost 명령어로 단계별 계획과 심층 검증을 자동화해 불필요한 수정 반복을 크게 줄였습니다.
+                </p>
+              </div>
+              <div className="p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm sm:col-span-2 lg:col-span-2">
+                <div className="font-bold text-blue-700">5. Unity MCP 에디터 반복 작업 위임</div>
+                <p className="text-gray-600">
+                  Unity MCP(Unity AI Assistant)를 에디터에 연결해 인스펙터 컴포넌트 바인딩, UI 배치 정렬, 애니메이션 상태 연결 등 수작업 비중이 큰 단순 반복 작업을 에이전트에게 직접 할당해 개발 효율을 높였습니다.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <hr className="border-gray-200/80" />
+
+          {/* 02. 전후 화면 비교 */}
+          <section id="plan-compare" className="scroll-mt-14 space-y-4">
+            <header className="space-y-1">
+              <span className="text-xs font-bold text-blue-600">02 / 전후 화면 비교</span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
+                전후 화면 비교 (v0.2.4 -&gt; v0.3.0)
+              </h2>
+            </header>
             <BeforeAfterSlider />
           </section>
 
           <hr className="border-gray-200/80" />
 
-          {/* 02. 대기실 개편 및 신규 시스템 확장 */}
+          {/* 03. 출격 대기실과 도감 신설 */}
           <section id="plan-hub" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">02 · 대기실 &amp; 도감 신설</span>
+              <span className="text-xs font-bold text-blue-600">03 / 출격 대기실과 도감</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                대기실 개편 및 신규 시스템 확장 (몬스터 도감 · 튜토리얼)
+                출격 대기실과 도감 신설
               </h2>
             </header>
 
@@ -291,7 +338,7 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/lobby-right.png"
-                    alt="상호작용형 대기실과 단계별 튜토리얼"
+                    alt="상호작용 대기실과 튜토리얼"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -300,10 +347,10 @@ export default function GearAndTowerClient({
                     출격 대기실
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    상호작용형 대기실과 단계별 튜토리얼
+                    상호작용 대기실과 튜토리얼
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    단일 팝업에 장비와 시작 버튼만 있던 구버전 대기실을 개편해, 캐릭터가 직접 이동하며 무기고, 훈련소, 상점, 도감, 성좌의 제단, 성문을 이용하는 거점 공간으로 구성했습니다. 단일 재화였던 경제 구조도 뽑기 중심의 심연의 주화와 강화 중심의 심연의 가루로 분리하고, 처음 접하는 유저가 자연스럽게 적응할 수 있도록 전투 및 대기실 안내 튜토리얼을 추가했습니다.
+                    단일 팝업에 장비와 시작 버튼만 있던 구버전 대기실을 개편해, 캐릭터가 직접 이동하며 무기고, 훈련소, 상점, 도감, 특성 제단, 성문을 이용하는 거점 공간으로 구성했습니다. 단일 재화였던 경제 구조도 뽑기 중심의 심연의 주화와 강화 중심의 심연의 가루로 분리하고, 초보 유저가 자연스럽게 익힐 수 있도록 전투와 대기실 튜토리얼을 추가했습니다.
                   </p>
                 </div>
               </div>
@@ -333,12 +380,12 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 03. 무기고 시스템 및 훈련소 연계 */}
+          {/* 04. 무기고와 훈련소 연계 */}
           <section id="plan-armory" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">03 · 무기고 &amp; 훈련소</span>
+              <span className="text-xs font-bold text-blue-600">04 / 무기고와 훈련소</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                무기고 시스템 (장비 강화 · 타워 덱 편성) 및 훈련소 연계
+                무기고와 훈련소 연계
               </h2>
             </header>
 
@@ -347,19 +394,19 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/armory-equip.png"
-                    alt="장비 성장 축: 동등 티어 세트 개편 및 장비 강화"
+                    alt="동등 티어 세트와 장비 강화"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="space-y-2">
                   <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
-                    장비 성장 축
+                    장기 성장
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    장비 성장 축: 동등 티어 세트 개편 및 장비 강화
+                    동등 티어 세트와 장비 강화
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    이원화 성장의 첫 번째 축인 장비 시스템에서 특정 최상위 세트가 강제되지 않도록 세트 간 위상을 동등하게 재설비하고 장착 UI를 개선했습니다. 또한 파밍 이후에도 지속적인 성장 목표를 가질 수 있도록 재화를 소모해 장비를 강화하는 시스템을 새로 도입했습니다.
+                    특정 최상위 세트만 강제되지 않도록 세트 간 위상을 동등하게 재조정하고 장착 화면을 개편했습니다. 또한 파밍 이후에도 지속적인 성장 목표를 가질 수 있도록 재화를 소모해 장비를 강화하는 시스템을 새로 도입했습니다.
                   </p>
                 </div>
               </div>
@@ -368,7 +415,7 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/armory-deck.png"
-                    alt="확장성과 빌드 압축을 고려한 타워 덱 편성"
+                    alt="선택형 타워 덱 편성"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -377,10 +424,10 @@ export default function GearAndTowerClient({
                     덱 편성 시스템
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    확장성과 빌드 압축을 고려한 타워 덱 편성
+                    선택형 타워 덱 편성
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    무기고 내 두 번째 기능으로 출격 타워를 직접 고르는 타워 편성 시스템을 구축했습니다. 기존 6종 고정 슬롯 구조를 탈피해 향후 신규 타워가 추가되더라도 유연하게 수용할 수 있는 확장성을 확보했으며, 플레이어가 출격 타워 수를 직접 조절해 인게임 보상 풀을 원하는 타워 위주로 압축할 수 있도록 설계했습니다.
+                    출격 타워를 직접 고르는 덱 편성 시스템을 구축했습니다. 기존 6종 고정 슬롯 구조를 탈피해 향후 신규 타워 추가를 수용할 수 있는 확장성을 확보했으며, 플레이어가 출격 타워 수를 조절해 인게임 보상 풀을 원하는 타워 위주로 압축할 수 있습니다.
                   </p>
                 </div>
               </div>
@@ -389,19 +436,19 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/training.png"
-                    alt="신규 시스템: 세팅한 성장을 즉시 검증하는 훈련소"
+                    alt="실시간 데미지 측정 훈련소"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="space-y-2">
                   <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
-                    신규 시스템 · 훈련소
+                    신규 시스템 / 훈련소
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    신규 시스템: 세팅한 성장을 즉시 검증하는 훈련소
+                    실시간 데미지 측정 훈련소
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    무기고에서 맞춘 장비 강화 수치와 편성한 타워 덱이 실제 전투에서 어느 정도의 효율을 내는지 출격 전에 바로 시험해 볼 수 있도록 훈련소를 새로 추가했습니다. 도감에서 해금한 몬스터를 허수아비 대상으로 지정하고 웨이브와 업그레이드 단계를 조절하며 타워별 실시간 DPS 점유율과 디버프 효율을 확인할 수 있습니다.
+                    무기고에서 맞춘 장비 강화 수치와 편성한 타워 덱이 실제 전투에서 어느 정도의 효율을 내는지 출격 전에 바로 시험해 볼 수 있도록 훈련소를 새로 추가했습니다. 도감에서 해금한 몬스터를 대상으로 지정해 타워별 실시간 DPS 점유율과 디버프 효율을 측정할 수 있습니다.
                   </p>
                 </div>
               </div>
@@ -410,12 +457,12 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 04. 인게임 빌드 성장: 웨이브 보상 개편과 심연의 성좌 */}
+          {/* 05. 단기 보상과 장기 특성 트리 */}
           <section id="plan-ingame" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">04 · 웨이브 보상 &amp; 성좌</span>
+              <span className="text-xs font-bold text-blue-600">05 / 단기 보상과 특성 트리</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                인게임 빌드 성장: 웨이브 보상 개편과 심연의 성좌
+                단기 보상과 장기 특성 트리
               </h2>
             </header>
 
@@ -424,7 +471,7 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/reward.png"
-                    alt="웨이브 보상 개편 및 전술 카드 도입"
+                    alt="전술 카드와 웨이브 보상"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -433,10 +480,10 @@ export default function GearAndTowerClient({
                     단기 빌드 보상
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    웨이브 보상 개편 및 전술 카드 도입
+                    전술 카드와 웨이브 보상
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    웨이브 클리어 시 단순 능력치 상승 위주였던 구버전 보상 구조에 전투 규칙과 버프를 변화시키는 전술 카드와 전설 보상을 추가해 매 판 단기 빌드의 변수를 넓혔습니다. 또한 다시 뽑기(리롤)와 전장 확인(접기) 버튼을 도입해 현재 타워 배치 상황을 직접 확인하며 보상을 선택할 수 있도록 개선했습니다.
+                    웨이브 클리어 시 단순 능력치 상승 위주였던 구버전 보상 구조에 전투 규칙과 버프를 바꾸는 전술 카드와 전설 보상을 추가해 매 판 단기 빌드의 변수를 넓혔습니다. 또한 다시 뽑기(리롤)와 전장 확인(접기) 버튼을 도입해 현재 타워 배치 상황을 직접 확인하며 보상을 선택할 수 있습니다.
                   </p>
                 </div>
               </div>
@@ -445,19 +492,19 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/constellation.png"
-                    alt="심연의 성좌: 4가지 방향성의 플레이어 선택 성장"
+                    alt="4갈래 선택형 특성 트리"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="space-y-2">
                   <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
-                    성좌 성장 축
+                    장기 특성 축
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    심연의 성좌: 4가지 방향성의 플레이어 선택 성장
+                    4갈래 선택형 특성 트리
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    장비 성장이 기초 체급을 높여 준다면, 심연의 성좌는 중앙 코어를 기점으로 4가지 방향성으로 뻗어 나가는 노드를 개방하며 플레이어가 원하는 전투 스타일을 선택하는 두 번째 핵심 성장 축입니다. 대기실의 영구 해금과 인게임 판당 투자를 연계하고, 전체 화면 드래그 이동과 줌 범위 제한을 적용해 조작 편의성을 높였습니다.
+                    장비 강화가 기초 체급을 높여 준다면, 특성 트리(심연의 성좌)는 중앙 코어를 기점으로 4가지 방향성의 노드를 개방해 플레이 스타일을 결정하는 장기 성장 축입니다. 대기실의 영구 해금과 인게임 판당 투자를 연계하고, 전체 화면 드래그와 줌 제한을 적용해 조작 편의성을 높였습니다.
                   </p>
                 </div>
               </div>
@@ -466,12 +513,12 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 05. 웨이브 진행 구조와 단계별 난이도 · 도전 모드 */}
+          {/* 06. 웨이브 구조와 도전 모드 */}
           <section id="plan-wave" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">05 · 웨이브 구조 &amp; 도전 모드</span>
+              <span className="text-xs font-bold text-blue-600">06 / 웨이브와 도전 모드</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                웨이브 진행 구조와 단계별 난이도 · 도전 모드
+                웨이브 구조와 도전 모드
               </h2>
             </header>
 
@@ -480,32 +527,32 @@ export default function GearAndTowerClient({
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
                     src="/images/gearandtower/ingame.png"
-                    alt="테마별 보스 중심의 웨이브 구조와 전투 HUD 개편"
+                    alt="테마 보스 구조와 전투 UI"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="space-y-2">
                   <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
-                    전투 · 웨이브 구조
+                    전투 / 웨이브 구조
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    테마별 보스 중심의 웨이브 구조와 전투 HUD 개편
+                    테마 보스 구조와 전투 UI
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    중간 네임드와 초원, 설원, 사막, 마그마 테마별 고유 스킬을 가진 결전 보스로 이어지는 20웨이브 구조를 확립해 구간별 공략 목표를 명확히 했습니다. 일반, 네임드, 보스 몬스터의 기초 체급을 정규화하고, 1080p 해상도 리뉴얼과 함께 상단 대형 보스 체력 및 실드 바와 좌측 전술 버프 HUD를 추가해 전투 시인성을 높였습니다.
+                    중간 네임드와 초원, 설원, 사막, 마그마 테마별 고유 스킬을 가진 보스로 이어지는 20웨이브 구조를 확립했습니다. 일반, 네임드, 보스의 기초 체급을 정규화하고, 1080p 해상도 개편과 함께 상단 대형 보스 체력 바와 좌측 전술 버프 화면을 추가해 전투 시인성을 높였습니다.
                   </p>
                 </div>
               </div>
 
               <div className="w-full rounded-2xl border border-gray-200 bg-gray-50 p-6 space-y-2 shadow-sm">
                 <span className="inline-block text-[11px] font-bold text-blue-600 bg-white border border-blue-200 px-2.5 py-0.5 rounded">
-                  난이도 · 엔드 콘텐츠
+                  난이도와 엔드 콘텐츠
                 </span>
                 <h3 className="text-lg font-bold text-gray-900">
-                  단계별 난이도 재설계 및 도전 모드
+                  난이도 재설계와 도전 모드
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  0부터 100까지의 숫자 슬라이더로 되어 있던 기존 난이도를 입문, 보통, 어려움, 지옥 단계로 개편하고, 단계마다 몬스터 체력과 방어력 배율을 분리해 물리·마법 타워 간 균형을 맞췄습니다. 또한 기존 무한 모드를 도전 모드로 개편해 보스 구간마다 난이도가 계단식으로 상승하도록 설계하여, 성장시킨 장비와 성좌 빌드의 한계를 시험할 수 있는 엔드 콘텐츠로 구성했습니다.
+                  0부터 100까지의 숫자 슬라이더였던 기존 난이도를 입문, 보통, 어려움, 지옥 단계로 개편하고, 단계별 체력과 방어력 배율을 분리해 물리 및 마법 타워 균형을 맞췄습니다. 또한 기존 무한 모드를 도전 모드로 개편해 보스 구간마다 난이도가 계단식으로 상승하도록 설계했습니다.
                 </p>
               </div>
             </div>
@@ -515,10 +562,10 @@ export default function GearAndTowerClient({
           <div className="p-6 bg-gradient-to-r from-blue-50/70 to-indigo-50/40 border border-blue-200/80 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <h3 className="font-bold text-gray-900 text-sm sm:text-base">
-                코드 아키텍처와 엑셀 · 다국어 자동화 구조가 궁금하신가요?
+                코드 아키텍처와 엑셀 및 다국어 자동화 구조가 궁금하신가요?
               </h3>
               <p className="text-xs sm:text-sm text-gray-600 mt-1">
-                대형 스크립트 분할, 전투 이벤트 구조, 엑셀 데이터 동기화 및 한국어·영어 지원 구조를 확인할 수 있습니다.
+                대형 스크립트 분할, 전투 이벤트 구조, 엑셀 데이터 동기화 및 한국어와 영어 지원 구조를 확인할 수 있습니다.
               </p>
             </div>
             <button
@@ -529,7 +576,7 @@ export default function GearAndTowerClient({
               }}
               className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-xl transition shrink-0 shadow-sm cursor-pointer"
             >
-              기술서 (코드 · 데이터)로 이동 -&gt;
+              기술서 (코드 및 데이터)로 이동 -&gt;
             </button>
           </div>
         </article>
@@ -548,29 +595,23 @@ export default function GearAndTowerClient({
                 클라이언트 구조 &amp; 데이터 파이프라인
               </span>
             </div>
-            <div className="grid sm:grid-cols-2 gap-4 pt-1">
+            <div className="grid md:grid-cols-3 gap-4 pt-1">
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">대형 스크립트 역할 분할</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 block">대형 스크립트 분할</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  인스펙터 참조(GUID)를 유지한 채 비대해진 UI·전투 코드를 역할별 분리
+                  인스펙터 참조(GUID)를 유지한 채 비대해진 UI와 전투 코드를 역할별 분리
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">전투 이벤트 분리 구조</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 block">전투 이벤트와 연산 최적화</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  하드코딩 조건문을 제거하고 전투 이벤트와 효과 모듈을 독립 연결
+                  조건문을 제거해 이벤트와 효과 모듈을 독립 연결하고 비활성 컴포넌트 연산 중단
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">연산 분리 &amp; 부하 감소</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 block">엑셀 연동 &amp; 실시간 다국어 지원</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  불변 발사체 구조체로 참조 오류를 막고 비활성 컴포넌트 연산 중단
-                </p>
-              </div>
-              <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">엑셀 연동 &amp; 실시간 다국어</span>
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  통합 엑셀 자동 동기화 및 한국어·영어 실시간 전환과 누락 점검
+                  통합 엑셀 자동 동기화 및 한국어와 영어 전환과 누락 점검 구축
                 </p>
               </div>
             </div>
@@ -594,12 +635,12 @@ export default function GearAndTowerClient({
           {/* 01. 대형 스크립트 분할 */}
           <section id="tech-split" className="scroll-mt-14 space-y-4">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">01 · 대형 스크립트 분할</span>
+              <span className="text-xs font-bold text-blue-600">01 / 대형 스크립트 분리</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                대형 스크립트 역할 분할 (partial class)
+                대형 스크립트 역할 분할
               </h2>
               <p className="text-sm text-gray-600">
-                인스펙터 직렬화 참조(GUID)를 유지한 채 도감, 훈련소, 대기실, 성좌, 타워, 보상 등 비대해진 스크립트를 역할별 파일로 분리했습니다.
+                인스펙터 직렬화 참조(GUID)를 유지한 채 도감, 훈련소, 대기실, 특성 트리, 타워, 보상 등 비대해진 스크립트를 역할별 파일(partial class)로 분리했습니다.
               </p>
             </header>
 
@@ -632,9 +673,9 @@ export default function GearAndTowerClient({
           {/* 02. 이벤트 분리 & 최적화 (전체 가로폭 세로 배치) */}
           <section id="tech-trigger" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">02 · 이벤트 분리 &amp; 최적화</span>
+              <span className="text-xs font-bold text-blue-600">02 / 전투 이벤트와 최적화</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                전투 이벤트 분리 및 연산 최적화
+                전투 이벤트와 연산 최적화
               </h2>
             </header>
 
@@ -644,7 +685,7 @@ export default function GearAndTowerClient({
                   전투 이벤트 분리 구조 (CombatTriggerManager)
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  전투 코드 곳곳에 흩어져 있던 조건문을 해체하고 <strong>CombatTriggerManager</strong>(16종 이벤트)와 <strong>TriggerEffectRegistry</strong>(성좌 및 전술 독립 효과 모듈 19종) 구조로 전환해, 기존 전투 코드를 수정하지 않고 신규 효과를 추가할 수 있도록 개선했습니다.
+                  전투 코드 곳곳에 흩어져 있던 조건문을 해체하고 <strong>CombatTriggerManager</strong>(16종 이벤트)와 <strong>TriggerEffectRegistry</strong>(특성 및 전술 독립 효과 모듈 19종) 구조로 전환해, 기존 전투 코드를 수정하지 않고 신규 효과를 추가할 수 있도록 개선했습니다.
                 </p>
               </div>
 
@@ -661,15 +702,15 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 03. 엑셀 연동 & 다국어 (전체 가로폭 세로 배치) */}
+          {/* 03. 엑셀 연동과 다국어 지원 */}
           <section id="tech-excel" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">03 · 엑셀 연동 &amp; 다국어</span>
+              <span className="text-xs font-bold text-blue-600">03 / 엑셀 연동과 다국어 지원</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                엑셀 데이터 통합 관리 및 한국어 · 영어 지원
+                엑셀 연동과 실시간 다국어 지원
               </h2>
               <p className="text-sm text-gray-600">
-                밸런스 수치와 장비, 몬스터, 성좌, 번역 데이터를 MasterGameData.xlsx에서 통합 관리하며, 저장 시 파이썬 스크립트와 에디터 감시기가 JSON 및 유니티 에셋에 자동 반영합니다.
+                밸런스 수치와 장비, 몬스터, 특성, 번역 데이터를 MasterGameData.xlsx에서 통합 관리하며, 저장 시 파이썬 스크립트와 에디터 감시기가 JSON 및 유니티 에셋에 자동 반영합니다.
               </p>
             </header>
 
@@ -699,11 +740,11 @@ export default function GearAndTowerClient({
                 <div className="text-xs font-bold text-blue-600">LocalizationManager</div>
                 <h3 className="text-base font-bold text-gray-900">실시간 언어 전환</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  통합 번역 테이블을 기반으로 게임 재시작 없이 한국어와 영어를 즉시 전환하며, 장비와 성좌, 세트 설명까지 전 항목을 대응했습니다.
+                  통합 번역 테이블을 기반으로 게임 재시작 없이 한국어와 영어를 즉시 전환하며, 장비와 특성, 세트 설명까지 전 항목을 대응했습니다.
                 </p>
               </div>
               <div className="w-full p-5 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
-                <div className="text-xs font-bold text-blue-600">UI · 폰트 규격</div>
+                <div className="text-xs font-bold text-blue-600">UI와 폰트 규격</div>
                 <h3 className="text-base font-bold text-gray-900">영문 레이아웃 및 픽셀 폰트 규격화</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   영문 전환 시 단어 길이 차이로 발생하는 넘침을 막기 위해 버튼과 툴팁 여백을 확보하고, 픽셀 폰트(Galmuri) 정수 크기 규칙을 통일했습니다.
@@ -726,7 +767,7 @@ export default function GearAndTowerClient({
                 밸런싱 문제 해결 과정과 출시 준비 현황이 궁금하신가요?
               </h3>
               <p className="text-xs sm:text-sm text-gray-600 mt-1">
-                테스트 기반 밸런스 조정 사례, 개발 관리 규칙 정립 및 스팀 출시 마무리 현황을 확인할 수 있습니다.
+                테스트 기반 밸런스 조정 사례, 에디터 안정성 규칙 및 스팀 출시 마무리 현황을 확인할 수 있습니다.
               </p>
             </div>
             <button
@@ -737,7 +778,7 @@ export default function GearAndTowerClient({
               }}
               className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-semibold rounded-xl transition shrink-0 shadow-sm cursor-pointer"
             >
-              개발일지 (밸런싱 · 출시)로 이동 -&gt;
+              개발일지 (밸런싱 및 출시)로 이동 -&gt;
             </button>
           </div>
         </article>
@@ -756,23 +797,17 @@ export default function GearAndTowerClient({
                 문제 해결 &amp; 출시 준비
               </span>
             </div>
-            <div className="grid sm:grid-cols-2 gap-4 pt-1">
+            <div className="grid md:grid-cols-3 gap-4 pt-1">
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">주기형 CC 구조 개편</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 block">보스 연속 기절 및 난이도 조율</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  다수 타워 배치 시의 연속 기절 문제를 주기형 EMP 펄스로 해결
+                  4.5초 고정 주기 3기 기절 개편 및 전설 제한, 초반 자원, 보스 체력 다각도 보정
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">초반 난이도 다각도 조율</span>
+                <span className="text-sm sm:text-base font-bold text-gray-900 block">에디터와 모듈 안정성 규칙</span>
                 <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  전설 보상 제한, 초반 자원, 보스 체력을 함께 조정해 스노우볼 완화
-                </p>
-              </div>
-              <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
-                <span className="text-sm sm:text-base font-bold text-gray-900 block">개발 안정성 규칙 정립</span>
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
-                  에디터 제어 도구(MCP)와 독립 모듈 분리로 참조 손상 및 충돌 방지
+                  씬과 프리팹 직접 편집 손상을 막고 신규 기능을 독립 모듈로 분리
                 </p>
               </div>
               <div className="p-4 sm:p-5 rounded-xl bg-white border border-gray-200 space-y-1.5">
@@ -799,35 +834,35 @@ export default function GearAndTowerClient({
             ))}
           </div>
 
-          {/* 01. 밸런스 문제 해결 (전체 가로폭 세로 배치) */}
+          {/* 01. 테스트 기반 밸런스 조정 */}
           <section id="log-balance" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">01 · 밸런스 문제 해결</span>
+              <span className="text-xs font-bold text-blue-600">01 / 밸런스 문제 해결</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                테스트 기반 밸런스 조정 및 문제 해결
+                테스트 기반 밸런스 조정
               </h2>
             </header>
 
             <div className="space-y-4">
               <div className="w-full p-6 rounded-2xl border border-gray-200 bg-white space-y-3 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900">
-                  다수 타워 배치 시 연속 기절 문제 해결 (전술 EMP 개편)
+                  다수 타워 배치 시 보스 연속 기절 해결
                 </h3>
                 <div className="space-y-2 text-sm">
                   <p className="text-gray-600 leading-relaxed">
                     <span className="font-bold text-rose-600 mr-2">[문제]</span>
-                    타워가 많이 쌓일수록 타격 확률 기반 기절이 면역 해제 직후 다시 걸려 보스·네임드가 사실상 계속 멈추는 문제를 확인했습니다.
+                    타워가 많이 쌓일수록 타격 확률 기반 기절이 면역 해제 직후 다시 걸려 보스와 네임드 몬스터가 사실상 계속 멈추는 문제를 확인했습니다.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     <span className="font-bold text-blue-700 mr-2">[해결]</span>
-                    타워 수와 무관하게 일정 주기(4.5초)마다 무작위 적 3기에게 작동하는 주기형 EMP 펄스로 개편하고, 보스 상태이상 면역 및 네임드 50% 저항 규칙을 통일했습니다.
+                    타워 수와 무관하게 4.5초마다 무작위 적 3기에게만 기절이 발동되는 고정 주기 방식으로 개편하고, 보스 상태이상 면역과 네임드 50% 저항 규칙을 통일했습니다.
                   </p>
                 </div>
               </div>
 
               <div className="w-full p-6 rounded-2xl border border-gray-200 bg-white space-y-3 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900">
-                  초반 난이도 불균형 다각도 조정
+                  초반 난이도 불균형 조정
                 </h3>
                 <div className="space-y-2 text-sm">
                   <p className="text-gray-600 leading-relaxed">
@@ -836,23 +871,23 @@ export default function GearAndTowerClient({
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     <span className="font-bold text-blue-700 mr-2">[해결]</span>
-                    단일 보상을 과도하게 하향하는 대신 전설 보상 게임당 1회 제한, 성좌 및 전술 수치 보정, 초반 웨이브 자원(100-&gt;80), 보스 체력 배율(3.5x-&gt;4.8x)을 나누어 단계적으로 조정했습니다.
+                    단일 보상을 과도하게 하향하는 대신 전설 보상 게임당 1회 제한, 특성 트리 및 전술 수치 보정, 초반 웨이브 자원(100-&gt;80), 보스 체력 배율(3.5x-&gt;4.8x)을 나누어 조정했습니다.
                   </p>
                 </div>
               </div>
 
               <div className="w-full p-6 rounded-2xl border border-gray-200 bg-white space-y-3 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900">
-                  초반 몬스터 체력 곡선 및 훈련소 DPS 계산식 보정
+                  초반 체력 곡선과 훈련소 계산 보정
                 </h3>
                 <div className="space-y-2 text-sm">
                   <p className="text-gray-600 leading-relaxed">
                     <span className="font-bold text-rose-600 mr-2">[문제]</span>
-                    초반 웨이브 몬스터가 한 방에 처치되어 장비 성장 체감이 낮아지고, 훈련소 DPS 계산에서 창술사(4타겟)·궁수(광역)·마법사(공속 비례 틱) 특성이 빠져 있었습니다.
+                    초반 웨이브 몬스터가 한 방에 처치되어 장비 성장 체감이 낮아지고, 훈련소 DPS 계산에서 창술사(4타겟), 궁수(광역), 마법사(공속 비례 타격) 특성이 빠져 있었습니다.
                   </p>
                   <p className="text-gray-700 leading-relaxed">
                     <span className="font-bold text-blue-700 mr-2">[해결]</span>
-                    초반 비-원샷 체력 곡선과 도전 모드 20웨이브 단위 계단식 상승 곡선을 적용하고, 훈련소 계산식에 타워별 다중 타격과 틱레이트 공식을 반영했습니다.
+                    초반 비-원샷 체력 곡선과 도전 모드 20웨이브 단위 계단식 상승 곡선을 적용하고, 훈련소 계산식에 타워별 다중 타격과 타격 빈도 공식을 반영했습니다.
                   </p>
                 </div>
               </div>
@@ -861,40 +896,31 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 02. 개발 관리 규칙 (전체 가로폭 세로 배치) */}
+          {/* 02. 에디터와 모듈 안정성 규칙 */}
           <section id="log-workflow" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">02 · 개발 관리 규칙</span>
+              <span className="text-xs font-bold text-blue-600">02 / 에디터와 모듈 규칙</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                개발 과정의 시행착오와 관리 규칙
+                에디터와 모듈 안정성 규칙
               </h2>
             </header>
 
             <div className="space-y-4">
               <div className="w-full p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900">
-                  유니티 씬 · 프리팹 참조 손상 방지
+                  씬과 프리팹 참조 손상 차단
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  씬이나 프리팹 파일을 텍스트로 직접 수정할 때 내부 참조가 깨지는 문제를 방지하기 위해, 에디터 제어 도구(Unity MCP)와 GUID 보존형 partial class 분할만 사용하도록 규칙화했습니다.
+                  유니티 씬이나 프리팹 파일을 텍스트로 직접 수정할 때 인스펙터 참조가 깨지는 문제를 겪은 뒤, 에디터 조작은 Unity MCP를 경유하고 코드 분할은 메타 GUID를 유지하는 방식으로 고정했습니다.
                 </p>
               </div>
 
               <div className="w-full p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
                 <h3 className="text-base font-bold text-gray-900">
-                  신규 UI · 기능의 독립 모듈 분리
+                  신규 기능의 독립 모듈 분리
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  유랑상인 등 신규 시스템을 기존 보상 스크립트에 덧붙이지 않고 독립된 UI 및 모듈로 분리하며, 프로젝트 마스터 문서를 기준으로 작업 맥락을 관리했습니다.
-                </p>
-              </div>
-
-              <div className="w-full p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-2 shadow-sm">
-                <h3 className="text-base font-bold text-gray-900">
-                  작업 영역 분리 및 단계별 콘솔 검증
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  대규모 수정 시 밸런스 데이터, 성좌·보상 로직, UI·튜토리얼처럼 수정 파일이 겹치지 않도록 작업을 나누어 진행하고 매 단계 유니티 콘솔 에러·경고 0건을 확인했습니다.
+                  유랑상인이나 도감, 훈련소 같은 신규 시스템을 기존 보상 스크립트에 덧붙이지 않고 독립 모듈로 분리해 기능 추가 시 기존 루프와 충돌하지 않도록 설계했습니다.
                 </p>
               </div>
             </div>
@@ -902,12 +928,12 @@ export default function GearAndTowerClient({
 
           <hr className="border-gray-200/80" />
 
-          {/* 03. 출시 준비 현황 (전체 가로폭 세로 배치) */}
+          {/* 03. 스팀 출시 준비 현황 */}
           <section id="log-status" className="scroll-mt-14 space-y-6">
             <header className="space-y-1">
-              <span className="text-xs font-bold text-blue-600">03 · 출시 준비 현황</span>
+              <span className="text-xs font-bold text-blue-600">03 / 출시 준비 현황</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-                스팀 출시 준비 및 구현 현황
+                스팀 출시 준비 현황
               </h2>
             </header>
 
@@ -915,10 +941,10 @@ export default function GearAndTowerClient({
               <div className="w-full p-6 rounded-2xl bg-gray-50 border border-gray-200 space-y-2.5 shadow-sm">
                 <div className="font-bold text-blue-700">[구현 및 에디터 검증 완료]</div>
                 <ul className="list-disc pl-5 space-y-1.5 text-gray-700 leading-relaxed">
-                  <li>전투·성좌 3웨이브 튜토리얼 및 대기실 8단계 안내 투어 연결 완료</li>
+                  <li>전투 및 특성 3웨이브 튜토리얼과 대기실 8단계 안내 투어 연결 완료</li>
                   <li>대장간 장비 강화, 확장성 기반 선택형 타워 덱, 동등 티어 세트 장비 완료</li>
-                  <li>보스 대형 체력/실드/잔상 바, 전술 버프 HUD, 세트 도감 및 몬스터 도감 완료</li>
-                  <li>훈련소 DPS 시뮬레이터, 한·영 실시간 전환, Beta_V0.3.0 표기 및 콘솔 0에러</li>
+                  <li>보스 대형 체력 바와 실드 바, 전술 버프 화면, 세트 도감 및 몬스터 도감 완료</li>
+                  <li>훈련소 DPS 측정기, 한영 실시간 전환, Beta_V0.3.0 표기 및 콘솔 0에러</li>
                 </ul>
               </div>
 

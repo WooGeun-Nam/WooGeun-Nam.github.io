@@ -49,6 +49,10 @@ export default function PortfolioHome() {
               alt: "Gear & Tower - 1080p 인게임 전투",
             },
             {
+              src: "/images/gearandtower/boss.png",
+              alt: "Gear & Tower - 20웨이브 테마 보스전",
+            },
+            {
               src: "/images/gearandtower/constellation.png",
               alt: "Gear & Tower - 장기 특성 트리",
             },

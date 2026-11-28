@@ -526,34 +526,43 @@ export default function GearAndTowerClient({
               <div className="w-full rounded-2xl border border-gray-200 bg-white p-5 grid md:grid-cols-[360px_1fr] gap-5 items-center shadow-sm">
                 <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
                   <ImgPrefixed
-                    src="/images/gearandtower/ingame.png"
-                    alt="테마 보스 구조와 전투 UI"
+                    src="/images/gearandtower/boss.png"
+                    alt="20웨이브 테마 보스전과 상단 대형 체력 바"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="space-y-2">
                   <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
-                    전투 / 웨이브 구조
+                    전투 / RPG 보스전 신설
                   </span>
                   <h3 className="text-lg font-bold text-gray-900">
-                    테마 보스 구조와 전투 UI
+                    20웨이브 테마 보스전과 상단 대형 체력 바
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    중간 네임드와 초원, 설원, 사막, 마그마 테마별 고유 스킬을 가진 보스로 이어지는 20웨이브 구조를 확립했습니다. 일반, 네임드, 보스의 기초 체급을 정규화하고, 1080p 해상도 개편과 함께 상단 대형 보스 체력 바와 좌측 전술 버프 화면을 추가해 전투 시인성을 높였습니다.
+                    일반 물량 웨이브 편중을 완화하기 위해 기존 중간보스를 제거하고 5웨이브 단위로 네임드 몬스터가 등장하도록 재편했습니다. 최종 웨이브에는 일반 몬스터와 다른 동작 방식과 초원·설원·사막·마그마 테마별 고유 스킬을 구사하는 보스전을 신설했으며, 상단 중앙의 전용 대형 HP 바를 통해 RPG 보스 공략의 직관성을 높였습니다.
                   </p>
                 </div>
               </div>
 
-              <div className="w-full rounded-2xl border border-gray-200 bg-gray-50 p-6 space-y-2 shadow-sm">
-                <span className="inline-block text-[11px] font-bold text-blue-600 bg-white border border-blue-200 px-2.5 py-0.5 rounded">
-                  난이도와 엔드 콘텐츠
-                </span>
-                <h3 className="text-lg font-bold text-gray-900">
-                  난이도 재설계와 도전 모드
-                </h3>
-                <p className="text-sm text-gray-700 leading-relaxed">
-                  0부터 100까지의 숫자 슬라이더였던 기존 난이도를 입문, 보통, 어려움, 지옥 단계로 개편하고, 단계별 체력과 방어력 배율을 분리해 물리 및 마법 타워 균형을 맞췄습니다. 또한 기존 무한 모드를 도전 모드로 개편해 보스 구간마다 난이도가 계단식으로 상승하도록 설계했습니다.
-                </p>
+              <div className="w-full rounded-2xl border border-gray-200 bg-white p-5 grid md:grid-cols-[360px_1fr] gap-5 items-center shadow-sm">
+                <div className="aspect-video rounded-xl overflow-hidden bg-slate-950 border border-gray-200">
+                  <ImgPrefixed
+                    src="/images/gearandtower/ingame.png"
+                    alt="5단위 네임드 웨이브와 1080p 전투 UI"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <span className="inline-block text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded">
+                    난이도 · 5단위 네임드 · 도전 모드
+                  </span>
+                  <h3 className="text-lg font-bold text-gray-900">
+                    일반·도전 모드 보스 구조 및 1080p 전투 UI
+                  </h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    1080p 해상도 개편과 함께 좌측 전술 버프 HUD와 일반·네임드·보스의 기초 체급을 정규화하고, 0부터 100까지 숫자 슬라이더였던 난이도를 입문·보통·어려움·지옥 4단계(체력·방어력 배율 분리)로 개편했습니다. 일반 모드에서는 스테이지 최종 보스로 등장하며, 무한 모드를 개편한 도전 모드에서는 20웨이브마다 보스가 등장하고 돌파 시 난이도가 계단식으로 상승하도록 설계했습니다.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
